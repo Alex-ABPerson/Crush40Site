@@ -1,0 +1,392 @@
+/* If you see this, you should REALLY come chat with us over on the Discord server! */
+
+/* GENERAL: */
+html, body {
+    margin: 0;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    overflow: auto;
+}
+
+button {
+    text-align: center;
+    font-size: 125%;
+    border-radius: 10px;
+    color: inherit;
+
+    transition: background-color 0.25s;
+
+    cursor: pointer;
+
+    position: relative;
+
+    margin-bottom: 5px;
+
+    /* Smallscreen: */
+    width: 100%;
+    height: 60px;
+}
+
+.btnSet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 580px) {
+    .btnSet {
+        width: auto;
+        flex-direction: row;
+    }
+
+    button {
+        width: 250px;
+        height: 60px;
+        margin-right: 5px;
+    }
+}
+
+.emptyButton {
+    border: solid 4px rgb(105, 2, 2);
+    background-color: transparent;
+}
+
+.emptyButton:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.filledButton {
+    border: none;
+    background-color: rgb(105, 2, 2);
+}
+
+.filledButton:hover {
+    background-color: rgb(85, 2, 2);
+}
+
+.background {
+    opacity: 50%;
+    background-image: url('img/backgrounds/Opening.png');
+    background-position: center;
+    background-size: cover;
+
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* OPENING */
+.opening {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    height: calc(100% - 200px);
+    min-height: 400px;
+
+    color: white;
+}
+
+.opening img {
+    max-width: 90%;
+}
+
+.opening-intro
+{
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+/* INTRODUCING... CRUSH 40! */
+.intro {
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+.intro .blockTitle {
+    color: white;
+    background-color: darkred;
+    width: 300px;
+    padding: 20px;
+
+    z-index: 1;
+}
+
+.intro .blockTitleRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro .strip {
+    width: calc(100% + 20px);
+    font-size: 160%;
+
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+
+    transform: rotateZ(-6deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.intro .stripText {
+    width: 80%;
+}
+
+.intro .stripImg {
+    width: 80%;
+}
+
+@media (min-width: 800px)
+{
+    .intro .strip {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 180%;
+        flex-direction: row;
+    }
+
+    .intro .stripImg {
+        width: 30%;
+    }
+}
+
+.intro .stripBack {
+    padding: 10px;
+    margin-left: -100px;
+
+    z-index: -1;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background-color: rgb(135, 0, 6);
+}
+
+.intro .bandMembers {
+    font-size: 160%;
+    display: grid;
+
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+        "johnnyIndicator gtr junIndicator"
+        "johnnyTitle gtr junTitle"
+        "johnnyAka gtr junTitle"
+        "johnnyDesc gtr junDesc"
+        "johnnyImg gtr junImg";
+
+    justify-items: center;
+
+    text-align: center;
+    flex-direction: row;
+}
+
+.intro .bandMembers .centreSeparator {
+    background-image: url('img/backgrounds/GuitarLoop/Vertical.svg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    width: 80px;
+
+    margin-top: -200px;
+    height: calc(100% + 200px);
+}
+
+.intro .bandMembers .indicator {
+    margin-bottom: 5px;
+}
+
+.intro .bandMembers .title {
+    margin: 0px;
+}
+
+.intro .bandMembers .img {
+    height: 350px;
+}
+
+.intro .bandMembers .johnnyAka {
+    grid-area: johnnyAka;
+    margin-bottom: 0px;
+}
+
+.intro .bandMembers .johnnyTitle { grid-area: johnnyTitle; }
+.intro .bandMembers .johnnyDesc { grid-area: johnnyDesc; }
+.intro .bandMembers .johnnyImg { grid-area: johnnyImg; }
+.intro .bandMembers .junTitle { grid-area: junTitle; }
+.intro .bandMembers .junDesc { grid-area: junDesc; }
+.intro .bandMembers .junImg { grid-area: junImg; }
+
+/* Main Information */
+.mainInfo {
+    background-color: white;
+    background-image: url('img/backgrounds/MainPart/Background.svg');
+    background-size: cover;
+    background-position: center;
+
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.mainInfoImgCaption {
+    font-style: italic;
+    color: #888;
+}
+
+.memberShowcase {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.memberShowcase img {
+    margin: 10px;
+}
+
+.mainInfo p {
+    font-size: 120%;
+}
+
+/* LIVE */
+.live {
+    text-align: center;
+    background-color: gray;
+    padding-top: 1px;
+}
+
+.live-strip {
+    display: flex;
+    flex-direction: row;
+}
+
+.live-strip img {
+    width: 25%;
+}
+
+/* More Information */
+.moreInfo {
+    background-color: black;
+    color: white;
+
+    padding-top: 1px;
+}
+
+.moreInfo h1 {
+    text-align: center;
+}
+
+.moreInfoPart h2 {
+    grid-area: title;
+}
+
+.moreInfoPart img {
+    grid-area: img;
+
+    margin: 20px;
+    border: 10px solid white;
+}
+
+.moreInfoPart .description {
+    grid-area: description;
+}
+
+.moreInfoPart .imgCaption {
+    grid-area: imgCaption;
+
+    font-style: italic;
+    color: lightgray;
+
+    margin-bottom: 15px;
+}
+
+.moreInfoPart {
+    display: grid;
+}
+
+/* Smallscreen */
+.moreInfoPart {
+    padding: 0 10px;
+    grid-template-rows: auto auto auto auto;
+}
+
+.moreInfoPart img, .moreInfoPart .imgCaption {
+    justify-self: center;
+}
+
+.moreInfoLeft {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "img"
+        "imgCaption";
+}
+
+.moreInfoRight {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "img"
+        "imgCaption";
+}
+
+/* Largescreen */
+@media (min-width: 800px) {
+    .moreInfoPart img, .moreInfoLeft .imgCaption {
+        justify-self: left;
+    }
+
+    .moreInfoRight .imgCaption {
+        justify-self: right;
+    }
+
+    .moreInfoPart {
+        text-align: left;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .moreInfoLeft {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "img title"
+            "img description"
+            "img imgCaption";
+    }
+    
+    .moreInfoRight {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "title img"
+            "description img"
+            "imgCaption img";
+    }
+}
