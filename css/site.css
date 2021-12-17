@@ -74,7 +74,7 @@ button {
 
 .background {
     opacity: 50%;
-    background-image: url('img/backgrounds/Opening.png');
+    background-image: url('../img/backgrounds/Opening.png');
     background-position: center;
     background-size: cover;
 
@@ -208,7 +208,7 @@ button {
 }
 
 .intro .bandMembers .centreSeparator {
-    background-image: url('img/backgrounds/GuitarLoop/Vertical.svg');
+    background-image: url('../img/backgrounds/GuitarLoop/Vertical.svg');
     background-repeat: repeat-y;
     background-size: contain;
     width: 80px;
