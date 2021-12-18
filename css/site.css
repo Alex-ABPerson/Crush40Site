@@ -47,8 +47,15 @@ button {
         flex-direction: row;
     }
 
+    .btnWidthNormal {
+        width: 285px;
+    }
+
+    .btnWidthWide {
+        width: 400px;
+    }
+
     button {
-        width: 250px;
         height: 60px;
         margin-right: 5px;
     }
@@ -141,11 +148,8 @@ button {
     font-size: 160%;
 
     box-sizing: border-box;
-    margin-top: 60px;
     margin-bottom: 50px;
     padding-left: 50px;
-
-    transform: rotateZ(-6deg);
 
     display: flex;
     flex-direction: column;
@@ -153,6 +157,14 @@ button {
     align-items: center;
 
     color: white;
+}
+
+.intro .stripUp {
+    transform: rotateZ(-6deg);
+}
+
+.intro .stripDown {
+    transform: rotateZ(6deg);
 }
 
 .intro .stripText {
@@ -185,7 +197,14 @@ button {
     position: absolute;
     width: 150%;
     height: 100%;
+}
+
+.intro .whoIsC40 .stripBack {
     background-color: rgb(135, 0, 6);
+}
+
+.intro .otherBandMembers .stripBack {
+    background-color: darkblue;
 }
 
 .intro .bandMembers {
@@ -199,7 +218,8 @@ button {
         "johnnyTitle gtr junTitle"
         "johnnyAka gtr junTitle"
         "johnnyDesc gtr junDesc"
-        "johnnyImg gtr junImg";
+        "johnnyImg gtr junImg"
+        "johnnyTogetherImg gtr junMrJun";
 
     justify-items: center;
 
@@ -237,9 +257,45 @@ button {
 .intro .bandMembers .johnnyTitle { grid-area: johnnyTitle; }
 .intro .bandMembers .johnnyDesc { grid-area: johnnyDesc; }
 .intro .bandMembers .johnnyImg { grid-area: johnnyImg; }
+.intro .bandMembers .johnnyIndicator { grid-area: johnnyIndicator; }
 .intro .bandMembers .junTitle { grid-area: junTitle; }
 .intro .bandMembers .junDesc { grid-area: junDesc; }
 .intro .bandMembers .junImg { grid-area: junImg; }
+.intro .bandMembers .junIndicator { grid-area: junIndicator; }
+
+.intro .bandMembers .johnnyTogetherImg {
+    grid-area: johnnyTogetherImg;
+
+    margin: 50px -32px -50px 0;
+    margin-top: 50px;
+    margin-bottom: -50px;
+
+    transform: rotate(6deg);
+    padding: 15px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.intro .bandMembers .johnnyTogetherImgImg {
+    max-width: 40%;
+}
+
+.intro .bandMembers .junMrJun {
+    grid-area: junMrJun;
+    justify-self: flex-end;
+
+    margin-top: 50px;
+    margin-bottom: -100px;
+    padding: 15px;
+
+    max-width: 90%;
+    background-color: rgb(130, 130, 130);
+}
+
+
+.intro .otherBandMembers {
+    margin-bottom: 100px;
+}
 
 /* Main Information */
 .mainInfo {
