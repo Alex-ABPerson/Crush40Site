@@ -346,7 +346,7 @@ button {
 /* Main Information */
 .mainInfo {
     background-color: white;
-    background-image: url('img/backgrounds/MainPart/Background.svg');
+    background-image: url('../img/backgrounds/MainPart/Background.svg');
     background-size: cover;
     background-position: center;
 
