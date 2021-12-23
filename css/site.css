@@ -243,6 +243,8 @@ button {
     width: 100%;
     height: 80px;
 
+    transition: background-position 0.1s ease-out;
+
     grid-area: gtr;
 }
 
