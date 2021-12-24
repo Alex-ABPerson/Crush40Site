@@ -192,6 +192,10 @@ button {
         flex-direction: row;
     }
 
+    .intro .stripDown {
+        padding-left: 50px;
+    }
+
     .intro .stripImg {
         width: 30%;
     }
