@@ -3,9 +3,13 @@ var backgroundParallax;
 
 window.addEventListener('load', () => {
 
-    backgroundParallax = document.querySelectorAll("[data-parallax='background']");
+    backgroundParallax = document.querySelectorAll("[data-parallax]");
 
     window.addEventListener('scroll', () => {
+        UpdateParallaxAll();
+    });
+
+    window.addEventListener('resize', () => {
         UpdateParallaxAll();
     });
 
@@ -14,11 +18,35 @@ window.addEventListener('load', () => {
 
 function UpdateParallaxAll()
 {
-    // Temporary: Stop the parallax on small screens
-    if (window.innerWidth < 1000) return;
-        
     for (let i = 0; i < backgroundParallax.length; i++)
     {
-        backgroundParallax[i].style.backgroundPosition = "0% " + -window.scrollY / parseInt(backgroundParallax[i].dataset.parallaxSpeed);
+        switch (backgroundParallax[i].dataset.parallax)
+        {
+            case "backgroundY":
+                if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
+                    UpdateBackgroundParallaxX(backgroundParallax[i]);
+                else
+                    UpdateBackgroundParallaxY(backgroundParallax[i]);
+                    
+                break;
+            case "backgroundX":
+                if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
+                    UpdateBackgroundParallaxY(backgroundParallax[i]);
+                else
+                    UpdateBackgroundParallaxX(backgroundParallax[i]);
+
+                break;
+        }
+        
     }
+}
+
+function UpdateBackgroundParallaxX(item)
+{
+    item.style.backgroundPosition = -window.scrollY / parseInt(item.dataset.parallaxSpeed) + " 0%";
+}
+
+function UpdateBackgroundParallaxY(item)
+{
+    item.style.backgroundPosition = "0% " + -window.scrollY / parseInt(item.dataset.parallaxSpeed);
 }
