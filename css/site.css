@@ -150,7 +150,6 @@ button {
     box-sizing: border-box;
     margin-top: 30px;
     margin-bottom: 50px;
-    padding-left: 50px;
 
     display: flex;
     flex-direction: column;
@@ -163,14 +162,20 @@ button {
 }
 
 .intro .stripUp {
+    padding-left: 50px;
     transform: rotateZ(-6deg);
 }
 
 .intro .stripDown {
+    padding-right: 50px;
     transform: rotateZ(6deg);
 }
 
-.intro .stripText {
+.intro .stripDown .stripText {
+    width: 80%;
+}
+
+.intro .stripUp .stripText {
     width: 80%;
 }
 
