@@ -145,7 +145,6 @@ button {
 
 .intro .strip {
     width: calc(100% + 20px);
-    font-size: 160%;
 
     box-sizing: border-box;
     margin-top: 30px;
@@ -219,9 +218,11 @@ button {
     background-color: darkblue;
 }
 
-.intro .bandMembers {
+.intro .introSection, .intro .strip {
     font-size: 160%;
+}
 
+.intro .bandMembers {
     justify-items: center;
     text-align: center;
     flex-direction: row;
@@ -348,7 +349,13 @@ button {
 .intro .bandMembers .junIndicator { grid-area: junIndicator; }
 
 .intro .otherBandMembers {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.intro .naming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Main Information */
