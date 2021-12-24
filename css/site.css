@@ -148,6 +148,7 @@ button {
     font-size: 160%;
 
     box-sizing: border-box;
+    margin-top: 30px;
     margin-bottom: 50px;
     padding-left: 50px;
 
@@ -157,6 +158,8 @@ button {
     align-items: center;
 
     color: white;
+
+    z-index: 1;
 }
 
 .intro .stripUp {
@@ -251,36 +254,33 @@ button {
 .intro .bandMembers .johnnyTogetherImg {
 
     grid-area: johnnyTogetherImg;
-
-    margin: 50px -32px 10px 0;
+    align-self: center;
 
     transform: rotate(6deg);
-    padding: 15px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-}
+    max-width: 50%;
 
-.intro .bandMembers .johnnyTogetherImgImg {
-    max-width: 45%;
+    /* Smallscreen */
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .intro .bandMembers .junMrJun {
     grid-area: junMrJun;
-    justify-self: flex-end;
+    justify-self: center;
 
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: -100px;
     padding: 15px;
+    padding-bottom: 40px;
 
-    max-width: 90%;
     background-color: rgb(130, 130, 130);
 }
 
-@media (max-width: 1400px) {
-    .intro .bandMembers .johnnyImg, .intro .bandMembers .junImg {
-        max-width: 70%;
-        object-fit: scale-down;
-    }
+.intro .bandMembers .img {
+    max-width: 70%;
+    object-fit: scale-down;
 }
 
 @media (min-width: 1000px) {
@@ -311,6 +311,7 @@ button {
     }
 
     .intro .bandMembers .johnnyTogetherImg {
+        margin-top: 0;
         margin-bottom: 0;
     }
 }
@@ -321,10 +322,6 @@ button {
 
 .intro .bandMembers .title {
     margin: 0px;
-}
-
-.intro .bandMembers .img {
-    height: 350px;
 }
 
 .intro .bandMembers .johnnyAka {
