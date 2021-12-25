@@ -91,6 +91,47 @@ button {
     height: 100%;
 }
 
+.floating {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.floating .panel {
+    position: absolute;
+    background-color: rgb(169, 169, 169);
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+
+    box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "titlebar"
+        "cont";
+}
+
+.floating .panel .contents {
+    grid-area: cont;
+    padding: 10px;
+}
+
+.floating .panel .titlebar {
+    grid-area: titlebar;
+
+    padding: 10px;
+    background-color: rgb(140, 140, 140);
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title close";
+}
+
 /* OPENING */
 .opening {
     display: grid;
