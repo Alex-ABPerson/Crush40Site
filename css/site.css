@@ -81,7 +81,7 @@ button {
 
 .background {
     opacity: 50%;
-    background-image: url('../img/backgrounds/Opening.png');
+    background-image: url('../img/visuals/Opening.png');
     background-position: center;
     background-size: cover;
 
@@ -250,7 +250,7 @@ button {
 
 .intro .bandMembers .centreSeparator {
     /* Smallscreen: */
-    background-image: url('../img/backgrounds/GuitarLoop/Horizontal.svg');
+    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
     background-repeat: repeat-x;
     background-size: contain;
     width: 100%;
@@ -314,7 +314,7 @@ button {
         margin-top: -193px;
         margin-left: 50%;
 
-        background-image: url('../img/backgrounds/GuitarLoop/Vertical.svg');
+        background-image: url('../img/visuals/GuitarLoop/Vertical.svg');
         background-repeat: repeat-y;
         width: 80px;
         height: calc(100% + 250px);
@@ -361,7 +361,7 @@ button {
 /* Main Information */
 .mainInfo {
     background-color: white;
-    background-image: url('../img/backgrounds/MainPart/Background.svg');
+    background-image: url('../img/visuals/MainPart/Background.svg');
     background-size: cover;
     background-position: center;
 
