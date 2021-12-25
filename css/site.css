@@ -99,14 +99,14 @@ button {
     height: 100%;
     z-index: 99;
 
-    /* Let input pass through */
+    background-color: rgba(0, 0, 0, 0.2);
     visibility: collapse;
 }
 
 .floating .panel {
 
     /* Change in JS */
-    visibility: visible;
+    visibility: collapse;
 
     position: absolute;
     background-color: rgb(169, 169, 169);
@@ -126,6 +126,11 @@ button {
 .floating .panel .contents {
     grid-area: cont;
     padding: 10px;
+}
+
+.floating .panel .page {
+    width: 100%;
+    height: 100%;
 }
 
 .floating .panel .titlebar {
