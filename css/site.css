@@ -98,9 +98,16 @@ button {
     width: 100%;
     height: 100%;
     z-index: 99;
+
+    /* Let input pass through */
+    visibility: collapse;
 }
 
 .floating .panel {
+
+    /* Change in JS */
+    visibility: visible;
+
     position: absolute;
     background-color: rgb(169, 169, 169);
     width: 100%;
