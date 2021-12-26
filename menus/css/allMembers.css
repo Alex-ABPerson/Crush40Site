@@ -78,15 +78,15 @@ body {
 }
 
 .list .itemShow {
-    background-color: rgb(90, 30, 30);
+    background-color: var(--crush40-red-pale);
 }
 
 .list .itemShow:hover {
-    background-color: rgb(120, 30, 30);
+    background-color: var(--crush40-red-pale-hover);
 }
 
 .list .itemSong {
-    background-color: rgb(30, 30, 90);
+    background-color: var(--crush40-blue-pale);
 }
 
 .list .itemSong:hover {

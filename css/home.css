@@ -6,7 +6,7 @@
 
 .intro .blockTitle {
     color: white;
-    background-color: darkred;
+    background-color: var(--crush40-red);
     width: 300px;
     padding: 20px;
 
@@ -86,11 +86,11 @@
 }
 
 .intro .whoIsC40 .stripBack {
-    background-color: rgb(135, 0, 6);
+    background-color: var(--crush40-red);
 }
 
 .intro .otherBandMembers .stripBack {
-    background-color: darkblue;
+    background-color: var(--crush40-blue);
 }
 
 .intro .introSection, .intro .strip {
@@ -145,7 +145,7 @@
     padding: 15px;
     padding-bottom: 40px;
 
-    background-color: rgb(130, 130, 130);
+    background-color: var(--crush40-darkgray);
 }
 
 .intro .bandMembers .img {
