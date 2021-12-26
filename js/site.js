@@ -1,6 +1,7 @@
 // Floating Panel
 var floating;
 var floatingPanel;
+var floatingPanelTitle;
 var floatingPanelPages;
 var panelButtons;
 
@@ -8,17 +9,24 @@ window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
     floatingPanel = document.querySelector(".floating .panel");
+    floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelPages = document.querySelectorAll(".floating .panel .page");
     panelButtons = document.querySelectorAll("[data-action='panel']");
 
     for (let btn of panelButtons)
     {
         btn.addEventListener('click', () => {
-            floating.style.visibility = 'visible'; // Preventing input presses
-            floatingPanel.style.visibility = 'visible';
+            floating.style.visibility = 'visible';
 
             for (let page of floatingPanelPages)
-                page.style.visibility = page.dataset.pageName == btn.dataset.pageName ? 'visible' : 'hidden';
+            {
+                if (page.dataset.pageName == btn.dataset.pageName)
+                {
+                    page.style.visibility = 'visible';
+                    floatingPanelTitle.innerHTML = page.dataset.pageTitle;
+                }
+                else page.style.visibility = 'hidden';
+            }
         });
     }
 });

@@ -105,9 +105,6 @@ button {
 
 .floating .panel {
 
-    /* Change in JS */
-    visibility: collapse;
-
     position: absolute;
     background-color: rgb(169, 169, 169);
     width: 100%;
@@ -142,6 +139,10 @@ button {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas: "title close";
+}
+
+.floating .panel .titlebar .title {
+    font-weight: 700;
 }
 
 /* OPENING */
