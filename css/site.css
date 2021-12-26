@@ -251,21 +251,19 @@ html, body {
     width: 110px;
     text-align: center;
 
-    --back-color: var(--crush40-red);
-
     cursor: pointer;
 }
 
-.nav .items li:hover {
-    --back-color: var(--crush40-red-hover);
+.nav .items li:hover .back {
+    background-color: var(--crush40-red-hover);
 }
 
-.nav .items .selected {
-    --back-color: var(--crush40-darkred);
+.nav .items .selected .back {
+    background-color: var(--crush40-darkred);
 }
 
 .nav .items li .back {
-    background-color: var(--back-color);
+    background-color: var(--crush40-red);
     transform: skew(-25deg);
 
     position: absolute;
