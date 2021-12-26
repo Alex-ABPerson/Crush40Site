@@ -229,3 +229,56 @@ html, body {
     padding: 10px;
     margin: 0;
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(60, 60, 60);
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items {
+    padding: 0;
+    
+    list-style-type: none;
+
+    color: white;
+
+    margin-right: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.back {
+    background-color: red;
+    transform: skew(-25deg);
+
+    position: absolute;
+    margin-top: 5px;
+    width: 110px;
+    height: 40px;
+
+    z-index: -1;
+}
+
+.nav-items li {
+    display: block;
+    padding: 10px;
+
+    width: 110px;
+    text-align: center;
+}
+
+.nav-items li p {
+    position: relative;
+
+    display: block;
+}
