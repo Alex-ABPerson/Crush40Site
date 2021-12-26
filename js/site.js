@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 1000)
+        if (window.innerWidth > 1040)
             CloseNavbar();
     });
 });
