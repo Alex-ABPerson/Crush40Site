@@ -1,3 +1,48 @@
+function DisableScroll()
+{
+    document.body.style.overflow = 'hidden';
+}
+
+function EnableScroll()
+{
+    document.body.style.overflow = 'auto';
+}
+
+// Navbar Mobile Menu
+var navbar;
+var navbarItems;
+var navbarBtn;
+
+window.addEventListener('load', () => {
+    navbar = document.querySelector(".nav");
+    navbarItems = document.querySelector(".nav .items");
+    navbarBtn = document.querySelector(".nav .btn");
+
+    navbarBtn.addEventListener('click', () => {
+        if (navbar.classList.contains("navOpen"))
+            CloseNavbar();
+        else
+            OpenNavbar();
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1000)
+            CloseNavbar();
+    });
+});
+
+function CloseNavbar()
+{
+    EnableScroll();
+    navbar.classList.remove("navOpen");
+}
+
+function OpenNavbar()
+{
+    DisableScroll();
+    navbar.classList.add("navOpen");
+}
+
 // Floating Panel
 var floating;
 var floatingClose;
@@ -35,7 +80,7 @@ window.addEventListener('load', () => {
 
 function OpenPanel()
 {
-    document.body.style.overflow = 'hidden';
+    DisableScroll();
     floating.style.visibility = 'visible';
 }
 
@@ -46,7 +91,7 @@ function ChangePanelSrc(newSrc)
 
 function ClosePanel()
 {
-    document.body.style.overflow = 'auto';
+    EnableScroll();
     floating.style.visibility = 'collapse';
 }
 
