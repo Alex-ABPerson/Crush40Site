@@ -14,11 +14,28 @@ window.addEventListener('load', () => {
     description = document.querySelector(".text .description")
     list = document.querySelector(".list")
 
-    UpdateView(members[0]);
+    navLeftBtn.addEventListener('click', () => {
+        pos--;
+        UpdateView();
+    });
+
+    navRightBtn.addEventListener('click', () => {
+        pos++;
+        UpdateView();
+    });
+
+    UpdateView();
 });
 
-function UpdateView(newView)
+function UpdateView()
 {
+    let newView = members[pos];
+
+    // Update buttons    
+    navLeftBtn.style.visibility = pos == 0 ? 'hidden' : 'visible';
+    navRightBtn.style.visibility = pos == members.length - 1 ? 'hidden' : 'visible';
+
+    // Update details
     title.innerHTML = newView.name;
     description.innerHTML = newView.description;
     img.src = '../img/' + newView.img;
