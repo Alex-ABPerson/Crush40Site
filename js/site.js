@@ -41,6 +41,10 @@ window.addEventListener('load', () => {
 function ClosePanel()
 {
     floating.style.visibility = 'collapse';
+
+    // Hide all the pages
+    for (let page of floatingPanelPages)
+        page.style.visibility = 'hidden';
 }
 
 // Parallax movement (e.g. guitar separator)
