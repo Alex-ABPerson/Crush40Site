@@ -35,6 +35,7 @@ window.addEventListener('load', () => {
 
 function OpenPanel()
 {
+    document.body.style.overflow = 'hidden';
     floating.style.visibility = 'visible';
 }
 
@@ -45,6 +46,7 @@ function ChangePanelSrc(newSrc)
 
 function ClosePanel()
 {
+    document.body.style.overflow = 'auto';
     floating.style.visibility = 'collapse';
 }
 
