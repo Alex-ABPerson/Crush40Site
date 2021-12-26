@@ -8,6 +8,9 @@ html, body {
     --crush40-red-hover: rgb(85, 2, 2);
     --crush40-blue: darkblue;
 
+    --crush40-darkred: rgb(65, 2, 2);
+    --crush40-lightred-hover: rgb(109, 0, 0);
+
     --crush40-red-pale: rgb(90, 30, 30);
     --crush40-red-pale-hover: rgb(120, 30, 30);
     --crush40-blue-pale: rgb(30, 30, 90);
@@ -262,6 +265,10 @@ html, body {
 
 .nav .items li:hover {
     --back-color: var(--crush40-red-hover);
+}
+
+.nav .items .selected {
+    --back-color: darkred;
 }
 
 .nav .items li .back {
