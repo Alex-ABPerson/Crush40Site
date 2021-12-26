@@ -377,7 +377,7 @@ html, body {
     align-content: center;
     
     height: calc(100% - 200px);
-    min-height: 400px;
+    min-height: 600px;
 
     color: white;
 }
