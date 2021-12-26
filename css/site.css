@@ -199,14 +199,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 800px) and (min-height: 600px)
-{
-    .floating .panel {
-        height: 400px;
-    }
-}
-
-@media (min-height: 600px)
+@media (min-width: 1000px) and (min-height: 600px)
 {
     .floating .panel {
         height: 400px;

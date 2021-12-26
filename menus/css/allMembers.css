@@ -1,65 +1,46 @@
 body {
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .contents {
+    padding-top: 20px;
+
     display: grid;
 
-    grid-template-rows: auto;
-    grid-template-columns: auto 400px 1fr 1fr auto;
-    grid-template-areas: "navLeft img txt list navRight";
+    /* Smallscreen */
+    grid-template-rows: 350px auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "img"
+        "txt"
+        "works";
 
     width: 100%;
-}
+    margin-right: 30px; /* Don't let the contents hit the right arrow */
+    height: 100%;
 
-.navLeft, .navRight {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    transition: transform 100ms ease-in-out;
-}
-
-.navLeft:hover {
-    grid-area: navLeft;
-    transform: translateX(-5px);
-}
-
-.navRight:hover {
-    grid-area: navRight;
-    transform: translateX(5px);
+    justify-items: center;
 }
 
 .img { 
     grid-area: img; 
-    align-self: center;
     justify-self: center;
 }
 
 .works {
-    grid-area: list;
-    align-content: flex-end;
+    grid-area: works;
+    text-align: center;
 }
 
 .list {
     list-style-type: none;
     padding: 0;
 
-    max-height: 250px;
-    box-sizing: border-box;
-
-    justify-self: center;
-
     display: flex;
     flex-direction: row;
-    flex-grow: 0;
-    flex-shrink: 0;
-
-    align-items: flex-start;
-
     flex-wrap: wrap;
-    overflow: auto;
+    justify-content: center;
 }
 
 .list .item {
@@ -98,10 +79,80 @@ body {
     width: 50px;
 }
 
+@media (min-width: 1000px)
+{
+    .contents {
+        grid-template-rows: auto;
+        grid-template-columns: 310px 1fr 1fr;
+        grid-template-areas: "img txt works";
+        justify-items: flex-start;
+
+        padding: 0;
+    }
+
+    .list {
+        overflow: auto;
+        max-height: 250px;
+    }
+
+    .works {
+        text-align: left;
+    }
+
+    .img {
+        align-self: center;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .contents {
+        grid-template-rows: auto;
+        grid-template-columns: 400px 1fr 1fr;
+        grid-template-areas: "img txt works";
+
+        padding: 0;
+    }
+}
+
+.fixedToCenter {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .text { 
     grid-area: txt; 
 }
 
 .text .description {
     font-size: 125%;
+}
+
+.fixedLeft {
+    left: 0;
+}
+
+.fixedRight {
+    right: 0;
+}
+
+.navLeft, .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.navLeft:hover {
+    grid-area: navLeft;
+    transform: translateX(-5px);
+}
+
+.navRight:hover {
+    grid-area: navRight;
+    transform: translateX(5px);
 }
