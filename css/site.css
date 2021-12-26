@@ -446,11 +446,21 @@ html, body {
     margin-bottom: 50px;
 }
 
+.allBandMembers {
+
+}
+
 .intro .naming {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* All Band Members */
+.allMembers {
+    
+}
+
 
 /* Main Information */
 .mainInfo {
