@@ -1,0 +1,31 @@
+body {
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-areas: "navLeft img txt list navRight";
+    
+    align-items: center;
+}
+
+.navLeft, .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.navLeft:hover {
+    grid-area: navLeft;
+    transform: translateX(-5px);
+}
+
+.navRight:hover {
+    grid-area: navRight;
+    transform: translateX(5px);
+}
+
+.img { grid-area: img; justify-self: center; }
+.text { grid-area: txt; }
+.list { grid-area: list; }
