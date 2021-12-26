@@ -4,7 +4,7 @@ var floatingClose;
 var floatingCloseButton;
 var floatingPanel;
 var floatingPanelTitle;
-var floatingPanelPages;
+var floatingPanelFrame;
 var panelButtons;
 
 window.addEventListener('load', () => {
@@ -14,26 +14,21 @@ window.addEventListener('load', () => {
     floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingCloseButton = document.querySelector(".floating .panel .titlebar .close");
-    floatingPanelPages = document.querySelectorAll(".floating .panel .page");
+    floatingPanelFrame = document.querySelector(".floating .panel .contents");
     panelButtons = document.querySelectorAll("[data-action='panel']");
 
     floatingClose.addEventListener('click', ClosePanel);
-    floatingCloseButton.addEventListener('click', ClosePanel);        
+    floatingCloseButton.addEventListener('click', ClosePanel);
+
+    floatingPanelFrame.addEventListener('load', () => {
+        floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;
+    });
 
     for (let btn of panelButtons)
     {
         btn.addEventListener('click', () => {
             floating.style.visibility = 'visible';
-
-            for (let page of floatingPanelPages)
-            {
-                if (page.dataset.pageName == btn.dataset.pageName)
-                {
-                    page.style.visibility = 'visible';
-                    floatingPanelTitle.innerHTML = page.dataset.pageTitle;
-                }
-                else page.style.visibility = 'hidden';
-            }
+            floatingPanelFrame.src = "menus/" + btn.dataset.pageName + ".html";
         });
     }
 });
@@ -41,10 +36,6 @@ window.addEventListener('load', () => {
 function ClosePanel()
 {
     floating.style.visibility = 'collapse';
-
-    // Hide all the pages
-    for (let page of floatingPanelPages)
-        page.style.visibility = 'hidden';
 }
 
 // Parallax movement (e.g. guitar separator)
