@@ -27,11 +27,21 @@ window.addEventListener('load', () => {
     for (let btn of panelButtons)
     {
         btn.addEventListener('click', () => {
-            floating.style.visibility = 'visible';
-            floatingPanelFrame.src = "menus/" + btn.dataset.pageName + ".html";
+            ChangePanelSrc(btn.dataset.pageName);
+            OpenPanel();
         });
     }
 });
+
+function OpenPanel()
+{
+    floating.style.visibility = 'visible';
+}
+
+function ChangePanelSrc(newSrc)
+{
+    floatingPanelFrame.src = "menus/" + newSrc + ".html";
+}
 
 function ClosePanel()
 {
