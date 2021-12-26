@@ -1,6 +1,7 @@
 // Floating Panel
 var floating;
 var floatingClose;
+var floatingCloseButton;
 var floatingPanel;
 var floatingPanelTitle;
 var floatingPanelPages;
@@ -12,12 +13,12 @@ window.addEventListener('load', () => {
     floatingClose = document.querySelector(".floating .floatingClose");
     floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
+    floatingCloseButton = document.querySelector(".floating .panel .titlebar .close");
     floatingPanelPages = document.querySelectorAll(".floating .panel .page");
     panelButtons = document.querySelectorAll("[data-action='panel']");
 
-    floatingClose.addEventListener('click', () => {
-        ClosePanel();
-    });
+    floatingClose.addEventListener('click', ClosePanel);
+    floatingCloseButton.addEventListener('click', ClosePanel);        
 
     for (let btn of panelButtons)
     {

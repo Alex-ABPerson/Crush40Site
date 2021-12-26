@@ -16,7 +16,7 @@ html, body {
     overflow: auto;
 }
 
-button {
+.emptyButton, .filledButton {
     text-align: center;
     font-size: 125%;
     border-radius: 10px;
@@ -33,6 +33,12 @@ button {
     /* Smallscreen: */
     width: 100%;
     height: 60px;
+}
+
+.closeButton {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
 
 .btnSet {
@@ -103,7 +109,7 @@ button {
 }
 
 .floating .floatingClose {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
 }
 
@@ -114,7 +120,7 @@ button {
     position: absolute;
     background-color: rgb(169, 169, 169);
     width: 100%;
-    height: 300px;
+    height: 400px;
     bottom: 0;
 
     box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.2);
@@ -139,7 +145,7 @@ button {
 .floating .panel .titlebar {
     grid-area: titlebar;
 
-    padding: 10px;
+    padding: 0;
     background-color: rgb(140, 140, 140);
 
     display: grid;
@@ -149,6 +155,20 @@ button {
 
 .floating .panel .titlebar .title {
     font-weight: 700;
+    margin: 0;
+    padding: 20px;
+}
+
+.floating .panel .titlebar .close {
+    margin-right: 10px;
+    margin: 0;
+    padding: 20px;
+
+    cursor: hand;
+}
+
+.floating .panel .titlebar .close:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* OPENING */
