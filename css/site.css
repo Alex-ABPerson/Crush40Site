@@ -446,10 +446,6 @@ html, body {
     margin-bottom: 50px;
 }
 
-.allBandMembers {
-
-}
-
 .intro .naming {
     display: flex;
     flex-direction: column;
@@ -458,8 +454,36 @@ html, body {
 
 /* All Band Members */
 .allMembers {
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-areas: "navLeft img txt list navRight";
     
+    align-items: center;
 }
+
+.allMembers .navLeft, .allMembers .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.allMembers .navLeft:hover {
+    grid-area: navLeft;
+    transform: translateX(-5px);
+}
+
+.allMembers .navRight:hover {
+    grid-area: navRight;
+    transform: translateX(5px);
+}
+
+.allMembers .img { grid-area: img; justify-self: center; }
+.allMembers .text { grid-area: txt; }
+.allMembers .list { grid-area: list; }
 
 
 /* Main Information */
