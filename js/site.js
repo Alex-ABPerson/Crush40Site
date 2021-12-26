@@ -45,31 +45,23 @@ function OpenNavbar()
 
 // Floating Panel
 var floating;
-var floatingClose;
-var floatingCloseButton;
-var floatingPanel;
 var floatingPanelTitle;
 var floatingPanelFrame;
-var panelButtons;
 
 window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
-    floatingClose = document.querySelector(".floating .floatingClose");
-    floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
-    floatingCloseButton = document.querySelector(".floating .panel .titlebar .close");
     floatingPanelFrame = document.querySelector(".floating .panel .contents");
-    panelButtons = document.querySelectorAll("[data-action='panel']");
 
-    floatingClose.addEventListener('click', ClosePanel);
-    floatingCloseButton.addEventListener('click', ClosePanel);
+    document.querySelector(".floating .floatingClose").addEventListener('click', ClosePanel);
+    document.querySelector(".floating .panel .titlebar .close").addEventListener('click', ClosePanel);
 
     floatingPanelFrame.addEventListener('load', () => {
         floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;
     });
 
-    for (let btn of panelButtons)
+    for (let btn of document.querySelectorAll("[data-action='panel']"))
     {
         btn.addEventListener('click', () => {
             ChangePanelSrc(btn.dataset.pageName);
