@@ -1,11 +1,18 @@
 body {
+    display: flex;
+    align-items: center;
+}
+
+.contents {
     display: grid;
 
     grid-template-rows: auto;
-    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-columns: auto 400px 1fr 350px auto;
     grid-template-areas: "navLeft img txt list navRight";
-    
-    align-items: center;
+
+    width: 100%;
+
+    overflow: auto;
 }
 
 .navLeft, .navRight {
@@ -26,6 +33,66 @@ body {
     transform: translateX(5px);
 }
 
-.img { grid-area: img; justify-self: center; }
-.text { grid-area: txt; }
-.list { grid-area: list; }
+.img { 
+    grid-area: img; 
+    align-self: center;
+    justify-self: center;
+}
+
+.works {
+    grid-area: list;
+}
+
+.list {
+    height: 250px;    
+    box-sizing: border-box;
+
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.list .item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    width: 300px;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.list .itemShow {
+    background-color: rgb(90, 30, 30);
+}
+
+.list .itemShow:hover {
+    background-color: rgb(120, 30, 30);
+}
+
+.list .itemSong {
+    background-color: rgb(30, 30, 90);
+}
+
+.list .itemSong:hover {
+    background-color: rgb(30, 30, 120);
+}
+
+.list .identifier {
+    margin-right: 5px;
+    width: 50px;
+}
+
+.text { 
+    grid-area: txt; 
+}
+
+.text .description {
+    font-size: 125%;
+}

@@ -13,12 +13,15 @@
         <script>
 var members = [
     { 
-        name: 'Takashi', 
+        name: 'Test', 
         description: "Just a drummer lol", 
         img: 'Placeholder.png',
         works: [
             { type: "show", name: "2 Nights 2 Remember" },
-            { type: "song", name: "2 Nights 2 Remember" }
+            { type: "song", name: "2 Nights 2 Remember" },
+            { type: "song", name: "Down & Dirty" },
+            { type: "song", name: "Big Mouth" },
+            { type: "song", name: "Light of the Day" }
         ]
     }
 ];
@@ -27,19 +30,24 @@ var members = [
     <body>
         <button class="navLeft"><img src="../img/icons/largeLeftArrow.svg"></button>
 
-        <div class="img">
-            <img src="../img/Placeholder.png">
+        <div class="contents">
+            <div class="img">
+                <img src="../img/Placeholder.png">
+            </div>
+    
+            <div class="text">
+                <h1 class="name">Member Name</h1>
+                <p class="description">Member Description</p>
+            </div>
+    
+            <div class="works">
+                <h2>Works</h2>
+                <div class="list">
+    
+                </div>
+            </div>
         </div>
 
-        <div class="text">
-            <h2 class="name">Member Name</h2>
-            <p class="description">Member Description</p>
-        </div>
-
-        <div class="list">
-
-        </div>
-        
         <button class="navRight"><img src="../img/icons/largeRightArrow.svg"></button>
     </body>
 </html>
