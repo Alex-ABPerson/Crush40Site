@@ -120,7 +120,7 @@ html, body {
     position: absolute;
     background-color: rgb(169, 169, 169);
     width: 100%;
-    height: 400px;
+    height: 100%;
     bottom: 0;
 
     box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.2);
@@ -169,6 +169,20 @@ html, body {
 
 .floating .panel .titlebar .close:hover {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 800px) and (min-height: 600px)
+{
+    .floating .panel {
+        height: 400px;
+    }
+}
+
+@media (min-height: 600px)
+{
+    .floating .panel {
+        height: 400px;
+    }
 }
 
 /* OPENING */
