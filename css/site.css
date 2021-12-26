@@ -268,7 +268,7 @@ html, body {
 }
 
 .nav .items .selected {
-    --back-color: darkred;
+    --back-color: var(--crush40-darkred);
 }
 
 .nav .items li .back {
