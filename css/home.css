@@ -1,0 +1,418 @@
+/* INTRODUCING... CRUSH 40! */
+.intro {
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+.intro .blockTitle {
+    color: white;
+    background-color: darkred;
+    width: 300px;
+    padding: 20px;
+
+    z-index: 1;
+}
+
+.intro .blockTitleRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro .strip {
+    width: calc(100% + 20px);
+
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    z-index: 1;
+}
+
+.intro .stripUp {
+    padding-left: 50px;
+    transform: rotateZ(-6deg);
+}
+
+.intro .stripDown {
+    padding-right: 50px;
+    transform: rotateZ(6deg);
+}
+
+.intro .stripDown .stripText {
+    width: 80%;
+}
+
+.intro .stripUp .stripText {
+    width: 80%;
+}
+
+.intro .stripImg {
+    width: 80%;
+}
+
+@media (min-width: 800px)
+{
+    .intro .strip {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 180%;
+        flex-direction: row;
+    }
+
+    .intro .stripDown {
+        padding-left: 50px;
+    }
+
+    .intro .stripImg {
+        width: 30%;
+    }
+}
+
+.intro .stripBack {
+    padding: 10px;
+    margin-left: -100px;
+
+    z-index: -1;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+}
+
+.intro .whoIsC40 .stripBack {
+    background-color: rgb(135, 0, 6);
+}
+
+.intro .otherBandMembers .stripBack {
+    background-color: darkblue;
+}
+
+.intro .introSection, .intro .strip {
+    font-size: 160%;
+}
+
+.intro .bandMembers {
+    justify-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+    /* Smallscreen: */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+        "johnnyIndicator"
+        "johnnyTitle"
+        "johnnyAka"
+        "johnnyDesc"
+        "johnnyImg"
+        "johnnyTogetherImg"
+        "gtr"
+        "junIndicator"
+        "junTitle"
+        "junDesc"
+        "junImg";*/
+
+}
+
+.intro .bandMembers .centreSeparator {
+    /* Smallscreen: */
+    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+
+    transition: background-position 0.1s ease-out;
+
+    grid-area: gtr;
+}
+
+.intro .bandMembers .johnnyTogetherImg {
+
+    grid-area: johnnyTogetherImg;
+    align-self: center;
+
+    transform: rotate(6deg);
+    max-width: 50%;
+
+    /* Smallscreen */
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.intro .bandMembers .junMrJun {
+    grid-area: junMrJun;
+    justify-self: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    padding: 15px;
+    padding-bottom: 40px;
+
+    background-color: rgb(130, 130, 130);
+}
+
+.intro .bandMembers .img {
+    max-width: 70%;
+    object-fit: scale-down;
+}
+
+@media (min-width: 1000px) {
+    /* Largescreen: */
+    .intro .bandMembers {
+        display: grid;
+        align-items: flex-start;
+
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas:
+            "johnnyIndicator gtr junIndicator"
+            "johnnyTitle gtr junTitle"
+            "johnnyAka gtr junTitle"
+            "johnnyDesc gtr junDesc"
+            "johnnyImg gtr junImg"
+            "johnnyTogetherImg gtr junMrJun";
+    }
+
+    .intro .bandMembers .centreSeparator {
+        margin-top: -193px;
+        margin-left: 50%;
+
+        background-image: url('../img/visuals/GuitarLoop/Vertical.svg');
+        background-repeat: repeat-y;
+        width: 80px;
+        height: calc(100% + 250px);
+    }
+
+    .intro .bandMembers .johnnyTogetherImg {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.intro .bandMembers .indicator {
+    margin-bottom: 5px;
+}
+
+.intro .bandMembers .title {
+    margin: 0px;
+}
+
+.intro .bandMembers .johnnyAka {
+    grid-area: johnnyAka;
+    margin-bottom: 0px;
+}
+
+.intro .bandMembers .johnnyTitle { grid-area: johnnyTitle; }
+.intro .bandMembers .johnnyDesc { grid-area: johnnyDesc; padding-left: 30px; }
+.intro .bandMembers .johnnyImg { grid-area: johnnyImg; }
+.intro .bandMembers .johnnyIndicator { grid-area: johnnyIndicator; }
+.intro .bandMembers .junTitle { grid-area: junTitle; }
+.intro .bandMembers .junDesc { grid-area: junDesc; padding-left: 25px; }
+.intro .bandMembers .junImg { grid-area: junImg; }
+.intro .bandMembers .junIndicator { grid-area: junIndicator; }
+
+.intro .otherBandMembers {
+    margin-bottom: 50px;
+}
+
+.intro .naming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* All Band Members */
+.allMembers {
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-areas: "navLeft img txt list navRight";
+    
+    align-items: center;
+}
+
+.allMembers .navLeft, .allMembers .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.allMembers .navLeft:hover {
+    grid-area: navLeft;
+    transform: translateX(-5px);
+}
+
+.allMembers .navRight:hover {
+    grid-area: navRight;
+    transform: translateX(5px);
+}
+
+.allMembers .img { grid-area: img; justify-self: center; }
+.allMembers .text { grid-area: txt; }
+.allMembers .list { grid-area: list; }
+
+
+/* Main Information */
+.mainInfo {
+    background-color: white;
+    background-image: url('../img/visuals/MainPart/Background.svg');
+    background-size: cover;
+    background-position: center;
+
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.mainInfoImgCaption {
+    font-style: italic;
+    color: #888;
+}
+
+.memberShowcase {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.memberShowcase img {
+    margin: 10px;
+}
+
+.mainInfo p {
+    font-size: 120%;
+}
+
+/* LIVE */
+.live {
+    text-align: center;
+    background-color: gray;
+    padding-top: 1px;
+}
+
+.live-strip {
+    display: flex;
+    flex-direction: row;
+}
+
+.live-strip img {
+    width: 25%;
+}
+
+/* More Information */
+.moreInfo {
+    background-color: black;
+    color: white;
+
+    padding-top: 1px;
+}
+
+.moreInfo h1 {
+    text-align: center;
+}
+
+.moreInfoPart h2 {
+    grid-area: title;
+}
+
+.moreInfoPart img {
+    grid-area: img;
+
+    margin: 20px;
+    border: 10px solid white;
+}
+
+.moreInfoPart .description {
+    grid-area: description;
+}
+
+.moreInfoPart .imgCaption {
+    grid-area: imgCaption;
+
+    font-style: italic;
+    color: lightgray;
+
+    margin-bottom: 15px;
+}
+
+.moreInfoPart {
+    display: grid;
+}
+
+/* Smallscreen */
+.moreInfoPart {
+    padding: 0 10px;
+    grid-template-rows: auto auto auto auto;
+}
+
+.moreInfoPart img, .moreInfoPart .imgCaption {
+    justify-self: center;
+}
+
+.moreInfoLeft {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "img"
+        "imgCaption";
+}
+
+.moreInfoRight {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "description"
+        "img"
+        "imgCaption";
+}
+
+/* Largescreen */
+@media (min-width: 800px) {
+    .moreInfoPart img, .moreInfoLeft .imgCaption {
+        justify-self: left;
+    }
+
+    .moreInfoRight .imgCaption {
+        justify-self: right;
+    }
+
+    .moreInfoPart {
+        text-align: left;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .moreInfoLeft {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "img title"
+            "img description"
+            "img imgCaption";
+    }
+    
+    .moreInfoRight {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "title img"
+            "description img"
+            "imgCaption img";
+    }
+}
