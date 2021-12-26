@@ -1,5 +1,6 @@
 // Floating Panel
 var floating;
+var floatingClose;
 var floatingPanel;
 var floatingPanelTitle;
 var floatingPanelPages;
@@ -8,10 +9,15 @@ var panelButtons;
 window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
+    floatingClose = document.querySelector(".floating .floatingClose");
     floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelPages = document.querySelectorAll(".floating .panel .page");
     panelButtons = document.querySelectorAll("[data-action='panel']");
+
+    floatingClose.addEventListener('click', () => {
+        ClosePanel();
+    });
 
     for (let btn of panelButtons)
     {
@@ -30,6 +36,11 @@ window.addEventListener('load', () => {
         });
     }
 });
+
+function ClosePanel()
+{
+    floating.style.visibility = 'collapse';
+}
 
 // Parallax movement (e.g. guitar separator)
 var backgroundParallax;

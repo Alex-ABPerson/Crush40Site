@@ -99,11 +99,17 @@ button {
     height: 100%;
     z-index: 99;
 
-    background-color: rgba(0, 0, 0, 0.2);
     visibility: collapse;
 }
 
+.floating .floatingClose {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
 .floating .panel {
+
+    z-index: 100;
 
     position: absolute;
     background-color: rgb(169, 169, 169);
