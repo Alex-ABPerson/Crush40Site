@@ -135,7 +135,6 @@ html, body {
 
 .floating .panel .contents {
     grid-area: cont;
-    padding: 10px;
 
     width: 100%;
     height: 100%;
