@@ -43,6 +43,9 @@ body {
 }
 
 .list {
+    list-style-type: none;
+    padding: 0;
+
     max-height: 250px;
     box-sizing: border-box;
 

@@ -45,7 +45,7 @@ function UpdateView()
     for (let work of newView.works)
     {
         // <div class="listItem"><p class="identifier"></p><p class="title"></p></div>
-        let listItem = document.createElement("div");
+        let listItem = document.createElement("li");
         listItem.classList.add("item");
 
         let identifier = document.createElement("p");
