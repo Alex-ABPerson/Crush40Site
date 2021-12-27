@@ -218,7 +218,16 @@
     align-items: center;
 }
 
-.intro .guitar {
+.intro {
+    padding-bottom: 200px;
+}
+
+/* GUITARS */
+.guitars {
+    margin-top: -170px;
+}
+
+.guitar {
     width: 100%;
     position: relative;
 
@@ -226,7 +235,7 @@
     align-items: center;
 }
 
-.intro .guitar .neck {
+.guitar .neck {
     position: absolute;
     height: 100%;
     background-repeat: repeat-x;
@@ -236,12 +245,12 @@
     background-size: auto 30px;
 }
 
-.intro .guitar-top .neck {
+.guitar-top .neck {
     background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
     background-position: 531px 107px;
 }
 
-.intro .guitar .body {
+.guitar .body {
     grid-area: body;
     z-index: 1;
     width: 400px;
@@ -249,7 +258,7 @@
     margin-left: -65px;
 }
 
-.intro .guitar .headstock {
+.guitar .headstock {
     visibility: hidden;
     position: absolute;
     z-index: 1;
@@ -261,48 +270,48 @@
     --offset-from-right: 70px;
 }
 
-.intro .guitar-top .headstock {
+.guitar-top .headstock {
     width: 134px;
 }
 
 @media (min-width: 600px) {
-    .intro .guitar .neck {
+    .guitar .neck {
         width: calc(100% - 30px);
     }
 
-    .intro .guitar .headstock {
+    .guitar .headstock {
         visibility: visible;
     }
 }
 
 @media (min-width: 800px) {
-    .intro .guitar .body {
+    .guitar .body {
         width: 600px;
         margin-left: -40px;
     }
 
-    .intro .guitar .headstock {
+    .guitar .headstock {
         --snap-size: 23px;
         --offset-from-right: 139px;
     }
 
-    .intro .guitar-top .headstock {
+    .guitar-top .headstock {
         right: -32px;
         width: 200px;
     }
 
-    .intro .guitar .neck {
+    .guitar .neck {
         width: calc(100% - 100px);
         background-size: auto 45px;
     }
 
-    .intro .guitar-top .neck {
+    .guitar-top .neck {
         background-position: 558px 160px;
     }
 }
 
-.intro .guitars .middle {
-    background-color: var(--crush40-red);
+.guitars .middle {
+    
     padding-top: 140px;
 
     color: white;
@@ -315,66 +324,83 @@
     height: 500px;
 }
 
-.intro .guitars .middle .contents {
+.guitars .middle .contents {
     text-align: center;
     margin-top: 50px;
     padding: 10px;
 }
 
-.intro .guitars .middle .heading {
+.guitars .middle .heading {
     font-size: 200%;
     margin-bottom: 0;
 }
 
-.intro .guitars .middle .subheading {
+.guitars .middle .subheading {
     font-size: 150%;
     margin-top: 10px;
 }
 
 @media (min-width: 800px) {
-    .intro .guitars .middle {
+    .guitars .middle {
         /* Largescreen */
         height: 500px;
         margin-top: -180px;
     }
 }
 
-.intro .guitar-bottom {
+.guitar-bottom {
     margin-top: -110px;
 }
 
-.intro .guitar-bottom .neck {
+.guitar-bottom .neck {
     background-image: url('../img/content/guitars/Shadow-II/NeckHorizontal.svg');
     background-position: 531px 109px;
     background-clip: content-box;
 }
 
-.intro .guitar-bottom .headstock {
+.guitar-bottom .headstock {
     margin-top: -8px;
     width: 138px;
 }
 
 @media (min-width: 800px)
 {
-    .intro .guitar-bottom {
+    .guitar-bottom {
         margin-top: -200px;
     }
 
-    .intro .guitar-bottom .neck {
+    .guitar-bottom .neck {
         background-position: 558px 163px;
     }
 
-    .intro .guitar-bottom .headstock {
+    .guitar-bottom .headstock {
         right: -32px;
         margin-top: -12px;
         width: 213px;
     }
 }
 
+.trivia {
+    margin-top: -120px;
+}
+
+@media (min-width: 800px) {
+    .trivia {
+        margin-top: -180px;
+    }    
+}
+
+/* Trivia */
+.trivia {
+    padding-top: 10px;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
 /* Main Information */
 .mainInfo {
-    margin-top: -175px;
-
     background-color: white;
     background-image: url('../img/visuals/MainPart/Background.svg');
     background-size: cover;

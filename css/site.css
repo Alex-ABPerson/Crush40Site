@@ -29,7 +29,7 @@ html, body {
 }
 
 .section {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .emptyButton, .filledButton {
