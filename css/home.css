@@ -218,10 +218,6 @@
     align-items: center;
 }
 
-.intro .guitars {
-    height: 800px;
-}
-
 .intro .guitar {
     width: 100%;
     position: relative;
@@ -241,7 +237,7 @@
     flex-direction: row;
 }
 
-.intro .guitars .body {
+.intro .guitar .body {
     grid-area: body;
     z-index: 1;
 
@@ -249,7 +245,7 @@
     width: 400px;
 }
 
-.intro .guitars .neck {
+.intro .guitar .neck {
     grid-area: neck;
 
     position: absolute;
@@ -257,7 +253,7 @@
     margin-top: -4px;
 }
 
-.intro .guitars .headstock-right {
+.intro .guitar .headstock-right {
     visibility: hidden;
 
     position: absolute;
@@ -270,23 +266,19 @@
     z-index: 1;
 }
 
-.intro .guitars .middle {
-    margin-top: -120px; /* Smallscreen */
-}
-
 @media (min-width: 600px) {
-    .intro .guitars .headstock-right {
+    .intro .guitar .headstock-right {
         visibility: visible;
     }
 }
 
 @media (min-width: 800px) {
-    .intro .guitars .body {
+    .intro .guitar .body {
         width: 600px;
         margin-left: -40px;
     }
 
-    .intro .guitars .headstock-right {
+    .intro .guitar .headstock-right {
         --offset-from-right: 140px;
         right: -32px;
         width: 200px;
@@ -296,22 +288,26 @@
         background-size: auto 45px;
         background-position: 558px 160px;
     }
-
-    .intro .guitars .middle {
-        margin-top: -180px;
-    }
 }
 
 .intro .guitars .middle {
     background-color: var(--crush40-red);
     padding-top: 140px;
-    height: 500px;
 
     color: white;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    /* Smallscreen */
+    margin-top: -120px; 
+    height: 300px;
+}
+
+.intro .guitars .middle .contents {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
 }
 
 .intro .guitars .middle .heading {
@@ -324,20 +320,16 @@
     margin-top: 10px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .intro .guitars .middle {
-        padding-left: 100px;
+        /* Largescreen */
+        height: 500px;
+        margin-top: -180px;
     }
 }
 
-@media (min-width: 1570px) {
-    .intro .guitars .middle .contents {
-        text-align: center;
-    }
-
-    .intro .guitars .middle {
-        padding-top: 20px;
-    }
+.intro .guitar-bottom {
+    margin-top: -200px;
 }
 
 /* Main Information */
