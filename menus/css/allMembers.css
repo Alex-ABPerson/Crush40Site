@@ -17,8 +17,11 @@ body {
         "works";
 
     width: 100%;
-    margin-right: 30px; /* Don't let the contents hit the right arrow */
     height: 100%;
+    
+    /* Don't let the contents hit the arrows */
+    margin-left: 30px;
+    margin-right: 30px;
 
     justify-items: center;
 }
