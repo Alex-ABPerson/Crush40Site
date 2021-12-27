@@ -218,6 +218,58 @@
     align-items: center;
 }
 
+.intro .guitars {
+    height: 600px;
+}
+
+.intro .guitar {
+    width: 100%;
+    position: relative;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "body neck headstock";
+
+    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
+    background-size: auto 45px;
+    background-position: 558px 160px;
+    background-repeat: repeat-x;
+
+    align-items: center;
+
+    flex-direction: row;
+}
+
+.intro .guitars .body {
+    grid-area: body;
+    z-index: 1;
+
+    margin-left: -40px;
+    width: 600px;
+}
+
+.intro .guitars .neck {
+    grid-area: neck;
+
+    position: absolute;
+    width: 100%;
+    margin-top: -4px;
+}
+
+.intro .guitars .headstock {
+    grid-area: headstock;
+
+    justify-self: flex-end;
+
+    position: absolute;
+    width: 200px;
+
+    right: -32px;
+
+    z-index: 1;
+}
+
 /* Main Information */
 .mainInfo {
     background-color: white;
