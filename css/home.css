@@ -258,14 +258,11 @@
 }
 
 .intro .guitars .headstock {
-    grid-area: headstock;
-
-    justify-self: flex-end;
-
     position: absolute;
     width: 200px;
 
-    right: -32px;
+    transform: translateX(5px);
+    right: -32px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
 
     z-index: 1;
 }
