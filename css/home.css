@@ -222,52 +222,58 @@
     width: 100%;
     position: relative;
 
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "body neck headstock";
+    display: flex;
+    align-items: center;
+}
 
-    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
-    background-size: auto 30px;
-    background-position: 531px 107px;
+.intro .guitar .neck {
+    position: absolute;
+    height: 100%;
     background-repeat: repeat-x;
 
-    align-items: center;
+    /* Smallscreen */
+    width: 100%;
+    background-size: auto 30px;
+}
 
-    flex-direction: row;
+.intro .guitar-top .neck {
+    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
+    background-position: 531px 107px;
 }
 
 .intro .guitar .body {
     grid-area: body;
     z-index: 1;
+    width: 400px;
 
     margin-left: -65px;
-    width: 400px;
 }
 
-.intro .guitar .neck {
-    grid-area: neck;
-
-    position: absolute;
-    width: 100%;
-    margin-top: -4px;
-}
-
-.intro .guitar .headstock-right {
+.intro .guitar .headstock {
     visibility: hidden;
-
     position: absolute;
-    --offset-from-right: 68px;
-
-    width: 133px;
+    z-index: 1;
 
     right: -72px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
 
-    z-index: 1;
+    --snap-size: 15px; /* Smallscreen */
+}
+
+.intro .guitar-top .headstock {
+    /* Smallscreen */
+    --offset-from-right: 70px;
+}
+
+.intro .guitar-top .headstock {
+    width: 134px;
 }
 
 @media (min-width: 600px) {
-    .intro .guitar .headstock-right {
+    .intro .guitar .neck {
+        width: calc(100% - 30px);
+    }
+
+    .intro .guitar .headstock {
         visibility: visible;
     }
 }
@@ -278,14 +284,19 @@
         margin-left: -40px;
     }
 
-    .intro .guitar .headstock-right {
-        --offset-from-right: 140px;
+    .intro .guitar-top .headstock {
+        --snap-size: 23px;
+        --offset-from-right: 139px;
         right: -32px;
         width: 200px;
     }
 
-    .intro .guitar {
+    .intro .guitar .neck {
+        width: calc(100% - 100px);
         background-size: auto 45px;
+    }
+
+    .intro .guitar-top .neck {
         background-position: 558px 160px;
     }
 }
@@ -301,7 +312,7 @@
 
     /* Smallscreen */
     margin-top: -120px; 
-    height: 300px;
+    height: 500px;
 }
 
 .intro .guitars .middle .contents {
@@ -329,7 +340,40 @@
 }
 
 .intro .guitar-bottom {
-    margin-top: -200px;
+    margin-top: -110px;
+}
+
+.intro .guitar-bottom .neck {
+    background-image: url('../img/content/guitars/Shadow-II/NeckHorizontal.svg');
+    background-position: 531px 109px;
+    background-clip: content-box;
+}
+
+.intro .guitar-bottom .headstock {
+    margin-top: -8px;
+    width: 138px;
+
+    /* Smallscreen */
+    --offset-from-right: 70px;
+}
+
+@media (min-width: 800px)
+{
+    .intro .guitar-bottom {
+        margin-top: -200px;
+    }
+
+    .intro .guitar-bottom .neck {
+        background-position: 558px 163px;
+    }
+
+    .intro .guitar-bottom .headstock {
+        --snap-size: 23px;
+        --offset-from-right: 135px;
+        right: -32px;
+        margin-top: -12px;
+        width: 213px;
+    }
 }
 
 /* Main Information */
