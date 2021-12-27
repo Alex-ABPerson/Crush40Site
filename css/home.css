@@ -311,7 +311,6 @@
 }
 
 .guitars .middle {
-    
     padding-top: 140px;
 
     color: white;
@@ -390,13 +389,25 @@
     }    
 }
 
-/* Trivia */
+/* TRIVIA */
 .trivia {
-    padding-top: 10px;
+    padding-top: 160px;
     height: 300px;
     background-color: white;
     text-align: center;
     color: black;
+}
+
+.trivia h2 {
+    font-size: 150%;
+}
+
+.trivia .description {
+    font-size: 150%;
+}
+
+.trivia .takeTrivia {
+    color: white;
 }
 
 /* Main Information */
