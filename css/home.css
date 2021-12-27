@@ -256,11 +256,8 @@
 
     right: -72px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
 
-    --snap-size: 15px; /* Smallscreen */
-}
-
-.intro .guitar-top .headstock {
     /* Smallscreen */
+    --snap-size: 15px;
     --offset-from-right: 70px;
 }
 
@@ -284,9 +281,12 @@
         margin-left: -40px;
     }
 
-    .intro .guitar-top .headstock {
+    .intro .guitar .headstock {
         --snap-size: 23px;
         --offset-from-right: 139px;
+    }
+
+    .intro .guitar-top .headstock {
         right: -32px;
         width: 200px;
     }
@@ -352,9 +352,6 @@
 .intro .guitar-bottom .headstock {
     margin-top: -8px;
     width: 138px;
-
-    /* Smallscreen */
-    --offset-from-right: 70px;
 }
 
 @media (min-width: 800px)
@@ -368,8 +365,6 @@
     }
 
     .intro .guitar-bottom .headstock {
-        --snap-size: 23px;
-        --offset-from-right: 135px;
         right: -32px;
         margin-top: -12px;
         width: 213px;
@@ -378,6 +373,8 @@
 
 /* Main Information */
 .mainInfo {
+    margin-top: -175px;
+
     background-color: white;
     background-image: url('../img/visuals/MainPart/Background.svg');
     background-size: cover;
