@@ -101,6 +101,10 @@ html, body {
     background-color: var(--crush40-red-hover);
 }
 
+.btnBlack {
+    border-color: black;
+}
+
 .backgroundContainer {
     background-color: black;
 

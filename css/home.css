@@ -219,7 +219,7 @@
 }
 
 .intro .guitars {
-    height: 600px;
+    height: 800px;
 }
 
 .intro .guitar {
@@ -271,15 +271,7 @@
 }
 
 .intro .guitars .middle {
-    background-color: var(--crush40-red);
-    padding-top: 140px;
-
     margin-top: -120px; /* Smallscreen */
-    height: 500px;
-
-    color: white;
-    text-align: center;
-    font-size: 200%;
 }
 
 @media (min-width: 600px) {
@@ -306,8 +298,45 @@
     }
 
     .intro .guitars .middle {
-        padding-top: 20px;
         margin-top: -180px;
+    }
+}
+
+.intro .guitars .middle {
+    background-color: var(--crush40-red);
+    padding-top: 140px;
+    height: 500px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .guitars .middle .heading {
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+.intro .guitars .middle .subheading {
+    font-size: 150%;
+    margin-top: 10px;
+}
+
+@media (min-width: 1000px) {
+    .intro .guitars .middle {
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1570px) {
+    .intro .guitars .middle .contents {
+        text-align: center;
+    }
+
+    .intro .guitars .middle {
+        padding-top: 20px;
     }
 }
 
