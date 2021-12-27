@@ -232,8 +232,8 @@
     grid-template-areas: "body neck headstock";
 
     background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
-    background-size: auto 45px;
-    background-position: 558px 160px;
+    background-size: auto 30px;
+    background-position: 531px 107px;
     background-repeat: repeat-x;
 
     align-items: center;
@@ -245,8 +245,8 @@
     grid-area: body;
     z-index: 1;
 
-    margin-left: -40px;
-    width: 600px;
+    margin-left: -65px;
+    width: 400px;
 }
 
 .intro .guitars .neck {
@@ -257,14 +257,58 @@
     margin-top: -4px;
 }
 
-.intro .guitars .headstock {
-    position: absolute;
-    width: 200px;
+.intro .guitars .headstock-right {
+    visibility: hidden;
 
-    transform: translateX(5px);
-    right: -32px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
+    position: absolute;
+    --offset-from-right: 68px;
+
+    width: 133px;
+
+    right: -72px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
 
     z-index: 1;
+}
+
+.intro .guitars .middle {
+    background-color: var(--crush40-red);
+    padding-top: 140px;
+
+    margin-top: -120px; /* Smallscreen */
+    height: 500px;
+
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+@media (min-width: 600px) {
+    .intro .guitars .headstock-right {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 800px) {
+    .intro .guitars .body {
+        width: 600px;
+        margin-left: -40px;
+    }
+
+    .intro .guitars .headstock-right {
+        --offset-from-right: 140px;
+        right: -32px;
+        width: 200px;
+    }
+
+    .intro .guitar {
+        background-size: auto 45px;
+        background-position: 558px 160px;
+    }
+
+    .intro .guitars .middle {
+        padding-top: 20px;
+        margin-top: -180px;
+    }
 }
 
 /* Main Information */

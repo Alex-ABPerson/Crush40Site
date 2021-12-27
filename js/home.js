@@ -9,6 +9,12 @@ window.addEventListener('load', () => {
     headstockRight.style.right = "unset";
 
     window.addEventListener('resize', () => {
-        headstockRight.style.left = ((Math.ceil(window.innerWidth / 23) * 23) - 140) + "px";
+        UpdatePos();
     });
+
+    UpdatePos();
 });
+
+function UpdatePos() {
+    headstockRight.style.left = "calc(" + ((Math.ceil(window.innerWidth / 23) * 23)) + "px - var(--offset-from-right)";
+}
