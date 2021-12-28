@@ -206,13 +206,6 @@ html, body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 1000px) and (min-height: 600px)
-{
-    .floating .panel {
-        height: 400px;
-    }
-}
-
 /* NAVBAR */
 .nav {
     position: fixed;

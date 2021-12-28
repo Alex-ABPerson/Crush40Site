@@ -47,18 +47,31 @@ function OpenNavbar()
 var floating;
 var floatingPanelTitle;
 var floatingPanelFrame;
+var currentPanelHeight;
 
 window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
+    let floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelFrame = document.querySelector(".floating .panel .contents");
 
     document.querySelector(".floating .floatingClose").addEventListener('click', ClosePanel);
     document.querySelector(".floating .panel .titlebar .close").addEventListener('click', ClosePanel);
 
-    floatingPanelFrame.addEventListener('load', () => {
-        floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;
+    // Listen out for a message from the page in the frame when it loads - this will not only tell us how tall to make the panel,
+    // but will also confirm it's fully loaded.
+    window.addEventListener('message', (e) => {
+        currentPanelHeight = parseInt(e.data);
+        floatingPanel.style.height = e.data;
+        OnPanelLoad();
+    });
+
+    window.addEventListener('resize', () => {
+        if (currentPanelHeight >= window.innerHeight)
+            floatingPanel.style.height = "100%";
+        else
+            floatingPanel.style.height = currentPanelHeight + "px";
     });
 
     for (let btn of document.querySelectorAll("[data-action='panel']"))
@@ -85,6 +98,11 @@ function ClosePanel()
 {
     EnableScroll();
     floating.style.visibility = 'collapse';
+}
+
+function OnPanelLoad()
+{
+    floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;   
 }
 
 // Parallax movement (e.g. guitar separator)
