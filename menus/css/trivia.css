@@ -39,6 +39,9 @@ body {
 .questionPos {
     grid-area: pos;
     margin: 0;
+
+    color: black;
+    font-weight: 700;
 }
 
 .question {
