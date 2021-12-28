@@ -45,6 +45,7 @@ function OpenNavbar()
 
 // Floating Panel
 var floating;
+var floatingLoading;
 var floatingPanelTitle;
 var floatingPanelFrame;
 var currentPanelHeight;
@@ -52,6 +53,7 @@ var currentPanelHeight;
 window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
+    floatingLoading = document.querySelector(".floating .panel .loading-screen");
     let floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelFrame = document.querySelector(".floating .panel .contents");
@@ -85,6 +87,7 @@ window.addEventListener('load', () => {
 
 function OpenPanel()
 {
+    StartLoading(floatingLoading);
     DisableScroll();
     floating.style.visibility = 'visible';
 }
@@ -103,6 +106,7 @@ function ClosePanel()
 function OnPanelLoad()
 {
     floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;   
+    StopLoading(floatingLoading);
 }
 
 // Parallax movement (e.g. guitar separator)
@@ -156,4 +160,25 @@ function UpdateBackgroundParallaxX(item)
 function UpdateBackgroundParallaxY(item)
 {
     item.style.backgroundPosition = "0% " + -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px";
+}
+
+// Loading Indicators
+function StartLoading(loading) {
+    loading.style.visibility = 'visible';
+    loading.spinningElement = loading.querySelector(".spinning");
+    loading.spinningElement.spinPos = 0;
+
+    loading.dataset.loadingId = setInterval(() => {
+        loading.spinningElement.spinPos += 2;
+
+        if (loading.spinningElement.spinPos == 360)
+            loading.spinningElement.spinPos = 0;
+
+        loading.spinningElement.style.transform = "rotateZ(" + loading.spinningElement.spinPos + "deg)";
+    }, 1);
+}
+
+function StopLoading(loading) {
+    loading.style.visibility = 'collapse';
+    clearInterval(loading.dataset.loadingId);
 }
