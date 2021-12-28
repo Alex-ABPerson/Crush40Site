@@ -132,10 +132,10 @@ function UpdateParallaxAll()
 
 function UpdateBackgroundParallaxX(item)
 {
-    item.style.backgroundPosition = -window.scrollY / parseInt(item.dataset.parallaxSpeed) + " 0%";
+    item.style.backgroundPosition = -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px 0%";
 }
 
 function UpdateBackgroundParallaxY(item)
 {
-    item.style.backgroundPosition = "0% " + -window.scrollY / parseInt(item.dataset.parallaxSpeed);
+    item.style.backgroundPosition = "0% " + -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px";
 }
