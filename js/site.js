@@ -79,8 +79,8 @@ window.addEventListener('load', () => {
     for (let btn of document.querySelectorAll("[data-action='panel']"))
     {
         btn.addEventListener('click', () => {
-            ChangePanelSrc(btn.dataset.pageName);
             OpenPanel();
+            ChangePanelSrc(btn.dataset.pageName);
         });
     }
 });
@@ -88,8 +88,8 @@ window.addEventListener('load', () => {
 function OpenPanel()
 {
     StartLoading(floatingLoading);
-    DisableScroll();
     floating.style.visibility = 'visible';
+    DisableScroll();
 }
 
 function ChangePanelSrc(newSrc)
