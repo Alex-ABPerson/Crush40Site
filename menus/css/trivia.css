@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "pos pos"
+        "question question"
+        "a b"
+        "c d"
+        "submit submit";
+
+    justify-items: center;
+
+    gap: 10px;
+
+    width: 80%;
+}
+
+@media (min-width: 1100px) {
+    .quiz {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "pos pos pos pos"
+            "question question question question"
+            "a b c d"
+            "submit submit submit submit";
+
+    }
+}
+
+.questionPos {
+    grid-area: pos;
+    margin: 0;
+}
+
+.question {
+    grid-area: question;
+    font-size: 150%;
+}
+
+.btnAnswer {
+    background-color: var(--crush40-red-pale);
+    border: none;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btnAnswer:hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.selectedBtnAnswer {
+    background-color: var(--crush40-blue-pale);
+}
+
+.selectedBtnAnswer:hover {
+    background-color: var(--crush40-blue-pale-hover);
+}
+
+.answerA { grid-area: a; }
+.answerB { grid-area: b; }
+.answerC { grid-area: c; }
+.answerD { grid-area: d; }
+
+.quizSubmit
+{
+    grid-area: submit;
+    width: 100%;
+}
