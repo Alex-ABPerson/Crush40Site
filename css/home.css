@@ -225,7 +225,13 @@
 
 /* GUITARS */
 .guitars {
-    margin-top: -170px;
+    margin-top: -125px;
+}
+
+@media (min-width: 800px) {
+    .guitars {
+        margin-top: -170px;
+    }   
 }
 
 .guitar {
