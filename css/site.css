@@ -26,6 +26,8 @@ html, body {
     height: 100%;
 
     font-family: 'Roboto', sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 .section {
@@ -101,8 +103,9 @@ html, body {
     background-color: var(--crush40-red-hover);
 }
 
-.btnBlack {
-    border-color: black;
+.btnLink {
+    color: white;
+    font-style: normal;
 }
 
 .backgroundContainer {
