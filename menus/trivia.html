@@ -9,6 +9,27 @@
         <link href="../css/site.css" rel="stylesheet">
         <link href="css/trivia.css" rel="stylesheet">
 
+        <!-- Questions -->
+        <script>
+            var Questions = [
+                { 
+                    title: "Test 1", 
+                    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+                    correctAnswer: 2
+                },
+                { 
+                    title: "Test 2", 
+                    answers: ["AnswerX 1", "AnswerX 2", "AnswerX 3", "AnswerX 4"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "Test 3", 
+                    answers: ["AnswerY 1", "AnswerY 2", "AnswerY 3", "AnswerY 4"],
+                    correctAnswer: 3
+                }
+            ];
+        </script>
+
         <script src="js/trivia.js"></script>
     </head>
     <body>
@@ -16,10 +37,10 @@
             <p class="questionPos">X / Y</p>
             <p class="question">Question</p>
 
-            <button class="btnAnswer selectedBtnAnswer answerA">A</button>
-            <button class="btnAnswer answerB">B</button>
-            <button class="btnAnswer answerC">C</button>
-            <button class="btnAnswer answerD">D</button>
+            <button class="btnAnswer answerA" data-answer-idx="0">A</button>
+            <button class="btnAnswer answerB" data-answer-idx="1">B</button>
+            <button class="btnAnswer answerC" data-answer-idx="2">C</button>
+            <button class="btnAnswer answerD" data-answer-idx="3">D</button>
 
             <button class="emptyButton quizSubmit">Submit</button>
         </div>

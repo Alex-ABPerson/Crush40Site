@@ -382,6 +382,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--crush40-gray)
 }
 
 .loading-screen .spinning {
