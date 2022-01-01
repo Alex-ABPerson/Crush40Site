@@ -143,9 +143,14 @@
     margin-top: 50px;
     margin-bottom: -100px;
     padding: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 
     background-color: var(--crush40-darkgray);
+}
+
+.intro .bandMembers .junMrJun .contents {
+    width: 400px;
+    height: 300px;
 }
 
 .intro .bandMembers .img {
