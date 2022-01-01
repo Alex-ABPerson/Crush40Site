@@ -29,6 +29,15 @@ body {
 .img { 
     grid-area: img; 
     justify-self: center;
+
+    max-width: 100%;
+}
+
+.img img {
+    position: relative;
+    max-width: 90%;
+    height: 300px;
+    object-fit: scale-down;
 }
 
 .works {
@@ -124,6 +133,9 @@ body {
 
 .text { 
     grid-area: txt; 
+    overflow: auto;
+    height: 300px;
+    padding-right: 5px;
 }
 
 .text .description {

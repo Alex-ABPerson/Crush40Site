@@ -9,7 +9,7 @@ var pos = 0;
 window.addEventListener('load', () => {
     navLeftBtn = document.querySelector(".navLeft");
     navRightBtn = document.querySelector(".navRight");
-    img = document.querySelector(".img");
+    img = document.querySelector(".img img");
     title = document.querySelector(".text .name");
     description = document.querySelector(".text .description")
     list = document.querySelector(".list")
@@ -39,7 +39,7 @@ function UpdateView()
     // Update details
     title.innerHTML = newView.name;
     description.innerHTML = newView.description;
-    img.src = '../img/' + newView.img;
+    img.src = '../img/content/members/' + newView.img;
 
     list.replaceChildren();
 
