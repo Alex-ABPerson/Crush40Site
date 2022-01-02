@@ -282,6 +282,16 @@
     align-items: center;
 }
 
+.intro .naming .imgContainer {
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.intro .naming .img {
+    margin: 15px;
+    height: 300px;
+}
+
 .intro {
     padding-bottom: 200px;
 }

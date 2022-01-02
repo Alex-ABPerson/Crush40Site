@@ -33,6 +33,7 @@ html, body {
 }
 
 .section {
+    width: 100%;
     overflow: hidden;
 }
 
@@ -432,4 +433,32 @@ html, body {
     box-sizing: border-box;
     padding: 10px;
     margin: 0;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--crush40-red-pale);
+    padding: 10px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "img txt";
+    align-items: center;
+}
+
+.footer:hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.footer .image {
+    grid-area: img;
+    width: 300px;
+}
+
+.footer .text {
+    grid-area: txt;
+    font-size: 150%;
+    margin-left: 20px;
 }
