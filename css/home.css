@@ -16,6 +16,11 @@
     src: url('../img/fonts/JohnnyTitle.ttf');
 }
 
+@font-face {
+    font-family: 'OoohBaby';
+    src: url('../img/fonts/OoohBaby-Regular.ttf')
+}
+
 /* INTRODUCING... CRUSH 40! */
 .intro {
     position: relative;
@@ -238,8 +243,11 @@
 }
 
 .intro .bandMembers .johnnyTitle .aka {
+    font-family: 'OoohBaby';
+    font-size: 150%;
+
     grid-area: johnnyAka;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .intro .bandMembers .junTitle { 
