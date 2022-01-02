@@ -1,11 +1,17 @@
-body {
+.page {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.quiz {
+/* Question Prompt */
+.questionPrompt {
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr 1fr;
@@ -21,10 +27,12 @@ body {
     gap: 10px;
 
     width: 80%;
+
+    visibility: hidden;
 }
 
 @media (min-width: 1100px) {
-    .quiz {
+    .questionPrompt {
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -40,7 +48,6 @@ body {
     grid-area: pos;
     margin: 0;
 
-    color: black;
     font-weight: 700;
 }
 
@@ -80,4 +87,42 @@ body {
     width: 100%;
 
     visibility: hidden;
+}
+
+/* Results Screen */
+.resultsScreen {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+
+    width: 50%;
+}
+
+.resultsScreen .results {
+    font-size: 200%;
+}
+
+.resultsScreen .quote {
+    margin-top: 0;
+    font-size: 160%;
+}
+
+.resultsScreen .correctBar {
+    border: 3px black solid;
+    border-radius: 10px;
+    line-height: 10px;
+    height: 40px;
+
+    position: relative;
+}
+
+.resultsScreen .correctBarFilled {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background-color: green;
 }
