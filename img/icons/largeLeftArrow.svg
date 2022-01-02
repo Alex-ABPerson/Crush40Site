@@ -1,4 +1,4 @@
 <?xml version="1.0" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="48">
-    <path stroke="#000" stroke-width="4" fill-opacity="0" d="M 12 2 L 4 24 L 12 48 "></path>
+    <path stroke="#fff" stroke-width="4" fill-opacity="0" d="M 12 2 L 4 24 L 12 48 "></path>
 </svg>

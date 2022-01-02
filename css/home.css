@@ -227,6 +227,8 @@
 }
 
 .intro .bandMembers .indicator {
+    font-family: 'Dimentia';
+    color: #ff0000;
     margin-bottom: 5px;
 }
 

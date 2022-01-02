@@ -13,10 +13,10 @@ html, body {
     --crush40-darkred: rgb(195, 0, 5);
     --crush40-lightred-hover: rgb(109, 0, 0);
 
-    --crush40-red-pale: rgb(90, 30, 30);
-    --crush40-red-pale-hover: rgb(120, 30, 30);
-    --crush40-blue-pale: rgb(30, 30, 90);
-    --crush40-blue-pale-hover: rgb(60, 30, 90);
+    --crush40-red-pale: rgb(140, 30, 30);
+    --crush40-red-pale-hover: rgb(160, 30, 30);
+    --crush40-blue-pale: rgb(30, 30, 140);
+    --crush40-blue-pale-hover: rgb(60, 30, 140);
 
     --crush40-gray: rgb(60, 60, 60);
     --crush40-darkgray: rgb(20, 20, 20);
