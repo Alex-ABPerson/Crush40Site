@@ -13,14 +13,16 @@
 /* Question Prompt */
 .questionPrompt {
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "pos pos"
-        "question question"
-        "a b"
-        "c d"
-        "submit submit";
+        "pos"
+        "question"
+        "a"
+        "b"
+        "c"
+        "d"
+        "submit";
 
     justify-items: center;
 
@@ -29,7 +31,7 @@
     width: 80%;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .questionPrompt {
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -59,6 +61,7 @@
     border: none;
     color: white;
     width: 100%;
+    height: 60px;
     cursor: pointer;
 }
 
