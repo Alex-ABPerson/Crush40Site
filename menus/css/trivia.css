@@ -89,7 +89,6 @@
 
 /* Results Screen */
 .resultsScreen {
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: stretch;
