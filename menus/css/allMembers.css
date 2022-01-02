@@ -110,6 +110,11 @@ body {
     .img {
         align-self: center;
     }
+
+    .text {
+        overflow: auto;
+        height: 300px;
+    }
 }
 
 @media (min-width: 1200px)
@@ -133,8 +138,6 @@ body {
 
 .text { 
     grid-area: txt; 
-    overflow: auto;
-    height: 300px;
     padding-right: 5px;
 }
 
