@@ -16,8 +16,8 @@ html, body {
     --crush40-blue-pale: rgb(30, 30, 90);
     --crush40-blue-pale-hover: rgb(60, 30, 90);
 
-    --crush40-gray: rgb(169, 169, 169);
-    --crush40-darkgray: rgb(140, 140, 140);
+    --crush40-gray: rgb(60, 60, 60);
+    --crush40-darkgray: rgb(0, 0, 0);
 
     margin: 0;
     position: absolute;
