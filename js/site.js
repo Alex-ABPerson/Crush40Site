@@ -45,6 +45,7 @@ function OpenNavbar()
 
 // Floating Panel
 var floating;
+var floatingPanel;
 var floatingLoading;
 var floatingPanelTitle;
 var floatingPanelFrame;
@@ -54,7 +55,7 @@ window.addEventListener('load', () => {
     
     floating = document.querySelector(".floating");
     floatingLoading = document.querySelector(".floating .panel .loading-screen");
-    let floatingPanel = document.querySelector(".floating .panel");
+    floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelFrame = document.querySelector(".floating .panel .contents");
 
@@ -65,16 +66,12 @@ window.addEventListener('load', () => {
     // but will also confirm it's fully loaded.
     window.addEventListener('message', (e) => {
         currentPanelHeight = parseInt(e.data);
-        floatingPanel.style.height = e.data;
+        UpdatePanelSizing();
         OnPanelLoad();
     });
 
-    window.addEventListener('resize', () => {
-        if (currentPanelHeight >= window.innerHeight)
-            floatingPanel.style.height = "100%";
-        else
-            floatingPanel.style.height = currentPanelHeight + "px";
-    });
+    window.addEventListener('resize', () => UpdatePanelSizing());
+    UpdatePanelSizing();
 
     for (let btn of document.querySelectorAll("[data-action='panel']"))
     {
@@ -84,6 +81,13 @@ window.addEventListener('load', () => {
         });
     }
 });
+
+function UpdatePanelSizing() {
+    if (currentPanelHeight >= window.innerHeight || window.innerWidth < 1000)
+        floatingPanel.style.height = "100%";
+    else
+        floatingPanel.style.height = currentPanelHeight + "px";
+}
 
 function OpenPanel()
 {

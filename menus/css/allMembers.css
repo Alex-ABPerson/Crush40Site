@@ -11,7 +11,7 @@ body {
     display: grid;
 
     /* Smallscreen */
-    grid-template-rows: 350px auto auto;
+    grid-template-rows: 300px auto auto;
     grid-template-columns: auto;
     grid-template-areas: 
         "img"
