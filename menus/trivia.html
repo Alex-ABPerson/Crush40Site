@@ -33,16 +33,28 @@
         <script src="js/trivia.js"></script>
     </head>
     <body>
-        <div class="quiz">
-            <p class="questionPos">X / Y</p>
-            <p class="question">Question</p>
+        <div class="page promptPage">
+            <div class="questionPrompt">
+                <p class="questionPos">X / Y</p>
+                <p class="question">Question</p>
+    
+                <button class="btnAnswer answerA" data-answer-idx="0">A</button>
+                <button class="btnAnswer answerB" data-answer-idx="1">B</button>
+                <button class="btnAnswer answerC" data-answer-idx="2">C</button>
+                <button class="btnAnswer answerD" data-answer-idx="3">D</button>
+    
+                <button class="emptyButton quizSubmit">Submit</button>
+            </div>
+        </div>
 
-            <button class="btnAnswer answerA" data-answer-idx="0">A</button>
-            <button class="btnAnswer answerB" data-answer-idx="1">B</button>
-            <button class="btnAnswer answerC" data-answer-idx="2">C</button>
-            <button class="btnAnswer answerD" data-answer-idx="3">D</button>
-
-            <button class="emptyButton quizSubmit">Submit</button>
+        <div class="page resultsPage">
+            <div class="resultsScreen">
+                <p class="results">Results</p>
+                <div class="correctBar">
+                    <div class="correctBarFilled"></div>
+                    <p>X / Y</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

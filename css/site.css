@@ -27,6 +27,8 @@ html, body {
     width: 100%;
     height: 100%;
 
+    color: white;
+
     font-family: 'Bahnschrift SemiLight', sans-serif;
 
     scroll-behavior: smooth;
@@ -439,13 +441,26 @@ html, body {
 .footer {
     background-color: var(--crush40-red-pale);
     padding: 10px;
+    box-sizing: border-box;
     cursor: pointer;
 
     display: grid;
-    grid-template-rows: 300px 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "img txt";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "img"
+        "txt";
+    
     align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 1000px) {
+    .footer {
+        grid-template-rows: auto;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: "img txt";
+    }
 }
 
 .footer:hover {
