@@ -28,11 +28,11 @@
 .intro h2 {
     text-align: center;
 
-    color: red;
+    color: var(--crush40-red);
     font-size: 200%;
     font-family: Dimentia;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .intro h2 img {
@@ -41,7 +41,7 @@
 }
 
 .intro .blockTitle {
-    color: white;
+    color: black;
     background-color: var(--crush40-red);
     width: 300px;
     padding: 20px;
@@ -66,7 +66,7 @@
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: black;
 
     z-index: 1;
 }
@@ -284,7 +284,7 @@
 @media (min-width: 800px) {
     .guitars {
         margin-top: -170px;
-    }   
+    }
 }
 
 .guitar {
