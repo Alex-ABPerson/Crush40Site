@@ -183,6 +183,7 @@ html, body {
 
 .floating .panel .titlebar {
     grid-area: titlebar;
+    color: black;
 
     padding: 0;
     background-color: var(--crush40-red);
