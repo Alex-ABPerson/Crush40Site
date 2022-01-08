@@ -1,28 +1,35 @@
 /* Albums */
-.albums {
+.albums-intro {
     background-color: var(--crush40-gray);
     font-size: 125%;
-}
 
-.albums .intro {
     text-align: center;
 }
 
-.albums .album {
+.albumList {
+    width: 100%;
+
+    z-index: -2;
+    font-size: 125%;
+}
+
+.albumList .album {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+
+    position: relative;
 }
 
-.albums .albumLeft {
+.albumList .albumLeft {
     grid-template-areas: "info img";
 }
 
-.albums .albumRight {
+.albumList .albumRight {
     grid-template-areas: "img info";
 }
 
-.albums .album .info {
+.albumList .album .info {
     grid-area: info;
 
     padding: 50px;
@@ -31,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.albums .album .img {
+.albumList .album .img {
     grid-area: img;
     max-width: 400px;
     margin: 15px;
@@ -40,10 +47,34 @@
     justify-self: center;
 }
 
-.albums .album2000 {
+.albumList .album2000 {
     background-color: darkblue;
 }
 
-.albums .album2009 {
+.albumList .album2009 {
     background-color: darkred;
+}
+
+.albumList .riseAgainBackground {
+    background-color: purple;
+    z-index: -1;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 50px);
+    height: 100%;
+
+    transform: rotate(6deg);
+    margin-left: -50px;
+    margin-top: -100px;
+    padding: 100px;
+}
+
+.albumList .albumLive {
+    margin-top: 150px;
+}
+
+.albumList .album2019 {
+    background-color: darkgreen;
 }
