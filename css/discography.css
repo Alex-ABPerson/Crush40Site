@@ -7,3 +7,43 @@
 .albums .intro {
     text-align: center;
 }
+
+.albums .album {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.albums .albumLeft {
+    grid-template-areas: "info img";
+}
+
+.albums .albumRight {
+    grid-template-areas: "img info";
+}
+
+.albums .album .info {
+    grid-area: info;
+
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.albums .album .img {
+    grid-area: img;
+    max-width: 400px;
+    margin: 15px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.albums .album2000 {
+    background-color: darkblue;
+}
+
+.albums .album2009 {
+    background-color: darkred;
+}
