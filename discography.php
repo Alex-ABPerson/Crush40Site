@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Crush 40</title>
+        <title>Crush 40 - Discography</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="The biggest fan-made Crush 40 website on the planet!">
+        <meta name="description" content="A list of Crush 40's entire discography!">
         <meta name="keywords" content="Crush 40, Johnny Gioeli, Jun Senoue, Sonic the Hedgehog, Crush 40 Live, Crush 40 Discography">
 
         <link href="css/site.css" rel="stylesheet">
@@ -13,6 +13,11 @@
 
         <!-- Crush 40 JavaScript -->
         <script src="js/site.js"></script>
+        <script>
+            window.addEventListener('load', () => {
+                UpdateNavbarPageSelection("navDiscography");
+            });
+        </script>
     </head>
     <body>
         <?php include('base/bodyStart.html') ?>

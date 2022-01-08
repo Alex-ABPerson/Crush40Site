@@ -14,6 +14,8 @@ window.addEventListener('load', () => {
 
         UpdatePos(headstock);
     }
+
+    UpdateNavbarPageSelection("navAbout");
 });
 
 function UpdatePos(headstock) {

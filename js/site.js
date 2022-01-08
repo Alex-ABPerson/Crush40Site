@@ -43,6 +43,12 @@ function OpenNavbar()
     navbar.classList.add("navOpen");
 }
 
+// Navbar "Current Page" selection
+function UpdateNavbarPageSelection(id) {
+    let item = document.querySelector(".nav .items #" + id);
+    item.classList.add("selected");
+}
+
 // Floating Panel
 var floating;
 var floatingPanel;
