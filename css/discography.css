@@ -1,0 +1,9 @@
+/* Albums */
+.albums {
+    background-color: var(--crush40-gray);
+    font-size: 125%;
+}
+
+.albums .intro {
+    text-align: center;
+}

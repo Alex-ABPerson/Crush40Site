@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Crush 40</title>
         <meta charset="UTF-8">
+        <title>Crush 40</title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="The biggest fan-made Crush 40 website on the planet!">
         <meta name="keywords" content="Crush 40, Johnny Gioeli, Jun Senoue, Sonic the Hedgehog, Crush 40 Live, Crush 40 Discography">
@@ -15,62 +16,7 @@
         <script src="js/site.js"></script>
     </head>
     <body>
-
-        <div class="backgroundContainer"><div class="background"></div></div>
-
-        <!-- Navbar -->
-        <nav class="nav">
-            <div class="other">
-                <img class="logo" src="img/logo_white.svg" alt="Crush 40 Logo">
-                <button class="btn" title="Toggle Navigation Menu"><img src="img/icons/hamburgerMenu.svg" alt="Menu Icon"></button>
-            </div>
-
-            <ul class="items">
-                <li class="selected">
-                    <div class="back"></div>
-                    <p>About</p>
-                </li>
-                <li>
-                    <div class="back"></div>
-                    <p>Discography</p>
-                </li>
-                <li>
-                    <div class="back"></div>
-                    <p>Gear</p>
-                </li>
-                <li>
-                    <div class="back"></div>
-                    <p>Media</p>
-                </li>
-                <li>
-                    <div class="back"></div>
-                    <p>Shows</p>
-                </li>
-                <li>
-                    <div class="back"></div>
-                    <p>Branding</p>
-                </li>
-            </ul>
-        </nav>
-    
-        <!-- Opening -->
-        <div class="opening section">
-
-            <div class="opening-intro">
-
-                <!-- Logo -->
-                <img src="img/logo/FanWebsiteLogo.svg" alt="Crush 40 Logo">
-
-                <!-- Text -->
-                <h2>Info, live shows, trivia, history, discography - and more!</h2> 
-                <!--<p>Containing: Info about the band, interactive trivia quizes, complete listings of live shows, listings of gear, you name it!</p>-->
-
-                <div class="btnSet">
-                    <a class="btnLink" href="#intro"><button class="filledButton btnExplore btnWidthNormal">Explore <img src="img/icons/smallDownArrow.svg" alt="Down Arrow"></button></a>
-                    <button class="emptyButton btnViewAll btnWidthNormal">View all sections</button>
-                </div>
-            </div>
-        </div>
+        <?php include('base/bodyStart.html') ?>
 
         <!-- Introducing... Crush 40! -->
         <div class="intro section" id="intro">
@@ -189,30 +135,6 @@
             <button style="font-size: 125%" class="filledButton btnWidthWide takeTrivia" data-action="panel" data-page-name="trivia">Start the quiz</button>
         </div>
 
-        <!-- Footer -->
-        <div class="footer section" data-action="panel" data-page-name="credits">
-            <img class="image" src="img/logo/FanWebsiteLogo.svg" alt="Crush 40 Logo">
-            <div class="text">
-                <p>This entire site was created completely from scratch by the <b>Crush 40 Fan Community</b> - no templates, no website builder, just raw work from the community!</p>
-                <p>Click here to see a list of the project leads who helped most of all to make this website come to life on your screen today!</p>
-            </div>
-        </div>
-
-        <div class="floating">
-            <div class="floatingClose"></div>
-            <div class="panel" id="myPanel">
-                <div class="titlebar">
-                    <p class="title">Loading...</p>
-                    <button title="Close" class="close closeButton"><img src="img/icons/smallCloseButton.svg" alt="Close Icon"></button>
-                </div>
-
-                <div class="loading-screen">
-                    <p><b>Revvin' Up</b> the engines!</p>
-                    <div class="spinning"></div>
-                </div>
-
-                <iframe title="Menu Contents" class="contents" src=""></iframe>
-            </div>
-        </div>
+        <?php include('base/bodyEnd.html') ?>
     </body>
 </html>
