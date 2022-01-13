@@ -45,7 +45,7 @@
 .albumList .album {
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto; /* Smallscreen */
 
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -54,12 +54,27 @@
     position: relative;
 }
 
-.albumList .albumLeft {
-    grid-template-areas: "info img";
+/* Smallscreen */
+.albumList .albumLeft, .albumList .albumRight  {
+    grid-template-areas: 
+        "img"
+        "info";
 }
 
-.albumList .albumRight {
-    grid-template-areas: "img info";
+@media (min-width: 980px) {
+
+    /* Largescreen */
+    .albumList .album {
+        grid-template-columns: 50% 50%;
+    }
+ 
+    .albumList .albumLeft {
+        grid-template-areas: "info img";
+    }
+
+    .albumList .albumRight {
+        grid-template-areas: "img info";
+    }
 }
 
 .albumList .album .info {
