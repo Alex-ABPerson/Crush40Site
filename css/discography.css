@@ -55,7 +55,7 @@
 }
 
 /* Smallscreen */
-.albumList .albumLeft, .albumList .albumRight  {
+.albumList .albumLeft, .albumList .albumRight {
     grid-template-areas: 
         "img"
         "info";

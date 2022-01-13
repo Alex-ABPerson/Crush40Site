@@ -37,7 +37,7 @@
                     <h2 class="title">Thrill of the Feel</h2>
                     <p>This is where it all began, the first album put out by the band themselves. Thrill Of The Feel is comprised of all the songs done with a full band performance featured in the game "EA SPORTS NASCAR ARCADE". Some tracks on this album do not have any vocals, making this album the only album released by the band that features instrumental tracks.</p>
                     <p>This album also includes "Sonic Adventure"'s Open Your Heart as a bonus track, officially making the song part of the band's works.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
             </div>
