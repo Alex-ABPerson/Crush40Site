@@ -1,0 +1,70 @@
+body {
+    color: black;
+
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-areas: "general pageContents"
+}
+
+.albumGeneral {
+    grid-area: general;
+
+    position: absolute;
+    width: 400px;
+    height: 100%;
+
+    background-image: url('../../img/visuals/Background/AlbumView/SSSBackground.png');
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "description"
+        "_"
+        "tabs";
+}
+
+.albumGeneral .description {
+    grid-area: description;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-top: 0;
+    
+    font-size: 125%;
+}
+
+.albumGeneral .description h1 {
+    margin-top: 0;
+}
+
+.albumGeneral .tabs {
+    grid-area: tabs;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 120%;
+
+    list-style-type: none;
+}
+
+.tabs .tab {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.tabs .tab p {
+    margin: 0;
+}
+
+.tabs .tab:hover {
+    color: white;
+    background-color: var(--crush40-red-pale);
+}
+
+.albumDetailsPage {
+    width: 100%;
+}

@@ -10,13 +10,25 @@
         <link href="../css/site.css" rel="stylesheet">
         <link href="css/albumView.css" rel="stylesheet">
 
-        <script>
-            window.addEventListener('load', () => {
-                window.parent.postMessage('800px', '*');
-            });
-        </script>
+        <script src="js/albumView.js"></script>
     </head>
     <body>
-        <h1>Album</h1>
+        <div class="albumGeneral">
+            <div class="description">
+                <h1>Album</h1>
+                <p>This is an album</p>
+            </div>
+
+            <ul class="tabs">
+                <li class="tab selectedTab"><p>Tracks</p></li>
+                <li class="tab"><p>Physical Print</p></li>
+                <li class="tab"><p>Images</p></li>
+                <li class="tab"><p>Info</p></li>
+            </ul>
+        </div>
+
+        <div class="albumCurrentTab">
+
+        </div>
     </body>
 </html>
