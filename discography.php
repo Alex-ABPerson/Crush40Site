@@ -31,7 +31,7 @@
         </div>
 
         <div class="albumList section">
-            <div class="album albumLeft album2000">
+            <div class="album albumLeft albumThrill">
                 <div class="info">
                     <p>2000</p>
                     <h3>Thrill of the Feel</h3>
@@ -40,7 +40,7 @@
                 </div>
                 <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg">
             </div>
-            <div class="album albumRight album2000">
+            <div class="album albumRight albumC40">
                 <div class="info">
                     <p>2003</p>
                     <h3>Crush 40</h3>
@@ -49,7 +49,7 @@
                 </div>
                 <img class="img" src="img/content/discography/Crush40.jpg">
             </div>
-            <div class="album albumLeft album2009">
+            <div class="album albumLeft albumSSS">
                 <div class="info">
                     <p>2009</p>
                     <h3>Super Sonic Songs</h3>
@@ -58,7 +58,7 @@
                 </div>
                 <img class="img" src="img/content/discography/SuperSonicSongs.png">
             </div>
-            <div class="album albumRight album2012">
+            <div class="album albumRight albumRiseAgain">
                 <div class="info">
                     <p>2012</p>
                     <h3>Rise Again</h3>
@@ -66,10 +66,7 @@
                     <p>There was a variant of this EP available to be purchased at <i>Sonic Boom 2012</i>, that excluded the Song of Hope single from 2011.</p>
                 </div>
                 <img class="img" src="img/content/discography/RiseAgain.jpg">
-                <div class="riseAgainBackground"></div>
-            </div>
-            <div class="albumSlantedSeparator">
-
+                <!--<div class="albumBackground"></div>-->
             </div>
             <div class="album albumLeft albumLive">
                 <div class="info">
@@ -80,7 +77,7 @@
                 </div>
                 <img class="img" src="img/content/discography/LIVE!.png">
             </div>
-            <div class="album albumRight album2014">
+            <div class="album albumRight album2N2R">
                 <div class="info">
                     <p>2015</p>
                     <h3>2 Nights 2 Remember</h3>
@@ -89,8 +86,9 @@
                     <p>The title of the album, <i>2 Nights 2 Remember</i> is a reference to the two shows Crush 40 performed in 2011 at Live Stage Guilty, and how much they meant to the band.</p>
                 </div>
                 <img class="img" src="img/content/discography/2N2R.png">
+                <div class="back"></div>
             </div>
-            <div class="album albumLeft album2019">
+            <div class="album albumLeft albumDrivingThroughForever">
                 <div class="info">
                     <p>2019</p>
                     <h3>Driving Through Forever</h3>
