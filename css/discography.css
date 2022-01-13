@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Brig';
+    src: url('../img/fonts/discography/Brig.ttf');
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url('../img/fonts/discography/STENCIL.TTF');
+}
+
+@font-face {
+    font-family: 'Downcome';
+    src: url('../img/fonts/discography/DOWNCOME.TTF');
+}
+
+@font-face {
+    font-family: 'Bronzo';
+    src: url('../img/fonts/discography/BronzoBold.ttf');
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../img/fonts/discography/Impact.ttf');
+}
+
 /* Albums */
 .albums-intro {
     background-color: var(--crush40-gray);
@@ -11,7 +36,7 @@
     font-size: 125%;
 
     /* Bleeds through 2N2R and Live! */
-    background-image: url('../img/visuals/Background/Discography/LiveBackground.jpg');
+    background-image: url('../img/visuals/Background/Discography/LiveStuff.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,9 +80,25 @@
     justify-self: center;
 }
 
+.albumList .album .yearIndicator {
+    font-family: 'Dimentia';
+    font-style: italic;
+    color: var(--crush40-red);
+}
+
+.albumList .album .title {
+    font-weight: 300;
+    font-size: 200%;
+}
+
 .albumList .albumThrill {
     background-image: url('../img/visuals/Background/Discography/SkyBg.jpg');
     background-color: skyblue;
+}
+
+.albumList .albumThrill .title {
+    font-family: 'Impact';
+    text-transform: uppercase;
 }
 
 .albumList .albumC40 {
@@ -65,9 +106,18 @@
     background-color: darkred;
 }
 
+.albumList .albumC40 .title {
+    font-family: 'Dimentia';
+    font-style: italic;
+}
+
 .albumList .albumSSS {
     background-image: url('../img/visuals/Background/Discography/SSSBackground.png');
     background-color: lightblue;
+}
+
+.albumList .albumSSS .title {
+    font-family: 'Bronzo';
 }
 
 .albumList .albumRiseAgain {
@@ -78,11 +128,24 @@
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.albumList .albumRiseAgain .title {
+    font-family: 'Downcome';
+}
+
+.albumList .albumLive .title {
+    font-family: 'Stencil';
+}
+
 .albumList .album2N2R {
     background-color: transparent;
     background-image: url('../img/visuals/Background/Discography/2N2RBackground_Transparent.png');
     background-repeat: repeat;
     background-size: cover;
+}
+
+.albumList .album2N2R .title {
+    font-family: 'Brig';
+    text-transform: lowercase;
 }
 
 .albumList .album2N2R .text { z-index: 100; }

@@ -102,7 +102,7 @@
                     <p>Like the previous compilation album, Driving Through Forever contains a new mix of His World and a new song. The new being Call Me Crazy, which had only ever been performed live before the album released, at Japan Game Music Festival II:RE.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/DrivingThroughForever.jpg"  alt="'Thrill of the Feel' Album Cover">
+                <img class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>
         </div>
 

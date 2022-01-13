@@ -4,6 +4,12 @@
     src: url('../img/fonts/Bahnschrift-SemiLight.ttf');
 }
 
+@font-face {
+    font-family: 'Dimentia';
+    font-weight: 300;
+    src: url('../img/fonts/Dimentia.otf');
+}
+
 /* GENERAL: */
 html, body {
     --crush40-red: rgb(235, 0, 5);
