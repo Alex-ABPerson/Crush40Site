@@ -39,7 +39,7 @@
                     <p>This album also includes "Sonic Adventure"'s Open Your Heart as a bonus track, officially making the song part of the band's works.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg">
+                <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
             </div>
             <div class="album albumRight albumC40">
                 <div class="info">
@@ -49,7 +49,7 @@
                     <p>The name "Crush 40" would be carried over to the game "Sonic Heroes", which would be released later in 2003.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/Crush40.jpg">
+                <img class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
             </div>
             <div class="album albumLeft albumSSS">
                 <div class="info">
@@ -59,7 +59,7 @@
                     <p>While the original CD release of Super Sonic Songs did not feature any bonus tracks, a few years after its release, the album was placed on digital platforms with 3 bonus tracks: Free, With Me -Massive Power Mix-, and Seven Rings In Hand - these songs had been previously featured elsewhere, however.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/SuperSonicSongs.png">
+                <img class="img" src="img/content/discography/SuperSonicSongs.png" alt="'Super Sonic Songs' Album Cover">
             </div>
             <div class="album albumRight albumRiseAgain">
                 <div class="info">
@@ -69,7 +69,7 @@
                     <p>There was a variant of this EP available to be purchased at <i>Sonic Boom 2012</i>, that excluded the Song of Hope single from 2011.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this EP</button>
                 </div>
-                <img class="img" src="img/content/discography/RiseAgain.jpg">
+                <img class="img" src="img/content/discography/RiseAgain.jpg" alt="'Rise Again' Album Cover">
                 <!--<div class="albumBackground"></div>-->
             </div>
             <div class="album albumLeft albumLive">
@@ -80,7 +80,7 @@
                     <p>All 24 songs performed at these shows were released, with the exception of a cover of Hardline's "Everything", which has not yet been released due to copyright concerns. There were very few official videos of these concerts released. This is in part due to the way the CD was edited, combining the best pieces of both shows, making it very hard to correctly sync up to just the video for one show.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/LIVE!.png">
+                <img class="img" src="img/content/discography/LIVE!.png"  alt="'LIVE!' Album Cover">
             </div>
             <div class="album albumRight album2N2R">
                 <div class="info">
@@ -91,7 +91,7 @@
                     <p>The title of the album, <i>2 Nights 2 Remember</i> is a reference to the two shows Crush 40 performed in 2011 at Live Stage Guilty, and how much they meant to the band.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/2N2R.png">
+                <img class="img" src="img/content/discography/2N2R.png" alt="'2 Nights 2 Remember' Album Cover">
                 <div class="back"></div>
             </div>
             <div class="album albumLeft albumDrivingThroughForever">
@@ -102,7 +102,7 @@
                     <p>Like the previous compilation album, Driving Through Forever contains a new mix of His World and a new song. The new being Call Me Crazy, which had only ever been performed live before the album released, at Japan Game Music Festival II:RE.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/DrivingThroughForever.jpg">
+                <img class="img" src="img/content/discography/DrivingThroughForever.jpg"  alt="'Thrill of the Feel' Album Cover">
             </div>
         </div>
 
