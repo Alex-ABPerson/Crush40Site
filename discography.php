@@ -67,7 +67,7 @@
                     <h3>Rise Again</h3>
                     <p>Throughout 2011 and 2012, Crush 40 released four singles: <i>Rise Again</i>, <i>Sonic Youth</i>, <i>One of Those Days</i> and <i>Song of Hope</i>. This EP is a compilation of these singles released by Crush 40 throughout 2011 and 2012.</p>
                     <p>There was a variant of this EP available to be purchased at <i>Sonic Boom 2012</i>, that excluded the Song of Hope single from 2011.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button class="emptyButton btnWidthWide" href="#">Explore this EP</button>
                 </div>
                 <img class="img" src="img/content/discography/RiseAgain.jpg">
                 <!--<div class="albumBackground"></div>-->
