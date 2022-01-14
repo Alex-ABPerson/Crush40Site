@@ -1,3 +1,3 @@
 window.addEventListener('load', () => {
-    window.parent.postMessage('800px', '*');
+    window.parent.postMessage('600px', '*');
 });
