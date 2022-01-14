@@ -163,9 +163,6 @@
     text-transform: lowercase;
 }
 
-.albumList .album2N2R .text { z-index: 100; }
-.albumList .album2N2R .img { z-index: 100; }
-
 /* Slanted background */
 /*.albumList .album2012 .albumBackground {
     background-color: purple;
