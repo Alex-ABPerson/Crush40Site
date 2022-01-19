@@ -47,7 +47,7 @@
             <p>Below is a list of all the albums/EPs the band has put out - be sure to explore them all to find out tons of in-depth trivia, booklet scans, and more!</p>
         </div>
 
-        <ul class="albumList section">
+        <ol class="albumList section">
             <li class="album albumLeft albumThrill">
                 <div class="info">
                     <p class="yearIndicator">2000</p>
@@ -122,7 +122,7 @@
                 </div>
                 <img class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>
-        </div>
+        </ol>
 
         <?php include('base/bodyEnd.html') ?>
     </body>
