@@ -36,7 +36,8 @@
                 <div class="info">
                     <p class="yearIndicator">2000</p>
                     <h2 class="title">Thrill of the Feel</h2>
-                    <p>This is where it all began; the first album put out by the band themselves! <i>Thrill Of The Feel</i> is comprised of all the songs recorded by a full band in the video game EA Sports NASCAR Arcade. Interestingly, some songs on this album do not have any vocals, making this album the only one released by the band to feature instrumental tracks.</p>
+                    <p>This is where it all began; the first album put out by the band themselves! <i>Thrill Of The Feel</i> is comprised of all the songs recorded by a full band in the video game EA Sports NASCAR Arcade.</p>
+                    <p>Interestingly, some songs on this album do not have any vocals, making this album the only one released by the band to feature instrumental tracks.</p>
                     <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, officially making the music made for this game series a part of the band's canon..</p>
                     <button data-action="panel" data-page-name="albumView" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
@@ -46,8 +47,8 @@
                 <div class="info">
                     <p class="yearIndicator">2003</p>
                     <h2 class="title">Crush 40</h2>
-                    <p>This album marks the first time the name "Crush 40" was used. All of the vocal tracks from <i>Thrill of the Feel</i> are featured on this album, so this album could be considered a western release of Thrill of the Feel. However, the instrumental tracks are missing and in their place are "Live & Learn" from <i>Sonic Adventure 2</i> and two bonus tracks, both lacking singer Johnny Gioeli on vocals: "It Doesn't Matter", and "Escape From The City".</p>
-                    <p>The name "Crush 40" would be carried over to the game <i>Sonic Heroes</i>, which would be released later in 2003.</p>
+                    <p>All of the vocal tracks from <i>Thrill of the Feel</i> are featured on this album, so this album could be considered a western release of Thrill of the Feel. However, the instrumental tracks are missing and in their place are "Live & Learn" from <i>Sonic Adventure 2</i> and two bonus tracks, both lacking singer Johnny Gioeli on vocals.</p>
+                    <p>This album marks the first time the name "Crush 40" was used, and the name "Crush 40" would be carried over to the game <i>Sonic Heroes</i>, which would be released later in 2003.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
@@ -56,7 +57,8 @@
                 <div class="info">
                     <p class="yearIndicator">2009</p>
                     <h2 class="title">Super Sonic Songs</h2>
-                    <p>This is the first compilation album released by Crush 40, encompassing a range of tracks from the band's near 10-year history at the time. Some older tracks were remixed for this release, a few new covers were created, and a fully original song, "Is It You", was released for the first time here.</p>
+                    <p>This is the first compilation album released by Crush 40, encompassing a range of tracks from the band's near 10-year history at the time.</p>
+                    <p>Some older tracks were remixed for this release, a few new covers were created, and a fully original song, "Is It You", was released for the first time here.</p>
                     <p>While the original CD release of <i>Super Sonic Songs</i> did not feature any bonus tracks, a few years after its release, the album was placed on digital platforms with 3 bonus tracks; these tracks were not new, however, and could be heard elsewhere.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>

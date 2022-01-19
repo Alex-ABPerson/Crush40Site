@@ -61,6 +61,15 @@
         "info";
 }
 
+.albumList .album .info {
+    grid-area: info;
+
+    padding: 10px; /* Smallscreen */
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 @media (min-width: 980px) {
 
     /* Largescreen */
@@ -75,20 +84,16 @@
     .albumList .albumRight {
         grid-template-areas: "img info";
     }
-}
 
-.albumList .album .info {
-    grid-area: info;
-
-    padding: 50px;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    .albumList .album .info {
+        padding: 50px;
+    }
 }
 
 .albumList .album .img {
     grid-area: img;
-    max-width: 400px;
+    width: 400px;
+    max-width: calc(100% - 20px);
     margin: 15px;
 
     align-self: center;
