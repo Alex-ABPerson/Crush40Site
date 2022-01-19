@@ -23,6 +23,24 @@
     <body>
         <?php include('base/bodyStart.html') ?>
 
+        <!-- Opening -->
+        <div class="opening section">
+
+            <div class="opening-intro">
+
+                <!-- Logo -->
+                <img src="img/logo/FanWebsiteLogo.svg" alt="Crush 40 Logo">
+
+                <!-- Text -->
+                <h2>Crush 40's entire discography, from their albums, to their songs, to their features - all right here!</h2>
+
+                <div class="btnSet">
+                    <a class="btnLink"><button class="filledButton btnAlbums btnWidthNormal">Albums <img src="img/icons/smallDownArrow.svg" alt="Down Arrow"></button></a>
+                    <button class="emptyButton btnViewAll btnWidthNormal">Songs <img src="img/icons/smallDownArrow.svg" alt="Down Arrow"></button>
+                </div>
+            </div>
+        </div>
+
         <!-- Albums -->
         <div class="albums-intro section" id="intro">
             <h1>Releases</h1>

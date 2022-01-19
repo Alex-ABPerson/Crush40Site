@@ -19,6 +19,23 @@
     <body>
         <?php include('base/bodyStart.html') ?>
 
+        <div class="opening section">
+
+            <div class="opening-intro">
+
+                <!-- Logo -->
+                <img src="img/logo/FanWebsiteLogo.svg" alt="Crush 40 Logo">
+
+                <!-- Text -->
+                <h2>Info, live shows, trivia, history, discography - and more!</h2> 
+
+                <div class="btnSet">
+                    <a class="btnLink" href="#intro"><button class="filledButton btnExplore btnWidthNormal">Explore <img src="img/icons/smallDownArrow.svg" alt="Down Arrow"></button></a>
+                    <button class="emptyButton btnViewAll btnWidthNormal">View all sections</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Introducing... Crush 40! -->
         <div class="intro section" id="intro">
             <div class="background-2n2r"></div>
