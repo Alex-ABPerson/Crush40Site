@@ -28,6 +28,8 @@
     background-color: var(--crush40-gray);
     font-size: 125%;
 
+    padding: 5px;
+    box-sizing: border-box;
     text-align: center;
 }
 

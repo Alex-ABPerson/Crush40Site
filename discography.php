@@ -25,10 +25,8 @@
 
         <!-- Albums -->
         <div class="albums-intro section" id="intro">
-            <div class="intro">
-                <h1>Releases</h1>
-                <p>Crush 40 has released a number of EPs and albums over the years, here's a list of all the dedicated Crush 40 EPs or albums they've released.</p>
-            </div>
+            <h1>Releases</h1>
+            <p>Below is a list of all the albums/EPs the band has put out - be sure to explore them all to find out tons of in-depth trivia, booklet scans, and more!</p>
         </div>
 
         <div class="albumList section">
