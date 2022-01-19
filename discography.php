@@ -12,6 +12,7 @@
         <link href="css/discography.css" rel="stylesheet">
 
         <!-- Crush 40 JavaScript -->
+        <script src="js/loading-bar.js"></script>
         <script src="js/site.js"></script>
         <script>
             window.addEventListener('load', () => {

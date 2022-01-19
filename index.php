@@ -13,6 +13,7 @@
 
         <!-- Crush 40 JavaScript -->
         <script src="js/home.js"></script>
+        <script src="js/loading-bar.js"></script>
         <script src="js/site.js"></script>
     </head>
     <body>
