@@ -47,8 +47,8 @@
             <p>Below is a list of all the albums/EPs the band has put out - be sure to explore them all to find out tons of in-depth trivia, booklet scans, and more!</p>
         </div>
 
-        <div class="albumList section">
-            <div class="album albumLeft albumThrill">
+        <ul class="albumList section">
+            <li class="album albumLeft albumThrill">
                 <div class="info">
                     <p class="yearIndicator">2000</p>
                     <h2 class="title">Thrill of the Feel</h2>
@@ -59,7 +59,7 @@
                 </div>
                 <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
             </div>
-            <div class="album albumRight albumC40">
+            <li class="album albumRight albumC40">
                 <div class="info">
                     <p class="yearIndicator">2003</p>
                     <h2 class="title">Crush 40</h2>
@@ -69,7 +69,7 @@
                 </div>
                 <img class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
             </div>
-            <div class="album albumLeft albumSSS">
+            <li class="album albumLeft albumSSS">
                 <div class="info">
                     <p class="yearIndicator">2009</p>
                     <h2 class="title">Super Sonic Songs</h2>
@@ -80,7 +80,7 @@
                 </div>
                 <img class="img" src="img/content/discography/SuperSonicSongs.png" alt="'Super Sonic Songs' Album Cover">
             </div>
-            <div class="album albumRight albumRiseAgain">
+            <li class="album albumRight albumRiseAgain">
                 <div class="info">
                     <p class="yearIndicator">2012</p>
                     <h2 class="title">Rise Again</h2>
@@ -91,7 +91,7 @@
                 <img class="img" src="img/content/discography/RiseAgain.jpg" alt="'Rise Again' Album Cover">
                 <!--<div class="albumBackground"></div>-->
             </div>
-            <div class="album albumLeft albumLive">
+            <li class="album albumLeft albumLive">
                 <div class="info">
                     <p class="yearIndicator">2012</p>
                     <h2 class="title">Live!</h2>
@@ -101,7 +101,7 @@
                 </div>
                 <img class="img" src="img/content/discography/LIVE!.png"  alt="'LIVE!' Album Cover">
             </div>
-            <div class="album albumRight album2N2R">
+            <li class="album albumRight album2N2R">
                 <div class="info">
                     <p class="yearIndicator">2015</p>
                     <h2 class="title">2 Nights 2 Remember</h2>
@@ -112,7 +112,7 @@
                 <img class="img" src="img/content/discography/2N2R.png" alt="'2 Nights 2 Remember' Album Cover">
                 <div class="back"></div>
             </div>
-            <div class="album albumLeft albumDrivingThroughForever">
+            <li class="album albumLeft albumDrivingThroughForever">
                 <div class="info">
                     <p class="yearIndicator">2019</p>
                     <h2 class="title">Driving Through Forever</h2>
