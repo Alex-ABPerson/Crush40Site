@@ -177,6 +177,13 @@ body {
 
 .description {
     grid-area: description;
+    text-align: center;
+    padding: 10px;
+    overflow: auto;
+}
+
+.description p {
+    font-size: 120%;
 }
 
 .physical {
