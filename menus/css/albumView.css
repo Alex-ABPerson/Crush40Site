@@ -5,10 +5,10 @@ body {
     /* Largescreen */
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 400px 1fr 1fr;
+    grid-template-columns: 400px 500px 1fr;
     grid-template-areas:
-        "intro description physical"
-        "tracks description physical";
+        "intro tracks physical"
+        "description tracks physical";
 
     padding-top: 5px;
     padding-left: 5px;
@@ -23,6 +23,7 @@ body {
     padding: 0;
 }
 
+/* Intro */
 .intro {
     padding-left: 5px;
     padding-right: 5px;
@@ -64,12 +65,114 @@ body {
     font-size: 200%;
 }
 
+/* Tracks */
 .tracks {
     grid-area: tracks;
+
+    overflow: auto;
 }
 
 .tracks .title {
     text-align: center;
+}
+
+.trackList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.trackList .track {
+    background-color: var(--crush40-red-pale);
+    margin: 5px;
+    padding: 15px;
+    padding-bottom: 30px;
+
+    cursor: pointer;
+}
+
+.trackList .track:hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.trackList .track .main {
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.trackList .track .title {
+    grid-area: title;
+
+    display: inline-block;
+    font-size: 150%;
+
+    margin: 0;
+}
+
+.trackList .track .length {
+    grid-area: length;
+    font-size: 135%;
+
+    margin-left: 10px;
+}
+
+.trackList .track .tags {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+.trackList .track .tag {
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    font-size: 120%;
+}
+
+.trackList .track .tag p {
+    margin: 0;
+}
+
+.trackList .track .tagReRelease {
+    background-color: rgb(40, 120, 80);
+}
+
+.trackList .track .tagRemix {
+    background-color: var(--crush40-blue-pale);
+}
+
+.trackList .track .tagInstrumental {
+    background-color: var(--crush40-blue);
+    
+}
+
+.trackList .track .tagOriginal {
+    background-color: var(--crush40-red);
+}
+
+.trackList .track .tagNotC40 {
+    background-color: var(--crush40-gray);
+}
+
+.trackList .track .tagLive {
+    background-color: rgb(215, 100, 0);
+}
+
+.trackList .track .description {
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .description {
