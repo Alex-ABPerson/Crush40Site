@@ -115,6 +115,7 @@
 .albumList .album .title {
     font-weight: 300;
     font-size: 200%;
+    color: red;
 }
 
 .albumList .albumThrill {
