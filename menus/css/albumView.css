@@ -187,7 +187,191 @@ body {
 }
 
 .physical {
+    background-image: url('../../img/visuals/Background/Discography/SSSBackground.png');
     grid-area: physical;
+    text-align: center;
+
+    overflow: auto;
+}
+
+.physical .cd {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.physical .cd .cdImg {
+    transform: rotate(6deg);
+    position: relative;
+    height: 100%;
+}
+
+.physical .coverings {
+    background-color: black;
+    width: 100%;
+
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+
+    font-size: 150%;
+}
+
+.physical .imgDetails {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.physical .imgDetailsLeft {
+    grid-template-columns: 50% 1fr;
+    grid-template-areas:
+        "title _"
+        "image info";
+}
+
+.physical .imgDetailsRight {
+    grid-template-columns: 1fr 50%;
+    grid-template-areas:
+        "_ title"
+        "info image";
+}
+
+.physical .imgDetails > .title {
+    grid-area: title;
+}
+
+.physical .imgDetailsRight > .title {
+    text-align: right;
+}
+
+.physical .imgDetails .img {
+    grid-area: image;
+    width: 100%;
+}
+
+.physical .imgDetails .facts {
+    grid-area: info;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 50px;
+}
+
+.physical .imgDetails .fact {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "img title"
+        "_ info";
+    
+    align-items: center;
+
+    gap: 4px;
+}
+
+.physical .imgDetails .fact .icon {
+    grid-area: img;
+}
+
+.physical .imgDetails .fact .title {
+    grid-area: title;
+    margin: 0;
+}
+
+.physical .imgDetails .fact .contents {
+    margin: 0;
+    margin-top: 5px;
+    grid-area: info;
+}
+
+.physical .imgDetails .fact .contentsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.physical .obi {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "img info";
+
+    position: relative;
+    font-size: 150%;
+
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.physical .obi .img {
+    grid-area: img;
+    max-width: 300px;
+    height: 100%;
+}
+
+.physical .obi .info {
+    text-align: left;
+    grid-area: info;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.physical .obi .translation {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.physical .tray {
+    margin-top: -10px;
+}
+
+.physical .booklet {
+    padding-top: 30px;
+    font-size: 150%;
+    background-color: var(--crush40-red);
+}
+
+.physical .booklet .title {
+    margin-top: 0;
+}
+
+.physical .booklet .explore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLeft, .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+}
+
+.navLeft:hover {
+    grid-area: navLeft;
+    transform: translateX(-5px);
+}
+
+.navRight:hover {
+    grid-area: navRight;
+    transform: translateX(5px);
 }
 
 /*body {
