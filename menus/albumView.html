@@ -34,13 +34,13 @@
 
         <div class="description block">
             <h2>Description</h2>
-            <p>This is a description about this amazing album - it's so amazing because of reason A, B and C. So yeah!</p>
+            <div class="text"><p>This is a description about this amazing album - it's so amazing because of reason A, B and C. So yeah!</p></div>
         </div>
 
         <div class="tracks block">
             <h2 class="title">Tracks</h2>
             <ol class="trackList">
-                <li class="track">
+                <!--<li class="track">
                     <div class="main">
                         <h3 class="title">Fill It Up</h3>
                         <p class="length">3:45</p>
@@ -53,35 +53,7 @@
                         <li class="tag tagLive"><p>Live Performance</p></li>
                         <li class="tag tagNotC40"><p>Not Crush 40</p></li>
                     </ul>
-                </li>
-                <li class="track">
-                    <div class="main">
-                        <h3 class="title">What I'm Made Of</h3>
-                        <p class="length">5:23</p>
-                    </div>
-                    <ul class="tags">
-                        <li class="tag tagFirstRelease"><p>First Release</p></li>
-                    </ul>
-                    <p class="description">This is a description all about this track and its details - fascinating stuff!</p>
-                </li>
-                <li class="track">
-                    <div class="main">
-                        <h3 class="title">Live & Learn</h3>
-                        <p class="length">3:45</p>
-                    </div>
-                    <ul class="tags">
-                        <li class="tag tagFirstRelease"><p>First Release</p></li>
-                    </ul>
-                </li>
-                <li class="track">
-                    <div class="main">
-                        <h3 class="title">Knight Of The Wind</h3>
-                        <p class="length">2:37</p>
-                    </div>
-                    <ul class="tags">
-                        <li class="tag tagReRelease"><p>Re-release</p></li>
-                    </ul>
-                </li>
+                </li>-->
             </ol>
         </div>
 
@@ -94,14 +66,14 @@
                 </div>
 
                 <div class="coverings outerCoverings">
-                    <div class="imgDetails imgDetailsLeft">
+                    <div id="cover" class="imgDetails imgDetailsLeft">
                         <h3 class="title">Cover</h3>
-                        <img class="img coverImg" src="../img/content/discography/SuperSonicSongs.png">
+                        <img class="img" src="../img/content/discography/SuperSonicSongs.png">
                         <div class="facts">
-                            <div class="fact">
+                            <!--<div class="fact">
                                 <img class="icon" src="../img/icons/background.svg">
                                 <h4 class="title">Background</h4>
-                                <p class="contents">From library 'XYZ'</p>
+                                <a class="contents" href="#"><p>From library 'XYZ'</p></a>
                             </div>
                             <div class="fact">
                                 <img class="icon" src="../img/icons/font.svg">
@@ -111,32 +83,17 @@
                                     <li>Font B</li>
                                     <li>Font C</li>
                                 </ul>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
-                    <div class="imgDetails imgDetailsRight">
+                    <div id="back" class="imgDetails imgDetailsRight">
                         <h3 class="title">Back</h3>
-                        <img class="img coverImg" src="../img/content/discography/physical/SSS/Back.jpg">
-                        <div class="facts">
-                            <div class="fact">
-                                <img class="icon" src="../img/icons/background.svg">
-                                <h4 class="title">Background</h4>
-                                <p class="contents">From library 'XYZ'</p>
-                            </div>
-                            <div class="fact">
-                                <img class="icon" src="../img/icons/font.svg">
-                                <h4 class="title">Fonts</h4>
-                                <ul class="contents contentsList">
-                                    <li>Font A</li>
-                                    <li>Font B</li>
-                                    <li>Font C</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img class="img" src="../img/content/discography/physical/SSS/Back.jpg">
+                        <div class="facts"></div>
                     </div>
                 </div>
 
-                <div class="obi">
+                <div id="obi" class="obi">
                     <div class="info">
                         <h3 class="title">Obi Strip</h3>
                         <div class="translations">
@@ -162,30 +119,15 @@
                     <img class="img" src="../img/content/discography/physical/SSS/Obi.png">
                 </div>
 
-                <div class="coverings tray">
+                <div id="tray" class="coverings tray">
                     <div class="imgDetails imgDetailsRight">
                         <h3 class="title">Tray</h3>
-                        <img class="img coverImg" src="../img/content/discography/physical/SSS/Tray.jpg">
-                        <div class="facts">
-                            <div class="fact">
-                                <img class="icon" src="../img/icons/background.svg">
-                                <h4 class="title">Background</h4>
-                                <p class="contents">From library 'XYZ'</p>
-                            </div>
-                            <div class="fact">
-                                <img class="icon" src="../img/icons/font.svg">
-                                <h4 class="title">Fonts</h4>
-                                <ul class="contents contentsList">
-                                    <li>Font A</li>
-                                    <li>Font B</li>
-                                    <li>Font C</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img id="tray" class="img coverImg" src="../img/content/discography/physical/SSS/Tray.jpg">
+                        <div class="facts"></div>
                     </div>
                 </div>
 
-                <div class="booklet">
+                <div id="booklet" class="booklet">
                     <h3 class="title">Booklet</h3>
                     
                     <div class="explore">
@@ -193,6 +135,7 @@
                         <img class="img" src="../img/content/discography/SuperSonicSongs.png">
                         <button class="navRight" title="Navigate Right"><img src="../img/icons/largeRightArrow.svg" alt="Right Arrow"></button>
                     </div>
+                    <div class="facts"></div>
                 </div>
             </div>
         </div>

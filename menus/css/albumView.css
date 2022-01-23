@@ -457,6 +457,10 @@ body {
     grid-area: info;
 }
 
+.physical .imgDetails .fact .contentsLink {
+    color: white;
+}
+
 .physical .imgDetails .fact .contentsList {
     list-style-type: none;
     padding: 0;
