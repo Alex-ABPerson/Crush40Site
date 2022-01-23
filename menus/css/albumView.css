@@ -393,13 +393,17 @@ body {
     .physical .imgDetailsLeft {
         grid-template-columns: 1fr;        
         grid-template-areas:
-        "title"
-        "image"
-        "info";
+            "title"
+            "image"
+            "info";
     }
 
     .physical .imgDetailsRight {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "image"
+            "info";
     }
 }
 
@@ -464,9 +468,7 @@ body {
     grid-template-columns: auto 1fr;
     grid-template-areas: "img info";
 
-    position: relative;
     font-size: 150%;
-
     z-index: 1;
 }
 
@@ -498,26 +500,30 @@ body {
 
 .physical .obi .translations {
     display: flex;
+    flex-direction: column;
     gap: 15px;
-    flex-direction: row;
+
+    /* Smallscreen */
+    width: 300px;
+    height: 310px;
+    overflow: auto;
 }
 
 .physical .obi .translation {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 
-    width: 500px;
-    height: 270px;
-    overflow: auto;
+    width: 90%;
 }
 
 @media (min-width: 1000px) {
     .physical .obi .translations {
-        flex-direction: column;
+        height: auto;
+        width: auto;
     }
 
     .physical .obi .translation {
-        overflow: visible;
+        width: auto;
     }
 }
 
