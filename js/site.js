@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 1040)
+        if (navbar.classList.contains("navOpen") && window.innerWidth > 1040)
             CloseNavbar();
     });
 });
@@ -76,7 +76,9 @@ window.addEventListener('load', () => {
         OnPanelLoad();
     });
 
-    window.addEventListener('resize', () => UpdatePanelSizing());
+    window.addEventListener('resize', () => {
+        UpdatePanelSizing();
+    });
     UpdatePanelSizing();
 
     for (let btn of document.querySelectorAll("[data-action='panel']"))
