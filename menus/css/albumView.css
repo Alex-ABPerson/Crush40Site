@@ -1,18 +1,55 @@
 body {
+    --switch-point: 1260px;
     --separator-color: rgb(40, 40, 40);
     background-color: var(--separator-color);
 
-    /* Largescreen */
     display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 400px 500px 1fr;
+
+    /* Smallscreen */
+    grid-template-rows: auto max-content max-content max-content;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "intro tracks physical"
-        "description tracks physical";
+        "intro"
+        "tracks"
+        "physical"
+        "description";
 
     padding-top: 5px;
     padding-left: 5px;
     box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+    body {
+        grid-template-rows: 180px 200px 1fr;
+        grid-template-columns: 400px 350px 1fr;
+        grid-template-areas:
+            "intro tracks tracks"
+            "description tracks tracks"
+            "description physical physical";
+    }
+}
+
+@media (min-width: 1160px) {
+    body {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 300px 350px 1fr;
+        grid-template-areas:
+            "intro tracks physical"
+            "description tracks physical";
+    }
+}
+
+@media (min-width: 1260px) {
+    body {
+        grid-template-columns: 400px 350px 1fr;
+    }
+}
+
+@media (min-width: 1410px) {
+    body {
+        grid-template-columns: 400px 500px 1fr;
+    }
 }
 
 .block {
@@ -39,7 +76,7 @@ body {
     padding-top: 0;
     margin-top: 0;
     list-style-type: none;
-    display: flex;
+    display: flex;    
     gap: 5px;
     justify-content: space-evenly;
 }
@@ -68,8 +105,6 @@ body {
 /* Tracks */
 .tracks {
     grid-area: tracks;
-
-    overflow: auto;
 }
 
 .tracks .title {
@@ -80,7 +115,15 @@ body {
     padding: 0;
     margin: 0;
     list-style-type: none;
+
+    display: flex;
+
+    /* Smallscreen */
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
 }
+
 
 .trackList .track {
     background-color: var(--crush40-red-pale);
@@ -88,7 +131,24 @@ body {
     padding: 15px;
     padding-bottom: 30px;
 
+    min-width: 300px;
+
     cursor: pointer;
+}
+
+@media (min-width: 1160px) {
+    .tracks {
+        overflow: auto;
+    }
+
+    .trackList {
+        flex-direction: column;
+        overflow: none;
+    }
+
+    .trackList .track {
+        min-width: unset;
+    }
 }
 
 .trackList .track:hover {
@@ -175,6 +235,7 @@ body {
     margin-bottom: 0;
 }
 
+/* Description */
 .description {
     grid-area: description;
     text-align: center;
@@ -190,21 +251,33 @@ body {
     background-image: url('../../img/visuals/Background/Discography/SSSBackground.png');
     grid-area: physical;
     text-align: center;
+}
 
-    overflow: auto;
+/* Physical */
+.physical > .title {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--crush40-gray);
 }
 
 .physical .cd {
     display: flex;
+    align-self: center;
     justify-content: center;
 
     position: relative;
-    width: 100%;
-    height: 50%;
+    height: 300px; /* Smallscreen */
+
     margin: 0;
     padding: 20px;
 
     box-sizing: border-box;
+}
+
+.physical .content {
+    display: flex;
+    flex-direction: row; /* Smallscreen */
+    overflow: auto;
 }
 
 .physical .cd .cdImg {
@@ -213,51 +286,39 @@ body {
     height: 100%;
 }
 
+@media (min-width: 1000px) {
+    .physical {
+        overflow: auto;
+    }
+
+    .physical .content {
+        flex-direction: column;
+        overflow: unset;
+    }
+
+    .physical .cd {
+        width: 100%;
+    }
+}
+
 .physical .coverings {
     background-color: black;
-    width: 100%;
 
     text-align: left;
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
     box-sizing: border-box;
 
     font-size: 150%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10px; /* Smallscreen */
 }
 
 .physical .imgDetails {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto auto; /* Smallscreen */
     align-items: center;
-    width: 100%;
-}
-
-.physical .imgDetailsLeft {
-    grid-template-columns: 50% 1fr;
-    grid-template-areas:
-        "title _"
-        "image info";
-}
-
-.physical .imgDetailsRight {
-    grid-template-columns: 1fr 50%;
-    grid-template-areas:
-        "_ title"
-        "info image";
-}
-
-.physical .imgDetails > .title {
-    grid-area: title;
-}
-
-.physical .imgDetailsRight > .title {
-    text-align: right;
-}
-
-.physical .imgDetails .img {
-    grid-area: image;
     width: 100%;
 }
 
@@ -268,6 +329,100 @@ body {
     flex-direction: column;
     justify-self: center;
     gap: 50px;
+}
+
+.physical .imgDetails .img {
+    grid-area: image;
+    width: 100%;
+}
+
+.physical .imgDetails > .title {
+    grid-area: title;
+}
+
+/* Mobile - Horizontal */
+@media (max-width: 999px) {
+    
+    .physical .coverings {
+        flex-direction: row;
+    }
+
+    .physical .imgDetails {
+        grid-template-rows: auto 1fr;
+        height: 400px;
+    }
+
+    .physical .imgDetails .img {
+        width: unset;
+        height: 300px;
+        object-fit: scale-down;
+    }
+
+    .physical .imgDetails .facts {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .physical .imgDetailsLeft, .physical .imgDetailsRight {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "title _"
+            "image info";
+    }
+
+    .physical .imgDetailsLeft {
+        grid-template-columns: auto 1fr;
+    }
+}
+
+/* Smallscreen - Vertical */
+@media (min-width: 1000px) {
+    
+    .physical .imgDetailsRight > .title {
+        text-align: right;
+    }
+
+    .physical .imgDetails .facts {
+        padding-top: 50px;
+    }
+
+    .physical .coverings {
+        padding: 50px;
+    }
+
+    .physical .imgDetailsLeft {
+        grid-template-columns: 1fr;        
+        grid-template-areas:
+        "title"
+        "image"
+        "info";
+    }
+
+    .physical .imgDetailsRight {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Largescreen - Vertical */
+@media (min-width: 1600px) {
+    .physical .imgDetails {
+        width: 100%;
+        grid-template-rows: auto 1fr;
+    }
+
+    .physical .imgDetailsLeft {
+        grid-template-columns: 50% 1fr;
+        grid-template-areas:
+            "title _"
+            "image info";
+    }
+
+    .physical .imgDetailsRight {
+        grid-template-columns: 1fr 50%;
+        grid-template-areas:
+            "_ title"
+            "info image";
+    }
 }
 
 .physical .imgDetails .fact {
@@ -313,13 +468,25 @@ body {
     font-size: 150%;
 
     z-index: 1;
-    margin-top: -10px;
 }
 
 .physical .obi .img {
-    grid-area: img;
-    max-width: 300px;
-    height: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+    .physical .obi .img {
+        grid-area: img;
+        max-width: 100px;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1510px) {
+    .physical .obi .img {
+        max-width: 200px;
+    }
 }
 
 .physical .obi .info {
@@ -329,17 +496,34 @@ body {
     padding-right: 20px;
 }
 
-.physical .obi .translation {
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-bottom: 15px;
-    padding: 20px;
+.physical .obi .translations {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
 }
 
-.physical .tray {
-    margin-top: -10px;
+.physical .obi .translation {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+
+    width: 500px;
+    height: 270px;
+    overflow: auto;
+}
+
+@media (min-width: 1000px) {
+    .physical .obi .translations {
+        flex-direction: column;
+    }
+
+    .physical .obi .translation {
+        overflow: visible;
+    }
 }
 
 .physical .booklet {
+    color: black;
+
     padding-top: 30px;
     font-size: 150%;
     background-color: var(--crush40-red);
@@ -354,6 +538,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.physical .booklet .explore .img {
+    max-height: 300px;
+}
+
+@media (min-width: 1000px) {
+    .physical .booklet .explore .img {
+        max-width: 85%;
+    }
 }
 
 .navLeft, .navRight {
