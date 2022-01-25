@@ -118,7 +118,7 @@ function Finish() {
 
     if (percentageScore == 100)
     {
-        resultsBarQuote.innerText = "\"Yeah, yeah, yeah... Yeah. Yeah! YEAAAHHHH!\"  - Johnny";
+        resultsBarQuote.innerText = "\"Yeah, yeah, yeah, yeah... Yeah. Yeah! YEAAAHHHH!\"  - Johnny";
 
     }
 
