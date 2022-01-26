@@ -7,9 +7,12 @@ let statLength;
 let trackList;
 let physicalCover;
 let physicalBack;
-let physicalObi;
 let physicalTray;
 let physicalBooklet;
+let physicalObiImg;
+let physicalObiRightTranslation;
+let physicalObiMiddleTranslation;
+let physicalObiLeftTranslation;
 
 let a = {
     title: "abc",
@@ -35,8 +38,15 @@ let a = {
     physicalObi:
     {
         imgSrc: "../img/content/discography/physical/SSS/Obi.jpg",
-        backgrounds: [ { title: "A Test Background", link: "#abc"}],
-        fonts: [ { title: "A Test Font", link: "#def"}]
+        rightTranslation: `
+            <p>This is the right translation</p>
+        `,
+        middleTranslation: `
+            <p>This is the middle translation</p>
+        `,
+        leftTranslation: `
+            <p>This is the left translation</p>
+        `
     },
     physicalTray:
     {
@@ -55,7 +65,10 @@ window.addEventListener('load', () => {
     trackList = document.querySelector(".tracks > .trackList");
     physicalCover = document.querySelector(".physical #cover");
     physicalBack = document.querySelector(".physical #back");
-    physicalObi = document.querySelector(".physical #obi");
+    physicalObiImg = document.querySelector(".physical #obiImg");
+    physicalObiRightTranslation = document.querySelector(".physical #obiRightText");
+    physicalObiMiddleTranslation = document.querySelector(".physical #obiMiddleText");
+    physicalObiLeftTranslation = document.querySelector(".physical #obiLeftText");
     physicalTray = document.querySelector(".physical #tray");
     physicalBooklet = document.querySelector(".physical #booklet");
 
@@ -71,6 +84,10 @@ function Populate(album)
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
+    physicalObiImg.src = album.physicalObi.imgSrc;
+    physicalObiRightTranslation.innerHTML = album.physicalObi.rightTranslation;
+    physicalObiMiddleTranslation.innerHTML = album.physicalObi.middleTranslation;
+    physicalObiLeftTranslation.innerHTML = album.physicalObi.leftTranslation;
 
     for (let track of album.tracks)
         trackList.appendChild(CreateTrack(track));
