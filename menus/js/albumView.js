@@ -13,6 +13,8 @@ let physicalObiImg;
 let physicalObiRightTranslation;
 let physicalObiMiddleTranslation;
 let physicalObiLeftTranslation;
+let bookletNavLeft;
+let bookletNavRight;
 
 let a = {
     title: "abc",
@@ -53,7 +55,23 @@ let a = {
         imgSrc: "../img/content/discography/physical/SSS/Tray.jpg",
         backgrounds: [ { title: "A Test Background", link: "#abc"}],
         fonts: [ { title: "A Test Font", link: "#def"}]
-    }
+    },
+    bookletPageSourcePrefix: '../img/content/discography/physical/SSS/',
+    bookletPages:
+    [
+        {
+            backgrounds: [ { title: "A Test Background", link: "#abc"}],
+            fonts: [ { title: "A Test Font", link: "#def"}]
+        },
+        {
+            backgrounds: [ { title: "Another Thing", link: "#abc"}],
+            fonts: [ { title: "Another Font", link: "#def"}]
+        },
+        {
+            backgrounds: [ { title: "Another Thing v2", link: "#abc"}],
+            fonts: [ { title: "Another Font v2", link: "#def"}]
+        },
+    ]
 };
 
 window.addEventListener('load', () => {
@@ -71,6 +89,16 @@ window.addEventListener('load', () => {
     physicalObiLeftTranslation = document.querySelector(".physical #obiLeftText");
     physicalTray = document.querySelector(".physical #tray");
     physicalBooklet = document.querySelector(".physical #booklet");
+    bookletNavLeft = document.querySelector(".physical #bookletNavLeft");
+    bookletNavRight = document.querySelector(".physical #bookletNavRight");
+
+    bookletNavLeft.addEventListener('click', () => {
+        MovePrev();
+    });
+
+    bookletNavRight.addEventListener('click', () => {
+        MoveNext();
+    });
 
     window.parent.postMessage('800px', '*');
 
@@ -94,8 +122,11 @@ function Populate(album)
 
     PopulatePhysicalImgDetails(album.physicalCover, physicalCover);
     PopulatePhysicalImgDetails(album.physicalBack, physicalBack);
-    //PopulatePhysicalImgDetails(album.physicalObi, physicalObi);
     PopulatePhysicalImgDetails(album.physicalTray, physicalTray);
+
+    currentBooklet = album.bookletPages;
+    currentBookletPageSourcePrefix = album.bookletPageSourcePrefix;
+    PopulateBookletInfo();
 }
 
 // Track List
@@ -173,7 +204,13 @@ function PopulatePhysicalImgDetails(info, elem)
     img.src = info.imgSrc;
 
     let facts = elem.querySelector(".facts");
+    PopulateFacts(info, facts);
+}
 
+function PopulateFacts(info, elem)
+{
+    elem.replaceChildren();
+    
     if (info.backgrounds.length > 0)
     {
         let fact = CreateFact('../img/icons/background.svg', 'Backgrounds');
@@ -181,7 +218,7 @@ function PopulatePhysicalImgDetails(info, elem)
         for (let back of info.backgrounds)
             fact.contents.appendChild(CreateFactItem(back.title, back.link));
 
-        facts.appendChild(fact.parent);
+        elem.appendChild(fact.parent);
     }
 
     if (info.fonts.length > 0)
@@ -191,7 +228,7 @@ function PopulatePhysicalImgDetails(info, elem)
         for (let fnt of info.fonts)
             fact.contents.appendChild(CreateFactItem(fnt.title, fnt.link));
             
-        facts.appendChild(fact.parent);
+            elem.appendChild(fact.parent);
     }
 }
 
@@ -233,4 +270,31 @@ function CreateFactItem(text, link)
     newItm.appendChild(newLink);
     
     return newItm;
+}
+
+// Physical - Booklet Experience
+var currentBookletPos = 0;
+var currentBooklet;
+var currentBookletPageSourcePrefix;
+
+function PopulateBookletInfo()
+{
+    bookletNavLeft.style.visibility = currentBookletPos == 0 ? 'hidden' : 'visible';
+    bookletNavRight.style.visibility = currentBookletPos == currentBooklet.length - 1 ? 'hidden' : 'visible';
+
+    let currentPage = currentBooklet[currentBookletPos];
+    currentPage.imgSrc = currentBookletPageSourcePrefix + 'Booklet' + currentBookletPos + ".png";
+    PopulatePhysicalImgDetails(currentPage, physicalBooklet);
+}
+
+function MovePrev()
+{
+    currentBookletPos--;
+    PopulateBookletInfo();
+}
+
+function MoveNext()
+{
+    currentBookletPos++;
+    PopulateBookletInfo();
 }

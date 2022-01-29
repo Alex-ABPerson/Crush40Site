@@ -1,0 +1,49 @@
+.facts {
+    grid-area: info;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 50px;
+
+    text-align: left;
+}
+
+.facts .fact {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "img title"
+        "_ info";
+    
+    align-items: center;
+
+    gap: 4px;
+
+    min-width: 150px;
+}
+
+.facts .fact .icon {
+    grid-area: img;
+}
+
+.facts .fact .title {
+    grid-area: title;
+    margin: 0;
+}
+
+.facts .fact .contents {
+    margin: 0;
+    margin-top: 5px;
+    grid-area: info;
+}
+
+.facts .fact .contentsLink {
+    color: white;
+}
+
+.facts .fact .contentsList {
+    list-style-type: none;
+    padding: 0;
+}

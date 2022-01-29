@@ -1,3 +1,5 @@
+@import url('../../css/imgFacts.css');
+
 body {
     --switch-point: 1260px;
     --separator-color: rgb(40, 40, 40);
@@ -322,15 +324,6 @@ body {
     width: 100%;
 }
 
-.physical .imgDetails .facts {
-    grid-area: info;
-
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    gap: 50px;
-}
-
 .physical .imgDetails .img {
     grid-area: image;
     width: 100%;
@@ -429,43 +422,6 @@ body {
     }
 }
 
-.physical .imgDetails .fact {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        "img title"
-        "_ info";
-    
-    align-items: center;
-
-    gap: 4px;
-}
-
-.physical .imgDetails .fact .icon {
-    grid-area: img;
-}
-
-.physical .imgDetails .fact .title {
-    grid-area: title;
-    margin: 0;
-}
-
-.physical .imgDetails .fact .contents {
-    margin: 0;
-    margin-top: 5px;
-    grid-area: info;
-}
-
-.physical .imgDetails .fact .contentsLink {
-    color: white;
-}
-
-.physical .imgDetails .fact .contentsList {
-    list-style-type: none;
-    padding: 0;
-}
-
 .physical .obi {
     display: grid;
     grid-template-rows: auto;
@@ -534,13 +490,8 @@ body {
 .physical .booklet {
     color: black;
 
-    padding-top: 30px;
     font-size: 150%;
     background-color: var(--crush40-red);
-}
-
-.physical .booklet .title {
-    margin-top: 0;
 }
 
 .physical .booklet .explore {
@@ -550,13 +501,43 @@ body {
     justify-content: center;
 }
 
+.physical .booklet .explore .content {
+    display: flex;
+    flex-direction: row; /* Smallscreen */
+    align-items: center;
+
+    width: 60%;
+    padding: 0 30px;
+}
+
+.physical .booklet .explore .content .facts {
+    flex-direction: row;
+
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
 .physical .booklet .explore .img {
     max-height: 300px;
 }
 
 @media (min-width: 1000px) {
+    .physical .booklet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .physical .booklet .explore .content {
+        flex-direction: column;
+    }
+
+    .physical .booklet .explore .content .facts {
+        flex-direction: column;
+    }
+
     .physical .booklet .explore .img {
-        max-width: 85%;
+        width: 100%;
+        max-height: unset;
     }
 }
 
