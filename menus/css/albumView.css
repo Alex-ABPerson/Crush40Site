@@ -128,10 +128,9 @@ body {
 
 
 .trackList .track {
+    padding: 20px;
     background-color: var(--crush40-red-pale);
     margin: 5px;
-    padding: 15px;
-    padding-bottom: 30px;
 
     min-width: 300px;
 
@@ -158,6 +157,7 @@ body {
 }
 
 .trackList .track .main {
+    padding-top: 1px;
     position: relative;
     
     display: flex;
@@ -167,18 +167,13 @@ body {
 }
 
 .trackList .track .title {
-    grid-area: title;
-
-    display: inline-block;
     font-size: 150%;
-
     margin: 0;
 }
 
 .trackList .track .length {
-    grid-area: length;
     font-size: 135%;
-
+    margin: 0;
     margin-left: 10px;
 }
 
@@ -192,6 +187,8 @@ body {
     justify-content: center;
 
     list-style-type: none;
+    
+    padding-bottom: 5px;
 }
 
 .trackList .track .tag {
@@ -207,6 +204,10 @@ body {
     margin: 0;
 }
 
+.trackList .track .tagFirst {
+    background-color: orangered;
+}
+
 .trackList .track .tagReRelease {
     background-color: rgb(40, 120, 80);
 }
@@ -217,7 +218,10 @@ body {
 
 .trackList .track .tagInstrumental {
     background-color: var(--crush40-blue);
-    
+}
+
+.trackList .track .tagCover {
+    background-color: green;
 }
 
 .trackList .track .tagOriginal {
@@ -234,19 +238,18 @@ body {
 
 .trackList .track .description {
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 /* Description */
 .description {
     grid-area: description;
-    text-align: center;
     padding: 10px;
     overflow: auto;
 }
 
 .description p {
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .physical {

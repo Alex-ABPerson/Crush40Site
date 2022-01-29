@@ -12,6 +12,85 @@
 
         <script src="../js/loading-bar.js"></script>
         <script src="js/albumView.js"></script>
+        <script>
+            var Albums = {
+                thrill: {
+                    title: "Thrill Of The Feel",
+                    description: `
+                    <p>This is where it all began; the first album put out by the band themselves! <i>Thrill Of The Feel</i> is comprised of all the songs recorded by a full band in the video game EA Sports NASCAR Arcade.</p>
+                    <p>This album is essentially a soundtrack for the video game - however, it only contains the songs with a full band performance, not everything Jun produced.</p>
+                    <p>Interestingly, five of the songs on this album do not have any vocals, making this album the only one released by the band to feature instrumental tracks.</p>
+                    <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, which was created two years prior to this album's release, and was the only other "Crush 40" song at the time.</p>
+                    <p>In addition, this release is the only one to use the band's former title, "Sons of Angels" (named after the song from 1997's "Daytona USA Chamionship Circuit Edition", by Jun Senoue, featuring Eric Martin on vocals), as this would soon be changed in the album "Crush 40".</p>
+                    `,
+                    releaseYear: 2000,
+                    playbackLength: "41:03",
+                    tracks: 
+                    [
+                        { title: "The Star Spangled Banner", playbackLength: "1:22", tags: [ 'instrumental', 'cover', 'notC40' ], description: "A cover of the United States national anthem." },
+                        { title: "Dangerous Ground", playbackLength: "2:32", tags: ['first'] },
+                        { title: "Into The Wind", playbackLength: "4:28", tags: ['first'] },
+                        { title: "Fill It Up", playbackLength: "2:30", tags: [ 'instrumental', 'notC40' ] },
+                        { title: "Revvin' Up", playbackLength: "4:35", tags: ['first'] },
+                        { title: "Rush Into The Crazy World", playbackLength: "0:48", tags: [ 'instrumental', 'notC40' ] },
+                        { title: "In the Lead", playbackLength: "4:03", tags: ['first'] },
+                        { title: "Watch Me Fly...", playbackLength: "5:09", tags: ['first'] },
+                        { title: "On The Road Again", playbackLength: "5:09", tags: [ 'instrumental', 'notC40' ] },
+                        { title: "Fuel Me", playbackLength: "2:44", tags: ['first']},
+                        { title: "When The Sun Goes Down", playbackLength: "1:50", tags: [ 'instrumental', 'notC40' ] },
+                        { title: "All The Way", playbackLength: "4:09", tags: ['first'] },
+                        { title: "Open Your Heart", playbackLength: "5:11", tags: ['first'], description: "A bonus track featured on the album - taken from <i>Sonic Adventure</i>, released two years prior." },
+                    ],
+                    physicalCover: 
+                    {
+                        imgSrc: "../img/content/discography/SuperSonicSongs.png",
+                        backgrounds: [ { title: "A Test Background", link: "#abc"}],
+                        fonts: [ { title: "A Test Font", link: "#def"}]
+                    },
+                    physicalBack:
+                    {
+                        imgSrc: "../img/content/discography/physical/SSS/Back.jpg",
+                        backgrounds: [ { title: "A Test Background", link: "#abc"}],
+                        fonts: [ { title: "A Test Font", link: "#def"}]
+                    },
+                    physicalObi:
+                    {
+                        imgSrc: "../img/content/discography/physical/SSS/Obi.jpg",
+                        rightTranslation: `
+                            <p>This is the right translation</p>
+                        `,
+                        middleTranslation: `
+                            <p>This is the middle translation</p>
+                        `,
+                        leftTranslation: `
+                            <p>This is the left translation</p>
+                        `
+                    },
+                    physicalTray:
+                    {
+                        imgSrc: "../img/content/discography/physical/SSS/Tray.jpg",
+                        backgrounds: [ { title: "A Test Background", link: "#abc"}],
+                        fonts: [ { title: "A Test Font", link: "#def"}]
+                    },
+                    bookletPageSourcePrefix: '../img/content/discography/physical/SSS/',
+                    bookletPages:
+                    [
+                        {
+                            backgrounds: [ { title: "A Test Background", link: "#abc"}],
+                            fonts: [ { title: "A Test Font", link: "#def"}]
+                        },
+                        {
+                            backgrounds: [ { title: "Another Thing", link: "#abc"}],
+                            fonts: [ { title: "Another Font", link: "#def"}]
+                        },
+                        {
+                            backgrounds: [ { title: "Another Thing v2", link: "#abc"}],
+                            fonts: [ { title: "Another Font v2", link: "#def"}]
+                        },
+                    ]
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="intro block">
@@ -46,11 +125,13 @@
                         <p class="length">3:45</p>
                     </div>
                     <ul class="tags">
+                        <li class="tag tagFirst"><p>First Release</p></li>
                         <li class="tag tagReRelease"><p>Rerelease</p></li>
                         <li class="tag tagRemix"><p>Remix</p></li>
                         <li class="tag tagInstrumental"><p>Instrumental</p></li>
                         <li class="tag tagOriginal"><p>Original</p></li>
                         <li class="tag tagLive"><p>Live Performance</p></li>
+                        <li class="tag tagCover"><p>Cover</p></li>
                         <li class="tag tagNotC40"><p>Not Crush 40</p></li>
                     </ul>
                 </li>-->

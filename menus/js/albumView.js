@@ -16,64 +16,6 @@ let physicalObiLeftTranslation;
 let bookletNavLeft;
 let bookletNavRight;
 
-let a = {
-    title: "abc",
-    description: "a",
-    releaseYear: 2007,
-    playbackLength: "34:24",
-    tracks: 
-    [
-        { title: "Thing", playbackLength: "2:53", tags: [ 'rerelease', 'instrumental' ] }
-    ],
-    physicalCover: 
-    {
-        imgSrc: "../img/content/discography/SuperSonicSongs.png",
-        backgrounds: [ { title: "A Test Background", link: "#abc"}],
-        fonts: [ { title: "A Test Font", link: "#def"}]
-    },
-    physicalBack:
-    {
-        imgSrc: "../img/content/discography/physical/SSS/Back.jpg",
-        backgrounds: [ { title: "A Test Background", link: "#abc"}],
-        fonts: [ { title: "A Test Font", link: "#def"}]
-    },
-    physicalObi:
-    {
-        imgSrc: "../img/content/discography/physical/SSS/Obi.jpg",
-        rightTranslation: `
-            <p>This is the right translation</p>
-        `,
-        middleTranslation: `
-            <p>This is the middle translation</p>
-        `,
-        leftTranslation: `
-            <p>This is the left translation</p>
-        `
-    },
-    physicalTray:
-    {
-        imgSrc: "../img/content/discography/physical/SSS/Tray.jpg",
-        backgrounds: [ { title: "A Test Background", link: "#abc"}],
-        fonts: [ { title: "A Test Font", link: "#def"}]
-    },
-    bookletPageSourcePrefix: '../img/content/discography/physical/SSS/',
-    bookletPages:
-    [
-        {
-            backgrounds: [ { title: "A Test Background", link: "#abc"}],
-            fonts: [ { title: "A Test Font", link: "#def"}]
-        },
-        {
-            backgrounds: [ { title: "Another Thing", link: "#abc"}],
-            fonts: [ { title: "Another Font", link: "#def"}]
-        },
-        {
-            backgrounds: [ { title: "Another Thing v2", link: "#abc"}],
-            fonts: [ { title: "Another Font v2", link: "#def"}]
-        },
-    ]
-};
-
 window.addEventListener('load', () => {
     title = document.querySelector(".intro > .title");
     description = document.querySelector(".description > .text");
@@ -102,7 +44,7 @@ window.addEventListener('load', () => {
 
     window.parent.postMessage('800px', '*');
 
-    Populate(a);
+    Populate(Albums["thrill"]);
 });
 
 function Populate(album)
@@ -151,15 +93,30 @@ function CreateTrack(track)
     trackMain.appendChild(title);
     trackMain.appendChild(playbackLen);
 
-    // Tags:
-    let tags = document.createElement("ul");
-    tags.classList.add("tags");
-
-    for (let tagId of track.tags)
-        tags.appendChild(CreateTag(tagId));
-
     newTrack.appendChild(trackMain);
-    newTrack.appendChild(tags);
+
+    // Tags
+    if (track.tags)
+    {
+        let tags = document.createElement("ul");
+        tags.classList.add("tags");
+    
+        for (let tagId of track.tags)
+            tags.appendChild(CreateTag(tagId));
+
+        newTrack.appendChild(tags);
+    }
+
+    // Description
+    if (track.description)
+    {
+        let description = document.createElement("p");
+        description.classList.add("description");
+        description.innerHTML = track.description;
+
+        newTrack.appendChild(description);
+    }
+
     return newTrack;
 }
 
@@ -167,6 +124,8 @@ function CreateTag(id)
 {
     switch (id)
     {
+        case "first":
+            return CreateTagWith("tagFirst", "First Release");
         case "rerelease":
             return CreateTagWith("tagReRelease", "Rerelease");
         case "remix":
@@ -177,6 +136,8 @@ function CreateTag(id)
             return CreateTagWith("tagOriginal", "Original");
         case "live":
             return CreateTagWith("tagLive", "Live Performance");
+        case "cover":
+            return CreateTagWith("tagCover", "Cover");
         case "notC40":
             return CreateTagWith("tagNotC40", "Not Crush 40");
         default:
