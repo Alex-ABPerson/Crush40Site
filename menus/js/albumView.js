@@ -172,7 +172,7 @@ function PopulateFacts(info, elem)
 {
     elem.replaceChildren();
     
-    if (info.backgrounds.length > 0)
+    if (info.backgrounds)
     {
         let fact = CreateFact('../img/icons/background.svg', 'Backgrounds');
 
@@ -182,7 +182,7 @@ function PopulateFacts(info, elem)
         elem.appendChild(fact.parent);
     }
 
-    if (info.fonts.length > 0)
+    if (info.fonts)
     {
         let fact = CreateFact('../img/icons/font.svg', 'Fonts');
 
