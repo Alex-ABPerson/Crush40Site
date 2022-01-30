@@ -229,6 +229,7 @@ function CreateFactItem(text, link)
     let newItm = document.createElement("li");
     let newLink = document.createElement("a");
     newLink.classList.add("contentsLink");
+    newLink.target = "_blank";
     newLink.href = link;
 
     let newPara = document.createElement("p");
