@@ -259,9 +259,25 @@ body {
 
 /* Physical */
 .physical .physicalTitle {
-    margin: 0;
     padding: 10px;
     background-color: var(--crush40-gray);
+}
+
+.physical .physicalTitleText {
+    margin: 0;
+}
+
+.physical .physicalTitleExpand {
+    font-size: 125%;
+    font-style: italic;
+
+    visibility: collapse; /* Smallscreen */
+}
+
+.physical .physicalTitleExpand img {
+    margin-top: -3px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .physical .cd {
@@ -309,7 +325,11 @@ body {
     }
 
     .physical .title {
-        margin: 30px;
+        margin: 30px 0;
+    }
+
+    .physical .physicalTitleExpand {
+        visibility: visible;
     }
 }
 
