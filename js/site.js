@@ -68,14 +68,7 @@ window.addEventListener('load', () => {
     document.querySelector(".floating .floatingClose").addEventListener('click', ClosePanel);
     document.querySelector(".floating .panel .titlebar .close").addEventListener('click', ClosePanel);
 
-    // Listen out for a message from the page in the frame when it loads - this will not only tell us how tall to make the panel,
-    // but will also confirm it's fully loaded.
-    window.addEventListener('message', (e) => {
-        currentPanelHeight = parseInt(e.data);
-        UpdatePanelSizing();
-        OnPanelLoad();
-    });
-
+    window.addEventListener('message', (e) => HandleMessage(e.data));
     window.addEventListener('resize', () => {
         UpdatePanelSizing();
     });
@@ -119,6 +112,48 @@ function OnPanelLoad()
 {
     floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;   
     StopLoading(floatingLoading);
+}
+
+function HandleMessage(msg) {
+    let msgCode = msg[0];
+    let msgContents = msg.substring(1);
+
+    switch (msgCode)
+    {
+        // Listen out for a message from the page in the frame when it loads - this will not only tell us how tall to make the panel,
+        // but will also confirm it's fully loaded.
+        case '!':
+            currentPanelHeight = parseInt(msgContents);
+            UpdatePanelSizing();
+            OnPanelLoad();
+            break;
+        // Zoom feature
+        case '^':
+            OpenZoom(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
+            break;
+    }
+}
+
+// Zoom
+let zoom;
+let zoomImg;
+
+window.addEventListener('load', () => {
+    zoom = document.querySelector("#zoom");
+    zoomImg = document.querySelector("#zoomImg");
+
+    zoom.addEventListener('click', CloseZoom);
+});
+
+function OpenZoom(imgSrc)
+{
+    zoom.style.visibility = 'visible';
+    zoomImg.src = imgSrc;
+}
+
+function CloseZoom()
+{
+    zoom.style.visibility = 'hidden';
 }
 
 // Parallax movement (e.g. guitar separator)

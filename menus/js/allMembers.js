@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
     });
 
     UpdateView();
-    window.parent.postMessage('400px', '*');
+    window.parent.postMessage('!400px', '*');
 });
 
 function UpdateView()

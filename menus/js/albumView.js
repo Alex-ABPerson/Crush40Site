@@ -38,8 +38,7 @@ window.addEventListener('load', () => {
         MoveNext();
     });
 
-    window.parent.postMessage('800px', '*');
-
+    window.parent.postMessage('!800px', '*');
     Populate(Albums["thrill"]);
 });
 

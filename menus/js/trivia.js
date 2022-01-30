@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
     tryAgainButton.addEventListener('click', () => TryAgain());
 
     LoadNext();
-    window.parent.postMessage('400px', '*');
+    window.parent.postMessage('!400px', '*');
 });
 
 function Submit() {
