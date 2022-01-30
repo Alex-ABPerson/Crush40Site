@@ -128,12 +128,12 @@
                 <ul class="featureList" id="featureList"></ul>
             </div>
 
-            <div class="featureInfo">
-                <h2>Sonic Team "PowerPlay"</h2>
-                <p>Sonic Team PowerPlay... That's a really odd name</p>
+            <div class="featureInfo" id="featureInfo">
+                <h2 id="featureTitle">Sonic Team "PowerPlay"</h2>
+                <p id="featureDescription">Sonic Team PowerPlay... That's a really odd name</p>
 
                 <h3 class="featuredTracksTitle">Featured Tracks</h3>
-                <ul class="featuredTracks">
+                <ul class="featuredTracks" id="featureTracks">
                     <li class="track">
                         <h4>A Song</h4>
                         <p>An absolute banger, of course!</p>
