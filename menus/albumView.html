@@ -48,19 +48,32 @@
                     },
                     physicalBack:
                     {
-                        imgSrc: "../img/content/discography/physical/Thrill/Back.jpg",
+                        imgSrc: "../img/content/discography/physical/Thrill/Back.jpg"
                     },
-                    physicalObi:
+                    obiFront:
                     {
-                        imgSrc: "../img/content/discography/physical/SSS/Obi.jpg",
+                        imgSrc: "../img/content/discography/physical/Thrill/Obi_Front.png",
                         rightTranslation: `
-                            <p>This is the right translation</p>
+                            <p><i>To be filled in</i></p>
                         `,
                         middleTranslation: `
-                            <p>This is the middle translation</p>
+                            <p><i>To be filled in</i></p>
                         `,
                         leftTranslation: `
-                            <p>This is the left translation</p>
+                            <p><i>To be filled in</i></p>
+                        `
+                    },
+                    obiBack:
+                    {
+                        imgSrc: "../img/content/discography/physical/Thrill/Obi_Back.png",
+                        rightTranslation: `
+                            <p><i>To be filled in</i></p>
+                        `,
+                        middleTranslation: `
+                            <p><i>To be filled in</i></p>
+                        `,
+                        leftTranslation: `
+                            <p><i>To be filled in</i></p>
                         `
                     },
                     physicalTray:
@@ -69,21 +82,21 @@
                         backgrounds: [ { title: "A Test Background", link: "#abc"}],
                         fonts: [ { title: "A Test Font", link: "#def"}]
                     },
-                    bookletPageSourcePrefix: '../img/content/discography/physical/SSS/',
+                    bookletPageSourcePrefix: '../img/content/discography/physical/Thrill/',
+                    bookletPageSourceExtension: '.jpg',
                     bookletPages:
                     [
-                        {
-                            backgrounds: [ { title: "A Test Background", link: "#abc"}],
-                            fonts: [ { title: "A Test Font", link: "#def"}]
-                        },
-                        {
-                            backgrounds: [ { title: "Another Thing", link: "#abc"}],
-                            fonts: [ { title: "Another Font", link: "#def"}]
-                        },
-                        {
-                            backgrounds: [ { title: "Another Thing v2", link: "#abc"}],
-                            fonts: [ { title: "Another Font v2", link: "#def"}]
-                        },
+                        { fonts: [ { title: "Impact", link: "https://www.dafontfree.io/impact-font/"} ] },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
                     ]
                 }
             }
@@ -171,36 +184,25 @@
                     </div>
                 </div>
 
-                <div id="obi" class="obi">
+                <div id="obiFront" class="obi">
                     <div class="info">
                         <h3 class="title">Obi Strip</h3>
                         <div class="translations">
                             <div class="translation">
                                 <h4>Right</h4>
-                                <div id="obiRightText">
-                                    <p>Some text to pad this section out!</p>
-                                    <p>Some text to pad this section out!</p>
-                                    <p>Some text to pad this section out!</p>
-                                    <p>Some text to pad this section out!</p>
-                                    <p>Some text to pad this section out!</p>
-                                    <p>Some text to pad this section out!</p>
-                                </div>
+                                <div class="obiRightText"></div>
                             </div>
                             <div class="translation">
                                 <h4>Middle</h4>
-                                <div id="obiMiddleText">
-                                    <p>Some more text to pad this section out!</p>
-                                </div>
+                                <div class="obiMiddleText"></div>
                             </div>
                             <div class="translation">
                                 <h4>Left</h4>
-                                <div id="obiLeftText">
-                                    <p>Even more text to pad this section out!</p>
-                                </div>
+                                <div class="obiLeftText"></div>
                             </div>
                         </div>
                     </div>
-                    <img class="img" id="obiImg" src="../img/content/discography/physical/SSS/Obi.png">
+                    <img class="img" src="../img/content/discography/physical/SSS/Obi.png">
                 </div>
 
                 <div id="tray" class="coverings tray">
@@ -209,6 +211,27 @@
                         <img id="tray" class="img coverImg" src="../img/content/discography/physical/SSS/Tray.jpg">
                         <div class="facts"></div>
                     </div>
+                </div>
+
+                <div id="obiBack" class="obi">
+                    <div class="info">
+                        <h3 class="title">Obi Strip Back</h3>
+                        <div class="translations">
+                            <div class="translation">
+                                <h4>Right</h4>
+                                <div class="obiRightText"></div>
+                            </div>
+                            <div class="translation">
+                                <h4>Middle</h4>
+                                <div class="obiMiddleText"></div>
+                            </div>
+                            <div class="translation">
+                                <h4>Left</h4>
+                                <div class="obiLeftText"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img" id="obiImg" src="../img/content/discography/physical/SSS/Obi.png">
                 </div>
 
                 <div class="booklet">

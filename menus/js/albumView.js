@@ -9,10 +9,8 @@ let physicalCover;
 let physicalBack;
 let physicalTray;
 let physicalBooklet;
-let physicalObiImg;
-let physicalObiRightTranslation;
-let physicalObiMiddleTranslation;
-let physicalObiLeftTranslation;
+let physicalObiFront;
+let physicalObiBack;
 let bookletNavLeft;
 let bookletNavRight;
 
@@ -25,12 +23,10 @@ window.addEventListener('load', () => {
     trackList = document.querySelector(".tracks > .trackList");
     physicalCover = document.querySelector(".physical #cover");
     physicalBack = document.querySelector(".physical #back");
-    physicalObiImg = document.querySelector(".physical #obiImg");
-    physicalObiRightTranslation = document.querySelector(".physical #obiRightText");
-    physicalObiMiddleTranslation = document.querySelector(".physical #obiMiddleText");
-    physicalObiLeftTranslation = document.querySelector(".physical #obiLeftText");
     physicalTray = document.querySelector(".physical #tray");
     physicalBooklet = document.querySelector(".physical #booklet");
+    physicalObiFront = document.querySelector(".physical #obiFront");
+    physicalObiBack = document.querySelector(".physical #obiBack");
     bookletNavLeft = document.querySelector(".physical #bookletNavLeft");
     bookletNavRight = document.querySelector(".physical #bookletNavRight");
 
@@ -54,10 +50,6 @@ function Populate(album)
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
-    physicalObiImg.src = album.physicalObi.imgSrc;
-    physicalObiRightTranslation.innerHTML = album.physicalObi.rightTranslation;
-    physicalObiMiddleTranslation.innerHTML = album.physicalObi.middleTranslation;
-    physicalObiLeftTranslation.innerHTML = album.physicalObi.leftTranslation;
 
     for (let track of album.tracks)
         trackList.appendChild(CreateTrack(track));
@@ -65,9 +57,16 @@ function Populate(album)
     PopulatePhysicalImgDetails(album.physicalCover, physicalCover);
     PopulatePhysicalImgDetails(album.physicalBack, physicalBack);
     PopulatePhysicalImgDetails(album.physicalTray, physicalTray);
+    PopulateObiDetails(album.obiFront, physicalObiFront);
+    
+    if (album.obiBack)
+        PopulateObiDetails(album.obiBack, physicalObiBack);
+    else
+        physicalObiBack.style.visibility = 'collapse';
 
     currentBooklet = album.bookletPages;
     currentBookletPageSourcePrefix = album.bookletPageSourcePrefix;
+    currentBookletPageSourceExt = album.bookletPageSourceExtension;
     PopulateBookletInfo();
 }
 
@@ -159,6 +158,14 @@ function CreateTagWith(clas, text)
 }
 
 // Physical
+function PopulateObiDetails(obi, elem)
+{
+    elem.querySelector(".img").src = obi.imgSrc;
+    elem.querySelector(".obiRightText").innerHTML = obi.rightTranslation;
+    elem.querySelector(".obiMiddleText").innerHTML = obi.middleTranslation;
+    elem.querySelector(".obiLeftText").innerHTML = obi.leftTranslation;
+}
+
 function PopulatePhysicalImgDetails(info, elem)
 {
     let img = elem.querySelector(".img");
@@ -237,6 +244,7 @@ function CreateFactItem(text, link)
 var currentBookletPos = 0;
 var currentBooklet;
 var currentBookletPageSourcePrefix;
+var currentBookletPageSourceExt;
 
 function PopulateBookletInfo()
 {
@@ -244,7 +252,7 @@ function PopulateBookletInfo()
     bookletNavRight.style.visibility = currentBookletPos == currentBooklet.length - 1 ? 'hidden' : 'visible';
 
     let currentPage = currentBooklet[currentBookletPos];
-    currentPage.imgSrc = currentBookletPageSourcePrefix + 'Booklet' + currentBookletPos + ".png";
+    currentPage.imgSrc = currentBookletPageSourcePrefix + 'Booklet' + currentBookletPos + currentBookletPageSourceExt;
     PopulatePhysicalImgDetails(currentPage, physicalBooklet);
 }
 
