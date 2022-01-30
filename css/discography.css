@@ -192,3 +192,78 @@
     background-image: url('../img/visuals/Background/Discography/DTF.jpg');
     background-position: center;
 }
+
+.features {
+    font-size: 125%;
+    background-color: white;
+    color: black;
+
+    display: grid;
+    grid-template-areas: "main info";
+    grid-template-columns: 1fr auto;
+}
+
+.features-main {
+    grid-area: main;
+
+    color: black;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.featureList {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.featureList .feature img {
+    border: solid 5px black;
+    width: 200px;
+}
+
+.featureInfo {
+    padding: 10px;
+    padding-top: 150px;
+    background-color: var(--crush40-blue-pale);
+    grid-area: info;
+    width: 500px;
+
+    color: white;
+    text-align: center;
+
+    overflow-y: visible;
+}
+
+.featuredTracksTitle {
+    margin-top: 50px;
+}
+
+.featuredTracks {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    padding: 10px;
+}
+
+.featuredTracks .track {
+    padding: 0 5px;
+    background-color: var(--crush40-red-pale);
+    margin: 5px;
+
+    min-width: 300px;
+
+    cursor: pointer;
+}
+
+.featuredTracks .track:hover {
+    background-color: var(--crush40-red-pale-hover);   
+}

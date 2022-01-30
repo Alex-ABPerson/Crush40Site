@@ -13,12 +13,8 @@
 
         <!-- Crush 40 JavaScript -->
         <script src="js/loading-bar.js"></script>
+        <script src="js/discography.js"></script>
         <script src="js/site.js"></script>
-        <script>
-            window.addEventListener('load', () => {
-                UpdateNavbarPageSelection("navDiscography");
-            });
-        </script>
     </head>
     <body>
         <?php include('base/bodyStart.html') ?>
@@ -54,7 +50,7 @@
                     <h2 class="title">Thrill of the Feel</h2>
                     <p>This is where it all began; the first album put out by the band themselves! <i>Thrill Of The Feel</i> is comprised of all the songs recorded by a full band in the video game EA Sports NASCAR Arcade.</p>
                     <p>Interestingly, some songs on this album do not have any vocals, making this album the only one released by the band to feature instrumental tracks.</p>
-                    <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, officially making the music made for this game series a part of the band's canon..</p>
+                    <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, officially making the music made for this game series a part of the band's canon.</p>
                     <button data-action="panel" data-page-name="albumView" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
@@ -123,6 +119,28 @@
                 <img class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>
         </ol>
+
+        <div class="features section">
+            <div class="features-main">
+                <h1>Features</h1>
+                <p>Given their presence in video games, Crush 40 has been featured in a number of releases/soundtracks over the years, this is a complete list of every non-Crush 40 album they're featured in.</p>
+
+                <ul class="featureList" id="featureList"></ul>
+            </div>
+
+            <div class="featureInfo">
+                <h2>Sonic Team "PowerPlay"</h2>
+                <p>Sonic Team PowerPlay... That's a really odd name</p>
+
+                <h3 class="featuredTracksTitle">Featured Tracks</h3>
+                <ul class="featuredTracks">
+                    <li class="track">
+                        <h4>A Song</h4>
+                        <p>An absolute banger, of course!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <?php include('base/bodyEnd.html') ?>
     </body>
