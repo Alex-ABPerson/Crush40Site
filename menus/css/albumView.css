@@ -258,7 +258,7 @@ body {
 }
 
 /* Physical */
-.physical > .title {
+.physical .physicalTitle {
     margin: 0;
     padding: 10px;
     background-color: var(--crush40-gray);
@@ -290,6 +290,10 @@ body {
     height: 100%;
 }
 
+.physical .title {
+    margin: 10px 0 5px 0;
+}
+
 @media (min-width: 1000px) {
     .physical {
         overflow: auto;
@@ -302,6 +306,10 @@ body {
 
     .physical .cd {
         width: 100%;
+    }
+
+    .physical .title {
+        margin: 30px;
     }
 }
 
@@ -346,12 +354,12 @@ body {
     }
 
     .physical .imgDetails .facts {
-        max-height: 290px;
+        max-height: 320px;
     }
 
     .physical .imgDetails .img {
         width: unset;
-        height: 290px;
+        height: 320px;
         object-fit: scale-down;
     }
 
@@ -477,7 +485,7 @@ body {
 
     /* Smallscreen */
     width: 300px;
-    height: 310px;
+    height: 340px;
     overflow: auto;
 }
 
@@ -508,7 +516,7 @@ body {
 
 .physical .booklet .explore {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Smallscreen */
     align-items: center;
     justify-content: center;
 }
@@ -529,13 +537,36 @@ body {
 }
 
 .physical .booklet .explore .img {
-    max-height: 300px;
+    max-height: 230px;
+}
+
+.navLeft, .navRight {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 100ms ease-in-out;
+    transform: rotate(90deg);
+}
+
+.navLeft:hover {
+    grid-area: navLeft;
+    transform: rotate(90deg) translateX(-5px); /* Smallscreen */
+}
+
+.navRight:hover {
+    grid-area: navRight;
+    transform: rotate(90deg) translateX(5px);
 }
 
 @media (min-width: 1000px) {
     .physical .booklet {
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .physical .booklet .explore {
+        flex-direction: row;
     }
 
     .physical .booklet .explore .content {
@@ -551,24 +582,18 @@ body {
         width: 100%;
         max-height: unset;
     }
-}
 
-.navLeft, .navRight {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    .navLeft, .navRight {
+        transform: none;
+    }
 
-    transition: transform 100ms ease-in-out;
-}
+    .navLeft:hover {
+        transform: translateX(-5px);
+    }
 
-.navLeft:hover {
-    grid-area: navLeft;
-    transform: translateX(-5px);
-}
-
-.navRight:hover {
-    grid-area: navRight;
-    transform: translateX(5px);
+    .navRight:hover {
+        transform: translateX(5px);
+    }
 }
 
 /*body {
