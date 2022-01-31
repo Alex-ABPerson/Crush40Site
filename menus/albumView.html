@@ -11,6 +11,7 @@
         <link href="css/albumView.css" rel="stylesheet">
 
         <script src="../js/loading-bar.js"></script>
+        <script src="js/menuZoom.js"></script>
         <script src="js/albumView.js"></script>
         <script>
             var Albums = {
@@ -156,13 +157,13 @@
 
             <div class="content">
                 <div class="cd">
-                    <img class="cdImg" src="../img/content/discography/physical/SSS/CD.png">
+                    <img class="cdImg" src="../img/content/discography/physical/SSS/CD.png" data-action='zoom'>
                 </div>
 
                 <div class="coverings outerCoverings">
                     <div id="cover" class="imgDetails imgDetailsLeft">
                         <h3 class="title">Cover</h3>
-                        <img class="img" src="../img/content/discography/SuperSonicSongs.png">
+                        <img class="img" src="../img/content/discography/SuperSonicSongs.png" data-action='zoom'>
                         <div class="facts">
                             <!--<div class="fact">
                                 <img class="icon" src="../img/icons/background.svg">
@@ -182,7 +183,7 @@
                     </div>
                     <div id="back" class="imgDetails imgDetailsRight">
                         <h3 class="title">Back</h3>
-                        <img class="img" src="../img/content/discography/physical/SSS/Back.jpg">
+                        <img class="img" src="../img/content/discography/physical/SSS/Back.jpg" data-action='zoom'>
                         <div class="facts"></div>
                     </div>
                 </div>
@@ -205,13 +206,13 @@
                             </div>
                         </div>
                     </div>
-                    <img class="img" src="../img/content/discography/physical/SSS/Obi.png">
+                    <img class="img" src="../img/content/discography/physical/SSS/Obi.png" data-action='zoom'>
                 </div>
 
                 <div id="tray" class="coverings tray">
                     <div class="imgDetails imgDetailsRight">
                         <h3 class="title">Tray</h3>
-                        <img id="tray" class="img coverImg" src="../img/content/discography/physical/SSS/Tray.jpg">
+                        <img id="tray" class="img coverImg" src="../img/content/discography/physical/SSS/Tray.jpg" data-action='zoom'>
                         <div class="facts"></div>
                     </div>
                 </div>
@@ -234,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="img" id="obiImg" src="../img/content/discography/physical/SSS/Obi.png">
+                    <img class="img" id="obiImg" src="../img/content/discography/physical/SSS/Obi.png" data-action='zoom'>
                 </div>
 
                 <div class="booklet">
@@ -243,7 +244,7 @@
                     <div class="explore">
                         <button id="bookletNavLeft" class="navLeft" title="Navigate Left"><img src="../img/icons/largeLeftArrow.svg" alt="Left Arrow"></button>
                         <div class="content" id="booklet">
-                            <img class="img" src="../img/content/discography/SuperSonicSongs.png">
+                            <img class="img" src="../img/content/discography/SuperSonicSongs.png" data-action='zoom'>
                             <div class="facts"></div>
                         </div>
                         <button id="bookletNavRight" class="navRight" title="Navigate Right"><img src="../img/icons/largeRightArrow.svg" alt="Right Arrow"></button>

@@ -239,6 +239,10 @@ html, body {
     max-height: 90%;
 }
 
+[data-action='zoom'] {
+    cursor: pointer;
+}
+
 /* NAVBAR */
 .nav {
     position: fixed;
