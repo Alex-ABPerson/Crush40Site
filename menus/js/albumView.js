@@ -41,7 +41,6 @@ window.addEventListener('load', () => {
     bookletNavRight.addEventListener('click', () => {
         MoveNext();
     });
-    
 
     let physicalContent = document.querySelector(".physical #physicalContent");
 
@@ -59,6 +58,7 @@ function Populate(album)
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
+    physical.style.backgroundImage = "url(" + album.physicalBg + ")";
     physicalDisc.src = album.discImg;
 
     for (let track of album.tracks)
