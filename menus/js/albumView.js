@@ -33,7 +33,6 @@ window.addEventListener('load', () => {
     physicalObiBack = document.querySelector(".physical #obiBack");
     bookletNavLeft = document.querySelector(".physical #bookletNavLeft");
     bookletNavRight = document.querySelector(".physical #bookletNavRight");
-
     
     bookletNavLeft.addEventListener('click', () => {
         MovePrev();
@@ -47,7 +46,7 @@ window.addEventListener('load', () => {
     let physicalContent = document.querySelector(".physical #physicalContent");
 
     physical.addEventListener("scroll", () => UpdateDiscSpin(physical.scrollTop));
-    physicalContent.addEventListener("scroll", () => UpdateDiscSpin(physical.scrollLeft));
+    physicalContent.addEventListener("scroll", () => UpdateDiscSpin(physicalContent.scrollLeft));
 
     window.parent.postMessage('!800px', '*');
     Populate(Albums["thrill"]);
