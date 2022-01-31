@@ -290,6 +290,8 @@ body {
     padding: 20px;
 
     box-sizing: border-box;
+
+    transition: transform 0.1s ease-out;
 }
 
 .physical .content {
@@ -299,7 +301,6 @@ body {
 }
 
 .physical .cd .cdImg {
-    transform: rotate(6deg);
     position: relative;
     height: 100%;
 }

@@ -5,6 +5,8 @@ let statYear;
 let statTracks;
 let statLength;
 let trackList;
+let physical;
+let physicalDisc;
 let physicalCover;
 let physicalBack;
 let physicalTray;
@@ -21,6 +23,8 @@ window.addEventListener('load', () => {
     statTracks = document.querySelector(".intro > .stats > .statTrackCount > .statVal");
     statLength = document.querySelector(".intro > .stats > .statLength > .statVal");
     trackList = document.querySelector(".tracks > .trackList");
+    physical = document.querySelector("#physical");
+    physicalDisc = document.querySelector(".physical #disc");
     physicalCover = document.querySelector(".physical #cover");
     physicalBack = document.querySelector(".physical #back");
     physicalTray = document.querySelector(".physical #tray");
@@ -30,13 +34,20 @@ window.addEventListener('load', () => {
     bookletNavLeft = document.querySelector(".physical #bookletNavLeft");
     bookletNavRight = document.querySelector(".physical #bookletNavRight");
 
+    
     bookletNavLeft.addEventListener('click', () => {
         MovePrev();
     });
-
+    
     bookletNavRight.addEventListener('click', () => {
         MoveNext();
     });
+    
+
+    let physicalContent = document.querySelector(".physical #physicalContent");
+
+    physical.addEventListener("scroll", () => UpdateDiscSpin(physical.scrollTop));
+    physicalContent.addEventListener("scroll", () => UpdateDiscSpin(physical.scrollLeft));
 
     window.parent.postMessage('!800px', '*');
     Populate(Albums["thrill"]);
@@ -49,6 +60,7 @@ function Populate(album)
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
+    physicalDisc.src = album.discImg;
 
     for (let track of album.tracks)
         trackList.appendChild(CreateTrack(track));
@@ -266,4 +278,10 @@ function MoveNext()
 {
     currentBookletPos++;
     PopulateBookletInfo();
+}
+
+// Disc Spin
+function UpdateDiscSpin(scrollPos)
+{
+    physicalDisc.style.transform = "rotate(" + scrollPos % 360 / 5 + "deg)";
 }
