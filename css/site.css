@@ -232,6 +232,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    visibility: hidden;
 }
 
 .zoom img {
