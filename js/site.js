@@ -99,7 +99,9 @@ function OpenPanel()
 
 function ChangePanelSrc(newSrc)
 {
-    floatingPanelFrame.src = "menus/" + newSrc + ".html";
+    let bothParts = newSrc.split('#');
+
+    floatingPanelFrame.src = "menus/" + bothParts[0] + ".html" + (bothParts.length > 1 ? "#" + bothParts[1] : "");
 }
 
 function ClosePanel()

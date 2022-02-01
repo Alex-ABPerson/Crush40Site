@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
     physicalContent.addEventListener("scroll", () => UpdateDiscSpin(physicalContent.scrollLeft));
 
     window.parent.postMessage('!800px', '*');
-    Populate(Albums["thrill"]);
+    Populate(Albums[document.URL.split('#')[1].toLowerCase()]);
 });
 
 function Populate(album)
@@ -58,7 +58,7 @@ function Populate(album)
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
-    physical.style.backgroundImage = "url(" + album.physicalBg + ")";
+    physical.style.backgroundImage = "url('" + album.physicalBg + "')";
     physicalDisc.src = album.discImg;
 
     for (let track of album.tracks)
