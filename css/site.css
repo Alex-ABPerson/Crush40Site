@@ -65,6 +65,9 @@ html, body {
 }
 
 .closeButton {
+    margin: 0;
+    padding: 20px;
+
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -204,14 +207,6 @@ html, body {
     font-size: 125%;
     margin: 0;
     padding: 20px;
-}
-
-.floating .panel .titlebar .close {
-    margin-right: 10px;
-    margin: 0;
-    padding: 20px;
-
-    cursor: hand;
 }
 
 .floating .panel .titlebar .close:hover {

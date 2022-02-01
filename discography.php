@@ -53,7 +53,7 @@
                     <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, officially making the music made for this game series a part of the band's canon.</p>
                     <button data-action="panel" data-page-name="albumView?a=Thrill" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
             </div>
             <li class="album albumRight albumC40">
                 <div class="info">
@@ -63,7 +63,7 @@
                     <p>This album marks the first time the name "Crush 40" was used, and the name "Crush 40" would be carried over to the game <i>Sonic Heroes</i>, which would be released later in 2003.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
             </div>
             <li class="album albumLeft albumSSS">
                 <div class="info">
@@ -74,7 +74,7 @@
                     <p>While the original CD release of <i>Super Sonic Songs</i> did not feature any bonus tracks, a few years after its release, the album was placed on digital platforms with 3 bonus tracks; these tracks were not new, however, and could be heard elsewhere.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/SuperSonicSongs.png" alt="'Super Sonic Songs' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/SuperSonicSongs.png" alt="'Super Sonic Songs' Album Cover">
             </div>
             <li class="album albumRight albumRiseAgain">
                 <div class="info">
@@ -84,7 +84,7 @@
                     <p>There exists a variant of this EP which was available to be purchased at the Sonic Boom 2012 event that excluded the track "Song of Hope".</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this EP</button>
                 </div>
-                <img class="img" src="img/content/discography/RiseAgain.jpg" alt="'Rise Again' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/RiseAgain.jpg" alt="'Rise Again' Album Cover">
                 <!--<div class="albumBackground"></div>-->
             </div>
             <li class="album albumLeft albumLive">
@@ -95,7 +95,7 @@
                     <p>All 24 songs performed at these shows were released, with the exception of a cover of Hardline's "Everything", which has not yet been released due to copyright concerns.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/LIVE!.png"  alt="'LIVE!' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/LIVE!.png"  alt="'LIVE!' Album Cover">
             </div>
             <li class="album albumRight album2N2R">
                 <div class="info">
@@ -105,7 +105,7 @@
                     <p>The <i>2 Nights 2 Remember</i> live performances was at Live Stage Guilty, on March 29th 2014 and March 30th 2014. Once again, both shows were professionally recorded and put on the CD in exactly the same manner as <i>Live!</i>. Unfortunately, only approximately half of the performance was featured on this CD and all subsequent digital releases, due to the limited size of the CD medium.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/2N2R.png" alt="'2 Nights 2 Remember' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/2N2R.png" alt="'2 Nights 2 Remember' Album Cover">
                 <div class="back"></div>
             </div>
             <li class="album albumLeft albumDrivingThroughForever">
@@ -116,7 +116,7 @@
                     <p>Like the previous compilation album, <i>Driving Through Forever</i> contains both a new mix on one of the song, and a new song, "Call Me Crazy", which had only ever been performed live before the album was released, at the Japan Game Music Festival II:RE.</p>
                     <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
-                <img class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
+                <img data-action="zoom" class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>
         </ol>
 

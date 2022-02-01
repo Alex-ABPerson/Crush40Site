@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- Image -->
-                <img src="img/content/Both1.jpg" class="stripImg" alt="Johnny Gioeli & Jun Senoue">
+                <img data-action="zoom" src="img/content/Both1.jpg" class="stripImg" alt="Johnny Gioeli & Jun Senoue">
             </div>
             
             <!-- Band Members -->
@@ -78,9 +78,9 @@
                 </div>
 
                 <p class="johnnyDesc">Pelting out strong rock melodies you can't avoid singing along to!</p>
-                <img class="johnnyImg img" src="img/content/Johnny_Ring.png" alt="Johnny Gioeli">
+                <img data-action="zoom" class="johnnyImg img" src="img/content/Johnny_Ring.png" alt="Johnny Gioeli">
 
-                <img class="johnnyTogetherImg" src="img/content/JohnnyAndJun.png" alt="Johnny & Jun">
+                <img data-action="zoom" class="johnnyTogetherImg" src="img/content/JohnnyAndJun.png" alt="Johnny & Jun">
 
                 <div class="centreSeparator" data-parallax="backgroundY" data-parallax-speed="4" data-parallax-change-at="1000"></div>
 
@@ -88,7 +88,7 @@
                 <p class="junIndicator indicator">GUITAR</p>
                 <h4 class="junTitle title"><span style="font-size: 180%;">Jun</span> Senoue</h4>
                 <p class="junDesc">Laying down irresistable lead and rhythm for every song!</p>
-                <img class="junImg img" src="img/content/Jun_Ring.png" alt="Jun Senoue">
+                <img data-action="zoom" class="junImg img" src="img/content/Jun_Ring.png" alt="Jun Senoue">
 
                 <div class="junMrJun">
                     <h5>"Mr Jun Senoue!"</h5>
@@ -108,7 +108,7 @@
                     <button style="font-size: 100%" class="emptyButton btnWidthWide" data-action="panel" data-page-name="allMembers">View other members</button>
                 </div>
 
-                <img src="img/content/members/Together.png" class="stripImg" alt="Crush 40 with full band">
+                <img data-action="zoom" src="img/content/members/Together.png" class="stripImg" alt="Crush 40 with full band">
             </div>
 
             <!-- Why "Crush 40"? -->

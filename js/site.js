@@ -56,6 +56,7 @@ var floatingLoading;
 var floatingPanelTitle;
 var floatingPanelFrame;
 var currentPanelHeight;
+var panelOpen = false;
 
 window.addEventListener('load', () => {
     
@@ -92,6 +93,8 @@ function UpdatePanelSizing() {
 
 function OpenPanel()
 {
+    panelOpen = true;
+
     StartLoading(floatingLoading);
     floating.style.visibility = 'visible';
     DisableScroll();
@@ -106,6 +109,8 @@ function ChangePanelSrc(newSrc)
 
 function ClosePanel()
 {
+    panelOpen = false;
+
     EnableScroll();
     floating.style.visibility = 'collapse';
 }
@@ -144,6 +149,14 @@ window.addEventListener('load', () => {
     zoom = document.querySelector("#zoom");
     zoomImg = document.querySelector("#zoomImg");
 
+    for (let itm of document.querySelectorAll("[data-action='zoom']"))
+    {
+        itm.addEventListener('click', () => {
+            DisableScroll();
+            OpenZoom(itm.src);
+        });
+    }
+
     zoom.addEventListener('click', CloseZoom);
 });
 
@@ -156,6 +169,10 @@ function OpenZoom(imgSrc)
 function CloseZoom()
 {
     zoom.style.visibility = 'hidden';
+
+    // If we're not in a menu, enable scrolling again.
+    if (!panelOpen)
+        EnableScroll();
 }
 
 // Parallax movement (e.g. guitar separator)
