@@ -138,6 +138,10 @@ body {
     background-color: var(--crush40-red-pale);
     margin: 5px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     min-width: 300px;
 
     cursor: pointer;
