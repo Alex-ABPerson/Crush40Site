@@ -48,7 +48,9 @@ window.addEventListener('load', () => {
     physicalContent.addEventListener("scroll", () => UpdateDiscSpin(physicalContent.scrollLeft));
 
     window.parent.postMessage('!800px', '*');
-    Populate(Albums[document.URL.split('#')[1].toLowerCase()]);
+
+    let afterQ = document.URL.split('?')[1].substring(2); // Trim off the "a="
+    Populate(Albums[afterQ.toLowerCase()]);
 });
 
 function Populate(album)

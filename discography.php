@@ -51,7 +51,7 @@
                     <p>This is where it all began; the first album put out by the band themselves! <i>Thrill Of The Feel</i> is comprised of all the songs recorded by a full band in the video game EA Sports NASCAR Arcade.</p>
                     <p>Interestingly, some songs on this album do not have any vocals, making this album the only one released by the band to feature instrumental tracks.</p>
                     <p>This album also includes the song "Open Your Heart" from <i>Sonic Adventure</i> as a bonus track, officially making the music made for this game series a part of the band's canon.</p>
-                    <button data-action="panel" data-page-name="albumView#Thrill" class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView?a=Thrill" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img class="img" src="img/content/discography/ThrillOfTheFeel.jpg" alt="'Thrill of the Feel' Album Cover">
             </div>
