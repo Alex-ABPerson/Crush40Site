@@ -9,8 +9,9 @@ let features = [
         ]
     },
     { 
-        img: "SongsWithAttitude.jpg",
+        title: "SONICTEAM \"PowerPlay\"",
         desc: "This is a compilation of tracks produced by Sonic Team at the time - primilarly the songs they produced for the <i>Sega Saturn</i>.",
+        img: "SongsWithAttitude.jpg",
         tracks: [
             { t: "Open Your Heart", d: "This was featured as a <i>hidden track</i> on CD - as Sonic Adventure would not come out until another three weeks after." }
         ]
@@ -25,6 +26,7 @@ let featureInfo;
 let featureInfoTitle;
 let featureInfoDescription;
 let featureInfoTracks;
+let selectedFeatureItemTxt;
 
 window.addEventListener('load', () => {
     UpdateNavbarPageSelection("navDiscography");
@@ -47,29 +49,55 @@ window.addEventListener('load', () => {
 
         let newElemHover = document.createElement("div");
         newElemHover.classList.add("hover");
-        newElemHover.innerHTML = "<p>Expand</p>";
+
+        // TODO: Add toggle closing!
+        let newElemHoverTxt = document.createElement("p");
+        newElemHoverTxt.innerText = "Expand";
+        newElemHover.appendChild(newElemHoverTxt);
+
         newElem.appendChild(newElemHover);
 
         newElem.addEventListener('click', () => {
 
+            // If it's already selected, close it.
+            if (newElemHoverTxt == selectedFeatureItemTxt)
+            {
+                HideFeatureInfo();
+                return;
+            }
+
             // Deselect everyone
-            for (let itm of featureList.querySelectorAll("li"))
-                itm.classList.remove("selected");
+            DeselectFeatures();
 
             // Select this one
+            selectedFeatureItemTxt = newElemHoverTxt;
+            selectedFeatureItemTxt.innerText = "Close";
             newElem.classList.add("selected");
 
             // Display the details
             ViewFeatureDetails(feature);
         });
 
+        document.querySelector("#featureInfoClose").addEventListener('click', HideFeatureInfo);
+
         featureList.appendChild(newElem);
     }
 });
 
+function DeselectFeatures()
+{
+    for (let itm of featureList.querySelectorAll("li"))
+        itm.classList.remove("selected");
+
+    if (selectedFeatureItemTxt)
+        selectedFeatureItemTxt.innerText = "Expand";
+
+    selectedFeatureItemTxt = null;
+}
+
 function ViewFeatureDetails(feature)
 {
-    featureInfo.style.visibility = 'visible';
+    ShowFeatureInfo();
     featureInfoTitle.innerText = feature.title;
     featureInfoDescription.innerHTML = feature.desc;
     
@@ -92,4 +120,18 @@ function ViewFeatureDetails(feature)
 
         featureInfoTracks.appendChild(newTrack);
     }
+}
+
+function ShowFeatureInfo()
+{
+    featureInfo.style.visibility = 'visible';
+    featureInfo.style.width = "var(--open-width)";
+}
+
+function HideFeatureInfo()
+{
+    DeselectFeatures();
+
+    featureInfo.style.visibility = 'collapse';
+    featureInfo.style.width = "0";
 }

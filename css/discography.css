@@ -256,7 +256,7 @@
     justify-content: center;
 }
 
-.featureList .feature:not(.selected):hover .hover {
+.featureList .feature:hover .hover {
     cursor: pointer;
     visibility: visible;
 }
@@ -266,12 +266,36 @@
     padding-top: 150px;
     background-color: var(--crush40-blue-pale);
     grid-area: info;
-    width: 500px;
+
+    --open-width: 500px;
+    width: 0;
+    visibility: hidden;
+
+    position: relative;
 
     color: white;
     text-align: center;
 
     overflow-y: visible;
+}
+
+@media (min-width: 1000px)
+{
+    .featureInfo {
+        --open-width: 500px;
+    }
+}
+
+.featureInfo .close {
+    position: absolute;
+    top: 165px;
+    right: 20px;
+
+    color: white;
+}
+
+.featureInfo .close:hover {
+    background-color: var(--crush40-blue-pale-hover);
 }
 
 .featuredTracksTitle {

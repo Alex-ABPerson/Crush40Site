@@ -129,6 +129,7 @@
             </div>
 
             <div class="featureInfo" id="featureInfo">
+                <button title="Close" class="close closeButton" id="featureInfoClose"><img src="img/icons/smallCloseButtonWhite.svg" alt="Close Icon"></button>
                 <h2 id="featureTitle">Sonic Team "PowerPlay"</h2>
                 <p id="featureDescription">Sonic Team PowerPlay... That's a really odd name</p>
 
