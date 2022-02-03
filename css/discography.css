@@ -201,6 +201,10 @@
     display: grid;
     grid-template-areas: "main info";
     grid-template-columns: 1fr auto;
+    height: 600px;
+
+    align-content: stretch;
+    justify-content: stretch;
 }
 
 .features-main {
@@ -222,6 +226,11 @@
 
     list-style-type: none;
     padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
 }
 
 .featureList .feature {
@@ -263,7 +272,7 @@
 
 .featureInfo {
     padding: 10px;
-    padding-top: 150px;
+    padding-top: 40px;
     background-color: var(--crush40-blue-pale);
     grid-area: info;
 
@@ -276,7 +285,9 @@
     color: white;
     text-align: center;
 
-    overflow-y: visible;
+    box-sizing: border-box;
+    height: 600px;
+    overflow-y: auto;
 }
 
 @media (min-width: 1000px)
@@ -288,8 +299,8 @@
 
 .featureInfo .close {
     position: absolute;
-    top: 165px;
-    right: 20px;
+    top: 5px;
+    right: 0;
 
     color: white;
 }
