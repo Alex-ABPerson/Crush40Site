@@ -16,8 +16,7 @@ body {
         "physical"
         "description";
 
-    padding-top: 5px;
-    padding-left: 5px;
+    gap: 5px;
     box-sizing: border-box;
 }
 
@@ -56,9 +55,6 @@ body {
 
 .block {
     background-color: var(--crush40-gray);
-    margin-right: 5px;
-    margin-bottom: 5px;
-
     padding: 0;
 }
 
@@ -256,6 +252,10 @@ body {
     grid-area: description;
     padding: 10px;
     overflow: auto;
+}
+
+.description h2 {
+    text-align: center;
 }
 
 .description p {
