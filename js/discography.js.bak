@@ -437,7 +437,7 @@ let featureMain;
 let selectedFeatureItemTxt;
 
 window.addEventListener('load', () => {
-    UpdateNavbarPageSelection("navDiscography");
+    //UpdateNavbarPageSelection("navDiscography");
 
     featuresSection = document.querySelector("#features");
     featureInfo = document.querySelector("#featureInfo");
