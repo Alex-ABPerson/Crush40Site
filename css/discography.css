@@ -194,32 +194,34 @@
 }
 
 .features {
+    position: relative;
+
     font-size: 125%;
     background-color: white;
     color: black;
 
-    display: grid;
-    grid-template-areas: "main info";
-    grid-template-columns: 1fr auto;
-    height: 600px;
-
     align-content: stretch;
     justify-content: stretch;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    /* Smallscreen */
+    --open-width: 100%;
+    --open-list-height: 450px;
+    --open-info-pos: relative;
 }
 
-.features-main {
-    grid-area: main;
-
-    color: black;
-    text-align: center;
-
+.featuresMain {
     box-sizing: border-box;
     padding: 0 10px;
 }
 
 .featureList {
+    grid-area: list;
+
     display: flex;
-    flex-direction: row;
+    
     gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
@@ -229,9 +231,121 @@
     margin: 0;
 
     width: 100%;
-    height: 600px;
-    overflow-y: scroll;
+
+    /* Smallscreen */
+    flex-direction: column;
+    height: 250px;
+    overflow-x: auto;
 }
+
+.featureInfo {
+    padding: 40px 10px 10px 10px;
+
+    padding-top: 40px;
+    background-color: var(--crush40-blue-pale);
+    grid-area: info;
+
+    width: 0;
+    visibility: hidden;
+
+    position: absolute;
+
+    color: white;
+    text-align: center;
+
+    box-sizing: border-box;
+
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.featuredTracks {
+    display: flex;
+    flex-direction: row; /* Smallscreen */
+    overflow-x: auto;
+    
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* Smallscreen */
+.featuresOpen .featuresMain {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.featuresOpen .featureInfo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1000px) and (min-height: 720px)
+{
+    .featureList {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .featuresMain {
+        height: 600px;
+        overflow-y: auto;
+    }
+
+    .featuresOpen .featuresMain {
+        width: calc(100% - var(--open-width));
+        height: 600px;
+        position: relative;
+    }
+
+    .featuresOpen .featureInfo {
+        position: absolute;
+        width: var(--open-width);
+        height: 100%;
+    }
+
+    .featuredTracks {
+        flex-direction: column;
+    }
+}
+
+.features {
+    --open-width: 400px;
+}
+
+@media (min-width: 1140px) {
+    .features {
+        --open-width: 500px; 
+    }
+}
+
+@media (min-width: 1400px) {
+    .features {
+        --open-width: 600px; 
+    }
+}
+
+/*@
+{
+
+    .featuredTracks .track {
+        width: auto;
+    }
+
+    .featuredTracks {
+        
+    }
+
+    .features {
+        --open-width: 500px;
+        --open-list-height: 600px;
+        --open-info-pos: absolute;
+    }
+}*/
 
 .featureList .feature {
     position: relative;
@@ -270,33 +384,6 @@
     visibility: visible;
 }
 
-.featureInfo {
-    padding: 10px;
-    padding-top: 40px;
-    background-color: var(--crush40-blue-pale);
-    grid-area: info;
-
-    --open-width: 500px;
-    width: 0;
-    visibility: hidden;
-
-    position: relative;
-
-    color: white;
-    text-align: center;
-
-    box-sizing: border-box;
-    height: 600px;
-    overflow-y: auto;
-}
-
-@media (min-width: 1000px)
-{
-    .featureInfo {
-        --open-width: 500px;
-    }
-}
-
 .featureInfo .close {
     position: absolute;
     top: 5px;
@@ -313,22 +400,18 @@
     margin-top: 50px;
 }
 
-.featuredTracks {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-
-    padding: 10px;
-}
-
 .featuredTracks .track {
-    padding: 0 5px;
+    padding: 10px;
     background-color: var(--crush40-red-pale);
     margin: 5px;
 
     min-width: 300px;
 
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .featuredTracks .track:hover {

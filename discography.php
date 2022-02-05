@@ -120,11 +120,10 @@
             </div>
         </ol>
 
-        <div class="features section">
-            <div class="features-main">
+        <div class="features section" id="features">
+            <div class="featuresMain" id="featuresMain">
                 <h1>Features</h1>
                 <p>Given their presence in video games, Crush 40 has been featured in a number of releases/soundtracks over the years, this is a complete list of every non-Crush 40 album they're featured in.</p>
-
                 <ul class="featureList" id="featureList"></ul>
             </div>
 

@@ -428,19 +428,23 @@ let features = [
     }
 ];
 
+let featuresSection;
 let featureInfo;
 let featureInfoTitle;
 let featureInfoDescription;
 let featureInfoTracks;
+let featureMain;
 let selectedFeatureItemTxt;
 
 window.addEventListener('load', () => {
     UpdateNavbarPageSelection("navDiscography");
 
+    featuresSection = document.querySelector("#features");
     featureInfo = document.querySelector("#featureInfo");
     featureInfoTitle = document.querySelector("#featureTitle");
     featureInfoDescription = document.querySelector("#featureDescription");
     featureInfoTracks = document.querySelector("#featureTracks");
+    featureMain = document.querySelector("#featuresMain");
 
     let featureList = document.querySelector("#featureList");
 
@@ -531,7 +535,7 @@ function ViewFeatureDetails(feature)
 function ShowFeatureInfo()
 {
     featureInfo.style.visibility = 'visible';
-    featureInfo.style.width = "var(--open-width)";
+    featuresSection.classList.add("featuresOpen");
 }
 
 function HideFeatureInfo()
@@ -539,5 +543,5 @@ function HideFeatureInfo()
     DeselectFeatures();
 
     featureInfo.style.visibility = 'collapse';
-    featureInfo.style.width = "0";
+    featuresSection.classList.remove("featuresOpen");
 }
