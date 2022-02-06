@@ -1,0 +1,46 @@
+body {
+    --separator-color: rgb(40, 40, 40);
+    background-color: var(--separator-color);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 500px auto 500px;
+    grid-template-areas:
+        "lyrics intro lists"
+        "lyrics desc lists"
+        "listen desc lists";
+    
+    gap: 5px;
+}
+
+.block {
+    background-color: var(--crush40-gray);
+    padding: 0;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.desc {
+    grid-area: desc;
+}
+
+.lyrics {
+    grid-area: lyrics;
+}
+
+.listen {
+    grid-area: listen;
+}
+
+.lists {
+    grid-area: lists;
+}
+
+.dimentiaFont {
+    font-family: 'Dimentia';
+    font-style: italic;
+    font-weight: 300;
+    color: red;
+}

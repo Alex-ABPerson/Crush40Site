@@ -1,7 +1,6 @@
 @import url('../../css/imgFacts.css');
 
 body {
-    --switch-point: 1260px;
     --separator-color: rgb(40, 40, 40);
     background-color: var(--separator-color);
 
