@@ -20,10 +20,29 @@ body {
 
 .intro {
     grid-area: intro;
+    background-color: var(--separator-color);
+    text-align: center;
 }
 
 .desc {
     grid-area: desc;
+    padding: 10px;
+}
+
+.desc p {
+    font-size: 120%;
+}
+
+.desc h2 {
+    text-align: center;
+}
+
+.desc .heading, .desc .subHeading {
+    text-align: center;
+}
+
+.desc .subHeading {
+    font-style: italic;
 }
 
 .lyrics {
