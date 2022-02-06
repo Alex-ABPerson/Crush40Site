@@ -1,7 +1,7 @@
 /* If you see this, you should REALLY come chat with us over on the Discord server! */
 @font-face {
-    font-family: 'Bahnschrift SemiLight';
-    src: url('../img/fonts/Bahnschrift-SemiLight.ttf');
+    font-family: 'Bahnschrift';
+    src: url('../img/fonts/Bahnschrift.ttf');
 }
 
 @font-face {
@@ -35,9 +35,14 @@ html, body {
 
     color: white;
 
-    font-family: 'Bahnschrift SemiLight', sans-serif;
+    font-family: 'Bahnschrift', sans-serif;
 
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 700;
 }
 
 .section {
