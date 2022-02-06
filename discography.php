@@ -91,9 +91,9 @@
                 <div class="info">
                     <p class="yearIndicator">2012</p>
                     <h2 class="title">Live!</h2>
-                    <p><i>Live!</i> is Crush 40's first live album. Crush 40 performed two gigs at Live Stage Guilty in Tokyo, Japan on March 29th, 2012, and March 30th, 2012, and both shows were professionally recorded in full for this album. This was the very first time Crush 40 could be heard with a full band live on an official recording.</p>
+                    <p><i>Live!</i> is Crush 40's first live album. Crush 40 performed two gigs at Live Stage Guilty in Tokyo, Japan on March 29th, 2012, and March 30th, 2012, and both shows were professionally recorded in full for this album. This was the very first time Crush 40 could be heard with a full band live outside of Japan.</p>
                     <p>All 24 songs performed at these shows were released, with the exception of a cover of Hardline's "Everything", which has not yet been released due to copyright concerns.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView?a=live" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/discography/LIVE!.png"  alt="'LIVE!' Album Cover">
             </div>
