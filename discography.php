@@ -72,7 +72,7 @@
                     <p>This is the first compilation album released by Crush 40, encompassing a range of tracks from the band's near 10-year history at the time.</p>
                     <p>Some older tracks were remixed for this release, a few new covers were created, and a fully original song, "Is It You", was released for the first time here.</p>
                     <p>While the original CD release of <i>Super Sonic Songs</i> did not feature any bonus tracks, a few years after its release, the album was placed on digital platforms with 3 bonus tracks; these tracks were not new, however, and could be heard elsewhere.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView?a=sss" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/discography/SuperSonicSongs.png" alt="'Super Sonic Songs' Album Cover">
             </div>
