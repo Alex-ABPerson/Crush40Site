@@ -1,0 +1,76 @@
+body {
+    --separator-color: rgb(40, 40, 40);
+    background-color: var(--separator-color);
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 500px auto 500px;
+    grid-template-areas:
+        "lyrics intro lists"
+        "lyrics desc lists"
+        "performances desc lists";
+    
+    gap: 5px;
+}
+
+.block {
+    background-color: var(--crush40-gray);
+    padding: 0;
+    text-align: center;
+}
+
+.intro {
+    grid-area: intro;
+    background-color: var(--separator-color);
+}
+
+.desc {
+    grid-area: desc;
+    padding: 10px;
+    text-align: left;
+}
+
+.desc p {
+    font-size: 120%;
+}
+
+.desc h2 {
+    text-align: center;
+}
+
+.desc hr {
+    border: none;
+    height: 3px;
+    background-color: red;
+}
+
+.desc .heading {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 700;
+    font-size: 180%;
+    margin-bottom: 0;
+}
+
+.desc .subHeading {
+    font-style: italic;
+    margin: 5px 0 0 0;
+}
+
+.lyrics {
+    grid-area: lyrics;
+}
+
+.performances {
+    grid-area: performances;
+}
+
+.lists {
+    grid-area: lists;
+}
+
+.dimentiaFont {
+    font-family: 'Dimentia';
+    font-style: italic;
+    font-weight: 300;
+    color: red;
+}

@@ -1,7 +1,6 @@
 @import url('../../css/imgFacts.css');
 
 body {
-    --switch-point: 1260px;
     --separator-color: rgb(40, 40, 40);
     background-color: var(--separator-color);
 
@@ -16,8 +15,7 @@ body {
         "physical"
         "description";
 
-    padding-top: 5px;
-    padding-left: 5px;
+    gap: 5px;
     box-sizing: border-box;
 }
 
@@ -56,9 +54,6 @@ body {
 
 .block {
     background-color: var(--crush40-gray);
-    margin-right: 5px;
-    margin-bottom: 5px;
-
     padding: 0;
 }
 
@@ -258,12 +253,17 @@ body {
     overflow: auto;
 }
 
+.description h2 {
+    text-align: center;
+}
+
 .description p {
     font-size: 110%;
 }
 
 .physical {
     background-image: url('../../img/visuals/Background/Discography/SSSBackground.png');
+    background-size: cover;
     grid-area: physical;
     text-align: center;
 }
@@ -275,8 +275,6 @@ body {
 }
 
 .physical .physicalTitleText {
-    
-
     margin: 0;
 }
 
