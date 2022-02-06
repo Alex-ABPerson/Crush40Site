@@ -263,6 +263,7 @@ body {
 
 .physical {
     background-image: url('../../img/visuals/Background/Discography/SSSBackground.png');
+    background-size: cover;
     grid-area: physical;
     text-align: center;
 }
@@ -274,8 +275,6 @@ body {
 }
 
 .physical .physicalTitleText {
-    
-
     margin: 0;
 }
 

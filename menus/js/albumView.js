@@ -70,11 +70,7 @@ function Populate(album)
     PopulatePhysicalImgDetails(album.physicalBack, physicalBack);
     PopulatePhysicalImgDetails(album.physicalTray, physicalTray);
     PopulateObiDetails(album.obiFront, physicalObiFront);
-    
-    if (album.obiBack)
-        PopulateObiDetails(album.obiBack, physicalObiBack);
-    else
-        physicalObiBack.style.visibility = 'collapse';
+    PopulateObiDetails(album.obiBack, physicalObiBack);
 
     currentBooklet = album.bookletPages;
     currentBookletPageSourcePrefix = album.bookletPageSourcePrefix;
@@ -172,6 +168,13 @@ function CreateTagWith(clas, text)
 // Physical
 function PopulateObiDetails(obi, elem)
 {
+    if (!obi)
+    {
+        elem.style.position = 'absolute'; // Remove effect on layout
+        elem.style.visibility = 'collapse';
+        return;
+    }
+    
     elem.querySelector(".img").src = obi.imgSrc;
     elem.querySelector(".obiRightText").innerHTML = obi.rightTranslation;
     elem.querySelector(".obiMiddleText").innerHTML = obi.middleTranslation;

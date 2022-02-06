@@ -61,7 +61,7 @@
                     <h2 class="title">Crush 40</h2>
                     <p>All of the vocal tracks from <i>Thrill of the Feel</i> are featured on this album, so this album could be considered a western release of Thrill of the Feel. However, the instrumental tracks are missing and in their place are "Live & Learn" from <i>Sonic Adventure 2</i> and two bonus tracks, both lacking singer Johnny Gioeli on vocals.</p>
                     <p>This album marks the first time the name "Crush 40" was used, and the name "Crush 40" would be carried over to the game <i>Sonic Heroes</i>, which would be released later in 2003.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView?a=crush40" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/discography/Crush40.jpg" alt="'Crush 40' Album Cover">
             </div>
