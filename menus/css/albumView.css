@@ -106,6 +106,17 @@ body {
     font-size: 200%;
 }
 
+.liveNotice {
+    background-color: rgb(215, 100, 0);
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.liveNotice:hover {
+    background-color: rgb(255, 140, 0);
+}
+
 /* Tracks */
 .tracks {
     grid-area: tracks;
