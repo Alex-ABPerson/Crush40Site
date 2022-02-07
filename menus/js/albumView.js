@@ -4,7 +4,9 @@ let description;
 let statYear;
 let statTracks;
 let statLength;
+let starText;
 let trackList;
+let liveNotice;
 let physical;
 let physicalDisc;
 let physicalCover;
@@ -22,7 +24,9 @@ window.addEventListener('load', () => {
     statYear = document.querySelector(".intro > .stats > .statYear > .statVal");
     statTracks = document.querySelector(".intro > .stats > .statTrackCount > .statVal");
     statLength = document.querySelector(".intro > .stats > .statLength > .statVal");
+    starText = document.querySelector("#starText");
     trackList = document.querySelector(".tracks > .trackList");
+    liveNotice = document.querySelector("#liveNotice");
     physical = document.querySelector("#physical");
     physicalDisc = document.querySelector(".physical #disc");
     physicalCover = document.querySelector(".physical #cover");
@@ -62,6 +66,16 @@ function Populate(album)
     statLength.innerText = album.playbackLength;
     physical.style.backgroundImage = "url('" + album.physicalBg + "')";
     physicalDisc.src = album.discImg;
+
+    if (!album.live)
+    {
+        liveNotice.style.height = '0';
+        liveNotice.style.padding = '0';
+        liveNotice.style.visibility = 'collapse';
+    }
+
+    if (album.starText)
+        starText.innerHTML = album.starText;
 
     for (let track of album.tracks)
         trackList.appendChild(CreateTrack(track));
