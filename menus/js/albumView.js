@@ -11,6 +11,7 @@ let physical;
 let physicalDisc;
 let physicalCover;
 let physicalBack;
+let physicalSticker;
 let physicalTray;
 let physicalBooklet;
 let physicalObiFront;
@@ -28,6 +29,7 @@ window.addEventListener('load', () => {
     trackList = document.querySelector(".tracks > .trackList");
     liveNotice = document.querySelector("#liveNotice");
     physical = document.querySelector("#physical");
+    physicalSticker = document.querySelector("#sticker");
     physicalDisc = document.querySelector(".physical #disc");
     physicalCover = document.querySelector(".physical #cover");
     physicalBack = document.querySelector(".physical #back");
@@ -69,9 +71,18 @@ function Populate(album)
 
     if (!album.live)
     {
-        liveNotice.style.height = '0';
-        liveNotice.style.padding = '0';
+        liveNotice.style.position = 'absolute';
         liveNotice.style.visibility = 'collapse';
+    }
+
+    if (album.sticker)
+    {
+        physicalSticker.querySelector(".img").src = album.sticker;
+    }
+    else
+    {
+        physicalSticker.style.position = 'absolute';
+        physicalSticker.style.visibility = 'collapse';
     }
 
     if (album.starText)

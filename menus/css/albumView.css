@@ -394,7 +394,7 @@ body {
         max-height: 320px;
     }
 
-    .physical .imgDetails .img {
+    .physical .imgDetails .img, .physical .sticker .img {
         width: unset;
         height: 320px;
         object-fit: scale-down;
@@ -426,6 +426,10 @@ body {
 
     .physical .imgDetails .img {
         width: 100%;
+    }
+
+    .physical .sticker .img {
+        width: 400px;
     }
 
     .physical .imgDetails .facts {
@@ -543,6 +547,13 @@ body {
     .physical .obi .translation {
         width: auto;
     }
+}
+
+.physical .sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .physical .booklet {

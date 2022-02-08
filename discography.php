@@ -103,7 +103,7 @@
                     <h2 class="title">2 Nights 2 Remember</h2>
                     <p><i>2 Nights 2 Remember</i> is unique in that it is both a studio EP and a live album. The first four tracks on the album are brand-new studio songs created specifically for the EP, while the rest of the album features professionally-recorded audio of their <i>2 Nights 2 Remember</i> live performance, with their inclusion allowing the length of this album to be closer to others.</p>
                     <p>The <i>2 Nights 2 Remember</i> live performances was at Live Stage Guilty, on March 29th 2014 and March 30th 2014. Once again, both shows were professionally recorded and put on the CD in exactly the same manner as <i>Live!</i>. Unfortunately, only approximately half of the performance was featured on this CD and all subsequent digital releases, due to the limited size of the CD medium.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <button data-action="panel" data-page-name="albumView?a=twoNights" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/discography/2N2R.png" alt="'2 Nights 2 Remember' Album Cover">
                 <div class="back"></div>
