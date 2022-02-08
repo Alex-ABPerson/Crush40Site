@@ -132,7 +132,7 @@ let features = [
     {
         title: "Sonic The Hedgehog Vocal Traxx Several Wills",
         desc: "Several Wills is the vocal tracks album of 2006's Sonic the Hedgehog.",
-        img: "SegaCon.jpg",
+        img: "SeveralWillsSonictheHedgehogVocalTrax.jpg",
         tracks: [
             { t: "All Hail Shadow", d: "This album features the Crush 40 version of All Hail Shadow as Shadow's character theme." },
             { t: "His World", d: "This album features the Crush 40 version of His World as an extra track." },
@@ -141,7 +141,7 @@ let features = [
     {
         title: "True Blue - The Best of Sonic the Hedgehog",
         desc: "True Blue is a best-of compilation album consisting of various songs from the Sonic the Hedgehog series.",
-        img: "SegaCon.jpg",
+        img: "TrueBluefrontcover.jpg",
         tracks: [
             { t: "Sonic Heroes" },
             { t: "Open Your Heart" },
@@ -154,7 +154,7 @@ let features = [
     {
         title: "Face To Faith: Sonic and the Black Knight - Vocal Trax",
         desc: "Face To Faith is the vocal tracks album of Sonic and the Black Knight. It features all vocal tracks of the game, plus some extra tracks.",
-        img: "SegaCon.jpg",
+        img: "FaceToFaithSonicandtheBlackKnightVocalTrax.jpg",
         tracks: [
             { t: "Knight Of The Wind" },
             { t: "Fight The Knight" },
@@ -168,7 +168,7 @@ let features = [
     {
         title: "Tales of the Knighthood",
         desc: "'Tales of the Knighthood: Sonic and the Black Knight - Original Soundtrax' is the original soundtrack of Sonic and the Black Knight.",
-        img: "SegaCon.jpg",
+        img: "TalesoftheKnighthood.jpg",
         tracks: [
             { t: "Knight Of The Wind", d: "This album includes the Title, TGS 2008, Original and 'Showdown With King Arthur' versions of this song." },
             { t: "Fight The Knight", d: "This album includes the strings mix of Fight the Knight." },
@@ -179,7 +179,7 @@ let features = [
     {
         title: "Sonic and the Black Knight Official Soundtrack vol.1",
         desc: "This album is the first volume of the digital release of the Sonic and the Black Knight soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicandtheBlackKnightOfficialSoundtrackvol.1.jpg",
         tracks: [
             { t: "Knight Of The Wind", d: "This album includes the Title, and full versions of this song." },
             { t: "Fight The Knight", d: "This album includes Fight the Knight, as well as its Strings Mix." },
@@ -189,7 +189,7 @@ let features = [
     {
         title: "Sonic and the Black Knight Official Soundtrack vol.2",
         desc: "This album is the second volume of the digital release of the Sonic and the Black Knight soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicandtheBlackKnightOfficialSoundtrackvol.2.jpg",
         tracks: [
             { t: "Knight Of The Wind", d: "This album includes the TGS 2008 of this song." },
             { t: "Live Life" }
@@ -198,7 +198,7 @@ let features = [
     {
         title: "Sonic Free Riders Original Soundtrack - Break Free",
         desc: "Break Free is the original soundtrack of Sonic Free Riders.",
-        img: "SegaCon.jpg",
+        img: "SonicFreeRidersOriginalSoundtrackBreakFree.jpg",
         tracks: [
             { t: "Free", d: "The Crush 40 version of the song was featured as a bonus track on this album." },
         ]
@@ -206,7 +206,7 @@ let features = [
     {
         title: "Sonic Adventure Original Soundtrack 20th Anniversary Edition",
         desc: "This is the 20th Anniversary Edition of the Sonic Adventure Original Soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicAdventureOriginalSoundtrack20thAnniversaryEdition.jpg",
         tracks: [
             { t: "Open your Heart" },
         ]
@@ -214,7 +214,7 @@ let features = [
     {
         title: "Sonic Adventure 2 Original Soundtrack 20th Anniversary Edition",
         desc: "This is the 20th Anniversary Edition of the Sonic Adventure 2 Original Soundtrack.",
-        img: "SegaCon.jpg",
+        img: "Sonic Adventure2OriginalSoundtrack20thAnniversaryEdition.jpg",
         tracks: [
             { t: "Live and Learn"  },
         ]
@@ -222,7 +222,7 @@ let features = [
     {
         title: "Sonic Heroes Original Soundtrack 20th Anniversary Edition",
         desc: "This is the 20th Anniversary Edition of the Sonic Heroes Original Soundtrack. The tracklist is actually the same as the original US OST release, but the track lengths have been adjusted.",
-        img: "SegaCon.jpg",
+        img: "SonicHeroesOriginalSoundtrack20thAnniversaryEdition.jpg",
         tracks: [
             { t: "Sonic Heroes" },
             { t: "What I'm Made Of" }
@@ -231,7 +231,7 @@ let features = [
     {
         title: "Sonic the Hedgehog CD Original Soundtrack 20th Anniversary Edition",
         desc: "This is the original soundtrack of Sonic the Hedgehog CD, released for the 20th Anniversary of the series. It includes all music from the JP / PAL version of the game.",
-        img: "SegaCon.jpg",
+        img: "SonictheHedgehogCDOriginalSoundtrack20thAnniversaryEdition.jpg",
         tracks: [
             { t: "Sonic Boom", d: "The Crush 40 vs. Cash Cash version of Sonic Boom" },
         ]
@@ -239,7 +239,7 @@ let features = [
     {
         title: "Sonic Generations Original Soundtrack Blue Blur",
         desc: "Blue Blur is the original soundtrack of Sonic Generations.",
-        img: "SegaCon.jpg",
+        img: "SonicGenerationsOriginalSoundtrackBlueBlur.jpg",
         tracks: [
             { t: "Live & Learn", d: "A short version of Live & Learn" },
             { t: "All Hail Shadow", d: "A short version of All Hail Shadow" },
@@ -247,19 +247,10 @@ let features = [
         ]
     },
     {
-        title: "Sonic Generations Original Soundtrack Blue Blur",
-        desc: "Blue Blur is the original soundtrack of Sonic Generations.",
-        img: "SegaCon.jpg",
-        tracks: [
-            { t: "Live & Learn", d: "A short version of Live & Learn" },
-            { t: "All Hail Shadow", d: "A short version of All Hail Shadow" },
-            { t: "Open Your Heart (Circuit Freq)", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart, used for the Perfect Chaos Boss Battle." }
-        ]
-    },
-    {
+       
         title: "Sonic Generations Official Soundtrack Vol.1",
         desc: "This is the first volume of the digital release of the Sonic Generations soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicGenerationsOfficialSoundtrackVol.1.jpg",
         tracks: [
             { t: "Open Your Heart (Circuit Freq)", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart, used for the Perfect Chaos Boss Battle." }
         ]
@@ -267,7 +258,7 @@ let features = [
     {
         title: "Shadow the Hedgehog Official Soundtrack",
         desc: "This is the digital release of the Shadow the Hedgehog soundtrack.",
-        img: "SegaCon.jpg",
+        img: "ShadowtheHedgehogOfficialSoundtrack.jpg",
         tracks: [
             { t: "I Am... All Of Me" },
             { t: "Never Turn Back" }
@@ -276,7 +267,7 @@ let features = [
     {
         title: "Sonic Adventure Original Soundtrack vol.2",
         desc: "This is the second volume of the digital release of the Sonic Adventure soundtack.",
-        img: "SegaCon.jpg",
+        img: "SonicAdventureOriginalSoundtrackvol.2.jpg",
         tracks: [
             { t: "Open Your Heart" },
             { t: "Open Your Heart (Instrumental)" }
@@ -285,7 +276,7 @@ let features = [
     {
         title: "Sonic Adventure 2 Original Soundtrack vol.2",
         desc: "This is the second volume of the digital release of the Sonic Adventure soundtack.",
-        img: "SegaCon.jpg",
+        img: "SonicAdventure2OriginalSoundtrackvol.2.jpg",
         tracks: [
             { t: "Live & Learn" },
             { t: "Live & Learn (Instrumental)" }
@@ -294,7 +285,7 @@ let features = [
     {
         title: "Sega Sound Selection 2",
         desc: "This digital album is the second part to a series of albums containing various songs from SEGA games.",
-        img: "SegaCon.jpg",
+        img: "SegaSoundSelection2.jpg",
         tracks: [
             { t: "Live & Learn" }
         ]
@@ -302,7 +293,7 @@ let features = [
     {
         title: "The Works II",
         desc: "The Works is a series of albums by Jun Senoue, containing various tracks he's made throughout the years.",
-        img: "SegaCon.jpg",
+        img: "TheWorksII.jpg",
         tracks: [
             { t: "Dangerous Ground" },
             { t: "In The Lead" },
@@ -313,7 +304,7 @@ let features = [
     {
         title: "Sonic the Hedgehog 25th Anniversary Selection",
         desc: "This album is a selection of various Sonic the Hedgehog songs, made to celebrate the series' 25th anniversary.",
-        img: "SegaCon.jpg",
+        img: "SonictheHedgehog25thAnniversarySelection.jpg",
         tracks: [
             { t: "Open Your Heart", d: "(Opening version)" },
             { t: "Sonic Heroes", d: "(Opening version)" },
@@ -324,15 +315,15 @@ let features = [
     {
         title: "Sonic the Hedgehog Café Selection",
         desc: "This album is a selection of various Sonic the Hedgehog songs, made to celebrate the series' 25th anniversary.",
-        img: "SegaCon.jpg",
+        img: "SonictheHedgehogCaféSelection.jpg",
         tracks: [
             { t: "All Hail Shadow", d: "(Shortened version)" }
         ]
     },
     {
         title: "Sonic the Hedgehog Café Selection",
-        desc: "his album contains songs that were played at the Sweets Paradise cafe during the 25th anniversary, it later saw a commercial release.",
-        img: "SegaCon.jpg",
+        desc: "This album contains songs that were played at the Sweets Paradise cafe during the 25th anniversary, it later saw a commercial release.",
+        img: "SonictheHedgehogCaféSelection.jpg",
         tracks: [
             { t: "All Hail Shadow", d: "(Shortened version)" }
         ]
@@ -340,7 +331,7 @@ let features = [
     {
         title: "Sonic Forces Original Soundtrack [A Hero Will Rise]",
         desc: "his album contains songs that were played at the Sweets Paradise cafe during the 25th anniversary, it later saw a commercial release.",
-        img: "SegaCon.jpg",
+        img: "SonicForcesOriginalSoundtrack[A Hero Will Rise].jpg",
         tracks: [
             { t: "All Hail Shadow", d: "(Short edit)" }
         ]
@@ -348,7 +339,7 @@ let features = [
     {
         title: "Sonic Adventure Official Soundtrack Vinyl Edition",
         desc: "This album is the vinyl release of the Sonic Adventure soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicAdventureOfficialSoundtrackVinylEdition.jpg",
         tracks: [
             { t: "Open Your Heart" }
         ]
@@ -356,7 +347,7 @@ let features = [
     {
         title: "Sonic Adventure 2 Official Soundtrack Vinyl Edition",
         desc: "This album is the vinyl release of the Sonic Adventure 2 soundtrack.",
-        img: "SegaCon.jpg",
+        img: "SonicAdventure2OfficialSoundtrackVinylEdition.jpg",
         tracks: [
             { t: "Live & Learn" }
         ]
@@ -364,7 +355,7 @@ let features = [
     {
         title: "Team Sonic Racing Trailer Selection",
         desc: "This album is the vinyl release of the Sonic Adventure 2 soundtrack.",
-        img: "SegaCon.jpg",
+        img: "TeamSonicRacingTrailerSelection.jpg",
         tracks: [
             { t: "Live & Learn" }
         ]
@@ -372,7 +363,7 @@ let features = [
     {
         title: "Maximum Overdrive - Team Sonic Racing Original Soundtrack",
         desc: "Maximum Overdrive is the original soundtack of Team Sonic Racing.",
-        img: "SegaCon.jpg",
+        img: "MaximumOverdriveTeamSonicRacingOriginalSoundtrack.jpg",
         tracks: [
             { t: "Green Light Ride", d: "This CD features various versions: Full, opening ver. racing mix and the various short menu edits." },
             { t: "Green Light Ride (Remixes)", d: "This CD features various remixes of Green Light Ride: Wall5, The Qemists and Tyler Smyth." },
@@ -382,7 +373,7 @@ let features = [
     {
         title: "Non-Stop Music Selection Vol.1",
         desc: "This album is the first of five 'Non-Stop' selections. 'Non-Stop' means there is no silence between songs, they all flow into each other.",
-        img: "SegaCon.jpg",
+        img: "NonStopMusicSelectionVol.1.jpg",
         tracks: [
             { t: "Live & Learn" }
         ]
@@ -390,7 +381,7 @@ let features = [
     {
         title: "Non-Stop Music Selection Vol.4",
         desc: "This album is the fourth of five 'Non-Stop' selections. 'Non-Stop' means there is no silence between songs, they all flow into each other.",
-        img: "SegaCon.jpg",
+        img: "NonStopMusicSelectionVol.4.jpg",
         tracks: [
             { t: "Green Light Ride" }
         ]
@@ -398,7 +389,7 @@ let features = [
     {
         title: "GO SEGA - 60th ANNIVERSARY Album",
         desc: "This album released during SEGA's 60th anniversary, and contains a wide selection of songs from throughout the company's lifespan.",
-        img: "SegaCon.jpg",
+        img: "GOSEGA60thANNIVERSARYAlbum.jpg",
         tracks: [
             { t: "Open Your Heart" },
             { t: "Sonic Heroes" }
@@ -407,7 +398,7 @@ let features = [
     {
         title: "Sonic 30th Anniversary Symphony",
         desc: "The Sonic 30th Anniversary Symphony was a digital concert held during the series' 30th anniversary. It is listed in the 'Shows' section.",
-        img: "SegaCon.jpg",
+        img: "Sonic30thAnniversarySymphony.jpg",
         tracks: [
             { t: "Open Your Heart", d: "A 'live' performance of Open Your Heart." },
             { t: "Sonic Heroes", d: "A 'live' performance of Sonic Heroes." },
@@ -421,7 +412,7 @@ let features = [
     {
         title: "Rock 'n' Sonic the Hedgehog: Sessions",
         desc: "Rock 'n' Sonic the Hedgehog: Sessions is an album containing various arrangements of Sonic the Hedgehog songs, by Jun Senoue.",
-        img: "SegaCon.jpg",
+        img: "RocknSonictheHedgehogSessions.jpg",
         tracks: [
             { t: "Live & Learn", d: "An acoustic performance of Live & Learn." }
         ]
@@ -437,7 +428,7 @@ let featureMain;
 let selectedFeatureItemTxt;
 
 window.addEventListener('load', () => {
-    //UpdateNavbarPageSelection("navDiscography");
+    UpdateNavbarPageSelection("navDiscography");
 
     featuresSection = document.querySelector("#features");
     featureInfo = document.querySelector("#featureInfo");
