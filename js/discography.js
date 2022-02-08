@@ -321,14 +321,6 @@ let features = [
         ]
     },
     {
-        title: "Sonic the Hedgehog Café Selection",
-        desc: "This album contains songs that were played at the Sweets Paradise cafe during the 25th anniversary, it later saw a commercial release.",
-        img: "SonictheHedgehogCaféSelection.jpg",
-        tracks: [
-            { t: "All Hail Shadow", d: "(Shortened version)" }
-        ]
-    },
-    {
         title: "Sonic Forces Original Soundtrack [A Hero Will Rise]",
         desc: "his album contains songs that were played at the Sweets Paradise cafe during the 25th anniversary, it later saw a commercial release.",
         img: "SonicForcesOriginalSoundtrack[A Hero Will Rise].jpg",
