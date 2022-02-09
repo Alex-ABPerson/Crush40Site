@@ -6,6 +6,8 @@ let statTracks;
 let statLength;
 let starText;
 let trackList;
+let trackListDvd;
+let trackListSection;
 let liveNotice;
 let physical;
 let physicalDisc;
@@ -26,7 +28,9 @@ window.addEventListener('load', () => {
     statTracks = document.querySelector(".intro > .stats > .statTrackCount > .statVal");
     statLength = document.querySelector(".intro > .stats > .statLength > .statVal");
     starText = document.querySelector("#starText");
-    trackList = document.querySelector(".tracks > .trackList");
+    trackList = document.querySelector("#cdTrackList");
+    trackListDvd = document.querySelector("#dvdTrackList");
+    trackListSection = document.querySelector("#trackList");
     liveNotice = document.querySelector("#liveNotice");
     physical = document.querySelector("#physical");
     physicalSticker = document.querySelector("#sticker");
@@ -88,8 +92,13 @@ function Populate(album)
     if (album.starText)
         starText.innerHTML = album.starText;
 
-    for (let track of album.tracks)
-        trackList.appendChild(CreateTrack(track));
+    if (album.dvdTracks)
+    {
+        trackListSection.classList.add("tracksWithSeparators");
+        PopulateTrackList(trackListDvd, album.dvdTracks);
+    }
+
+    PopulateTrackList(trackList, album.tracks);
 
     PopulatePhysicalImgDetails(album.physicalCover, physicalCover);
     PopulatePhysicalImgDetails(album.physicalBack, physicalBack);
@@ -104,6 +113,12 @@ function Populate(album)
 }
 
 // Track List
+function PopulateTrackList(elem, tracks)
+{
+    for (let track of tracks)
+        elem.appendChild(CreateTrack(track));
+}
+
 function CreateTrack(track)
 {
     // <li class="track"><div class="main">...</div><ul class="tags">...</ul></li>

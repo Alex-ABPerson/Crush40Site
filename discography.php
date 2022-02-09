@@ -113,8 +113,8 @@
                     <p class="yearIndicator">2019</p>
                     <h2 class="title">Driving Through Forever</h2>
                     <p><i>Driving Through Forever</i> is Crush 40's most recent album. It is another compilation album in the vein of <i>Super Sonic Songs</i>, which aims to celebrate the past 20 years of Crush 40, containing tracks ranging from "Open Your Heart", written in 1998, to "Green Light Ride", written in 2018.</p>
-                    <p>Like the previous compilation album, <i>Driving Through Forever</i> contains both a new mix on one of the song, and a new song, "Call Me Crazy", which had only ever been performed live before the album was released, at the Japan Game Music Festival II:RE.</p>
-                    <button class="emptyButton btnWidthWide" href="#">Explore this album</button>
+                    <p>Like the previous compilation album, <i>Driving Through Forever</i> contains both a new mix on one of the songs, and a new song, "Call Me Crazy", which had only ever been performed live before the album was released, at the Japan Game Music Festival II:RE.</p>
+                    <button data-action="panel" data-page-name="albumView?a=driving" class="emptyButton btnWidthWide" href="#">Explore this album</button>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>

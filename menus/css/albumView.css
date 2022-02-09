@@ -122,8 +122,27 @@ body {
     grid-area: tracks;
 }
 
-.tracks .title {
+.tracksContents {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.tracks {
     text-align: center;
+}
+
+.tracks .separator {
+    align-self: center;
+    padding: 0 15px;
+}
+
+.tracks:not(.tracksWithSeparators) .separator {
+    position: absolute;
+    visibility: collapse;
 }
 
 .trackList {
@@ -135,11 +154,11 @@ body {
 
     /* Smallscreen */
     flex-direction: row;
-    overflow: auto;
-    width: 100%;
 }
 
 .trackList .track {
+    text-align: left;
+
     padding: 20px;
     background-color: var(--crush40-red-pale);
     margin: 5px;
@@ -156,6 +175,10 @@ body {
 @media (min-width: 1160px) {
     .tracks {
         overflow: auto;
+    }
+
+    .tracksContents {
+        flex-direction: column;
     }
 
     .trackList {

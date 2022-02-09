@@ -437,7 +437,87 @@
                     [
                         {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
                     ]
-                }
+                },
+                driving: {
+                    title: "Driving Through Forever",
+                    description: `
+                    <p>Driving Through Forever is Crush 40's most recent album. It is another compilation album in the vein of <i>Super Sonic Songs</i>, which aims to celebrate the past 20 years of Crush 40, containing tracks ranging from "Open Your Heart", written in 1998, to "Green Light Ride", written in 2018.</p>
+                    <p><i>Driving Through Forever</i> contains a new mix of "His World" and a new song "Call Me Crazy", which had only ever been performed live before the album was released, at the Japan Game Music Festival II:RE.</p>
+                    <p><b><u>Bonus DVD</u></b></p>
+                    <p>The release also included a <b>bonus DVD</b>, which is a compilation DVD of various random clips - comprised of previous lyric videos and footage from live shows.</p>
+                    <p>Most notably, the DVD includes half an hour of completely unseen footage from the 2014 2 Nights 2 Remember performance, even going as far to feature a song from the concert that <i>wasn't</i> featured on the 2 Nights 2 Remember CD, I Am... All Of Me. Find out more about the content featured on the 2 Nights 2 Remember show page.</p>
+                    <p>In addition, this DVD contains one of the only known videos of the Crush 40's JGMF II:RE performance, as well as a previously unreleased multi-camera video of "Open Your Heart" from JGMF 2013.</p>
+                    `,
+                    releaseYear: 2019,
+                    playbackLength: "1:10:42",
+                    tracks:
+                    [
+                        { title: "Green Light Ride", playbackLength: "4:36", tags: [ 'first' ] },
+                        { title: "2 Nights 2 Remember", playbackLength: "3:45", tags: [ 'rerelease' ] },
+                        { title: "Free", playbackLength: "3:22", tags: [ 'rerelease' ] },
+                        { title: "Sonic Boom", playbackLength: "2:43", tags: [ 'rerelease' ] },
+                        { title: "One Of Those Days", playbackLength: "4:29", tags: [ 'rerelease' ] },
+                        { title: "All Hail Shadow", playbackLength: "4:01", tags: [ 'rerelease' ] },
+                        { title: "His World", playbackLength: "5:11", tags: [ 'remix' ] },
+                        { title: "Knight Of The Wind", playbackLength: "4:32", tags: [ 'rerelease' ] },
+                        { title: "Watch Me Fly...", playbackLength: "5:10", tags: [ 'rerelease' ] },
+                        { title: "I Am... All Of Me", playbackLength: "3:52", tags: [ 'rerelease' ] },
+                        { title: "Never Turn Back", playbackLength: "4:40", tags: [ 'rerelease' ] },
+                        { title: "Sonic Heroes", playbackLength: "3:29", tags: [ 'rerelease' ] },
+                        { title: "What I'm Made Of...", playbackLength: "3:43", tags: [ 'rerelease' ] },
+                        { title: "Live & Learn", playbackLength: "4:31", tags: [ 'rerelease' ] },
+                        { title: "Open Your Heart", playbackLength: "5:11", tags: [ 'rerelease' ] },
+                        { title: "Sonic Youth", playbackLength: "3:48", tags: [ 'rerelease' ] },
+                        { title: "Call Me Crazy", playbackLength: "3:39", tags: [ 'first', 'original' ] }
+                    ],
+                    dvdTracks:
+                    [
+                        { title: "Test 1", playbackLength: "4:36", tags: [ 'first' ] },
+                        { title: "Test 2", playbackLength: "3:45", tags: [ 'rerelease' ] },
+                    ],
+                    physicalBg: "../img/visuals/Background/Discography/LiveStuff.png",
+                    discImg: "../img/content/discography/physical/2N2R/Disc.png",
+                    sticker: "../img/content/discography/physical/2N2R/Sticker.jpg",
+                    physicalCover: 
+                    {
+                        imgSrc: "../img/content/discography/2N2R.png",
+                        backgrounds: [ 
+                            { title: "Cut-out by Shoko Otsuka", link: "https://ameblo.jp/shokootsuka/entry-11858040940.html" },
+                            { title: "Cut-out by Shoko Otsuka", link: "https://ameblo.jp/shokootsuka/entry-11832475290.html" },
+                            { title: "Texture", link: "https://www.photos-public-domain.com/2011/11/29/light-brown-or-tan-paper-texture-with-flecks/" },
+                        ],
+                        fonts: [ { title: "BRIG", link: "https://www.behance.net/gallery/18876427/BRIG-free-typeface" } ]
+                    },
+                    obiFront:
+                    {
+                        imgSrc: "../img/content/discography/physical/2N2R/Obi.jpg",
+                        rightTranslation: `
+                            <p><i>To be filled in</i></p>
+                        `,
+                        middleTranslation: `
+                            <p><i>Crush 40 2 Nights 2 Remember</i></p>
+                        `,
+                        leftTranslation: `
+                            <p><i>CD tracklisting</i></p>
+                        `
+                    },
+                    physicalBack:
+                    {
+                        imgSrc: "../img/content/discography/physical/2N2R/Back.jpg",
+                        backgrounds: [ { title: "Texture", link: "https://www.photos-public-domain.com/2011/11/29/light-brown-or-tan-paper-texture-with-flecks/" }, ],
+                        fonts: [ { title: "BRIG", link: "https://www.behance.net/gallery/18876427/BRIG-free-typeface" } ]
+                    },
+                    physicalTray:
+                    {
+                        imgSrc: "../img/content/discography/physical/2N2R/Tray.jpg"
+                    },
+                    bookletPageSourcePrefix: '../img/content/discography/physical/2N2R/',
+                    bookletPageSourceExtension: '.jpg',
+                    bookletPages:
+                    [
+                        {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
+                    ]
+                },
             }
         </script>
     </head>
@@ -469,26 +549,31 @@
             <div class="text"><p>This is a description about this amazing album - it's so amazing because of reason A, B and C. So yeah!</p></div>
         </div>
 
-        <div class="tracks block">
+        <div class="tracks block" id="trackList">
             <h2 class="title dimentiaFont">Tracks</h2>
-            <ol class="trackList">
-                <!--<li class="track">
-                    <div class="main">
-                        <h3 class="title">Fill It Up</h3>
-                        <p class="length">3:45</p>
-                    </div>
-                    <ul class="tags">
-                        <li class="tag tagFirst"><p>First Release</p></li>
-                        <li class="tag tagReRelease"><p>Rerelease</p></li>
-                        <li class="tag tagRemix"><p>Remix</p></li>
-                        <li class="tag tagInstrumental"><p>Instrumental</p></li>
-                        <li class="tag tagOriginal"><p>Original</p></li>
-                        <li class="tag tagLive"><p>Live Performance</p></li>
-                        <li class="tag tagCover"><p>Cover</p></li>
-                        <li class="tag tagNotC40"><p>Not Crush 40</p></li>
-                    </ul>
-                </li>-->
-            </ol>
+            <div class="tracksContents">
+                <h3 class="separator" id="cdIndicator">CD</h3>
+                <ol class="trackList" id="cdTrackList">
+                    <!--<li class="track">
+                        <div class="main">
+                            <h3 class="title">Fill It Up</h3>
+                            <p class="length">3:45</p>
+                        </div>
+                        <ul class="tags">
+                            <li class="tag tagFirst"><p>First Release</p></li>
+                            <li class="tag tagReRelease"><p>Rerelease</p></li>
+                            <li class="tag tagRemix"><p>Remix</p></li>
+                            <li class="tag tagInstrumental"><p>Instrumental</p></li>
+                            <li class="tag tagOriginal"><p>Original</p></li>
+                            <li class="tag tagLive"><p>Live Performance</p></li>
+                            <li class="tag tagCover"><p>Cover</p></li>
+                            <li class="tag tagNotC40"><p>Not Crush 40</p></li>
+                        </ul>
+                    </li>-->
+                </ol>
+                <h3 class="separator" id="dvdIndicator">Bonus DVD</h3>
+                <ol class="trackList" id="dvdTrackList"></ol>
+            </div>
         </div>
 
         <div class="physical block" id="physical">
