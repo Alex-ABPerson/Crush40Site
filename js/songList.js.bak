@@ -1,0 +1,8 @@
+var Crush40Songs = {
+  wimo: "What I'm Made Of",
+  iam: "I Am... All Of Me",
+  life: "Live Life",
+  lal: "Live & Learn",
+  oyh: "Open Your Heart",
+  : "",
+};
