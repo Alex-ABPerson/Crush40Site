@@ -34,6 +34,5 @@ var Crush40Songs = {
   lotd: "Light Of The Day",
   dnd: "Down & Dirty",
   glr: "Green Light Ride",
-  cmc: "Call Me Crazy",
-  s30thas: "Sonic 30th Anniversary Symphony",
+  cmc: "Call Me Crazy"
 };
