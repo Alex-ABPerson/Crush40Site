@@ -175,6 +175,8 @@ function CreateTag(id)
             return CreateTagWith("tagFirst", "First Release");
         case "rerelease":
             return CreateTagWith("tagReRelease", "Rerelease");
+        case "partial-rerelease":
+            return CreateTagWith("tagReRelease", "Partial Rerelease");
         case "remix":
             return CreateTagWith("tagRemix", "Remix");
         case "instrumental":
@@ -183,6 +185,8 @@ function CreateTag(id)
             return CreateTagWith("tagOriginal", "Original");
         case "live":
             return CreateTagWith("tagLive", "Live Performance");
+        case "lyric":
+            return CreateTagWith("tagInstrumental", "Lyric Video");
         case "cover":
             return CreateTagWith("tagCover", "Cover");
         case "notC40":

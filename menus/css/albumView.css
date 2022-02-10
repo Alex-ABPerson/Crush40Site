@@ -179,6 +179,7 @@ body {
 
     .tracksContents {
         flex-direction: column;
+        height: auto;
     }
 
     .trackList {
