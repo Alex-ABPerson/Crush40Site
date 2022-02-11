@@ -71,6 +71,11 @@ window.addEventListener('load', () => {
 function Populate(album)
 {
     title.innerText = album.title;
+
+    if (album.titleFont) title.style.fontFamily = album.titleFont;
+    if (album.titleFontTransform) title.style.textTransform = album.titleFontTransform;
+    if (album.titleFontStyle) title.style.fontStyle = album.titleFontStyle;
+
     description.innerHTML = album.description;
     statYear.innerText = album.releaseYear;
     statTracks.innerText = album.tracks.length;

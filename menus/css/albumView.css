@@ -1,3 +1,4 @@
+@import url('../../css/discographyFonts.css');
 @import url('../../css/imgFacts.css');
 
 body {
@@ -104,6 +105,11 @@ body {
     padding-right: 5px;
     background-color: var(--separator-color);
     text-align: center;
+}
+
+.intro .title {
+    color: red;
+    font-weight: 300;
 }
 
 .stats {
