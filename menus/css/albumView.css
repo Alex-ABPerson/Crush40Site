@@ -13,7 +13,7 @@ body {
         "intro"
         "tracks"
         "physical"
-        "description";
+        "description";    
 
     gap: 5px;
     box-sizing: border-box;
@@ -36,8 +36,9 @@ body {
 }
 
 .tabs {
-    grid-area: tabs;
-    visibility: hidden;
+    grid-area: tabs;    
+    position: absolute;
+    visibility: collapse;
 }
 
 @media (min-width: 1000px) and (max-width: 1409px) {
@@ -62,17 +63,15 @@ body {
         border-bottom-color: var(--crush40-blue);
     }
 
-    .page.descOpen .tracks {
+    .page.descOpen .tracks, body:not(.descOpen) .description {
         position: absolute;
         visibility: collapse;
-    }
-
-    body:not(.descOpen) .description {
-        position: absolute;
-        visibility: collapse;
+        width: 0;
+        height: 0;
     }
 
     .tabs {
+        position: relative;
         visibility: visible;
     }
 }
@@ -84,11 +83,6 @@ body {
         grid-template-areas:
             "intro tracks physical"
             "description tracks physical";
-    }
-
-    .tabs {
-        position: absolute;
-        visibility: collapse;
     }
 }
 
@@ -159,14 +153,18 @@ body {
 /* Tracks */
 .tracksContents {
     display: flex;
+
+    position: absolute;
     width: 100%;
     height: 300px;
     overflow: auto;
     flex-direction: row;
-    flex-grow: 1;
 }
 
 .tracks {
+    position: relative;
+    width: 100%;
+    height: 400px;
     text-align: center;
 }
 
@@ -208,18 +206,20 @@ body {
 }
 
 @media (min-width: 1000px) {
+
     .tracks {
+        height: 100%;
         overflow: auto;
     }
 
     .tracksContents {
-        flex-direction: column;
+        position: relative;
         height: auto;
+        flex-direction: column;
     }
 
     .trackList {
         flex-direction: column;
-        overflow: none;
     }
 
     .trackList .track {
