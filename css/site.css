@@ -136,6 +136,34 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
+.tabSet {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.tabSet .tab {
+    margin: 10px;
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    border-bottom: solid var(--crush40-red) 5px;
+    cursor: pointer;
+}
+
+.tabSet .tab p {
+    margin: 5px;
+}
+
+.tabSet .tab:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .background {
     opacity: 50%;
 

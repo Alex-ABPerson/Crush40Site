@@ -1,4 +1,5 @@
 // General
+let page;
 let title;
 let description;
 let statYear;
@@ -22,6 +23,7 @@ let bookletNavLeft;
 let bookletNavRight;
 
 window.addEventListener('load', () => {
+    page = document.querySelector(".page");
     title = document.querySelector(".intro > .title");
     description = document.querySelector(".description > .text");
     statYear = document.querySelector(".intro > .stats > .statYear > .statVal");
@@ -51,6 +53,9 @@ window.addEventListener('load', () => {
     bookletNavRight.addEventListener('click', () => {
         MoveNext();
     });
+
+    document.querySelector("#descriptionTab").addEventListener('click', () => page.classList.add("descOpen"));
+    document.querySelector("#tracksTab").addEventListener('click', () => page.classList.remove("descOpen"));
 
     let physicalContent = document.querySelector(".physical #physicalContent");
 
