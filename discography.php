@@ -142,11 +142,47 @@
             </div>
         </div>
 
-        <!--<div class="songs section" id="songs">
-            <h1>Songs</h1>
-            <p>A complete list of every Crush 40 song!</p>
-            <ul class="songList" id="songList"></ul>
-        </div>-->
+        <div class="songs section" id="songs">
+            <div class="top">
+                <h1>Songs</h1>
+                <p>Every "Crush 40" (Johnny Gioeli + Jun Senoue) song created.</p>
+                <input class="search" placeholder="Search"></input>
+            </div>
+            <div class="songListContainer">
+                <ul class="songList" id="songList">
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                    <li class="song">
+                        <h2 class="title">Song Title</h2>
+                        <p class="releaseYear">Release Year</p>
+                        <p class="game">Game</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <?php include('base/bodyEnd.html') ?>
     </body>

@@ -2,7 +2,7 @@
 
 /* Albums */
 .albums-intro {
-    background-color: var(--crush40-gray);
+    background-color: var(--crush40-red);
     font-size: 125%;
 
     padding: 5px;
@@ -388,4 +388,68 @@
 
 .featuredTracks .track:hover {
     background-color: var(--crush40-red-pale-hover);   
+}
+
+/* Songs List */
+.songs {
+    background-color: black;
+    text-align: center;
+}
+
+.songs .top {
+    padding: 10px;
+}
+
+.songs .search {
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 3px var(--crush40-red);
+    outline: none;
+    border-radius: 10px;
+}
+
+.songs .search::placeholder {
+    color: lightgray;
+}
+
+.songs .search:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.songs .songList {
+    width: 100%;
+
+    margin-bottom: 0;
+    padding: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    overflow-x: auto;
+}
+
+.songs .songListContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.songs .song {
+    padding: 10px;
+    min-width: 400px;
+    cursor: pointer;
+}
+
+.songs .song {
+    background-color: var(--crush40-red-pale);
+}
+
+.songs .song:hover {
+    background-color: var(--crush40-red-pale-hover);
 }
