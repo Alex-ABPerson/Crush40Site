@@ -1,3 +1,10 @@
+window.addEventListener('load', () => {
+    UpdateNavbarPageSelection("navDiscography");
+
+    InitFeatures();
+    InitSongs();
+});
+
 // Features
 let features = [
     { 
@@ -419,9 +426,8 @@ let featureInfoTracks;
 let featureMain;
 let selectedFeatureItemTxt;
 
-window.addEventListener('load', () => {
-    UpdateNavbarPageSelection("navDiscography");
-
+function InitFeatures()
+{
     featuresSection = document.querySelector("#features");
     featureInfo = document.querySelector("#featureInfo");
     featureInfoTitle = document.querySelector("#featureTitle");
@@ -475,7 +481,7 @@ window.addEventListener('load', () => {
 
         featureList.appendChild(newElem);
     }
-});
+}
 
 function DeselectFeatures()
 {
@@ -527,4 +533,72 @@ function HideFeatureInfo()
 
     featureInfo.style.visibility = 'collapse';
     featuresSection.classList.remove("featuresOpen");
+}
+
+// Song Viewer
+let songsSearch;
+let songsList;
+
+function InitSongs()
+{
+    songsSearch = document.querySelector("#songsSearch");
+    songsList = document.querySelector("#songList");
+
+    songsSearch.addEventListener('input', () => {
+        let itms = Object.values(Crush40Songs).filter(x => x.includes(songsSearch.value));
+        UpdateSongs(itms, songsSearch.value);
+    });
+
+    UpdateSongs(Object.values(Crush40Songs), "");
+}
+
+function UpdateSongs(songs, searchTerm)
+{
+    songsList.replaceChildren();
+
+    for (let itm of songs)
+    {
+        let newSongView = document.createElement("li");
+        newSongView.classList.add("song");
+        
+        let title = document.createElement("h2");
+        title.innerHTML = CreateHTMLFor(itm, searchTerm);
+        newSongView.appendChild(title);
+
+        let year = document.createElement("p");
+        year.classList.add("")
+        year.innerHTML = CreateHTMLFor("2012", searchTerm);
+        newSongView.appendChild(year);
+
+        let desc = document.createElement("p");
+        desc.innerHTML = CreateHTMLFor("The song's video game.", searchTerm);
+        newSongView.appendChild(desc);
+
+        songsList.appendChild(newSongView);
+    }
+}
+
+// Creates HTML with bold around the searched items
+function CreateHTMLFor(itm, searchTerm)
+{
+    if (searchTerm == "") return itm;
+
+    let result = "";
+    let currentPos = 0;
+    while (true)
+    {
+        let newPos = itm.indexOf(searchTerm, currentPos);
+        if (newPos == -1) break;
+        
+        result += itm.substring(currentPos, newPos);
+
+        result += "<u>";
+        result += searchTerm;
+        result += "</u>";
+        
+        currentPos = newPos + searchTerm.length;
+    }
+
+    result += itm.substring(currentPos, itm.length);
+    return result;
 }

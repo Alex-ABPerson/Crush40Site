@@ -13,6 +13,7 @@
 
         <!-- Crush 40 JavaScript -->
         <script src="js/loading-bar.js"></script>
+        <script src="js/songList.js"></script>
         <script src="js/discography.js"></script>
         <script src="js/site.js"></script>
     </head>
@@ -146,7 +147,7 @@
             <div class="top">
                 <h1>Songs</h1>
                 <p>Every "Crush 40" (Johnny Gioeli + Jun Senoue) song created.</p>
-                <input class="search" placeholder="Search"></input>
+                <input class="search" id="songsSearch" placeholder="Search"></input>
             </div>
             <div class="songListContainer">
                 <ul class="songList" id="songList">
