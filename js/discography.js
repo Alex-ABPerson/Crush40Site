@@ -545,8 +545,9 @@ function InitSongs()
     songsList = document.querySelector("#songList");
 
     songsSearch.addEventListener('input', () => {
-        let itms = Object.values(Crush40Songs).filter(x => x.includes(songsSearch.value));
-        UpdateSongs(itms, songsSearch.value);
+        let searchTerm = songsSearch.value.toLowerCase();
+        let itms = Object.values(Crush40Songs).filter(x => x.toLowerCase().includes(searchTerm));
+        UpdateSongs(itms, searchTerm);
     });
 
     UpdateSongs(Object.values(Crush40Songs), "");
@@ -584,20 +585,22 @@ function CreateHTMLFor(itm, searchTerm)
 {
     if (searchTerm == "") return itm;
 
+    let lowerItm = itm.toLowerCase();
     let result = "";
     let currentPos = 0;
     while (true)
     {
-        let newPos = itm.indexOf(searchTerm, currentPos);
+        let newPos = lowerItm.indexOf(searchTerm, currentPos);
         if (newPos == -1) break;
         
         result += itm.substring(currentPos, newPos);
+        currentPos = newPos;
 
         result += "<u>";
-        result += searchTerm;
+        result += itm.substring(currentPos, newPos + searchTerm.length);
         result += "</u>";
-        
-        currentPos = newPos + searchTerm.length;
+
+        currentPos += searchTerm.length;
     }
 
     result += itm.substring(currentPos, itm.length);
