@@ -141,7 +141,7 @@ function CreateTrack(track)
 
     let title = document.createElement("h3");
     title.classList.add("title");
-    title.innerText = track.title;
+    title.innerText = track.id ? Crush40Songs[track.id] : track.title;
 
     let playbackLen = document.createElement("p");
     playbackLen.classList.add("length");
