@@ -150,38 +150,7 @@
                 <input class="search" id="songsSearch" placeholder="Search"></input>
             </div>
             <div class="songListContainer">
-                <ul class="songList" id="songList">
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                    <li class="song">
-                        <h2 class="title">Song Title</h2>
-                        <p class="releaseYear">Release Year</p>
-                        <p class="game">Game</p>
-                    </li>
-                </ul>
+                <ul class="songList" id="songList"></ul>
             </div>
         </div>
 
