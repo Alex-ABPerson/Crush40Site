@@ -29,7 +29,7 @@ var Crush40Songs = {
   sy: "Sonic Youth",
   ootd: "One Of Those Days",
   ra: "Rise Again",
-  2n2r: "2 Nights 2 Remember",
+  twoNights: "2 Nights 2 Remember",
   bm: "Big Mouth",
   lotd: "Light Of The Day",
   dnd: "Down & Dirty",
