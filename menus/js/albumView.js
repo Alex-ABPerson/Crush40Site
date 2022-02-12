@@ -11,7 +11,8 @@ let trackListDvd;
 let trackListSection;
 let liveNotice;
 let physical;
-let physicalDisc;
+let physicalCD;
+let physicalDVD;
 let physicalCover;
 let physicalBack;
 let physicalSticker;
@@ -36,7 +37,8 @@ window.addEventListener('load', () => {
     liveNotice = document.querySelector("#liveNotice");
     physical = document.querySelector("#physical");
     physicalSticker = document.querySelector("#sticker");
-    physicalDisc = document.querySelector(".physical #disc");
+    physicalCD = document.querySelector(".physical #cd");
+    physicalDVD = document.querySelector(".physical #dvd");
     physicalCover = document.querySelector(".physical #cover");
     physicalBack = document.querySelector(".physical #back");
     physicalTray = document.querySelector(".physical #tray");
@@ -81,7 +83,12 @@ function Populate(album)
     statTracks.innerText = album.tracks.length;
     statLength.innerText = album.playbackLength;
     physical.style.backgroundImage = "url('" + album.physicalBg + "')";
-    physicalDisc.src = album.discImg;
+    physicalCD.src = album.discImg;
+
+    if (album.dvdImg)
+    {
+        physicalDVD.src = album.dvdImg;
+    }
 
     if (!album.live)
     {
@@ -341,5 +348,6 @@ function MoveNext()
 // Disc Spin
 function UpdateDiscSpin(scrollPos)
 {
-    physicalDisc.style.transform = "rotate(" + scrollPos % 360 / 5 + "deg)";
+    physicalCD.style.transform = "rotate(" + scrollPos % 360 / 5 + "deg)";
+    physicalDVD.style.transform = "rotate(" + scrollPos % 360 / 5 + "deg)";
 }

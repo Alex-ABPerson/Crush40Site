@@ -367,6 +367,9 @@ body {
 
 .physical .cd {
     display: flex;
+    flex-direction: row;
+    gap: 10px;
+
     align-self: center;
     justify-content: center;
 
