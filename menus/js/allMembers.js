@@ -68,7 +68,12 @@ function UpdateView()
 
         let title = document.createElement("p");
         title.classList.add("title");
-        title.innerHTML = work.name;
+
+        if (work.id)
+        {
+            title.innerHTML = Crush40Songs[work.id];
+        }
+        else title.innerHTML = work.name; // TODO: Remove
 
         listItem.appendChild(title);
     
