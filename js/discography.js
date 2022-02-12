@@ -566,13 +566,14 @@ function UpdateSongs(songs, searchTerm)
         newSongView.appendChild(title);
 
         let year = document.createElement("p");
-        year.classList.add("")
+        year.classList.add("year");
         year.innerHTML = CreateHTMLFor("2012", searchTerm);
         newSongView.appendChild(year);
 
-        let desc = document.createElement("p");
-        desc.innerHTML = CreateHTMLFor("The song's video game.", searchTerm);
-        newSongView.appendChild(desc);
+        let soundtrack = document.createElement("p");
+        soundtrack.classList.add("soundtrack");
+        soundtrack.innerHTML = CreateHTMLFor("The song's video game.", searchTerm);
+        newSongView.appendChild(soundtrack);
 
         songsList.appendChild(newSongView);
     }
