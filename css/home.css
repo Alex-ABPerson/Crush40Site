@@ -15,6 +15,10 @@
     src: url('../img/fonts/OoohBaby-Regular.ttf')
 }
 
+.background {
+    background-image: url('../img/visuals/Background/Back1.jpg');
+}
+
 /* INTRODUCING... CRUSH 40! */
 .intro {
     position: relative;

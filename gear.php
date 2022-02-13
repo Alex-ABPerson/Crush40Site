@@ -9,7 +9,7 @@
         <meta name="keywords" content="Crush 40, Johnny Gioeli, Jun Senoue, Sonic the Hedgehog, Crush 40 Live, Crush 40 Discography">
 
         <link href="css/site.css" rel="stylesheet">
-        <link href="css/discography.css" rel="stylesheet">
+        <link href="css/gear.css" rel="stylesheet">
 
         <!-- Crush 40 JavaScript -->
         <script src="js/loading-bar.js"></script>
