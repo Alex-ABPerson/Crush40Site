@@ -167,7 +167,6 @@ h1, h2, h3, h4, h5, h6 {
 .background {
     opacity: 50%;
 
-    background-image: url('../img/visuals/Opening.png');
     background-position: center;
     background-size: cover;
 

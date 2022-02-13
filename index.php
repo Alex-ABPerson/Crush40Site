@@ -69,6 +69,8 @@
 
             <div class="bandMembers introSection">
 
+                <div class="bg"></div>
+
                 <!-- Johnny -->
                 <p class="johnnyIndicator indicator">VOCALS</p>
 

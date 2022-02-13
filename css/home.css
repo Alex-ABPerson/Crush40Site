@@ -22,6 +22,7 @@
 /* INTRODUCING... CRUSH 40! */
 .intro {
     position: relative;
+    z-index: 0;
 
     background-color: var(--crush40-gray);
     color: white;
@@ -58,6 +59,7 @@
 }
 
 .intro .strip {
+    position: relative;
     width: calc(100% + 20px);
 
     box-sizing: border-box;
@@ -137,6 +139,8 @@
 }
 
 .intro .bandMembers {
+    position: relative;
+
     justify-items: center;
     text-align: center;
     flex-direction: row;
@@ -145,6 +149,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.intro .bandMembers .bg {
+    position: absolute;
+    z-index: -1;
+
+    top: -250px;
+    left: 0;
+    width: 100%;
+    height: 130%;
+
+    background-image: url('../img/visuals/Background/Montage.png');
+    background-attachment: fixed;
 }
 
 .intro .bandMembers .centreSeparator {
@@ -177,10 +194,10 @@
     grid-area: junMrJun;
     justify-self: center;
 
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    margin-bottom: -100px;
+    width: 85%;
+
+    margin: 0 0 -100px 15px;
+
     padding: 15px;
     padding-bottom: 100px;
 
@@ -193,7 +210,8 @@
 }
 
 .intro .bandMembers .img {
-    max-width: 70%;
+    height: 500px;
+    max-width: 100%;
     object-fit: scale-down;
 }
 
@@ -262,11 +280,11 @@
     grid-area: johnnyTitle;
 }
 
-.intro .bandMembers .johnnyDesc { grid-area: johnnyDesc; padding-left: 30px; }
+.intro .bandMembers .johnnyDesc { grid-area: johnnyDesc; padding: 10px; }
 .intro .bandMembers .johnnyImg { grid-area: johnnyImg; }
 .intro .bandMembers .johnnyIndicator { grid-area: johnnyIndicator; }
 .intro .bandMembers .johnnyTitle { grid-area: johnnyTitle; }
-.intro .bandMembers .junDesc { grid-area: junDesc; padding-left: 25px; }
+.intro .bandMembers .junDesc { grid-area: junDesc; padding-left: 25px; padding-right: 5px; }
 .intro .bandMembers .junImg { grid-area: junImg; }
 .intro .bandMembers .junIndicator { grid-area: junIndicator; }
 
