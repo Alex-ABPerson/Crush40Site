@@ -15,7 +15,7 @@
     display: grid;
 
     /* Smallscreen */
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
         "img"
         "text";
@@ -47,10 +47,12 @@
 
 /* Details */
 .guitars .details {
+    position: relative;
+
     display: flex;
     flex-direction: column; /* Smallscreen */
     justify-content: center;
-    padding: 60px 15px;
+    padding: 100px 15px;
     gap: 20px;
 }
 
@@ -109,6 +111,30 @@
     bottom: -200px;
 }
 
+.guitars .details .zigZagTop,.guitars .details .zigZagBottom {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+}
+
+.guitars .details .zigZagTop {
+    top: 0;
+
+    background-image: url('../img/visuals/Separators/ZigZagDownBlack.svg');
+    background-repeat: repeat;
+}
+
+.guitars .details .zigZagBottom {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+
+    background-image: url('../img/visuals/Separators/ZigZagUpWhite.svg');
+    background-repeat: repeat;
+}
+
 @media (min-width: 1000px)
 {
     .guitars .details {
@@ -124,4 +150,13 @@
         right: -15px;
         bottom: -200px;
     }*/
+}
+
+.guitars .explorer {
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 130%;
+
+    padding: 20px;
 }

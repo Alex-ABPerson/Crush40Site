@@ -53,6 +53,7 @@
             </div>
             
             <div class="details">
+                <div class="zigZagTop"></div>
                 <div class="imgFrame frame">
                     <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars2.png" alt="Some of Jun's guitars">
                     <p>Jun's guitars backstage for the JGMF2013 show.</p>
@@ -69,6 +70,12 @@
                     </div>
                     <p class="text">- Johnny Gioeli, <i>2 Nights 2 Remember</i>, 2014.</p>
                 </div>
+                <div class="zigZagBottom"></div>
+            </div>
+
+            <div class="explorer">
+                <h2>All Guitars</h2>
+                <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
             </div>
         </div>
 
