@@ -1,3 +1,90 @@
 .background {
     background-image: url('../img/visuals/Background/Back3.jpg');
 }
+
+.guitars .intro {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.guitars .intro .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text img";
+}
+
+.guitars .intro .content .text {
+    grid-area: text;
+    align-self: center;
+    text-align: left;
+    font-size: 150%;
+}
+
+.guitars .intro .content .img {
+    grid-area: img;
+    justify-self: center;
+    height: 500px;
+}
+
+.guitars .details {
+    padding: 60px 30px;
+}
+
+.guitars .details .images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.guitars .details .imgFrame {
+    text-align: center;
+    font-size: 110%;
+    padding: 10px;
+}
+
+.guitars .details .frame {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid 3px white;
+}
+
+.guitars .details .images .img {
+    height: 300px;
+}
+
+.guitars .details .quoteFrame {
+    position: relative;
+    width: 100%;
+    margin: 0 40px;
+
+    text-align: center;
+    font-size: 150%;
+}
+
+.guitars .details .quoteFrame .quotation {
+    display: flex;
+    align-items: center;
+
+    font-size: 125%;
+
+    padding: 100px 0;
+    position: relative;
+}
+
+.guitars .details .quoteFrame .quotation .mark {
+    position: absolute;
+    font-size: 300px;
+    font-style: italic;
+    margin: 0;
+}
+
+.guitars .details .quoteFrame .quotationStart {
+    left: -104px;
+    top: -40px;
+}
+
+.guitars .details .quoteFrame .quotationEnd {
+    right: -15px;
+    bottom: -200px;
+}
