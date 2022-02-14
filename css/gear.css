@@ -2,6 +2,8 @@
     background-image: url('../img/visuals/Background/Back3.jpg');
 }
 
+/* GUITARS */
+/* Intro */
 .guitars .intro {
     padding: 15px;
     background-color: black;
@@ -11,8 +13,12 @@
 
 .guitars .intro .content {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "text img";
+
+    /* Smallscreen */
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "img"
+        "text";
 }
 
 .guitars .intro .content .text {
@@ -26,15 +32,25 @@
     grid-area: img;
     justify-self: center;
     height: 500px;
+    max-width: 100%;
+    object-fit: scale-down;
 }
 
+@media (min-width: 1000px)
+{
+    .guitars .intro .content {
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "text img";
+    }
+}
+
+/* Details */
 .guitars .details {
-    padding: 60px 30px;
-}
-
-.guitars .details .images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Smallscreen */
+    justify-content: center;
+    padding: 60px 15px;
     gap: 20px;
 }
 
@@ -49,14 +65,15 @@
     border: solid 3px white;
 }
 
-.guitars .details .images .img {
+.guitars .details .img {
+    max-width: 100%;
+    object-fit: scale-down;
     height: 300px;
 }
 
 .guitars .details .quoteFrame {
     position: relative;
     width: 100%;
-    margin: 0 40px;
 
     text-align: center;
     font-size: 150%;
@@ -65,6 +82,7 @@
 .guitars .details .quoteFrame .quotation {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     font-size: 125%;
 
@@ -80,11 +98,30 @@
 }
 
 .guitars .details .quoteFrame .quotationStart {
-    left: -104px;
-    top: -40px;
+    /* Smallscreen */
+    left: -30px;
+    top: -20px;
 }
 
 .guitars .details .quoteFrame .quotationEnd {
-    right: -15px;
+    /* Smallscreen */
+    right: 50px;
     bottom: -200px;
+}
+
+@media (min-width: 1000px)
+{
+    .guitars .details {
+        flex-direction: row;
+    }
+    
+    /*.guitars .details .quoteFrame .quotationStart {
+        left: -104px;
+        top: -40px;
+    }
+
+    .guitars .details .quoteFrame .quotationEnd {
+        right: -15px;
+        bottom: -200px;
+    }*/
 }

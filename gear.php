@@ -53,23 +53,21 @@
             </div>
             
             <div class="details">
-                <div class="images">
-                    <div class="imgFrame frame">
-                        <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars2.png" alt="Some of Jun's guitars">
-                        <p>Jun's guitars backstage for the JGMF2013 show.</p>
+                <div class="imgFrame frame">
+                    <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars2.png" alt="Some of Jun's guitars">
+                    <p>Jun's guitars backstage for the JGMF2013 show.</p>
+                </div>
+                <div class="imgFrame frame">
+                    <img data-action="zoom" class="img" src="img/content/guitars/Exhibition.png" alt="Some of Jun's guitars">
+                    <p>An <a href="https://soahcity.com/2016/08/23/jun-senoues-sonic-guitars-on-display-at-esp-museum/">exhibit</a> dedicated to Jun's guitars at the ESP Museum.</p>
+                </div>
+                <div class="quoteFrame frame">
+                    <div class="quotation">
+                        <p class="mark quotationStart">"</p>
+                        <p class="text">Jun Senoue has 742 guitars! And this is #82! Whew. Thank goodness you only brought <i>82</i>.</p>
+                        <p class="mark quotationEnd">"</p>
                     </div>
-                    <div class="imgFrame frame">
-                        <img data-action="zoom" class="img" src="img/content/guitars/Exhibition.png" alt="Some of Jun's guitars">
-                        <p>An <a href="https://soahcity.com/2016/08/23/jun-senoues-sonic-guitars-on-display-at-esp-museum/">exhibit</a> dedicated to Jun's guitars at the ESP Museum.</p>
-                    </div>
-                    <div class="quoteFrame frame">
-                        <div class="quotation">
-                            <p class="mark quotationStart">"</p>
-                            <p class="text">Jun Senoue has 742 guitars! And this is #82! Whew. Thank goodness you only brought <i>82</i>.</p>
-                            <p class="mark quotationEnd">"</p>
-                        </div>
-                        <p class="text">- Johnny Gioeli, <i>2 Nights 2 Remember</i>, 2014.</p>
-                    </div>
+                    <p class="text">- Johnny Gioeli, <i>2 Nights 2 Remember</i>, 2014.</p>
                 </div>
             </div>
         </div>
