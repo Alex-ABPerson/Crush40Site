@@ -1,12 +1,12 @@
 .background {
-    background-image: url('../img/visuals/Background/Back3.jpg');
+    background-image: url('../img/visuals/Background/Back5.png');
 }
 
 /* GUITARS */
 /* Intro */
 .guitars .intro {
     padding: 15px;
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: white;
     text-align: center;
 }
