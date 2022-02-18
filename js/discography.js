@@ -507,7 +507,7 @@ function ViewFeatureDetails(feature)
         newTrack.classList.add("track");
 
         let trackTitle = document.createElement("h4");
-        trackTitle.innerText = track.t;
+        trackTitle.innerText = track.id ? Crush40Songs[track.id] : track.t;
         newTrack.appendChild(trackTitle);
 
         if (track.d)
