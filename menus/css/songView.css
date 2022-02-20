@@ -4,11 +4,11 @@ body {
 
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 500px auto 500px;
+    grid-template-columns: 500px 500px 1fr;
     grid-template-areas:
-        "lyrics intro lists"
-        "lyrics desc lists"
-        "performances desc lists";
+        "intro lyrics versions"
+        "desc lyrics versions"
+        "desc performances versions";
     
     gap: 5px;
 }
@@ -60,12 +60,22 @@ body {
     grid-area: lyrics;
 }
 
+.lyrics .source {
+    font-style: italic;
+}
+
+.lyrics .text {
+    font-size: 130%;
+    text-align: left;
+    padding: 10px;
+}
+
 .performances {
     grid-area: performances;
 }
 
-.lists {
-    grid-area: lists;
+.versions {
+    grid-area: versions;
 }
 
 .dimentiaFont {
