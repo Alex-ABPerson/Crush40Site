@@ -48,7 +48,7 @@
                         <p>Jun most commonly plays the <b>ESP GL "SONIC"</b>, <b>ESP SONIC-II</b> and <b>ESP SHADOW-II</b> at most Crush 40 shows, but at some shows he also brings the dedicated game guitars to play.</p>
                         <p>He's been in a sponsership deal with ESP ever since he first worked on Sonic Adventure - and as such is required to use these guitars at his shows, but that's not a problem, because they're awesome and he always sounds great anyway!</p>
                     </div>
-                    <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars.jpg" alt="Some of Jun's guitars">
+                    <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars.png" alt="Some of Jun's guitars">
                 </div>
             </div>
             
@@ -76,6 +76,31 @@
             <div class="explorer">
                 <h2>All Guitars</h2>
                 <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
+
+                <div class="selection">
+                    <div class="selectionColumn">
+                        <h3>General</h3>
+                        <ul class="selectionList">
+                            <li><p>ESP GL "Sonic"</p></li>
+                            <li><p>ESP SONIC-II</p></li>
+                            <li><p>ESP SHADOW-II</p></li>
+                        </ul>
+                    </div>
+                    <div class="selectionColumn">
+                        <h3>Soundtracks</h3>
+                        <ul class="selectionList">
+                            <li><p>ESP VP "Shadow"</p></li>
+                            <li><p>ESP MR "Black Knight"</p></li>
+                            <li><p>ESP SEC "82 Custom"</p></li>
+                        </ul>
+                    </div>
+                    <div class="selectionColumn">
+                        <h3>Bass</h3>
+                        <ul class="selectionList">
+                            <li><p>ESP AMAZE-AL</p></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 

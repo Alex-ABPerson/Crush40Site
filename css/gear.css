@@ -160,3 +160,43 @@
 
     padding: 20px;
 }
+
+.guitars .explorer .selection {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.guitars .explorer .selection .selectionColumn .selectionList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+@media (min-width: 1000px)
+{
+    .guitars .explorer .selection {
+        justify-content: center;
+    }
+
+    .guitars .explorer .selection .selectionColumn .selectionList {
+        flex-direction: column;
+    }
+}
+
+.guitars .explorer .selection .selectionColumn .selectionList li {
+    min-width: 210px;
+    height: 100%;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+    border: black solid 3px;
+}
+
+.guitars .explorer .selection .selectionColumn .selectionList li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
