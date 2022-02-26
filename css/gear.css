@@ -200,3 +200,46 @@
 .guitars .explorer .selection .selectionColumn .selectionList li:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+.guitar {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.guitar .neck {
+    position: absolute;
+    height: 100%;
+    background-repeat: repeat-x;
+
+    left: 50px;
+    width: calc(100% - 150px);
+    background-size: auto 45px;
+}
+
+.guitar .neck {
+    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
+    background-position: 558px 160px;
+}
+
+.guitar .body {
+    grid-area: body;
+    z-index: 1;
+    
+    width: 600px;
+    margin-left: 10px;
+}
+
+.guitar .headstock {
+    position: absolute;
+    z-index: 1;
+
+    right: 10px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
+    width: 200px;
+
+    --snap-size: 23px;
+    --offset-from-right: 139px;
+}
