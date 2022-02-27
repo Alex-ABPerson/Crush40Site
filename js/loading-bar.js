@@ -1,8 +1,20 @@
 // Loading Indicators
+let messages = [
+    "<b>Revvin' Up</b> the engines!",
+    "Load <b>& Learn</b>!",
+    "<b>Thunder, rain and</b> loading",
+    "Loading <b>down to the paradise</b>",
+    "<b>It's time to get ready to</b> load!",
+    "<b>In his world,</b> loading <b>does not exist</b>!"
+];
+
 function StartLoading(loading) {
     loading.style.visibility = 'visible';
     loading.spinningElement = loading.querySelector(".spinning");
     loading.spinningElement.spinPos = 0;
+
+    // Choose a random message
+    loading.querySelector(".loading-text").innerHTML = ChooseRandMsg();
 
     loading.dataset.loadingId = setInterval(() => {
         loading.spinningElement.spinPos += 2;
@@ -17,4 +29,8 @@ function StartLoading(loading) {
 function StopLoading(loading) {
     loading.style.visibility = 'collapse';
     clearInterval(loading.dataset.loadingId);
+}
+
+function ChooseRandMsg() {
+    return messages[Math.floor(Math.random() * messages.length)];
 }
