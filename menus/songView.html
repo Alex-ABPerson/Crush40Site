@@ -8,25 +8,17 @@
         
         <link href="../css/site.css" rel="stylesheet">
         <link href="css/songView.css" rel="stylesheet">
+
+        <script src="js/songView.js"></script>
     </head>
     <body>
         <div class="intro block">
-            <h1>Revvin' Up</h1>
+            <h1 id="songTitle">Revvin' Up</h1>
         </div>
         <div class="desc block">
             <h2 class="dimentiaFont">Description</h2>
 
-            <hr>
-            <h3 class="heading">Fan Description</h3>
-            <p>This is a mind-blowing description about how epic this song is.</p>
-            <p>Just a whole load of text.</p>
-            <p>Keep it going!</p>
-            <p>Cool.</p>
-
-            <hr>
-            <h3 class="heading">Band Description</h3>
-            <p class="subHeading">(Written by Jun on Twitter)</p>
-            <p>This is a mind-blowing description about how epic this song is.</p>
+            <div id="descText"></div>
         </div>
         <div class="lyrics block">
             <h2 class="dimentiaFont">Lyrics</h2>
@@ -39,6 +31,14 @@
         </div>
         <div class="performances block">
             <h2 class="dimentiaFont">Performances</h2>
+            <ul class="list" id="performancesList">
+                <li class="performance">
+                    <p class="title">ABC</p>
+                    <p class="year">2011</p>
+                    <p class="description">2011</p>
+                </li>
+                <li class="performance"><p>DEF</p></li>
+            </ul>
         </div>
         <div class="versions block">
             <h2 class="dimentiaFont">Variants</h2>

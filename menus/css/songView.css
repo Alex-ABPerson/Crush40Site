@@ -6,9 +6,9 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 500px 500px 1fr;
     grid-template-areas:
-        "intro lyrics versions"
-        "desc lyrics versions"
-        "desc performances versions";
+        "intro desc versions"
+        "lyrics desc versions"
+        "performances performances versions";
     
     gap: 5px;
 }
@@ -72,6 +72,10 @@ body {
 
 .performances {
     grid-area: performances;
+}
+
+.performances .list {
+    
 }
 
 .versions {
