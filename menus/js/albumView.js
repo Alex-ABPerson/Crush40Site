@@ -26,7 +26,7 @@ let bookletNavRight;
 window.addEventListener('load', () => {
     page = document.querySelector(".page");
     title = document.querySelector(".intro > .title");
-    description = document.querySelector(".description > .text");
+    description = document.querySelector(".descriptionSection > .text");
     statYear = document.querySelector(".intro > .stats > .statYear > .statVal");
     statTracks = document.querySelector(".intro > .stats > .statTrackCount > .statVal");
     statLength = document.querySelector(".intro > .stats > .statLength > .statVal");

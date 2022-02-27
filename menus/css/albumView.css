@@ -3,7 +3,9 @@
 
 body {
     --separator-color: rgb(40, 40, 40);
-    background-color: var(--separator-color);
+    background-color: var(--crush40-gray);
+    background-image: url('../../img/visuals/Background/Vector/Jun1.svg');
+    background-repeat: no-repeat;
 
     display: grid;
 
@@ -16,7 +18,6 @@ body {
         "physical"
         "description";    
 
-    gap: 5px;
     box-sizing: border-box;
 }
 
@@ -24,7 +25,7 @@ body {
     grid-area: intro;
 }
 
-.description {
+.descriptionSection {
     grid-area: description;
 }
 
@@ -40,6 +41,28 @@ body {
     grid-area: tabs;    
     position: absolute;
     visibility: collapse;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-size: cover;
+        background-position: auto;
+    }
+
+    .descriptionSection, .tracks, .tabs {
+        border-bottom: 5px solid var(--separator-color);
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-size: 80%;
+        background-position: -80% 60%;
+    }
+
+    .descriptionSection, .tracks, .tabs {
+        border-right: 5px solid var(--separator-color);
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1409px) {
@@ -64,7 +87,7 @@ body {
         border-bottom-color: var(--crush40-blue);
     }
 
-    .page.descOpen .tracks, body:not(.descOpen) .description {
+    .page.descOpen .tracks, body:not(.descOpen) .descriptionSection {
         position: absolute;
         visibility: collapse;
         width: 0;
@@ -88,7 +111,6 @@ body {
 }
 
 .block {
-    background-color: var(--crush40-gray);
     padding: 0;
 }
 
@@ -102,7 +124,8 @@ body {
 /* Intro */
 .intro {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
     background-color: var(--separator-color);
     text-align: center;
 }
@@ -162,15 +185,13 @@ body {
 
     position: absolute;
     width: 100%;
-    height: 300px;
     overflow: auto;
     flex-direction: row;
 }
 
 .tracks {
     position: relative;
-    width: 100%;
-    height: 400px;
+    height: 295px;
     text-align: center;
 }
 
@@ -186,7 +207,6 @@ body {
 
 .trackList {
     padding: 0;
-    margin: 0;
     list-style-type: none;
 
     display: flex;
@@ -323,17 +343,17 @@ body {
 }
 
 /* Description */
-.description {
+.descriptionSection {
     grid-area: description;
     padding: 10px;
     overflow: auto;
 }
 
-.description h2 {
+.descriptionSection h2 {
     text-align: center;
 }
 
-.description p {
+.descriptionSection p {
     font-size: 110%;
 }
 
