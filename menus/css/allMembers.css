@@ -1,6 +1,11 @@
 body {
     display: flex;
     flex-direction: row;
+
+    background-image: url('../../img/visuals/Background/Vector/AllMembers.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
 }
 
 .contents {
