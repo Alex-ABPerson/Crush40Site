@@ -296,6 +296,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url('../img/visuals/Background/Vector/Johnny1.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
 }
 
 .intro .naming .imgContainer {
