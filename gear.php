@@ -74,6 +74,8 @@
                     </div>
                     <p class="text">- Johnny Gioeli, <i>2 Nights 2 Remember</i>, 2014.</p>
                 </div>
+
+                <div class="zigZag zigZagBottom"></div>
             </div>
 
             <div class="explorer">
