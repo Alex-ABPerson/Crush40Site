@@ -183,15 +183,12 @@ body {
 .tracksContents {
     display: flex;
 
-    position: absolute;
     width: 100%;
     overflow: auto;
     flex-direction: row;
 }
 
 .tracks {
-    position: relative;
-    height: 295px;
     text-align: center;
 }
 
@@ -239,7 +236,6 @@ body {
     }
 
     .tracksContents {
-        position: relative;
         height: auto;
         flex-direction: column;
     }
