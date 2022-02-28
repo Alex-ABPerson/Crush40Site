@@ -53,8 +53,9 @@
 
     padding: 10px; /* Smallscreen */
     box-sizing: border-box;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 3px white;
 }
 
 @media (min-width: 980px) {
@@ -74,6 +75,7 @@
 
     .albumList .album .info {
         padding: 50px;
+        margin: 20px;
     }
 }
 
