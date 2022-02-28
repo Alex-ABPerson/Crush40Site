@@ -3,15 +3,19 @@
 }
 
 /* GUITARS */
-/* Intro */
+/* Start */
 .guitars .intro {
     padding: 15px;
     background-color: rgb(40, 40, 40);
     color: white;
     text-align: center;
+
+    background-image: url('../img/visuals/Background/Vector/Jun2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.guitars .intro .content {
+.guitars .intro .start {
     display: grid;
 
     /* Smallscreen */
@@ -21,14 +25,14 @@
         "text";
 }
 
-.guitars .intro .content .text {
+.guitars .intro .start .text {
     grid-area: text;
     align-self: center;
     text-align: left;
     font-size: 150%;
 }
 
-.guitars .intro .content .img {
+.guitars .intro .start .img {
     grid-area: img;
     justify-self: center;
     height: 500px;
@@ -38,7 +42,7 @@
 
 @media (min-width: 1000px)
 {
-    .guitars .intro .content {
+    .guitars .intro .start {
         grid-template-rows: auto;
         grid-template-columns: 50% 50%;
         grid-template-areas: "text img";
@@ -46,34 +50,51 @@
 }
 
 /* Details */
-.guitars .details {
-    position: relative;
-
-    display: flex;
-    flex-direction: column; /* Smallscreen */
-    justify-content: center;
-    padding: 100px 15px;
-    gap: 20px;
-}
-
-.guitars .details .imgFrame {
-    text-align: center;
-    font-size: 110%;
-    padding: 10px;
-}
-
-.guitars .details .frame {
+.guitars .intro .frame {
     background-color: rgba(0, 0, 0, 0.8);
     border: solid 3px white;
 }
 
-.guitars .details .img {
-    max-width: 100%;
-    object-fit: scale-down;
-    height: 300px;
+.guitars .intro .imgSet {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Smallscreen */
+    justify-content: center;
+    gap: 20px;
+
+    padding: 20px 0;
 }
 
-.guitars .details .quoteFrame {
+.guitars .intro .imgSet .imgFrame {
+    text-align: center;
+    font-size: 110%;
+    padding: 10px;
+    min-width: 350px;
+    max-width: 100%;
+}
+
+.guitars .intro .imgSet .img {
+    max-width: 100%;
+    object-fit: scale-down;
+
+    max-height: 300px; /* Smallscreen */
+}
+
+@media (min-width: 980px)
+{
+    .guitars .intro .imgSet {
+        flex-direction: row;
+    }
+
+    .guitars .intro .imgSet .img {
+        height: 350px;
+        max-height: unset;
+    }
+}
+
+.guitars .quoteFrame {
     position: relative;
     width: 100%;
 
@@ -81,37 +102,37 @@
     font-size: 150%;
 }
 
-.guitars .details .quoteFrame .quotation {
+.guitars .quoteFrame .quotation {
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-size: 125%;
 
-    padding: 100px 0;
+    padding: 100px 10px;
     position: relative;
 }
 
-.guitars .details .quoteFrame .quotation .mark {
+.guitars .quoteFrame .quotation .mark {
     position: absolute;
     font-size: 300px;
     font-style: italic;
     margin: 0;
 }
 
-.guitars .details .quoteFrame .quotationStart {
+.guitars .quoteFrame .quotationStart {
     /* Smallscreen */
     left: -30px;
     top: -20px;
 }
 
-.guitars .details .quoteFrame .quotationEnd {
+.guitars .quoteFrame .quotationEnd {
     /* Smallscreen */
     right: 50px;
     bottom: -200px;
 }
 
-.guitars .details .zigZagTop,.guitars .details .zigZagBottom {
+/*.guitars .details .zigZagTop, .guitars .details .zigZagBottom {
     position: absolute;
     width: 100%;
     height: 50px;
@@ -133,24 +154,7 @@
 
     background-image: url('../img/visuals/Separators/ZigZagUpWhite.svg');
     background-repeat: repeat;
-}
-
-@media (min-width: 1000px)
-{
-    .guitars .details {
-        flex-direction: row;
-    }
-    
-    /*.guitars .details .quoteFrame .quotationStart {
-        left: -104px;
-        top: -40px;
-    }
-
-    .guitars .details .quoteFrame .quotationEnd {
-        right: -15px;
-        bottom: -200px;
-    }*/
-}
+}*/
 
 .guitars .explorer {
     color: black;
@@ -200,7 +204,6 @@
 .guitars .explorer .selection .selectionColumn .selectionList li:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .guitar {
     width: 100%;

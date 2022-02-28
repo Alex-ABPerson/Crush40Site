@@ -41,7 +41,7 @@
             <div class="intro">
                 <h1>Guitars</h1>
 
-                <div class="content">
+                <div class="start">
                     <div class="text">
                         <p>By far the most prominent set of gear for Crush 40 is Jun's <i>guitars</i>.</p>
                         <p>Jun uses custom-made <b>ESP Guitars</b> for his own works and Crush 40. The guitars have different designs on them - some being used for general Sonic/Shadow songs, and some being used for very precise game soundtracks.</p>
@@ -50,18 +50,22 @@
                     </div>
                     <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars.png" alt="Some of Jun's guitars">
                 </div>
-            </div>
-            
-            <div class="details">
-                <div class="zigZagTop"></div>
-                <div class="imgFrame frame">
-                    <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars2.png" alt="Some of Jun's guitars">
-                    <p>Jun's guitars backstage for the JGMF2013 show.</p>
+
+                <div class="imgSet">
+                    <div class="imgFrame frame">
+                        <p>Jun's guitars backstage for the JGMF2013 show.</p>
+                        <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars2.png" alt="Some of Jun's guitars">
+                    </div>
+                    <div class="imgFrame frame">
+                        <p>An <a href="https://soahcity.com/2016/08/23/jun-senoues-sonic-guitars-on-display-at-esp-museum/">exhibit</a> dedicated to Jun's guitars at the ESP Museum.</p>
+                        <img data-action="zoom" class="img" src="img/content/guitars/Exhibition.png" alt="Some of Jun's guitars">
+                    </div>
+                    <div class="imgFrame frame">
+                        <p>The guitars at the Tokyo 2011 show.</p>
+                        <img data-action="zoom" class="img" src="img/content/guitars/Tokyo2011Guitars.jpg" alt="Some of Jun's guitars at Tokyo 2011">
+                    </div>
                 </div>
-                <div class="imgFrame frame">
-                    <img data-action="zoom" class="img" src="img/content/guitars/Exhibition.png" alt="Some of Jun's guitars">
-                    <p>An <a href="https://soahcity.com/2016/08/23/jun-senoues-sonic-guitars-on-display-at-esp-museum/">exhibit</a> dedicated to Jun's guitars at the ESP Museum.</p>
-                </div>
+
                 <div class="quoteFrame frame">
                     <div class="quotation">
                         <p class="mark quotationStart">"</p>
@@ -70,7 +74,6 @@
                     </div>
                     <p class="text">- Johnny Gioeli, <i>2 Nights 2 Remember</i>, 2014.</p>
                 </div>
-                <div class="zigZagBottom"></div>
             </div>
 
             <div class="explorer">
