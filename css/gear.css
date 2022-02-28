@@ -73,7 +73,6 @@
     text-align: center;
     font-size: 110%;
     padding: 10px;
-    min-width: 350px;
     max-width: 100%;
 }
 
@@ -88,6 +87,10 @@
 {
     .guitars .intro .imgSet {
         flex-direction: row;
+    }
+
+    .guitars .intro .imgSet .imgFrame {
+        min-width: 350px;
     }
 
     .guitars .intro .imgSet .img {
