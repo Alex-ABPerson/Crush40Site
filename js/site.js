@@ -199,19 +199,15 @@ function UpdateParallaxAll()
     {
         switch (backgroundParallax[i].dataset.parallax)
         {
-            case "backgroundY":
+            case "backgroundYRev":
                 if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
                     UpdateBackgroundParallaxX(backgroundParallax[i]);
                 else
-                    UpdateBackgroundParallaxY(backgroundParallax[i]);
+                    UpdateBackgroundParallaxYRev(backgroundParallax[i]);
                     
                 break;
-            case "backgroundX":
-                if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
-                    UpdateBackgroundParallaxY(backgroundParallax[i]);
-                else
-                    UpdateBackgroundParallaxX(backgroundParallax[i]);
-
+            case "backgroundY":
+                UpdateBackgroundParallaxY(backgroundParallax[i]);
                 break;
         }
         
@@ -223,7 +219,27 @@ function UpdateBackgroundParallaxX(item)
     item.style.backgroundPosition = -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px 0%";
 }
 
+function UpdateBackgroundParallaxYRev(item)
+{
+    item.style.backgroundPosition = "0% " + item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed) + "px";
+}
+
 function UpdateBackgroundParallaxY(item)
 {
-    item.style.backgroundPosition = "0% " + -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px";
+    item.style.backgroundPosition = "0% " + -(item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed)) + "px";
 }
+
+// Parallax
+/*window.addEventListener('load', () => {
+    let parallaxed = document.querySelectorAll("[data-parallax-speed]")
+
+    for (let para of parallaxed)
+    {
+        document.addEventListener('scroll', () => {            
+            let yPos = -(document.scrollTop / para.dataset.parallaxSpeed);
+            para.style.backgroundPosition = "50%" + yPos + 'px';
+
+            $scroll.css({ backgroundPosition: coords });
+        });
+    }
+});*/

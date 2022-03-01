@@ -15,7 +15,7 @@
     src: url('../img/fonts/OoohBaby-Regular.ttf')
 }
 
-.background {
+.GSBack {
     background-image: url('../img/visuals/Background/Back1.jpg');
 }
 
@@ -319,6 +319,7 @@
 
 /* GUITARS */
 .guitars {
+    position: relative;
     margin-top: -125px;
 }
 
@@ -422,6 +423,10 @@
     /* Smallscreen */
     margin-top: -120px; 
     height: 500px;
+}
+
+.guitars .middle .GSBackContainer {
+    margin-top: -200px;
 }
 
 .guitars .middle .contents {
