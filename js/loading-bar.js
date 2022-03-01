@@ -5,7 +5,9 @@ let messages = [
     "<b>Thunder, rain and</b> loading",
     "Loading <b>down to the paradise</b>",
     "<b>It's time to get ready to</b> load!",
-    "<b>In his world,</b> loading <b>does not exist</b>!"
+    "<b>In his world,</b> loading <b>does not exist</b>!",
+    "<b>2 Nights 2</b> Load",
+    "<b>No</b> loading <b>to bring you down!</b>"
 ];
 
 function StartLoading(loading) {
