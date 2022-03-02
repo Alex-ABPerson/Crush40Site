@@ -130,16 +130,11 @@
 
             <div class="featureInfo" id="featureInfo">
                 <button title="Close" class="close closeButton" id="featureInfoClose"><img src="img/icons/smallCloseButtonWhite.svg" alt="Close Icon"></button>
-                <h2 id="featureTitle">Sonic Team "PowerPlay"</h2>
-                <p id="featureDescription">Sonic Team PowerPlay... That's a really odd name</p>
+                <h2 id="featureTitle"></h2>
+                <p id="featureDescription"></p>
 
                 <h3 class="featuredTracksTitle">Featured Tracks</h3>
-                <ul class="featuredTracks" id="featureTracks">
-                    <li class="track">
-                        <h4>A Song</h4>
-                        <p>An absolute banger, of course!</p>
-                    </li>
-                </ul>
+                <ul class="generalList featuredTracks" id="featureTracks"></ul>
             </div>
         </div>
 
@@ -150,7 +145,7 @@
                 <input class="search" id="songsSearch" placeholder="Search"></input>
             </div>
             <div class="songListContainer">
-                <ul class="songList" id="songList"></ul>
+                <ul class="generalList songList" id="songList"></ul>
             </div>
         </div>
 

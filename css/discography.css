@@ -252,15 +252,6 @@
     overflow-y: auto;
 }
 
-.featuredTracks {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    
-    list-style-type: none;
-    padding: 10px;
-}
-
 /* Smallscreen */
 .featuresOpen .featuresMain {
     visibility: collapse;
@@ -378,22 +369,14 @@
     margin-top: 50px;
 }
 
-.featuredTracks .track {
+.featuredTracks {
+    flex-direction: row;
     padding: 10px;
-    background-color: var(--crush40-red-pale);
-    margin: 5px;
-
-    min-width: 300px;
-
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.featuredTracks .track:hover {
-    background-color: var(--crush40-red-pale-hover);   
+.featuredTracks .track {
+    text-align: center;
+    justify-content: center;
 }
 
 /* Songs List */
@@ -425,31 +408,23 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.songs .songList {
-    width: 100%;
-
-    margin-bottom: 0;
-    padding: 10px;
-    padding-bottom: 10px;
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-
-    overflow-x: auto;
-}
-
 .songs .songListContainer {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.songs .song {
-    padding: 10px;
-    min-width: 400px;
-    cursor: pointer;
+.songs .songList {
+    width: 100%;
+
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.songs .songList .song {
+    min-width: 250px;
+    text-align: center;
+    justify-content: center;
 }
 
 .songs .song {

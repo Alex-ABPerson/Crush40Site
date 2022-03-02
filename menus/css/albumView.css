@@ -203,29 +203,12 @@ body {
 }
 
 .trackList {
-    padding: 0;
-    list-style-type: none;
-
-    display: flex;
-
     /* Smallscreen */
     flex-direction: row;
 }
 
 .trackList .track {
-    text-align: left;
-
-    padding: 20px;
-    background-color: var(--crush40-red-pale);
-    margin: 5px;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-
-    min-width: 300px;
-
-    cursor: pointer;
 }
 
 @media (min-width: 1000px) {
@@ -247,10 +230,6 @@ body {
     .trackList .track {
         min-width: unset;
     }
-}
-
-.trackList .track:hover {
-    background-color: var(--crush40-red-pale-hover);
 }
 
 .trackList .track .main {
