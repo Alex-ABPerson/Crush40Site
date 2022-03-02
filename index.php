@@ -135,7 +135,7 @@
                 <img class="headstock headstock-right" src="img/content/guitars/Sonic-II/HeadstockHorizontal.svg" alt="ESP-SONIC-II Guitar Headstock">
             </div>
             <div class="middle">
-                <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2" data-parallax-change-at="0"></div></div>
+                <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
                 <div class="contents">
                     <p class="heading">Oh - and there's even custom "Crush 40" guitars by ESP!</p>
                     <p class="subheading"><i>Jun uses these live!</i></p>

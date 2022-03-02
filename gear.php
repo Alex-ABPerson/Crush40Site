@@ -79,8 +79,10 @@
             </div>
 
             <div class="explorer">
-                <h2>Guitar Breakdown</h2>
-                <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
+                <div class="explorer-intro">
+                    <h2>Guitar Breakdown</h2>
+                    <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
+                </div>
 
                 <div class="selection">
                     <div class="selectionColumn">
@@ -106,12 +108,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="guitar">
-                <img class="body" src="img/content/guitars/Sonic-II/BodyHorizontal.svg" alt="ESP-SONIC-II Guitar Body">
-                <div class="neck"></div>
-                <img class="headstock headstock-right" src="img/content/guitars/Sonic-II/HeadstockHorizontal.svg" alt="ESP-SONIC-II Guitar Headstock">
+                <div class="guitar">
+                    <div class="guitarImgContainer">
+                        <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
+                        <img src="img/content/guitars/GtrOutline.png">
+                    </div>
+                </div>
             </div>
         </div>
 

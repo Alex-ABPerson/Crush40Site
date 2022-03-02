@@ -1,5 +1,5 @@
 .GSBack {
-    background-image: url('../img/visuals/Background/Back5.png');
+    background-image: url('../img/visuals/Background/Back6.png');
 }
 
 /* GUITARS */
@@ -162,12 +162,13 @@
 }*/
 
 .guitars .explorer {
+    z-index: 1;
+    background: none;
     color: black;
     text-align: center;
-    background-color: white;
     font-size: 130%;
 
-    padding: 20px;
+    background-color: white;
 }
 
 .guitars .explorer .selection {
@@ -175,6 +176,7 @@
     flex-direction: row;
     overflow-x: auto;
     gap: 15px;
+    padding: 20px;
 }
 
 .guitars .explorer .selection .selectionColumn .selectionList {
@@ -215,39 +217,14 @@
     position: relative;
 
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.guitar .neck {
-    position: absolute;
+.guitarImgContainer {
+    position: relative;
+    z-index: 0;
+}
+
+.guitarImgContainer img {
     height: 100%;
-    background-repeat: repeat-x;
-
-    left: 50px;
-    width: calc(100% - 150px);
-    background-size: auto 45px;
-}
-
-.guitar .neck {
-    background-image: url('../img/visuals/GuitarLoop/Horizontal.svg');
-    background-position: 558px 160px;
-}
-
-.guitar .body {
-    grid-area: body;
-    z-index: 1;
-    
-    width: 600px;
-    margin-left: 10px;
-}
-
-.guitar .headstock {
-    position: absolute;
-    z-index: 1;
-
-    right: 10px; /* This is overriden by JS to use a snapping system instead, to avoid weirdly lining up with frets - this is just here for non-JS */
-    width: 200px;
-
-    --snap-size: 23px;
-    --offset-from-right: 139px;
 }
