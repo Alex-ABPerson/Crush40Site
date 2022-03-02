@@ -23,6 +23,7 @@ html, body {
     --crush40-red-pale-transparent: rgba(140, 30, 30, 0.8);
     --crush40-red-pale-hover: rgb(160, 30, 30);
     --crush40-blue-pale: rgb(30, 30, 140);
+    --crush40-blue-pale-transparent: rgba(30, 30, 140, 0.8);
     --crush40-blue-pale-hover: rgb(60, 30, 140);
 
     --crush40-gray: rgb(60, 60, 60);

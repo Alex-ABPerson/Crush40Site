@@ -63,19 +63,11 @@ body {
 }
 
 .list .itemShow {
-    background-color: var(--crush40-red-pale);
+    background-color: var(--crush40-blue-pale-transparent);
 }
 
 .list .itemShow:hover {
-    background-color: var(--crush40-red-pale-hover);
-}
-
-.list .itemSong {
-    background-color: var(--crush40-blue-pale);
-}
-
-.list .itemSong:hover {
-    background-color: rgb(30, 30, 120);
+    background-color: var(--crush40-blue-pale-hover);
 }
 
 .list .identifier {
