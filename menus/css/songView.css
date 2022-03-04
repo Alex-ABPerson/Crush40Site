@@ -4,7 +4,7 @@ body {
 
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 500px 500px 1fr;
+    grid-template-columns: 450px 600px 1fr;
     grid-template-areas:
         "intro desc versions"
         "lyrics desc versions"
@@ -75,7 +75,28 @@ body {
 }
 
 .performances .list {
+    overflow-x: auto;
+}
+
+.performances .list > li {
+    flex-shrink: 0;
     
+    font-size: 120%;
+    max-width: 450px;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.performances .list p {
+    margin: 0;
+}
+
+.performances .list .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 .versions {
