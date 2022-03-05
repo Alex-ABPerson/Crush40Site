@@ -28,7 +28,10 @@ let Songs = {
             ]
         },
         lyrics: {
-            src: "Driving Through Forever booklet",
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" },
+                { n: "Another" }
+            ],
             text: `
 <p>I don't care what you're thinking<br/>
 As you turn to me<br/>
@@ -111,7 +114,29 @@ function Populate(basicSong, song)
 
 function PopulateLyrics(song) 
 {
-    lyricsSource.innerHTML = "<p>(Sourced from the " + song.lyrics.src + ")</p>";
+    let srcPara = document.createElement("p");
+    srcPara.insertAdjacentText('beforeEnd', "(Sourced from the ");
+
+    for (let src in song.lyrics.src)
+    {
+        let itm = song.lyrics.src[src];
+
+        if (itm.id)
+        {
+            let link = document.createElement("a");
+            link.innerText = itm.n;
+            link.addEventListener('click', () => window.parent.postMessage('@albumView?a=' + itm.id, '*'));
+            srcPara.appendChild(link);
+        }
+        else
+            srcPara.insertAdjacentText('beforeEnd', itm.n);
+
+        if (src < song.lyrics.src.length - 1)
+            srcPara.insertAdjacentText('beforeEnd', src == song.lyrics.src.length - 2 ? " and " : ", ");
+    }
+
+    srcPara.insertAdjacentText('beforeEnd', song.lyrics.src.length > 1 ? " booklets)" : " booklet)");
+    lyricsSource.appendChild(srcPara);
     lyricsText.innerHTML = song.lyrics.text;
 }
 
