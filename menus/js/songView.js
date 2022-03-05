@@ -101,7 +101,7 @@ Let me show you just what I'm made of</p>
                     subHeading: "(Written by <a href='https://twitter.com/crush40/status/454927117495435264' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>A song I wrote in a studio in Tokyo with Johnny a long time ago.</p>
-                        <p>I remember I was almost crying from the crowd reaction when I played this song at [Sonic Boom 2012], and I really wanted to play this song with a full band, so I was very happy to be able to do that [at the 2 Nights 2 Remember show].
+                        <p>I remember I was almost crying from the crowd reaction when I played this song at [Summer of Sonic 2012], and I really wanted to play this song with a full band, so I was very happy to be able to do that [at the 2 Nights 2 Remember show].
                     ` }
             ]
         },
@@ -156,6 +156,102 @@ Live Life...</p>
             { id: "sos12" },
             { id: "twoNights" },
             { id: "jgmf18", d: "Featuring a real violinist!" },
+        ]
+    },
+    iam: {
+        desc: {
+            fan: `
+            <p>"I Am... All Of Me" is the main theme of "Shadow The Hedgehog". Originally, Magna-fi (who also wrote & recorded "All Hail Shadow") had written a track called "Who I Am" to be the game's main theme, but was excluded due to complications with the band's then label, Aezra.</p>
+            <p>The game itself goes for a radically different approach in comparison to previous games (taking inspiration from the then-emerging mature game market), so Jun followed suit with a soundtrack focusing on Heavy & Industrial Metal.</p> 
+            <p>"I Am... All Of Me" stands out as the game & soundtrack's crowning achievement, being the first song the player hears during the opening cinematic, along with the final boss. Despite the game's polarizing reception, the track has become regarded as one of Crush 40's best, being a fan favorite & commonly performed during their live shows.</p>
+            `,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454926790746599425' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>The main theme of Shadow the Hedgehog, which was tuned down to C and made dark and heavy.</p>
+                        <p>Both Johnny and I love this song, and the way the venue fired up [at the 2 Nights 2 Remember show] when the introductory part of this song came in was just thrilling, regardless of how many times we've experienced it!</p>
+                        <p>The air changes in an instant!</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+<p>I hear no speak no evil<br />
+Black writing's on the wall<br />
+Unleashed a million faces<br />
+And one by one they fall<br />
+Black hearted evil or<br />
+Brave hearted hero<br />
+I am all I am all I am...</p>
+<p>Go ahead and try to see thru me<br />
+Do it if you dare<br />
+One step forward two steps back I'm here</p>
+<p>Do it, do it, do it, do it</p>
+<p>Can you see all of me<br />
+Walk into my mystery<br />
+Step inside and hold on for dear life<br />
+Do you rememeber me<br />
+Capture you or set you free<br />
+I am all I am all of me...<br />
+I am... I'm all of me...</p>
+<p>I see and feel the evil<br />
+My hands will crush em' all<br />
+You think you have the answers<br />
+I'll laugh and watch you fall<br />
+Black hearted evil or<br />
+Brave hearted hero<br />
+I am all I am all I am...</p>
+<p>Go ahead and try to see thru me<br />
+Do it if you dare<br />
+One step forward two steps back I'm here</p>
+<p>Do it, do it, do it, do it</p>
+<p>Can you see all of me<br />
+Walk into my mystery<br />
+Step inside and hold on for dear life<br />
+Do you rememeber me<br />
+Capture you or set you free<br />
+I am all I am all of me...<br />
+I am... I'm all of me...</p>
+<p>I am I am everyone, everywhere, anyhow, anyway, any will, any day<br />
+I am I am everyone, everywhere, anyhow, anyway, any will, any day<br />
+I Am... I Am... I Am...<br />
+I Am... I Am... I Am...</p>
+<p>Do it, do it, do it, do it</p>
+<p>Can you see all of me<br />
+Walk into my mystery<br />
+Step inside and hold on for dear life<br />
+Do you rememeber me<br />
+Capture you or set you free<br />
+I am all I am all of me...<br />
+I am... I'm all of me...</p>
+            `
+        },
+        performances: [
+            { id: "tgs08" },
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "sb12" },
+            { id: "jgmf13" },
+            { id: "sb13" },
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
+            { id: "tmg17" },
+            { id: "mgc18" },
+            { id: "puma18" },
+            { id: "jgmf18" },
+            { id: "tmg18" },
+            { id: "mgc19" },
+            { id: "tmg19" },
+            { id: "symphony" }
         ]
     }
 };
