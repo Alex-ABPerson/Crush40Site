@@ -101,6 +101,9 @@ body {
     justify-content: center;
     gap: 10px;
 }
+.performances .list .description {
+    text-align: center;
+}
 
 .versions {
     grid-area: versions;

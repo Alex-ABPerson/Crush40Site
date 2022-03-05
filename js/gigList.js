@@ -5,7 +5,7 @@ var Crush40Performances = {
     sb11: { n: "Sonic Boom 2011", y: 2011 },
     t11: { n: "Live In Tokyo 2011", y: 2011 },
     t12: { n: "Live In Tokyo 2012", y: 2012 },
-    sb12: { n: "Sonic Boom 2011", y: 2012 },
+    sb12: { n: "Sonic Boom 2012", y: 2012 },
     sos12: { n: "Summer of Sonic 2012", y: 2012 },
     jgmf13: { n: "Japan Game Music Festival", y: 2013 },
     sb13: { n: "Sonic Boom 2013", y: 2013 },

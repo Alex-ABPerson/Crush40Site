@@ -29,8 +29,7 @@ let Songs = {
         },
         lyrics: {
             src: [ 
-                { n: "Driving Through Forever", id: "driving" },
-                { n: "Another" }
+                { n: "Driving Through Forever", id: "driving" }
             ],
             text: `
 <p>I don't care what you're thinking<br/>
@@ -87,6 +86,76 @@ Let me show you just what I'm made of</p>
             { id: "tmg18" },
             { id: "mgc19" },
             { id: "tmg19" }
+        ]
+    },
+    ll: {
+        desc: {
+            fan: `
+            <p>As the ending song of <i>Sonic and The Black Knight</i>, Live Life creates a perfect continuity from Knight of The Wind by utilizing a variant of the latter's main riff.</p>
+            <p>Bringing the violins back in full force, the song proves yet again Johnny's incredible talent for ballads, delivering one of his most soulful performances in any Crush 40 song - it's certainly brought some Crush 40 fans to tears more than once!</p>
+            <p>Furthermore the lyrics perfectly convey the game's message of living life to the fullest in the time you have; even though according to Johnny they were written in a hotel room mere days before the deadline!</p>
+            `,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454927117495435264' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>A song I wrote in a studio in Tokyo with Johnny a long time ago.</p>
+                        <p>I remember I was almost crying from the crowd reaction when I played this song at [Sonic Boom 2012], and I really wanted to play this song with a full band, so I was very happy to be able to do that [at the 2 Nights 2 Remember show].
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Super Sonic Songs", id: "sss" }
+            ],
+            text: `
+<p>Take a look inside your heart<br />
+What once seemed fair today<br />
+Tomorrow it may not<br />
+Just a walk or a journey<br />
+Don't stop reaching high<br />
+Don't let the time pass you by</p>
+<p>So many ways that you can try to forget<br />
+So many ways you'll find you wake up to regret</p>
+<p>Someday, one day we'll say live life I know<br />
+Hold on hold tight<br />
+Don't let go don't lose sight</p>
+<p>Feeling like the road<br />
+Is winding you on every turn<br />
+But there are lessons to learn<br />
+Take a look inside your heart<br />
+What once seemed impossible<br />
+Today is not</p>
+<p>So many ways that you can try to forget<br />
+So many ways you'll find you wake up to regret</p>
+<p>Someday, one day we'll say live life I know<br />
+Hold on hold tight<br />
+Don't let go don't lose sight<br />
+Someday, one day we'll say live life I know<br />
+Hold on hold tight<br />
+Don't let go</p>
+<p>I can't imagine I can't imagine<br />
+Making it on your own<br />
+You've got it inside you've got it inside of you...<br />
+So let it out...!</p>
+<p>Someday, one day we'll say live life I know<br />
+Hold on hold tight<br />
+Don't let go don't lose sight<br />
+Someday, one day we'll say live life I know<br />
+Hold on hold tight<br />
+Don't let go don't live life</p>
+<p>Live Life...</p>
+<p>Live Life...<br />
+Don't let go...</p>
+<p>Live Life...<br />
+Live Life...</p>
+            `
+        },
+        performances: [
+            { id: "sos12" },
+            { id: "twoNights" },
+            { id: "jgmf18", d: "Featuring a real violinist!" },
         ]
     }
 };
