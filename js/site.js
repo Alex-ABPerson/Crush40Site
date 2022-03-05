@@ -55,8 +55,10 @@ var floatingPanel;
 var floatingLoading;
 var floatingPanelTitle;
 var floatingPanelFrame;
+var floatingPanelBack;
 var currentPanelHeight;
 var panelOpen = false;
+var noPanelHistory = 0;
 
 window.addEventListener('load', () => {
     
@@ -65,9 +67,11 @@ window.addEventListener('load', () => {
     floatingPanel = document.querySelector(".floating .panel");
     floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
     floatingPanelFrame = document.querySelector(".floating .panel .contents");
+    floatingPanelBack = document.querySelector(".floating .panel .titlebar .back");
 
     document.querySelector(".floating .floatingClose").addEventListener('click', ClosePanel);
     document.querySelector(".floating .panel .titlebar .close").addEventListener('click', ClosePanel);
+    floatingPanelBack.addEventListener('click', NavBack);
 
     window.addEventListener('message', (e) => HandleMessage(e.data));
     window.addEventListener('resize', () => {
@@ -76,49 +80,64 @@ window.addEventListener('load', () => {
     UpdatePanelSizing();
 
     for (let btn of document.querySelectorAll("[data-action='panel']"))
-    {
-        btn.addEventListener('click', () => {
-            OpenPanel();
-            ChangePanelSrc(btn.dataset.pageName);
-        });
-    }
+        btn.addEventListener('click', () => UpdatePanelPage(btn.dataset.pageName));
 });
 
-function UpdatePanelSizing() {
-    if (currentPanelHeight >= window.innerHeight || window.innerWidth < 1000)
-        floatingPanel.style.height = "100%";
+function UpdatePanelPage(newSrc)
+{   
+    let bothParts = newSrc.split('?');
+    floatingPanelFrame.src = "menus/" + bothParts[0] + ".html" + (bothParts.length > 1 ? "?" + bothParts[1] : "");
+
+    OnUpdatePanelPage(true);
+}
+
+function OnUpdatePanelPage(updateHistory)
+{
+    StartLoading(floatingLoading);
+    OpenPanel();
+
+    // Show the back button if we have enough history.
+    if (noPanelHistory > 0)
+        floatingPanelBack.classList.remove("hiddenBack");
     else
-        floatingPanel.style.height = currentPanelHeight + "px";
+        floatingPanelBack.classList.add("hiddenBack");
+
+    if (updateHistory) noPanelHistory++;
+}
+
+function NavBack()
+{
+    noPanelHistory--;
+    iframe.contentWindow.history.back();
+    OnUpdatePanelPage(false);
 }
 
 function OpenPanel()
 {
     panelOpen = true;
-
-    StartLoading(floatingLoading);
     floating.style.visibility = 'visible';
     DisableScroll();
-}
-
-function ChangePanelSrc(newSrc)
-{
-    let bothParts = newSrc.split('?');
-
-    floatingPanelFrame.src = "menus/" + bothParts[0] + ".html" + (bothParts.length > 1 ? "?" + bothParts[1] : "");
 }
 
 function ClosePanel()
 {
     panelOpen = false;
-
-    EnableScroll();
+    noPanelHistory = 0;
     floating.style.visibility = 'collapse';
+    EnableScroll();
 }
 
 function OnPanelLoad()
 {
     floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;   
     StopLoading(floatingLoading);
+}
+
+function UpdatePanelSizing() {
+    if (currentPanelHeight >= window.innerHeight || window.innerWidth < 1000)
+        floatingPanel.style.height = "100%";
+    else
+        floatingPanel.style.height = currentPanelHeight + "px";
 }
 
 function HandleMessage(msg) {
@@ -137,6 +156,10 @@ function HandleMessage(msg) {
         // Zoom feature
         case '^':
             OpenZoom(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
+            break;
+        // Navigate To
+        case '@':
+            UpdatePanelPage(msgContents); // Get rid of any ../s as they don't apply here.
             break;
     }
 }

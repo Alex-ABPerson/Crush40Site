@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
 }
 
-.closeButton {
+.iconButton {
     margin: 0;
     padding: 20px;
 
@@ -264,8 +264,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--crush40-red);
 
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "title close";
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "back title close";
 }
 
 .floating .panel .titlebar .title {
@@ -275,7 +275,24 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 }
 
-.floating .panel .titlebar .close:hover {
+.floating .panel .titlebar .back {
+    grid-area: back;
+}
+
+.floating .panel .titlebar .close {
+    grid-area: close;
+}
+
+.floating .panel .titlebar .hiddenBack {
+    position: absolute;
+    visibility: collapse;
+}
+
+.floating .panel .titlebar .iconButton {
+    height: 64px;
+}
+
+.floating .panel .titlebar .close:hover, .floating .panel .titlebar .back:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
