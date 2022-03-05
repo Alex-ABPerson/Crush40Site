@@ -215,6 +215,7 @@
 .guitar {
     width: 100%;
     position: relative;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
@@ -227,4 +228,35 @@
 
 .guitarImgContainer img {
     height: 100%;
+}
+
+.guitars .details {
+    position: relative;
+    
+    color: white;
+    text-align: center;
+    background-color: black;
+    margin-top: -205px;
+    padding-top: 205px;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: "more select";
+    flex-direction: column;
+}
+
+.guitars .details .otherDetails {
+    grid-area: more;
+    border-right: solid 3px red;
+    padding: 50px 20px;
+}
+
+.guitars .details .selectInfo {
+    grid-area: select;
+
+    padding: 50px;
+    align-self: center;
 }
