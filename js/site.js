@@ -206,36 +206,33 @@ window.addEventListener('load', () => {
     
     backgroundParallax = document.querySelectorAll("[data-parallax]");
 
-    window.addEventListener('scroll', () => {
-        UpdateParallaxAll();
-    });
-    
-    window.addEventListener('resize', () => {
-        UpdateParallaxAll();
-    });
-    
-    UpdateParallaxAll();
-});
-
-function UpdateParallaxAll()
-{
     for (let i = 0; i < backgroundParallax.length; i++)
     {
+        let itm = backgroundParallax[i];
+        let handler;
+        
         switch (backgroundParallax[i].dataset.parallax)
         {
             case "backgroundYRev":
-                if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
-                    UpdateBackgroundParallaxX(backgroundParallax[i]);
-                else
-                    UpdateBackgroundParallaxYRev(backgroundParallax[i]);
-                    
+                handler = () => UpdateBackgroundParallaxYRev(itm);
                 break;
             case "backgroundY":
-                UpdateBackgroundParallaxY(backgroundParallax[i]);
+                handler = () => UpdateBackgroundParallaxY(itm);
                 break;
         }
-        
+
+        window.addEventListener('scroll', handler);
+        window.addEventListener('resize', handler);
+        handler();
     }
+});
+
+function HandleBackgroundYRev(itm)
+{
+    if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
+        UpdateBackgroundParallaxX(backgroundParallax[i]);
+    else
+        UpdateBackgroundParallaxYRev(backgroundParallax[i]);
 }
 
 function UpdateBackgroundParallaxX(item)
