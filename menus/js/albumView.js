@@ -184,6 +184,8 @@ function CreateTrack(track)
     // Click
     if (track.id)
         newTrack.addEventListener('click', () => window.parent.postMessage('@songView?s=' + track.id, '*'));
+    else
+        newTrack.classList.add("noFocus");
 
     return newTrack;
 }

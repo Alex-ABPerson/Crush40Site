@@ -232,6 +232,11 @@ body {
     }
 }
 
+.trackList .noFocus, .trackList .noFocus:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
 .trackList .track .main {
     padding-top: 1px;
     position: relative;
