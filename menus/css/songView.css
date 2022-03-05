@@ -28,6 +28,8 @@ body {
     grid-area: desc;
     padding: 10px;
     text-align: left;
+
+    overflow-y: auto;
 }
 
 .desc p {
@@ -58,6 +60,7 @@ body {
 
 .lyrics {
     grid-area: lyrics;
+    overflow-y: auto;
 }
 
 .lyrics .source {

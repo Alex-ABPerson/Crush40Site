@@ -5,40 +5,88 @@ let lyricsSource;
 let lyricsText;
 
 let Song = {
-    title: "I Am... All Of Me",
-    desc: {
-        fan: "<p>abc</p>",
-        other: [
-            { heading: "Another Description", subHeading: "(Written by someone)", text:`
-            <p>This is a mind-blowing description about how epic this song is.</p>
-            <p>Just a whole load of text.</p>
-            <p>Keep it going!</p>
-            <p>Cool.</p>
-            ` }
+   
+};
+
+let Songs = {
+    wimo: {
+        desc: {
+            fan: `
+            <p>"What I'm Made Of..." is the second Crush 40 track on Sonic Heroes, and has been remarked multiple times by Johnny as his favourite Crush 40 song of all time. 
+            <p>Jun had already created a short demo of "What I'm Made Of..." before the title track of the game, Sonic Heroes, was even composed, but it was initially rejected by the team.</p>
+            <p>Insisting that the song be used in the game, late into development it was decided it would be used as the track for the final boss; Jun then informed Johnny about the track (who was in the middle of a camping trip with his family), and how it was needed to be written quickly.</p>
+            <p>And so, inside of a tour bus' kitchen area, Johnny began writing the lyrics to the track, and by Summer 2003 an early demo featuring background vocals was completed. By Fall 2003, the track was completely finished.</p>
+            `,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454934664549908480' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>For [the 2 Nights 2 Remember performance], I played "What I'm Made Of" with my "82" instead of my Sonic guitar for the first time - I just wanted to play my favourite song on that guitar!</p>
+                        <p>One especially notable moment was at the end of the second day of the show, where the whole audience sang the final "What I'm Made Of..." in unison - it gave me goosebumps!</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: "Driving Through Forever booklet",
+            text: `
+<p>I don't care what you're thinking<br/>
+As you turn to me<br/>
+Cause what I have in my two hands<br/>
+Is enough to set me free<br/>
+I could fight the feeling<br/>
+To resist it over time<br/>
+But when it's just too much to take<br/>
+You sneak up from behind</p>
+<p>Is it me, you say, you're looking for<br/>
+Let me show you who I am and what I'm here for... here for...</p>
+<p>Try to reach inside of me, try to drain my energy<br/>
+Let me show you just what I'm made of<br/>
+Simple curiosity tries to take a bite of me<br/>
+Let me show you just what I'm made of now...</p>
+<p>Like a million faces<br/>
+I've recognized them all<br/>
+And one by one they've all become<br/>
+A black mark on the floor</p>
+<p>Is it me, you say, you're looking for<br/>
+Let me show you who I am and what I have in store.... in store...</p>
+<p>Try to reach inside of me, try to drain my energy<br/>
+Let me show you just what I'm made of<br/>
+Simple curiosity tries to take a bite of me<br/>
+Let me show you just what I'm made of now...</p>
+<p>You can take another life long try<br/>
+You can take another try...</p>
+<p>Try to reach inside of me, try to drain my energy<br/>
+Let me show you just what I'm made of<br/>
+Simple curiosity tries to take a bite of me<br/>
+Let me show you just what I'm made of now...</p>
+<p>Try to reach inside of me, try to drain my energy<br/>
+Let me show you just what I'm made of</p>
+            `
+        },
+        performances: [
+            { id: "tgs08" },
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "sb12" },
+            { id: "jgmf13" },
+            { id: "sb13" },
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
+            { id: "tmg17" },
+            { id: "mgc18" },
+            { id: "puma18" },
+            { id: "jgmf18" },
+            { id: "tmg18" },
+            { id: "mgc19" },
+            { id: "tmg19" }
         ]
-    },
-    lyrics: {
-        src: "2 Nights 2 Remember booklet",
-        text: `
-            <p>Thunder, rain and lightning</p> 
-            <p>Danger, water rising</p>
-            <p>...</p>
-            <p>Revvin' Up</p>
-        `
-    },
-    performances: [
-        { 
-            id: "sb13",
-            d: "Sad about that stream..."
-        },
-        {
-            id: "jgmf13"
-        },
-        {
-            id: "symphony"
-        }
-    ]
-}
+    }
+};
 
 window.addEventListener('load', () => {
     songTitle = document.querySelector("#songTitle");
@@ -48,7 +96,7 @@ window.addEventListener('load', () => {
     performancesList = document.querySelector("#performancesList")
 
     let afterS = document.URL.split('?')[1].substring(2); // Trim off the "s="
-    Populate(Crush40Songs[afterS.toLowerCase()], Song);
+    Populate(Crush40Songs[afterS.toLowerCase()], Songs[afterS.toLowerCase()]);
 
     window.parent.postMessage('!800px', '*');
 });
