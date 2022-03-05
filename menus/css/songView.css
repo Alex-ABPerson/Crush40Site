@@ -3,14 +3,121 @@ body {
     background-color: var(--separator-color);
 
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 450px 600px 1fr;
+    
+    /* Mobile */
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        "intro desc versions"
-        "lyrics desc versions"
-        "performances performances versions";
+        "intro"
+        "versions"
+        "tabs"
+        "desc";
     
     gap: 5px;
+}
+
+.tabs {
+    position: fixed;
+    visibility: collapse;
+}
+
+/* Smaller, tab-based, layouts */
+@media (max-width: 1299px)
+{
+    /* Mobile */
+    .lyricsOpen {
+        grid-template-areas:
+            "intro"
+            "versions"
+            "tabs"
+            "lyrics";
+    }
+
+    .performancesOpen {
+        grid-template-areas:
+            "intro"
+            "versions"
+            "tabs"
+            "performances";
+    }
+
+    .performances .list {
+        flex-direction: column;
+    }
+
+    /* Focus selected tabs */
+    .page:not(.lyricsOpen):not(.performancesOpen) #descriptionTab, .page.lyricsOpen #lyricsTab, .page.performancesOpen #performancesTab {
+        border-bottom-color: var(--crush40-blue);
+    }
+
+    /* Hide not selected tabs */
+    .page.lyricsOpen .desc, .page.performancesOpen .desc, .page:not(.lyricsOpen) .lyrics, .page:not(.performancesOpen) .performances {
+        position: fixed;
+        visibility: collapse;
+    }
+
+    .tabs {
+        position: relative;
+        visibility: visible;
+    }
+}
+
+/* Smallscreen */
+@media (min-width: 850px)
+{
+    body {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 410px 1fr;
+        grid-template-areas:
+            "intro versions"
+            "tabs versions"
+            "desc versions";
+    }
+
+    .lyricsOpen {
+        grid-template-areas:
+            "intro versions"
+            "tabs versions"
+            "lyrics versions";
+    }
+    
+    .performancesOpen {
+        grid-template-areas:
+            "intro versions"
+            "tabs versions"
+            "performances versions";
+    }
+
+    .desc {
+        overflow-y: auto;
+    }
+
+    .lyrics {
+        overflow-y: auto;
+    }
+
+    .performances {
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 1300px)
+{
+    body {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 410px 450px 1fr;
+        grid-template-areas:
+            "intro desc versions"
+            "lyrics desc versions"
+            "performances performances versions";
+    }
+}
+
+@media (min-width: 1500px)
+{
+    body {
+        grid-template-columns: 450px 600px 1fr;
+    }
 }
 
 .block {
@@ -28,8 +135,6 @@ body {
     grid-area: desc;
     padding: 10px;
     text-align: left;
-
-    overflow-y: auto;
 }
 
 .desc p {
@@ -60,7 +165,6 @@ body {
 
 .lyrics {
     grid-area: lyrics;
-    overflow-y: auto;
 }
 
 .lyrics .source {
@@ -101,6 +205,7 @@ body {
     justify-content: center;
     gap: 10px;
 }
+
 .performances .list .description {
     text-align: center;
 }

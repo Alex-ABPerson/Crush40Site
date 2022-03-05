@@ -1,3 +1,4 @@
+let page;
 let songTitle;
 let description;
 let performancesList;
@@ -426,11 +427,14 @@ I'm the knight of the wind...</p>
 };
 
 window.addEventListener('load', () => {
+    page = document.querySelector(".page");
     songTitle = document.querySelector("#songTitle");
     description = document.querySelector("#descText");
     lyricsSource = document.querySelector("#lyricsSource");
     lyricsText = document.querySelector("#lyricsText");
-    performancesList = document.querySelector("#performancesList")
+    performancesList = document.querySelector("#performancesList");
+
+    SetupTabs();
 
     let afterS = document.URL.split('?')[1].substring(2); // Trim off the "s="
     try {
@@ -440,6 +444,27 @@ window.addEventListener('load', () => {
         window.parent.postMessage('!800px', '*');
     }
 });
+
+function SetupTabs()
+{
+    document.querySelector("#descriptionTab").addEventListener('click', () => 
+    {
+        page.classList.remove("lyricsOpen");
+        page.classList.remove("performancesOpen");
+    });
+
+    document.querySelector("#lyricsTab").addEventListener('click', () =>
+    {
+        page.classList.add("lyricsOpen");
+        page.classList.remove("performancesOpen");
+    });
+
+    document.querySelector("#performancesTab").addEventListener('click', () =>
+    {
+        page.classList.remove("lyricsOpen");
+        page.classList.add("performancesOpen");
+    });
+}
 
 function Populate(basicSong, song)
 {

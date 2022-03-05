@@ -13,24 +13,40 @@
         <script src="../js/gigList.js"></script>
         <script src="js/songView.js"></script>
     </head>
-    <body>
+    <body class="page">
         <div class="intro block">
             <h1 id="songTitle">Revvin' Up</h1>
         </div>
+
+        <!-- Smallscreen Tabs -->
+        <div class="tabs block">
+            <ul class="tabSet">
+                <li class="tab" id="descriptionTab"><p>Description</p></li>
+                <li class="tab" id="lyricsTab"><p>Lyrics</p></li>
+                <li class="tab" id="performancesTab"><p>Performances</p></li>
+            </ul>
+        </div>
+
+        <!-- Description -->
         <div class="desc block">
             <h2 class="dimentiaFont">Description</h2>
-
             <div id="descText"></div>
         </div>
+
+        <!-- Lyrics -->
         <div class="lyrics block">
             <h2 class="dimentiaFont">Lyrics</h2>
             <div class="source" id="lyricsSource"></div>
             <div class="text" id="lyricsText"></div>
         </div>
+
+        <!-- Performances -->
         <div class="performances block">
             <h2 class="dimentiaFont">Performances</h2>
             <ul class="generalList list" id="performancesList"></ul>
         </div>
+
+        <!-- Variants -->
         <div class="versions block">
             <h2 class="dimentiaFont">Variants</h2>
             <p>To be filled in</p>
