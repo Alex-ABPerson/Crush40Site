@@ -11,6 +11,7 @@ var Crush40Performances = {
     sb13: { n: "Sonic Boom 2013", y: 2013 },
     twoNights: { n: "2 Nights 2 Remember", y: 2014 },
     expoTNT: { n: "ExpoTNT", y: 2014 },
+    joypolis15: { n: "Joypolis 2015", y: 2015 },
     youmacon15: { n: "Youmacon 2015", y: 2015 },
     sonic25th: { n: "Sonic 25th Party", y: 2016 },
     sos16: { n: "Summer of Sonic 2016", y: 2016 },

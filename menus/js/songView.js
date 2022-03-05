@@ -67,15 +67,16 @@ Let me show you just what I'm made of</p>
             `
         },
         performances: [
-            { id: "tgs08" },
             { id: "sos10" },
             { id: "t11" },
             { id: "t12" },
             { id: "sb12" },
+            { id: "sos12" },
             { id: "jgmf13" },
             { id: "sb13" },
             { id: "twoNights" },
             { id: "expoTNT" },
+            { id: "joypolis15" },
             { id: "youmacon15" },
             { id: "sonic25th" },
             { id: "sos16" },
@@ -237,10 +238,12 @@ I am... I'm all of me...</p>
             { id: "t11" },
             { id: "t12" },
             { id: "sb12" },
+            { id: "sos12" },
             { id: "jgmf13" },
             { id: "sb13" },
             { id: "twoNights" },
             { id: "expoTNT" },
+            { id: "joypolis15" },
             { id: "youmacon15" },
             { id: "sonic25th" },
             { id: "sos16" },
@@ -251,6 +254,172 @@ I am... I'm all of me...</p>
             { id: "tmg18" },
             { id: "mgc19" },
             { id: "tmg19" },
+            { id: "symphony" }
+        ]
+    },
+    oyh: {
+        desc: {
+            fan: `
+            <p>"Open Your Heart" is the main track of "Sonic Adventure" and the first Crush 40 track ever created - written before they even had a name!</p>
+            <p>Jun made at least 7 different demos of this track before settling on the final arrangement, multiple of which were made featuring different vocalists. The earliest available demo features co-composer <i>Kenichi Tokoi</i> on vocals, and the most famous of all is the demo featuring "Anthem" vocalist <i>Eizo Sakamoto</i>, which appears to have been recorded around Summer 1998.</p>
+            <p>Eizo's demo would end up making it to prototypes of the game, and was also performed the track live during the "SONIC Adventure Production Presentation" on September 1998.</p>
+            <p>Shortly after this demo, Jun contacted Johnny via Neal Schon of "Journey" to ask him to record for the track, as a result completing it around October 1998 and forming their relationship that would later give rise to "Crush 40".</p>
+            `,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454925447537496065' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>It's definitely an important song due to its roots, and loads of people still say they like it, and I'm happy that they do!</p>
+                        <p>Although - Johnny made the audience sing far too much of it [at the 2 Nights 2 Remember show], so sing more of it properly, Johnny!</p>
+                        <p>Also, this is a song I always feel I should play on my [ESP SONIC "GL"] guitar.</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+<p>Thunder, rain, and lightning<br />
+Danger, water rising<br />
+Clamour, sirens wailing<br />
+It's such a bad sign</p>
+<p>Shadows of dark creatures<br />
+Steel clouds floating in the air<br />
+People run for shelter<br />
+What's gonna happen to us!?</p>
+<p>All the steps we take, all the moves we make, all the pain at stake<br />
+I see the chaos for everyone who are we what can we do<br />
+You and I are the same in the way that we have our own styles that we won't change<br />
+Yours is filled with evil and mine's not there is no way I can lose</p>
+<p>Can't hold on much longer - But I will never let go<br />
+I know it's a one-way track - Tell me now how long this'll last<br />
+I'm not gonna think this way - Nor will I count on others<br />
+Close my eyes and feel it burn - Now I see what I've gotta do</p>
+<p>Open your heart, it's gonna be alright</p>
+<p>Ancient city blazing<br />
+Shadows keep attacking<br />
+Little children crying<br />
+Confusion, hopeless anger</p>
+<p>I don't know what it can be but you drive me crazy<br />
+All your cunning tricks make me sick, you won't have it your own way</p>
+<p>Can't hold on much longer - But I will never let go<br />
+I know it's a one-way track - Tell me now how long this'll last<br />
+I'm not gonna think this way - Nor will I count on others<br />
+Close my eyes and feel it burn - Now I see what I've gotta do</p>
+<p>Open your heart ...and you'll see...</p>
+<p>If it won't stop, there will be no future for us<br />
+Its heart is tied down by all the hate, gotta set him free</p>
+<p>I know it's a one-way track - Tell me now how long this'll last<br />
+Close my eyes and feel it burn - Now I see what I've gotta do</p>
+<p>Gotta open your heart, dude!</p>
+<p>Can't hold on much longer - But I will never let go<br />
+I know it's a one-way track - Tell me now how long this'll last<br />
+I'm not gonna think this way - Nor will I count on others<br />
+Close my eyes and feel it burn - Now I see what I've gotta do</p>
+<p>Open your heart, it's gonna be alright</p>
+            `
+        },
+        performances: [
+            { id: "sap", d: "Featuring <i>Eizo Sakamoto</i> on vocals!" },
+            { id: "tgs08" },
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "sb12" },
+            { id: "sos12" },
+            { id: "jgmf13" },
+            { id: "sb13" },
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "joypolis15" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
+            { id: "tmg17" },
+            { id: "mgc18" },
+            { id: "puma18" },
+            { id: "jgmf18" },
+            { id: "tmg18" },
+            { id: "mgc19" },
+            { id: "tmg19" },
+            { id: "sega60th" },
+            { id: "symphony" }
+        ]
+    },
+    kotw: {
+        desc: {
+            fan: `
+            <p>The first Crush 40 song to be played in D Standard tuning, Knight of The Wind was written as the opening track for 2009's <i>Sonic and The Black Knight</i>. The song has been a fan favourite since, with over 5 million plays on Spotify, and it's easy to see why!</p> 
+            <p>The song perfectly blends violins into Crush 40's signature rock sound, helping to slowly build the intensity for the perfect payoff in Jun's incredible solo - and a stunning final chorus that has the violins play the main riff in the background. 
+            <p>The song was actually re-recorded shortly after the game's release, with a completely different rhythm guitar tone able to be heard on "Super Sonic Songs", released later that year.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454927576276807680' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>The Tokyo Game Show 2008 performance was the first time this song was unveiled, being the theme song of <i>Sonic and the Black Knight</i>, and that performance was my first with Johnny.</p>
+                        <p>At that time, it had already been 10 years since Crush 40 was formed and everyone was very enthusiastic about this song, which has allowed me to continue to be to this day.</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+<p>Hey all, welcome to the greatest storm<br />
+I know, you have waited much too long<br />
+And I, I will be your shining star<br />
+I'm here, here to conquer near and far...</p>
+<p>Like the sun I run into the heat of day<br />
+Like the night I fight until the fight is won<br />
+In a rage I'll save each and every each and every each and everyone<br />
+Till this war is won</p>
+<p>And I live to rule by the sword<br />
+Slashing thru the every inch of the power the power in you<br />
+As I sit and as I stand by the table I command my kingdom<br />
+I'm the knight of the wind...</p>
+<p>Hey all, welcome to the end is near<br />
+I know, I will bring you pain and fear</p>
+<p>On the ground to the sky<br />
+Faced with you and I<br />
+In a flash I'm gone holding your crown high<br />
+In a rage I'll save each and every each and every each and everyone<br />
+Till this war is won</p>
+<p>And I live to rule by the sword<br />
+Slashing thru the every inch of the power the power in you<br />
+As I sit and as I stand by the table I command my kingdom<br />
+I'm the knight of the wind...</p>
+<p>Our castle is a massive force<br />
+A strong hold of power<br />
+My armor stays unbreakable<br />
+In battle every hour</p>
+<p>Like the sun I run into the heat of day<br />
+Like the night I fight until the fight is won<br />
+In a rage I'll save each and every each and every each and everyone<br />
+Till this war is won</p>
+<p>And I live to rule by the sword<br />
+Slashing thru the every inch of the power the power in you<br />
+As I sit and as I stand by the table I command my kingdom<br />
+I'm the knight of the wind...</p>
+            `
+        },
+        performances: [
+            { id: "tgs08" },
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "sos12" },
+            { id: "jgmf13" },
+            { id: "sb13" },
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "joypolis15" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
             { id: "symphony" }
         ]
     }
