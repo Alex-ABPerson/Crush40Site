@@ -427,6 +427,10 @@
     justify-content: center;
 }
 
+.songs .songList .song .year {
+    margin: 0;
+}
+
 .songs .song {
     background-color: var(--crush40-red-pale);
 }

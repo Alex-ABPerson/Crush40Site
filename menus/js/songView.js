@@ -439,7 +439,6 @@ window.addEventListener('load', () => {
     finally {
         window.parent.postMessage('!800px', '*');
     }
-
 });
 
 function Populate(basicSong, song)

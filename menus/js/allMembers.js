@@ -61,6 +61,7 @@ function UpdateView()
             case "song":
                 identifier.innerHTML = "SONG";
                 listItem.classList.add("itemSong");
+                listItem.addEventListener('click', () => window.parent.postMessage('@songView?s=' + work.id, '*'));
                 break;
         }
 
