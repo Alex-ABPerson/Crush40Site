@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
 
 function Populate(basicSong, song)
 {
-    songTitle.innerText = basicSong;
+    songTitle.innerText = basicSong.t;
     PopulateDescription(song);
     PopulateLyrics(song);
     PopulatePerformances(song);

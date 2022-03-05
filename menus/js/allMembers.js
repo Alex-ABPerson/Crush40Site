@@ -68,7 +68,7 @@ function UpdateView()
 
         let title = document.createElement("p");
         title.classList.add("title");
-        title.innerHTML = work.name ? work.name : Crush40Songs[work.id]; // TODO: Remove work.name
+        title.innerHTML = work.name ?? Crush40Songs[work.id].t; // TODO: Remove work.name
 
         listItem.appendChild(title);
     

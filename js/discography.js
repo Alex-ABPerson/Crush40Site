@@ -546,7 +546,10 @@ function InitSongs()
 
     songsSearch.addEventListener('input', () => {
         let searchTerm = songsSearch.value.toLowerCase();
-        let itms = Object.values(Crush40Songs).filter(x => x.toLowerCase().includes(searchTerm));
+        let itms = Object.values(Crush40Songs).filter(x => 
+            x.t.toLowerCase().includes(searchTerm) ||
+            x.y.toString().toLowerCase().includes(searchTerm) ||
+            x.g.toLowerCase().includes(searchTerm));
         UpdateSongs(itms, searchTerm);
     });
 
@@ -563,17 +566,17 @@ function UpdateSongs(songs, searchTerm)
         newSongView.classList.add("song");
         
         let title = document.createElement("h2");
-        title.innerHTML = CreateHTMLFor(itm, searchTerm);
+        title.innerHTML = CreateHTMLFor(itm.t, searchTerm);
         newSongView.appendChild(title);
 
         let year = document.createElement("p");
         year.classList.add("year");
-        year.innerHTML = CreateHTMLFor("2012", searchTerm);
+        year.innerHTML = CreateHTMLFor(itm.y.toString(), searchTerm);
         newSongView.appendChild(year);
 
         let soundtrack = document.createElement("p");
         soundtrack.classList.add("soundtrack");
-        soundtrack.innerHTML = CreateHTMLFor("The song's video game.", searchTerm);
+        soundtrack.innerHTML = CreateHTMLFor(itm.g, searchTerm);
         newSongView.appendChild(soundtrack);
 
         songsList.appendChild(newSongView);
