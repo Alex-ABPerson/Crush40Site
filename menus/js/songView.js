@@ -433,9 +433,13 @@ window.addEventListener('load', () => {
     performancesList = document.querySelector("#performancesList")
 
     let afterS = document.URL.split('?')[1].substring(2); // Trim off the "s="
-    Populate(Crush40Songs[afterS.toLowerCase()], Songs[afterS.toLowerCase()]);
+    try {
+        Populate(Crush40Songs[afterS.toLowerCase()], Songs[afterS.toLowerCase()]);
+    }
+    finally {
+        window.parent.postMessage('!800px', '*');
+    }
 
-    window.parent.postMessage('!800px', '*');
 });
 
 function Populate(basicSong, song)
