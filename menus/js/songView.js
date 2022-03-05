@@ -45,15 +45,21 @@ window.addEventListener('load', () => {
     description = document.querySelector("#descText");
     lyricsSource = document.querySelector("#lyricsSource");
     lyricsText = document.querySelector("#lyricsText");
-    performancesList = document.querySelector("#performancesList");
+    performancesList = document.querySelector("#performancesList")
 
-    songTitle.innerText = Song.title;
-    PopulateDescription(Song);
-    PopulateLyrics(Song);
-    PopulatePerformances(Song);
+    let afterS = document.URL.split('?')[1].substring(2); // Trim off the "s="
+    Populate(Crush40Songs[afterS.toLowerCase()], Song);
 
     window.parent.postMessage('!800px', '*');
 });
+
+function Populate(basicSong, song)
+{
+    songTitle.innerText = basicSong;
+    PopulateDescription(song);
+    PopulateLyrics(song);
+    PopulatePerformances(song);
+}
 
 function PopulateLyrics(song) 
 {
@@ -129,9 +135,4 @@ function AppendDesc(desc)
     text.classList.add("text");
     text.innerHTML = desc.text;
     description.appendChild(text);
-}
-
-function Populate()
-{
-
 }

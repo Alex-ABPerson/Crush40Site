@@ -181,6 +181,10 @@ function CreateTrack(track)
         newTrack.appendChild(description);
     }
 
+    // Click
+    if (track.id)
+        newTrack.addEventListener('click', () => window.parent.postMessage('@songView?s=' + track.id, '*'));
+
     return newTrack;
 }
 

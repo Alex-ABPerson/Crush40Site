@@ -88,7 +88,7 @@ function UpdatePanelPage(newSrc)
     let bothParts = newSrc.split('?');
     floatingPanelFrame.src = "menus/" + bothParts[0] + ".html" + (bothParts.length > 1 ? "?" + bothParts[1] : "");
 
-    OnUpdatePanelPage(true);
+    OnUpdatePanelPage(panelOpen);
 }
 
 function OnUpdatePanelPage(updateHistory)
@@ -96,19 +96,20 @@ function OnUpdatePanelPage(updateHistory)
     StartLoading(floatingLoading);
     OpenPanel();
 
-    // Show the back button if we have enough history.
+    if (updateHistory) noPanelHistory++;
+
+    // Show the back button if we have enough history now.
     if (noPanelHistory > 0)
         floatingPanelBack.classList.remove("hiddenBack");
     else
         floatingPanelBack.classList.add("hiddenBack");
 
-    if (updateHistory) noPanelHistory++;
 }
 
 function NavBack()
 {
     noPanelHistory--;
-    iframe.contentWindow.history.back();
+    floatingPanelFrame.contentWindow.history.back();
     OnUpdatePanelPage(false);
 }
 
