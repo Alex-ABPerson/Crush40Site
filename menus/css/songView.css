@@ -131,6 +131,18 @@ body {
     background-color: var(--separator-color);
 }
 
+.intro h1 {
+    margin-bottom: 0;
+}
+
+.intro .extra {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 120%;
+    justify-content: center;
+}
+
 .desc {
     grid-area: desc;
     padding: 10px;

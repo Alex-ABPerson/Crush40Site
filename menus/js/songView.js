@@ -1,5 +1,4 @@
 let page;
-let songTitle;
 let description;
 let performancesList;
 let lyricsSource;
@@ -428,7 +427,6 @@ I'm the knight of the wind...</p>
 
 window.addEventListener('load', () => {
     page = document.querySelector(".page");
-    songTitle = document.querySelector("#songTitle");
     description = document.querySelector("#descText");
     lyricsSource = document.querySelector("#lyricsSource");
     lyricsText = document.querySelector("#lyricsText");
@@ -468,7 +466,9 @@ function SetupTabs()
 
 function Populate(basicSong, song)
 {
-    songTitle.innerText = basicSong.t;
+    document.querySelector("#txtTitle").innerText = basicSong.t;
+    document.querySelector("#txtGame").innerText = basicSong.g;
+    document.querySelector("#txtYear").innerText = basicSong.y;
     PopulateDescription(song);
     PopulateLyrics(song);
     PopulatePerformances(song);
