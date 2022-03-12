@@ -53,6 +53,12 @@ a {
     cursor: pointer;
 }
 
+.dimentiaTitle {
+    font-family: 'Dimentia';
+    font-weight: 300;
+    color: red;
+}
+
 .section {
     width: 100%;
     overflow: hidden;

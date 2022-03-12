@@ -225,10 +225,3 @@ body {
 .versions {
     grid-area: versions;
 }
-
-.dimentiaFont {
-    font-family: 'Dimentia';
-    font-style: italic;
-    font-weight: 300;
-    color: red;
-}
