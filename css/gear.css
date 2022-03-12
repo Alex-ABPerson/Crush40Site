@@ -221,13 +221,20 @@
     justify-content: center;
 }
 
+.guitarNoBg .GSBackContainer {
+    visibility: hidden;
+}
+
 .guitarImgContainer {
+    width: 100%;
     position: relative;
     z-index: 0;
 }
 
 .guitarImgContainer img {
-    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    min-width: 1000px;
 }
 
 .guitars .details {
@@ -236,8 +243,8 @@
     color: white;
     text-align: center;
     background-color: black;
-    margin-top: -205px;
-    padding-top: 205px;
+    margin-top: -310px;
+    padding-top: 310px;
 
     width: 100%;
 

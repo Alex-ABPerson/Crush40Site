@@ -109,10 +109,10 @@
                     </div>
                 </div>
 
-                <div class="guitar">
+                <div class="guitar guitarNoBg">
                     <div class="guitarImgContainer">
                         <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
-                        <img src="img/content/guitars/GtrOutline.png">
+                        <img src="img/content/guitars/GL-SONIC/Front.svg">
                     </div>
                 </div>
 
