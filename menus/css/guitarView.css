@@ -1,0 +1,52 @@
+body {
+    --separator-color: rgb(40, 40, 40);
+    background-color: var(--separator-color);
+
+    display: grid;
+    
+    /* Mobile */
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 400px 400px 1fr;
+    grid-template-areas:
+        "intro desc pictures"
+        "performances desc pictures";
+
+    gap: 5px;
+}
+
+.block {
+    background-color: var(--crush40-gray);
+    padding: 0;
+    text-align: center;
+}
+
+.intro {
+    background-color: var(--separator-color);
+    grid-area: intro;
+}
+
+.intro h1 {
+    padding-top: 8px;
+}
+
+.intro .hiddenNav {
+    visibility: collapse;
+    position: fixed;
+}
+
+.performances {
+    grid-area: performances;
+}
+
+.performances .list {
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.desc {
+    grid-area: desc;
+}
+
+.pictures {
+    grid-area: pictures;
+}

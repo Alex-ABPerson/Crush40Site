@@ -103,7 +103,6 @@ function OnUpdatePanelPage(updateHistory)
         floatingPanelBack.classList.remove("hiddenBack");
     else
         floatingPanelBack.classList.add("hiddenBack");
-
 }
 
 function NavBack()
@@ -130,7 +129,13 @@ function ClosePanel()
 
 function OnPanelLoad()
 {
-    floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;   
+    let splitURL = document.URL.split('/');
+
+    // Send the current parent page to the iframe - the menu may just ignore this. One place this is used by the "guitar view" page,
+    // which needs to know whether it should hide the "View on Gear page" button if we're already on the gear page.
+    floatingPanelFrame.contentWindow.postMessage(splitURL[splitURL.length - 1]);
+    
+    floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;
     StopLoading(floatingLoading);
 }
 

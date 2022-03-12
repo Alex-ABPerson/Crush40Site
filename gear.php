@@ -120,7 +120,7 @@
                     <div class="otherDetails">
                         <h3>ESP SONIC-II</h3>
                         <p>Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
-                        <button class="emptyButton">View More Details</button>
+                        <button data-action="panel" data-page-name="guitarView?g=sonic-ii" class="emptyButton">View More Details</button>
                     </div>
                     <div class="selectInfo">
                         <h1>Select Info</h1>
