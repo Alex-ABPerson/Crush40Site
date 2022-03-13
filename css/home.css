@@ -486,6 +486,9 @@
 }
 
 .trivia {
+    background-image: url('../img/visuals/Background/Vector/Jun3.svg');
+    background-position: right;
+    background-repeat: no-repeat;
     margin-top: -120px;
 }
 
