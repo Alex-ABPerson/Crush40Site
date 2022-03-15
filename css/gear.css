@@ -172,14 +172,12 @@
 }
 
 .guitars .explorer .selection {
-    display: flex;
-    flex-direction: row;
     overflow-x: auto;
-    gap: 15px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
-.guitars .explorer .selection .selectionColumn .selectionList {
+.guitars .explorer .selection .selectionList {
     padding: 0;
     margin: 0;
     display: flex;
@@ -187,29 +185,43 @@
     list-style-type: none;
 }
 
-@media (min-width: 1000px)
-{
-    .guitars .explorer .selection {
-        justify-content: center;
-    }
-
-    .guitars .explorer .selection .selectionColumn .selectionList {
-        flex-direction: column;
-    }
-}
-
-.guitars .explorer .selection .selectionColumn .selectionList li {
+.guitars .explorer .selection li {
     min-width: 210px;
-    height: 100%;
     padding: 15px;
     margin: 10px;
-    cursor: pointer;
 
     border: black solid 3px;
 }
 
-.guitars .explorer .selection .selectionColumn .selectionList li:hover {
+.guitars .explorer .selection .guitar:not(.selected) {
+    cursor: pointer;
+    background-color: var(--crush40-red-pale-transparent);
+}
+
+.guitars .explorer .selection .guitar:not(.selected):hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.guitars .explorer .selection .selected {
+    background-color: var(--crush40-blue-pale-transparent);
+}
+
+.guitars .explorer .selection .multiItem {
+    min-width: 600px;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.guitars .explorer .selection .multiItem ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.guitars .explorer .selection .multiItem .guitar {
+    height: 100%;
 }
 
 .guitar {
@@ -218,6 +230,7 @@
     z-index: 1;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 

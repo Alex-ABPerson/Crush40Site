@@ -14,6 +14,7 @@
         <!-- Crush 40 JavaScript -->
         <script src="js/loading-bar.js"></script>
         <script src="js/site.js"></script>
+        <script src="js/gear.js"></script>
     </head>
     <body>
         <?php include('base/bodyStart.html') ?>
@@ -85,38 +86,60 @@
                 </div>
 
                 <div class="selection">
-                    <div class="selectionColumn">
-                        <h3>General</h3>
-                        <ul class="selectionList">
-                            <li><p>ESP GL "Sonic"</p></li>
-                            <li><p>ESP SONIC-II</p></li>
-                            <li><p>ESP SHADOW-II</p></li>
-                        </ul>
-                    </div>
-                    <div class="selectionColumn">
-                        <h3>Soundtracks</h3>
-                        <ul class="selectionList">
-                            <li><p>ESP VP "Shadow"</p></li>
-                            <li><p>ESP MR "Black Knight"</p></li>
-                            <li><p>ESP SEC "82 Custom"</p></li>
-                        </ul>
-                    </div>
-                    <div class="selectionColumn">
-                        <h3>Bass</h3>
-                        <ul class="selectionList">
-                            <li><p>ESP AMAZE-AL</p></li>
-                        </ul>
-                    </div>
+                    <ul class="selectionList">
+                        <li class="multiItem">
+                            <p>ESP GL "SONIC"</p>
+                            <ul>
+                                <li data-id="sonic" class="guitar">
+                                    <p>Original</p>
+                                    <p><i>ESP GL "SONIC"</i></p>
+                                </li>
+                                <li data-id="sth130" class="guitar">
+                                    <p>20th Anniversary</p>
+                                    <p><i>ESP STH-130</i></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="multiItem">
+                            <p>ESP SONIC-II</p>
+                            <ul>
+                                <li data-id="sonicii" class="guitar">
+                                    <p>Original</p>
+                                    <p><i>ESP SONIC-II</i></p>
+                                </li>
+                                <li data-id="sn25th" class="guitar">
+                                    <p>25th Anniversary</p>
+                                    <p><i>ESP SN-25th</i></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="multiItem">
+                            <p>ESP SHADOW-II</p>
+                            <ul>
+                                <li data-id="shadowii" class="guitar">
+                                    <p>Original</p>
+                                    <p><i>ESP SHADOW-II</i></p>
+                                </li>
+                                <li data-id="sd15th" class="guitar">
+                                    <p>15th Anniversary</p>
+                                    <p><i>ESP SD-15th</i></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-id="shadow" class="guitar"><p>ESP VP "Shadow"</p></li>
+                        <li data-id="knight" class="guitar"><p>ESP MR "Black Knight"</p></li>
+                        <li data-id="c82" class="guitar"><p>ESP SEC "82 Custom"</p></li>
+                    </ul>
                 </div>
 
                 <div class="guitar guitarNoBg">
                     <div class="guitarImgContainer">
                         <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
-                        <img src="img/content/guitars/GL-SONIC/Front.svg">
+                        <img id="gtrImg" src="img/content/guitars/GL-SONIC/Front.svg">
                     </div>
                 </div>
 
-                <div class="details">
+                <div class="details" id="belowGtr">
                     <div class="otherDetails">
                         <h3>ESP SONIC-II</h3>
                         <p>Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
