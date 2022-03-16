@@ -4,6 +4,15 @@ let belowGtr;
 var Guitars = {
     sonic: {
         img: "img/content/guitars/GL-SONIC/Front.svg"
+    },
+    sth130: {
+        img: "img/content/guitars/STH-130/Front.svg"
+    },
+    sonicii: {
+        img: "img/content/guitars/Sonic-II/Front.svg"
+    },
+    sn25th: {
+        img: "img/content/guitars/SN-25th/Front.svg"
     }
 };
 
