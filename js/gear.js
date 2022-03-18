@@ -1,6 +1,8 @@
 let gtrElem;
 let gtrImg;
 let belowGtr;
+let selectTitle;
+let selectDesc;
 let hoverPointsElem;
 let currentGuitar;
 
@@ -11,10 +13,20 @@ var Guitars = {
         imgBaseHeight: 749.46,
         hoverPoints: [
             {
-                left: 500,
-                top: 500,
-                width: 200,
-                height: 200
+                left: 398,
+                top: 275,
+                width: 110,
+                height: 200,
+                title: "Bridge Pickup",
+                desc: "In line with most of Jun's guitars, this guitar has a <b>Seymour Duncan TB-4</b> pickup for the bridge!"
+            },
+            {
+                left: 675,
+                top: 275,
+                width: 80,
+                height: 200,
+                title: "Neck Pickup",
+                desc: "This guitar has a <b>SCHECTER MONSTERTONE</b> pickup for the neck pickup!"
             }
         ]
     },
@@ -34,6 +46,9 @@ window.addEventListener('load', () => {
 
     gtrElem = document.querySelector("#gtrElem");
     gtrImg = document.querySelector("#gtrImg");
+    selectImg = document.querySelector("#selectImg");
+    selectTitle = document.querySelector("#selectTxt");
+    selectDesc = document.querySelector("#selectDesc");
     belowGtr = document.querySelector("#belowGtr");
     hoverPointsElem = document.querySelector("#hoverPoints");
 
@@ -84,6 +99,8 @@ function ChangeTo(gtr)
         UpdateHoverPointPos(hoverPoint);
 
         hoverPointsElem.appendChild(point);
+
+        point.addEventListener('click', () => ViewDetailsOf(hoverPoint));
     }
 
     UpdateGtrMargin();
@@ -108,4 +125,13 @@ function UpdateHoverPointPos(point)
     let yStretch = gtrImg.clientHeight / currentGuitar.imgBaseHeight;
     elem.style.top = point.top * yStretch + "px";
     elem.style.height = point.height * yStretch + "px";
+}
+
+function ViewDetailsOf(point)
+{
+    if (!point.img)
+        selectImg.classList.add("hidden");
+
+    selectTitle.innerHTML = point.title;
+    selectDesc.innerHTML = point.desc;
 }
