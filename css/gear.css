@@ -193,12 +193,12 @@
     border: black solid 3px;
 }
 
-.guitars .explorer .selection .guitar:not(.selected) {
+.guitars .explorer .selection .guitarBtn:not(.selected) {
     cursor: pointer;
     background-color: var(--crush40-red-pale-transparent);
 }
 
-.guitars .explorer .selection .guitar:not(.selected):hover {
+.guitars .explorer .selection .guitarBtn:not(.selected):hover {
     background-color: var(--crush40-red-pale-hover);
 }
 
@@ -207,7 +207,7 @@
 }
 
 .guitars .explorer .selection .multiItem {
-    min-width: 600px;
+    min-width: 540px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -220,7 +220,7 @@
     box-sizing: border-box;
 }
 
-.guitars .explorer .selection .multiItem .guitar {
+.guitars .explorer .selection .multiItem .guitarBtn {
     height: 100%;
 }
 
@@ -234,19 +234,37 @@
     justify-content: center;
 }
 
+.guitar .hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.guitar .hover .point {
+    position: absolute;
+    cursor: pointer;
+}
+
+.guitar .hover .point:hover {
+    background-color: var(--crush40-red-pale-transparent);
+}
+
 .guitarNoBg .GSBackContainer {
     visibility: hidden;
 }
 
 .guitarImgContainer {
-    width: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
     position: relative;
     z-index: 0;
 }
 
 .guitarImgContainer img {
-    left: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     min-width: 1000px;
 }
 

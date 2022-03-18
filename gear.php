@@ -90,11 +90,11 @@
                         <li class="multiItem">
                             <p>ESP GL "SONIC"</p>
                             <ul>
-                                <li data-id="sonic" class="guitar">
+                                <li data-id="sonic" class="guitarBtn">
                                     <p>Original</p>
                                     <p><i>ESP GL "SONIC"</i></p>
                                 </li>
-                                <li data-id="sth130" class="guitar">
+                                <li data-id="sth130" class="guitarBtn">
                                     <p>20th Anniversary</p>
                                     <p><i>ESP STH-130</i></p>
                                 </li>
@@ -103,11 +103,11 @@
                         <li class="multiItem">
                             <p>ESP SONIC-II</p>
                             <ul>
-                                <li data-id="sonicii" class="guitar">
+                                <li data-id="sonicii" class="guitarBtn">
                                     <p>Original</p>
                                     <p><i>ESP SONIC-II</i></p>
                                 </li>
-                                <li data-id="sn25th" class="guitar">
+                                <li data-id="sn25th" class="guitarBtn">
                                     <p>25th Anniversary</p>
                                     <p><i>ESP SN-25th</i></p>
                                 </li>
@@ -116,19 +116,19 @@
                         <li class="multiItem">
                             <p>ESP SHADOW-II</p>
                             <ul>
-                                <li data-id="shadowii" class="guitar">
+                                <li data-id="shadowii" class="guitarBtn">
                                     <p>Original</p>
                                     <p><i>ESP SHADOW-II</i></p>
                                 </li>
-                                <li data-id="sd15th" class="guitar">
+                                <li data-id="sd15th" class="guitarBtn">
                                     <p>15th Anniversary</p>
                                     <p><i>ESP SD-15th</i></p>
                                 </li>
                             </ul>
                         </li>
-                        <li data-id="shadow" class="guitar"><p>ESP VP "Shadow"</p></li>
-                        <li data-id="knight" class="guitar"><p>ESP MR "Black Knight"</p></li>
-                        <li data-id="c82" class="guitar"><p>ESP SEC "82 Custom"</p></li>
+                        <li data-id="shadow" class="guitarBtn"><p>ESP VP "Shadow"</p></li>
+                        <li data-id="knight" class="guitarBtn"><p>ESP MR "Black Knight"</p></li>
+                        <li data-id="c82" class="guitarBtn"><p>ESP SEC "82 Custom"</p></li>
                     </ul>
                 </div>
 
@@ -136,6 +136,9 @@
                     <div class="guitarImgContainer">
                         <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
                         <img id="gtrImg" src="img/content/guitars/GL-SONIC/Front.svg">
+                        <div class="hover hoverBack" id="hoverPoints">
+                            <div class="point" style="left: 200px; top: 200px; width: 100px; height: 100px"></div>
+                        </div>
                     </div>
                 </div>
 
