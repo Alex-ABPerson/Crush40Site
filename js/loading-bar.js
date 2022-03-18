@@ -1,13 +1,13 @@
 // Loading Indicators
 let messages = [
     "<b>Revvin' Up</b> the engines!",
-    "Load <b>& Learn</b>!",
-    "<b>Thunder, rain and</b> loading",
-    "Loading <b>down to the paradise</b>",
-    "<b>It's time to get ready to</b> load!",
-    "<b>In his world,</b> loading <b>does not exist</b>!",
-    "<b>2 Nights 2</b> Load",
-    "<b>No</b> loading <b>to bring you down!</b>"
+    "<b>Load</b> & Learn!",
+    "Thunder, rain and <b>loading</b>",
+    "<b>Loading</b> down to the paradise",
+    "It's time to get ready to <b>load</b>!",
+    "In his world, <b>loading</b> does not exist!",
+    "2 Nights 2 <b>Load</b>",
+    "No <b>loading</b> to bring you down!"
 ];
 
 function StartLoading(loading) {
