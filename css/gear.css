@@ -274,8 +274,6 @@
     color: white;
     text-align: center;
     background-color: black;
-    margin-top: -310px;
-    padding-top: 310px;
 
     width: 100%;
 
@@ -290,6 +288,10 @@
     grid-area: more;
     border-right: solid 3px red;
     padding: 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .guitars .details .selectInfo {
@@ -297,4 +299,14 @@
 
     padding: 50px;
     align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.guitars .details .otherDetails, .guitars .details .selectInfo {
+    padding-top: var(--guitar-half-height);
 }

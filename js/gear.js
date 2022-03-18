@@ -82,7 +82,9 @@ function ChangeTo(gtr)
 
 function UpdateGtrMargin()
 {
-    belowGtr.style.marginTop = "-" + (gtrImg.offsetHeight / 2 + 5) + "px";
+    let val = (gtrImg.offsetHeight / 2 + 5) + "px";
+    belowGtr.style.setProperty("--guitar-half-height", val);
+    belowGtr.style.marginTop = "-" + val;
 }
 
 function UpdateHoverPointPos(point)
