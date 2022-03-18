@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
     for (let gtr of guitars)
         gtr.addEventListener('click', () => {
             // Deselect everyone else
-            for (let deselectGtr of guitars)            
+            for (let deselectGtr of guitars)
                 deselectGtr.classList.remove("selected");
 
             gtr.classList.add("selected");
@@ -88,22 +88,34 @@ function ChangeTo(gtr)
     currentGuitar = gtr;
     gtrImg.src = gtr.img;
 
-    // Generate touch points
     hoverPointsElem.replaceChildren();
     for (let hoverPoint of gtr.hoverPoints)
-    {
-        let point = document.createElement("div");
-        point.classList.add("point");
-        hoverPoint.elem = point;
-
-        UpdateHoverPointPos(hoverPoint);
-
-        hoverPointsElem.appendChild(point);
-
-        point.addEventListener('click', () => ViewDetailsOf(hoverPoint));
-    }
+        hoverPointsElem.appendChild(GenerateTouchPoint(hoverPoint));
 
     UpdateGtrMargin();
+}
+
+function GenerateTouchPoint(data)
+{
+    let elem = document.createElement("div");
+    elem.classList.add("point");
+    data.elem = elem;
+
+    UpdateHoverPointPos(data);
+
+    elem.addEventListener('click', () => {
+        // Deselect everything else
+        for (let itm of hoverPointsElem.querySelectorAll('*'))
+            itm.classList.remove("selected");
+
+        // Select this
+        elem.classList.add("selected");
+
+        // View its details
+        ViewDetailsOf(data);
+    });
+
+    return elem;
 }
 
 function UpdateGtrMargin()
@@ -134,4 +146,12 @@ function ViewDetailsOf(point)
 
     selectTitle.innerHTML = point.title;
     selectDesc.innerHTML = point.desc;
+}
+
+function SelectBtn(elem, allElems)
+{
+    
+    
+
+    elem.classList.add("selected");
 }

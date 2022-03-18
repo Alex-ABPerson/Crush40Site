@@ -245,11 +245,18 @@
 
 .guitar .hover .point {
     position: absolute;
+}
+
+.guitar .hover .point:not(.selected) {
     cursor: pointer;
 }
 
-.guitar .hover .point:hover {
+.guitar .hover .point:not(.selected):hover {
     background-color: var(--crush40-red-pale-transparent);
+}
+
+.guitar .hover .selected {
+    background-color: var(--crush40-blue-pale-transparent);
 }
 
 .guitarNoBg .GSBackContainer {
