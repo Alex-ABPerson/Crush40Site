@@ -149,10 +149,15 @@
                         <button data-action="panel" data-page-name="guitarView?g=sonic-ii" class="emptyButton">View More Details</button>
                     </div>
                     <div class="selectInfo">
+                        <!--<div class="pickupInfo">
+                            <h1>Pickups</h1>
+                            <p>The pickups on this guitar are in the following formation:</p>
+                            <h2></h2>
+                        </div>-->
                         <img src="img/content/Johnny_Ring.png" id="selectImg">
                         <div class="text">
-                            <h1 id="selectTxt">Pickups</h1>
-                            <p id="selectDesc">This guitar uses these pickups!</p>
+                            <h1 id="selectTxt">Title</h1>
+                            <div id="selectDesc"></div>
                         </div>
                     </div>
                 </div>

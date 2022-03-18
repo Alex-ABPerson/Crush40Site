@@ -27,6 +27,39 @@ var Guitars = {
                 height: 200,
                 title: "Neck Pickup",
                 desc: "This guitar has a <b>SCHECTER MONSTERTONE</b> pickup for the neck pickup!"
+            },
+            {
+                left: 790,
+                top: 295,
+                width: 1050,
+                height: 160,
+                title: "Fingerboard",
+                desc: `
+                    <p><i>Number of frets</i>: This guitar has <b>22 frets</b></p>
+                    <p><i>Material</i>: The fingerboard is made of <b>Ebony</b> wood</p>
+                `
+            },
+            {
+                left: 2150,
+                top: 180,
+                width: 100,
+                height: 50,
+                rotLeft: 35,
+                title: "ESP Logo",
+                desc: `
+                    <p>The ESP Logo.</p>
+                `
+            },
+            {
+                left: 1920,
+                top: 320,
+                width: 330,
+                height: 100,
+                rotLeft: 36,
+                title: "Tuning",
+                desc: `
+                    <p>This guitar uses <b>GOTOH SG360-07</b> tuners.</p>
+                `
             }
         ]
     },
@@ -99,6 +132,10 @@ function GenerateTouchPoint(data)
 {
     let elem = document.createElement("div");
     elem.classList.add("point");
+    
+    if (data.rotLeft)
+        elem.style.transform = "rotateZ(-" + data.rotLeft + "deg)";
+
     data.elem = elem;
 
     UpdateHoverPointPos(data);
