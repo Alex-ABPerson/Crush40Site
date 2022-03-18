@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="details" id="belowGtr">
+                <div class="details noGtr" id="belowGtr">
                     <div class="otherDetails">
                         <h3>ESP SONIC-II</h3>
                         <p>Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
@@ -154,9 +154,9 @@
                             <p>The pickups on this guitar are in the following formation:</p>
                             <h2></h2>
                         </div>-->
-                        <img src="img/content/Johnny_Ring.png" id="selectImg">
+                        <img src="" id="selectImg">
                         <div class="text">
-                            <h1 id="selectTxt">Title</h1>
+                            <h1 id="selectTxt"></h1>
                             <div id="selectDesc"></div>
                         </div>
                     </div>

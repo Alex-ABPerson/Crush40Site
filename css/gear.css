@@ -291,6 +291,15 @@
     flex-direction: column;
 }
 
+.guitars .details.noGtr .otherDetails, .guitars .details.noGtr .selectInfo {
+    visibility: hidden;
+}
+
+.guitars .details .hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
 .guitars .details .otherDetails {
     grid-area: more;
     border-right: solid 3px red;
@@ -312,11 +321,6 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-
-.guitars .details .selectInfo .hidden {
-    position: absolute;
-    visibility: hidden;
 }
 
 .guitars .details .otherDetails, .guitars .details .selectInfo {

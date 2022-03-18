@@ -118,6 +118,11 @@ window.addEventListener('load', () => {
 
 function ChangeTo(gtr)
 {
+    // Ensure we are showing guitar details now
+    belowGtr.classList.remove("noGtr");
+
+    ViewDefaultDetails();
+
     currentGuitar = gtr;
     gtrImg.src = gtr.img;
 
@@ -176,6 +181,7 @@ function UpdateHoverPointPos(point)
     elem.style.height = point.height * yStretch + "px";
 }
 
+function ViewDefaultDetails() { ViewDetailsOf({ title: "Tap something!", desc: "Tap something on the guitar to find out about it details about it!" })}
 function ViewDetailsOf(point)
 {
     if (!point.img)
@@ -183,12 +189,4 @@ function ViewDetailsOf(point)
 
     selectTitle.innerHTML = point.title;
     selectDesc.innerHTML = point.desc;
-}
-
-function SelectBtn(elem, allElems)
-{
-    
-    
-
-    elem.classList.add("selected");
 }
