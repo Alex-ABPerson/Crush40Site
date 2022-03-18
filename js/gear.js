@@ -1,3 +1,4 @@
+let gtrElem;
 let gtrImg;
 let belowGtr;
 let hoverPointsElem;
@@ -31,6 +32,7 @@ var Guitars = {
 window.addEventListener('load', () => {
     UpdateNavbarPageSelection("navGear");
 
+    gtrElem = document.querySelector("#gtrElem");
     gtrImg = document.querySelector("#gtrImg");
     belowGtr = document.querySelector("#belowGtr");
     hoverPointsElem = document.querySelector("#hoverPoints");
@@ -45,6 +47,17 @@ window.addEventListener('load', () => {
 
             gtr.classList.add("selected");
 
+            // If we didn't previously have a guitar, start listening for touch point adjustments and remove BG
+            if (!currentGuitar)
+            {
+                gtrElem.classList.add('guitarNoBg');
+
+                window.addEventListener('resize', () => {
+                    for (let hoverPoint of currentGuitar.hoverPoints)
+                        UpdateHoverPointPos(hoverPoint);
+                });
+            }
+
             ChangeTo(Guitars[gtr.dataset.id]);
         });
 
@@ -52,10 +65,6 @@ window.addEventListener('load', () => {
 
     window.addEventListener('resize', () => {
         UpdateGtrMargin();
-
-        // Update all the current guitar's hover points to the new guitar size
-        for (let hoverPoint of currentGuitar.hoverPoints)
-            UpdateHoverPointPos(hoverPoint);
     });
 });
 
