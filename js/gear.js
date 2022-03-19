@@ -1,5 +1,7 @@
 let gtrElem;
 let gtrImg;
+let gtrTitle;
+let gtrDesc;
 let belowGtr;
 let selectTitle;
 let selectDesc;
@@ -8,6 +10,8 @@ let currentGuitar;
 
 var Guitars = {
     sonic: {
+        title: "ESP GL 'SONIC'",
+        desc: "The first 'Crush 40' guitar made, created for Jun due to his work in the game <i>Sonic Adventure</i>!",
         img: "img/content/guitars/GL-SONIC/Front.svg",
         imgBaseWidth: 2284.64,
         imgBaseHeight: 749.46,
@@ -64,12 +68,18 @@ var Guitars = {
         ]
     },
     sth130: {
+        title: "ESP STH-130",
+        desc: "A <b>20th Anniversary edition</b> variant of the classic <i>ESP GL 'SONIC'</i>!",
         img: "img/content/guitars/STH-130/Front.svg"
     },
     sonicii: {
+        title: "ESP SONIC-II",
+        desc: "The most common guitar Jun uses at Crush 40 shows, often used for any song!",
         img: "img/content/guitars/Sonic-II/Front.svg"
     },
     sn25th: {
+        title: "ESP SN-25th",
+        desc: "A <b>25th Anniversary edition</b> variant of the <i>ESP SONIC-II</i>!",
         img: "img/content/guitars/SN-25th/Front.svg"
     }
 };
@@ -79,6 +89,8 @@ window.addEventListener('load', () => {
 
     gtrElem = document.querySelector("#gtrElem");
     gtrImg = document.querySelector("#gtrImg");
+    gtrTitle = document.querySelector("#gtrTitle");
+    gtrDesc = document.querySelector("#gtrDesc");
     selectImg = document.querySelector("#selectImg");
     selectTitle = document.querySelector("#selectTxt");
     selectDesc = document.querySelector("#selectDesc");
@@ -118,19 +130,28 @@ window.addEventListener('load', () => {
 
 function ChangeTo(gtr)
 {
-    // Ensure we are showing guitar details now
+    currentGuitar = gtr;
+
+    // Populate basic details
+    PopulateBasicDetails(gtr);
+
+    // Handle guitar details
+    ViewDefaultDetails();
     belowGtr.classList.remove("noGtr");
 
-    ViewDefaultDetails();
-
-    currentGuitar = gtr;
-    gtrImg.src = gtr.img;
-
+    // Handle hover points
     hoverPointsElem.replaceChildren();
     for (let hoverPoint of gtr.hoverPoints)
         hoverPointsElem.appendChild(GenerateTouchPoint(hoverPoint));
 
     UpdateGtrMargin();
+}
+
+function PopulateBasicDetails(gtr)
+{
+    gtrImg.src = gtr.img;
+    gtrTitle.innerHTML = gtr.title;
+    gtrDesc.innerHTML = gtr.desc;
 }
 
 function GenerateTouchPoint(data)

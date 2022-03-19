@@ -144,8 +144,8 @@
 
                 <div class="details noGtr" id="belowGtr">
                     <div class="otherDetails">
-                        <h3>ESP SONIC-II</h3>
-                        <p>Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
+                        <h3 id="gtrTitle">ESP SONIC-II</h3>
+                        <p id="gtrDesc">Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
                         <button data-action="panel" data-page-name="guitarView?g=sonic-ii" class="emptyButton">View More Details</button>
                     </div>
                     <div class="selectInfo">
