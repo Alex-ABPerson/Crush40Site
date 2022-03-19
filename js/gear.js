@@ -50,8 +50,9 @@ var Guitars = {
                 height: 50,
                 rotLeft: 35,
                 title: "ESP Logo",
+                img: "img/content/guitars/ESPLogo.svg",
                 desc: `
-                    <p>The ESP Logo.</p>
+                    <p>Unlike the <i>20th Anniversary Edition</i>, the original version of this guitar has an ESP logo on its headstock.</p>
                 `
             },
             {
@@ -205,7 +206,12 @@ function UpdateHoverPointPos(point)
 function ViewDefaultDetails() { ViewDetailsOf({ title: "Tap something!", desc: "Tap something on the guitar to find out about it details about it!" })}
 function ViewDetailsOf(point)
 {
-    if (!point.img)
+    if (point.img)
+    {
+        selectImg.classList.remove("hidden");
+        selectImg.src = point.img;
+    }
+    else
         selectImg.classList.add("hidden");
 
     selectTitle.innerHTML = point.title;

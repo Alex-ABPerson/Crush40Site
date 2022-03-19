@@ -310,6 +310,10 @@
     justify-content: center;
 }
 
+.guitars .details .selectInfo .generalImg {
+    height: 300px;
+}
+
 .guitars .details .selectInfo {
     grid-area: select;
 

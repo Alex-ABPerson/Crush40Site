@@ -154,7 +154,7 @@
                             <p>The pickups on this guitar are in the following formation:</p>
                             <h2></h2>
                         </div>-->
-                        <img src="" id="selectImg">
+                        <img src="" class="generalImg" id="selectImg">
                         <div class="text">
                             <h1 id="selectTxt"></h1>
                             <div id="selectDesc"></div>
