@@ -81,7 +81,7 @@
         <!-- Guitars Explorer -->
         <div class="explorer section">
             <div class="explorer-intro">
-                <h2>Guitar Breakdown</h2>
+                <h1>Guitar Explorer</h1>
                 <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
             </div>
 
@@ -144,20 +144,31 @@
 
             <div class="details noGtr" id="belowGtr">
                 <div class="otherDetails">
-                    <h3 id="gtrTitle">ESP SONIC-II</h3>
+                    <h2 id="gtrTitle">ESP SONIC-II</h2>
                     <p id="gtrDesc">Jun uses this guitar for a significant amount of the Crush 40 shows in existance.</p>
                     <button data-action="panel" data-page-name="guitarView?g=sonic-ii" class="emptyButton">View More Details</button>
                 </div>
-                <div class="selectInfo">
-                    <!--<div class="pickupInfo">
-                        <h1>Pickups</h1>
-                        <p>The pickups on this guitar are in the following formation:</p>
-                        <h2></h2>
-                    </div>-->
-                    <img src="" class="generalImg" id="selectImg">
-                    <div class="text">
-                        <h1 id="selectTxt"></h1>
-                        <div id="selectDesc"></div>
+                <div class="selectInfo" id="selectInfo">
+                    <div class="page pickupInfo" id="selectPickupPage">
+                        <h2>Pickups</h2>
+                        <p id="gtrPickupDesc">This guitar has a <b>HS</b> layout for pickups</p>
+                        <div class="pickups" id="gtrPickups">
+                            <div class="pickup" id="pickup1">
+                                <p class="type">Humbucker</p>
+                                <h3 class="title">Seymour Duncan</h3>
+                            </div>
+                            <div class="pickup" id="pickup2">
+                                <p class="type">Single</p>
+                                <h3 class="title">MONSTER Thing</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page basicInfo" id="selectBasicPage">
+                        <img src="" class="generalImg" id="selectImg">
+                        <div class="text">
+                            <h2 id="selectTxt"></h2>
+                            <div id="selectDesc"></div>
+                        </div>
                     </div>
                 </div>
             </div>
