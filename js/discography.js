@@ -548,6 +548,13 @@ function InitSongs()
 
     songsSearch.addEventListener('input', () => {
         let searchTerm = songsSearch.value.toLowerCase();
+
+        if (searchTerm == "")
+            songsSearch.classList.remove("active");
+        else
+            songsSearch.classList.add("active");
+        
+
         let itms = songList.filter(x => 
             x.data.t.toLowerCase().includes(searchTerm) ||
             x.data.y.toString().toLowerCase().includes(searchTerm) ||

@@ -408,6 +408,10 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.songs .search.active {
+    border: solid 3px var(--crush40-blue);
+}
+
 .songs .songListContainer {
     width: 100%;
     display: flex;
