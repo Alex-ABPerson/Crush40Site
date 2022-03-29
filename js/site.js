@@ -232,14 +232,6 @@ window.addEventListener('load', () => {
     }
 });
 
-function HandleBackgroundYRev(itm)
-{
-    if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
-        UpdateBackgroundParallaxX(backgroundParallax[i]);
-    else
-        UpdateBackgroundParallaxYRev(backgroundParallax[i]);
-}
-
 function UpdateBackgroundParallaxX(item)
 {
     item.style.backgroundPosition = -window.scrollY / parseInt(item.dataset.parallaxSpeed) + "px 0%";
@@ -247,7 +239,10 @@ function UpdateBackgroundParallaxX(item)
 
 function UpdateBackgroundParallaxYRev(item)
 {
-    item.style.backgroundPosition = "0% " + item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed) + "px";
+    if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
+        UpdateBackgroundParallaxX(backgroundParallax[i]);
+    else
+        item.style.backgroundPosition = "0% " + item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed) + "px";
 }
 
 function UpdateBackgroundParallaxY(item)
