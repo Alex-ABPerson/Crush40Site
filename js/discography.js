@@ -29,7 +29,7 @@ let features = [
         img: "SonicAdventureDigiLog.jpg",
         tracks: [
             { t: "Introduction ...Featuring Open Your Heart", d: "Included due to its inclusion in the game" },
-            { id: "oyh", d: "Included due to its inclusion in the game" }
+            { id: "oyh"}
         ]
     },
     { 
@@ -47,7 +47,7 @@ let features = [
         img: "SA2VocalCollection.jpg",
         tracks: [
             { id: "lal" },
-            { id: "lal" (Instrumentation)", d: "An instrumental version of Live & Learn." }
+            { id: "lal" , d: "An instrumental version of Live & Learn." }
         ]
     },
     {
@@ -55,7 +55,7 @@ let features = [
         desc: "Multi-dimensional is the original soundtrack of Sonic Adventure 2, featuring (almost) all songs in the game.",
         img: "MultiDimensionalSA2.jpg",
         tracks: [
-            { t: "Live & Learn", d: "Being the main theme, this is included" },
+            { id: "lal", d: "Being the main theme, this is included" },
         ]
     },
     {
@@ -155,7 +155,7 @@ let features = [
             { id: "lal", d: "This album features a re-mixed version of Live & Learn." },
             { id: "wimo", d: "This album features a re-mixed version of What I'm Made Of...." },
             { id: "srih", d: "This album features a bonus track on this album." },
-            { id: "oyh" (Bentley Jones Remix)", d: "This album also features the 'Crush 40 vs. Bentley Jones' remix of Open Your Heart." },
+            { id: "oyh" , d: "This album also features the 'Crush 40 vs. Bentley Jones' remix of Open Your Heart." },
         ]
     },
     {
@@ -168,8 +168,8 @@ let features = [
             { id: "ttf" },
             { id: "ll" },
             { id: "wm", d: "Crush 40's version of With Me, 'With Me -Massive Power Mix- is included on this album.'" },
-            { id: "ll" (Instrumental)", d: "An instrumental version of Live Life is included on this album." },
-            { id: "kotw" (Instrumental)", d: "An instrumental version of Knight Of The Wind is included on this album." },
+            { id: "ll" , d: "An instrumental version of Live Life is included on this album." },
+            { id: "kotw" , d: "An instrumental version of Knight Of The Wind is included on this album." },
         ]
     },
     {
@@ -177,10 +177,10 @@ let features = [
         desc: "'Tales of the Knighthood: Sonic and the Black Knight - Original Soundtrax' is the original soundtrack of Sonic and the Black Knight.",
         img: "TalesoftheKnighthood.jpg",
         tracks: [
-            { id: ""kotw, d: "This album includes the Title, TGS 2008, Original and 'Showdown With King Arthur' versions of this song." },
+            { id: "kotw", d: "This album includes the Title, TGS 2008, Original and 'Showdown With King Arthur' versions of this song." },
             { id: "ftk", d: "This album includes the strings mix of Fight the Knight." },
             { id: "ll", d: "This album includes an extremely short version of Live Life." },
-            { t: "Knight Of The Wind (Acoustic)", d: "In addition to the four versions above, an acoustic version of Knight of the Wind is also included." },
+            { t: "kotw", d: "In addition to the four versions above, an acoustic version of Knight of the Wind is also included." },
         ]
     },
     {
@@ -198,7 +198,7 @@ let features = [
         desc: "This album is the second volume of the digital release of the Sonic and the Black Knight soundtrack.",
         img: "SonicandtheBlackKnightOfficialSoundtrackvol.2.jpg",
         tracks: [
-            { id: ""kotw, d: "This album includes the TGS 2008 of this song." },
+            { id: "kotw", d: "This album includes the TGS 2008 of this song." },
             { id: "ll" }
         ]
     },
