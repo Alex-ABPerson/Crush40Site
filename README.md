@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/26012626/161085742-1e4ab2ce-c45e-4413-a8f3-ae5eb1e0e701.png)
 # Crush 40 Fan Website
 
 The **Crush 40 Fan Website** is a fan-made website, developed from complete scratch by the members of the _Crush 40 Discord server_.
