@@ -239,8 +239,8 @@ function UpdateBackgroundParallaxX(item)
 
 function UpdateBackgroundParallaxYRev(item)
 {
-    if (window.innerWidth < parseInt(backgroundParallax[i].dataset.parallaxChangeAt))
-        UpdateBackgroundParallaxX(backgroundParallax[i]);
+    if (window.innerWidth < parseInt(item.dataset.parallaxChangeAt))
+        UpdateBackgroundParallaxX(item);
     else
         item.style.backgroundPosition = "0% " + item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed) + "px";
 }
