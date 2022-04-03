@@ -242,6 +242,8 @@ body {
     padding: 20px;
     
     overflow-x: auto;
+
+    background-attachment: fixed;
 }
 
 .versions .groupsList {

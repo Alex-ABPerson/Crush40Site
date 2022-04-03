@@ -79,6 +79,7 @@ Let me show you just what I'm made of</p>
             { id: "mgc19" },
             { id: "tmg19" }
         ],
+        versionsBg: 'SSSBackground.png'
     },
     ll: {
         desc: {
@@ -148,7 +149,8 @@ Live Life...</p>
             { id: "sos12" },
             { id: "twoNights" },
             { id: "jgmf18", d: "Featuring a real violinist!" },
-        ]
+        ],
+        versionsBg: 'SSSBackground.png'
     },
     iam: {
         desc: {
@@ -335,7 +337,8 @@ I am... I'm all of me...</p>
                     },
                 ]
             }
-        ]
+        ],
+        versionsBg: 'SSSBackground.png'
     },
     oyh: {
         desc: {
@@ -501,7 +504,8 @@ I'm the knight of the wind...</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "symphony" }
-        ]
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
     }
 };
 
@@ -559,6 +563,8 @@ function Populate(basicSong, song)
     document.querySelector("#txtTitle").innerText = basicSong.t;
     document.querySelector("#txtGame").innerText = basicSong.g;
     document.querySelector("#txtYear").innerText = basicSong.y;
+    document.querySelector("#groups").style.backgroundImage = "url('../img/visuals/Background/Discography/" + song.versionsBg + "')";
+    
     PopulateDescription(song);
     PopulateLyrics(song);
     PopulatePerformances(song);
