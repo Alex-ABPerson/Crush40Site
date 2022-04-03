@@ -507,7 +507,7 @@ function ViewFeatureDetails(feature)
         newTrack.classList.add("track");
 
         let trackTitle = document.createElement("h4");
-        trackTitle.innerText = track.t ? track.t : Crush40Songs[track.id];
+        trackTitle.innerText = track.t ? track.t : Crush40Songs[track.id].t;
         newTrack.appendChild(trackTitle);
 
         if (track.d)
@@ -553,7 +553,6 @@ function InitSongs()
             songsSearch.classList.remove("active");
         else
             songsSearch.classList.add("active");
-        
 
         let itms = songList.filter(x => 
             x.data.t.toLowerCase().includes(searchTerm) ||
