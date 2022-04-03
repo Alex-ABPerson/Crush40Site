@@ -740,14 +740,7 @@ function PopulateVersions(song)
         // Credits
         let creditsElem = document.createElement("ul");
         creditsElem.classList.add("credits");
-        for (let credit of group.credits)
-        {
-            let creditElem = document.createElement("p");
-            creditElem.innerHTML = 
-                "<b>" + credit.t + "</b><br/>" + credit.n;
-            
-            creditsElem.appendChild(creditElem);
-        }
+        CreateCreditsItems(creditsElem, group.credits)
 
         grpElem.appendChild(creditsElem);
 
@@ -756,5 +749,17 @@ function PopulateVersions(song)
             longGroupsList.appendChild(grpElem);
         else
             shortGroupsList.appendChild(grpElem);
+    }
+}
+
+function CreateCreditsItems(elem, credits)
+{
+    for (let credit of credits)
+    {
+        let creditElem = document.createElement("p");
+        creditElem.innerHTML = 
+            "<b>" + credit.t + "</b><br/>" + credit.n;
+        
+        elem.appendChild(creditElem);
     }
 }

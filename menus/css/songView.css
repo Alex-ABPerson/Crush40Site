@@ -211,7 +211,6 @@ body {
 
 .performances .list {
     flex-direction: column;
-    overflow-x: auto;
 }
 
 .performances .list > li {
@@ -246,6 +245,9 @@ body {
     height: max-content; /* Mobile */
     max-height: 100%;
     overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .versions .groups {
@@ -258,7 +260,8 @@ body {
     gap: 15px;
     padding: 20px;
     
-    overflow-x: auto;
+    flex-grow: 1;
+    overflow: auto;
 
     background-attachment: fixed;
 }
@@ -384,4 +387,80 @@ body {
 
 .versions .groupsList .title {
     font-size: 110%;
+}
+
+.versions .info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "details appearances";
+
+    position: relative;
+    height: 300px;
+    background-color: black;
+}
+
+.versions .details {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 10px;
+    font-size: 125%;
+    grid-area: details;
+
+    overflow-y: auto;
+}
+
+.versions .details .title {
+    font-size: 150%;
+    margin-bottom: 0;
+}
+
+.versions .details .isOfficial {
+    font-size: 80%;
+    font-style: italic;
+    color: lightgray;
+}
+
+.versions .details .inSong {
+    padding: 10px;
+    background-color: var(--crush40-red-pale);
+}
+
+.versions .details .inSong p {
+    margin: 0;
+}
+
+.versions .details .credits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+}
+
+.versions .info .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.versions .appearances {
+    grid-area: appearances;
+    overflow-y: auto;
+}
+
+.versions .appearances .title {
+    font-size: 120%;
+}
+
+.versions .appearances .list {
+    flex-direction: column;
+}
+
+.versions .appearances .list li, .versions .appearances .list li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: default;
+}
+
+.versions .appearances .list li p {
+    margin: 0;
 }
