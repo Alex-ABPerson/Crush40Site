@@ -28,7 +28,7 @@ let features = [
         desc: "The SONIC ADVENTURE Original Soundtrack (Digi-LOG Conversation) is the original soundtrack of Sonic Adventure, featuring (almost) all the songs in the game.",
         img: "SonicAdventureDigiLog.jpg",
         tracks: [
-            { t: "Introduction ...Featuring Open Your Heart", d: "Included due to its inclusion in the game" },
+            { t: "Introduction ...Featuring Open Your Heart", id: "oyh", d: "Included due to its inclusion in the game" },
             { id: "oyh"}
         ]
     },
@@ -116,7 +116,7 @@ let features = [
         img: "ShadowtheHedgehogOriginalSoundtrack.jpg",
         tracks: [
             { id: "iam", d: "This album features the Opening and Final Doom versions of I Am... All Of Me" },
-            { t: "I Am... The Story Is Over", d: "This album also features this track - which is most commonly known as the piano opening to 'Never Turn Back'" },
+            { t: "I Am... The Story Is Over", id: "iam", d: "This album also features this track - which is most commonly known as the piano opening to 'Never Turn Back'" },
         ]
     },
     {
@@ -180,7 +180,7 @@ let features = [
             { id: "kotw", d: "This album includes the Title, TGS 2008, Original and 'Showdown With King Arthur' versions of this song." },
             { id: "ftk", d: "This album includes the strings mix of Fight the Knight." },
             { id: "ll", d: "This album includes an extremely short version of Live Life." },
-            { t: "kotw", d: "In addition to the four versions above, an acoustic version of Knight of the Wind is also included." },
+            { id: "kotw", d: "In addition to the four versions above, an acoustic version of Knight of the Wind is also included." },
         ]
     },
     {
@@ -250,7 +250,7 @@ let features = [
         tracks: [
             { id: "lal", d: "A short version of Live & Learn" },
             { id: "ahs", d: "A short version of All Hail Shadow" },
-            { t: "Open Your Heart (Circuit Freq)", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart." }
+            { t: "Open Your Heart (Circuit Freq)", id: "oyh", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart." }
         ]
     },
     {
@@ -259,7 +259,7 @@ let features = [
         desc: "This is the first volume of the digital release of the Sonic Generations soundtrack.",
         img: "SonicGenerationsOfficialSoundtrackVol.1.jpg",
         tracks: [
-            { t: "Open Your Heart (Circuit Freq)", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart, used for the Perfect Chaos Boss Battle." }
+            { t: "Open Your Heart (Circuit Freq)", id: "oyh", d: "The 'Crush 40 vs. Circuit Freq' RMX of Open Your Heart, used for the Perfect Chaos Boss Battle." }
         ]
     },
     {
@@ -366,7 +366,7 @@ let features = [
         tracks: [
             { id: "glr", d: "This CD features various versions: Full, opening ver. racing mix and the various short menu edits." },
             { id: "glr", d: "This CD features various remixes of Green Light Ride: Wall5, The Qemists and Tyler Smyth." },
-            { t: "Team Ultimate: Shadow", d: "A short version of 'All Hail Shadow'." }
+            { t: "Team Ultimate: Shadow", id: "ahs", d: "A short version of 'All Hail Shadow'." }
         ]
     },
     {
@@ -505,6 +505,7 @@ function ViewFeatureDetails(feature)
     {
         let newTrack = document.createElement("li");
         newTrack.classList.add("track");
+        newTrack.addEventListener('click', () => UpdatePanelPage("songView?s=" + track.id));
 
         let trackTitle = document.createElement("h4");
         trackTitle.innerText = track.t ? track.t : Crush40Songs[track.id].t;
