@@ -676,6 +676,7 @@ function PopulateVersions(song)
             grpTitle.innerText = group.title;
             grpElem.appendChild(grpTitle);
         }
+        else grpElem.classList.add("noTitle");
 
         // Versions
         let versElem = document.createElement("ul");
