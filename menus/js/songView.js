@@ -14,7 +14,8 @@ let Songs = {
                     text:`
                         <p>For [the 2 Nights 2 Remember performance], I played "What I'm Made Of" with my "82" instead of my Sonic guitar for the first time - I just wanted to play my favourite song on that guitar!</p>
                         <p>One especially notable moment was at the end of the second day of the show, where the whole audience sang the final "What I'm Made Of..." in unison - it gave me goosebumps!</p>
-                    ` }
+                    ` 
+                }
             ]
         },
         lyrics: {

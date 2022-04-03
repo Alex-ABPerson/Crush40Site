@@ -153,7 +153,7 @@ a {
     text-align: left;
 
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px 20px;
     border: 2px solid white;
     background-color: var(--crush40-red-pale-transparent);
     margin-bottom: 10px;

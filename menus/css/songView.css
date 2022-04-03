@@ -257,7 +257,7 @@ body {
 
 .versions .groupsList .group {
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     
     /* Mobile */
@@ -272,6 +272,9 @@ body {
 
 .versions .groupsList .group li {
     justify-content: center;
+
+    /* Mobile */
+    min-width: 200px;
 }
 
 .versions .groupsList .group .credits {
@@ -285,9 +288,13 @@ body {
 }
 
 .versions .versionList {
-    align-self: center; /* Mobile */
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
+    justify-content: center;
+
+    /* Mobile */
+    flex-wrap: wrap;
+    height: 300px;
 }
 
 @media (min-width: 850px)
@@ -313,13 +320,14 @@ body {
     }
 
     .versions .groupsList .group {
-        width: 335px;
+        width: 330px;
         height: max-content;
     }
 
     .versions .versionList {
-        align-self: flex-start;
-        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: unset;
     }
 
     .versions .groupsList .group .credits {
