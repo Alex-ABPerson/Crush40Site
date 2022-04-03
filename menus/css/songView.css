@@ -214,6 +214,7 @@ body {
 .performances .list .main {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
     gap: 10px;
 }
@@ -229,14 +230,30 @@ body {
     overflow-y: auto;
 }
 
+.versions .groups {
+    display: grid;
+    grid-template-columns: 350px min-content;
+    grid-template-areas: "long short";
+    justify-content: center;
+    padding: 20px;
+}
+
+.versions .longGroupsList {
+    grid-area: long;
+}
+
+.versions .shortGroupsList {
+    grid-area: short;
+}
+
 .versions .groupsList {
     width: 100%;
     list-style-type: none;
     padding: 0;
+
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -247,21 +264,17 @@ body {
 .versions .groupsList .group {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    width: 350px;
+    padding: 15px;
+    width: 302px;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .versions .groupsList .group .credits {
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
-}
-
-.versions .groupsList .group .credits p {
-    margin: 0;
 }
 
 .versions .versionList {

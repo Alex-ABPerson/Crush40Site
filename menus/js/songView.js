@@ -1,10 +1,3 @@
-let page;
-let description;
-let performancesList;
-let groupsList;
-let lyricsSource;
-let lyricsText;
-
 let Songs = {
     wimo: {
         desc: {
@@ -255,7 +248,6 @@ I am... I'm all of me...</p>
         ],
         versionGroups: [
             {
-                title: "Game Versions",
                 credits: [
                     { t: "Composition & Arrangement", n: "Jun Senoue" },
                     { t: "Lyrics & Vocals", n: "Johnny Gioeli" },
@@ -308,12 +300,7 @@ I am... I'm all of me...</p>
                         fanName: "Opening ver. (SSS Mix)",
                         long: "This version of the song is the Super Sonic Songs mix, but edited down to the length of the Opening version. The song is also labelled as the Opening version on the album it appears on.",
                         appearances: [ "Sonic the Hedgehog 25th Anniversary Selection" ]
-                    },
-                    { 
-                        fanName: "Super Shadow",
-                        long: "This instrumental track combines I Am... All Of Me, All Hail Shadow, and Live & Learn for Shadow's Super transformation.",
-                        appearances: [ "Shadow the Hedgehog Original Soundtrax", "Shadow the Hedgehog Official Soundtrack" ]
-                    },
+                    }
                 ]
             },
             {
@@ -517,12 +504,21 @@ I'm the knight of the wind...</p>
     }
 };
 
+let page;
+let description;
+let performancesList;
+let shortGroupsList;
+let longGroupsList;
+let lyricsSource;
+let lyricsText;
+
 window.addEventListener('load', () => {
     page = document.querySelector(".page");
     description = document.querySelector("#descText");
     lyricsSource = document.querySelector("#lyricsSource");
     lyricsText = document.querySelector("#lyricsText");
-    groupsList = document.querySelector("#groupsList");
+    shortGroupsList = document.querySelector("#shortGroupsList");
+    longGroupsList = document.querySelector("#longGroupsList");
     performancesList = document.querySelector("#performancesList");
 
     SetupTabs();
@@ -719,6 +715,10 @@ function PopulateVersions(song)
 
         grpElem.appendChild(creditsElem);
 
-        groupsList.appendChild(grpElem);
+        // Add it to the correct list
+        if (group.versions.length > 3)
+            longGroupsList.appendChild(grpElem);
+        else
+            shortGroupsList.appendChild(grpElem);
     }
 }
