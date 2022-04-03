@@ -16,49 +16,47 @@ body {
     gap: 5px;
 }
 
-.tabs {
+/* Smallscreen */
+.tabs .descTab {
+    visibility: visible;
+    position: relative;
+}
+
+/* Focus selected tabs */
+.page:not(.lyricsOpen):not(.performancesOpen) #descriptionTab, .page.lyricsOpen #lyricsTab, .page.performancesOpen #performancesTab {
+    border-bottom-color: var(--crush40-blue);
+}
+
+/* Hide not selected sections */
+.page:not(.lyricsOpen) .lyrics, .page:not(.performancesOpen) .performances {
     position: fixed;
     visibility: collapse;
 }
 
-/* Smaller, tab-based, layouts */
-@media (max-width: 1299px)
+/* Mobile */
+.lyricsOpen {
+    grid-template-areas:
+        "intro"
+        "versions"
+        "tabs"
+        "lyrics";
+}
+
+.performancesOpen {
+    grid-template-areas:
+        "intro"
+        "versions"
+        "tabs"
+        "performances";
+}
+
+@media (max-width: 1300px)
 {
-    /* Mobile */
-    .lyricsOpen {
-        grid-template-areas:
-            "intro"
-            "versions"
-            "tabs"
-            "lyrics";
-    }
-
-    .performancesOpen {
-        grid-template-areas:
-            "intro"
-            "versions"
-            "tabs"
-            "performances";
-    }
-
-    .performances .list {
-        flex-direction: column;
-    }
-
-    /* Focus selected tabs */
-    .page:not(.lyricsOpen):not(.performancesOpen) #descriptionTab, .page.lyricsOpen #lyricsTab, .page.performancesOpen #performancesTab {
-        border-bottom-color: var(--crush40-blue);
-    }
-
-    /* Hide not selected tabs */
-    .page.lyricsOpen .desc, .page.performancesOpen .desc, .page:not(.lyricsOpen) .lyrics, .page:not(.performancesOpen) .performances {
+    /* Hide the description on three-tabbed view unless selected */
+    .page.lyricsOpen .desc, .page.performancesOpen .desc
+    {
         position: fixed;
         visibility: collapse;
-    }
-
-    .tabs {
-        position: relative;
-        visibility: visible;
     }
 }
 
@@ -103,13 +101,31 @@ body {
 
 @media (min-width: 1300px)
 {
-    body {
-        grid-template-rows: auto 1fr auto;
+    .tabs .descTab {
+        visibility: collapse;
+        position: fixed;
+    }
+
+    body, .lyricsOpen {
         grid-template-columns: 410px 450px 1fr;
         grid-template-areas:
             "intro desc versions"
-            "lyrics desc versions"
-            "performances performances versions";
+            "tabs desc versions"
+            "lyrics desc versions";
+    }
+
+    .lyricsOpen {
+        grid-template-areas:
+            "intro desc versions"
+            "tabs desc versions"
+            "lyrics desc versions";
+    }
+    
+    .performancesOpen {
+        grid-template-areas:
+            "intro desc versions"
+            "tabs desc versions"
+            "performances desc versions";
     }
 }
 
@@ -194,6 +210,7 @@ body {
 }
 
 .performances .list {
+    flex-direction: column;
     overflow-x: auto;
 }
 
