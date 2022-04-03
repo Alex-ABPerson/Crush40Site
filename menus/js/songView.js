@@ -351,12 +351,40 @@ I am... I'm all of me...</p>
             other: [
                 { 
                     heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='http://sonic.sega.jp/sonicadv/snd/cd_2.html' target='_blank'>Jun in an interview</a> regarding all the Sonic Adventure tracks)",
+                    text:`
+                        <p>This song was the main theme of the game, and there were approximately 9 remakes of this song!</p>
+                        <p>The backing track of this song was done quickly, but I had a very hard time coming up with the melody and lyrics (rhymes and whatnot...)</p>
+                        <p>For a long time, this song didn't have a guitar solo, but I put it in at the end on a whim, and the 'whin-whin-whin' guitar sound at the end of the song is an electric screwdriver being played on the guitar, if that makes sense.</p>
+                        <p>We prepared a demo of this song sung by Tokoi for the <i>Sonic Adventure Presentation</i>, and another one sung by Sakamoto that actually ended up being used.</p>
+                        <p>I guess we recorded a lot of things. Recording with Johnny Gioeli in the end was tough because of our tight schedule, but it was perfect!</p>
+                    ` 
+                },
+                { 
+                    heading: "Kenichi Tokoi", 
+                    subHeading: "(Written by <a href='http://sonic.sega.jp/sonicadv/snd/cd_2.html' target='_blank'>Tokoi in an interview</a>)",
+                    text:`
+                        <p>Johnny is really good, the chorus is difficult to get into but he does it easily... and with a crisp and clear singing style, it's perfectly balanced.</p>
+                        <p>I think it gives the main theme a very good finish.</p>
+                    ` 
+                },
+                { 
+                    heading: "Fumie Kumatani", 
+                    subHeading: "(Written by <a href='http://sonic.sega.jp/sonicadv/snd/cd_2.html' target='_blank'>Kumatani in an interview</a>)",
+                    text:`
+                        <p>This song really does deserve its spot as the main theme. I think the key word for it is "COOL", I fell in love with the song, but I don't forget the hard work that went into this song.</p>
+                        <p>Hooray for "Open Your Heart"!</p>
+                    ` 
+                },
+                { 
+                    heading: "Jun Senoue", 
                     subHeading: "(Written by <a href='https://twitter.com/crush40/status/454925447537496065' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>It's definitely an important song due to its roots, and loads of people still say they like it, and I'm happy that they do!</p>
                         <p>Although - Johnny made the audience sing far too much of it [at the 2 Nights 2 Remember show], so sing more of it properly, Johnny!</p>
                         <p>Also, this is a song I always feel I should play on my [ESP SONIC "GL"] guitar.</p>
-                    ` }
+                    ` 
+                },
             ]
         },
         lyrics: {

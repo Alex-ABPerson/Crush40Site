@@ -131,7 +131,7 @@ body {
 
 @media (min-width: 1500px)
 {
-    body {
+    body, .lyricsOpen, .performancesOpen {
         grid-template-columns: 450px 600px 1fr;
     }
 }
