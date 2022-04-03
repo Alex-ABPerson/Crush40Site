@@ -1,12 +1,9 @@
 let page;
 let description;
 let performancesList;
+let groupsList;
 let lyricsSource;
 let lyricsText;
-
-let Song = {
-   
-};
 
 let Songs = {
     wimo: {
@@ -87,7 +84,7 @@ Let me show you just what I'm made of</p>
             { id: "tmg18" },
             { id: "mgc19" },
             { id: "tmg19" }
-        ]
+        ],
     },
     ll: {
         desc: {
@@ -196,7 +193,7 @@ One step forward two steps back I'm here</p>
 <p>Can you see all of me<br />
 Walk into my mystery<br />
 Step inside and hold on for dear life<br />
-Do you rememeber me<br />
+Do you remember me<br />
 Capture you or set you free<br />
 I am all I am all of me...<br />
 I am... I'm all of me...</p>
@@ -214,7 +211,7 @@ One step forward two steps back I'm here</p>
 <p>Can you see all of me<br />
 Walk into my mystery<br />
 Step inside and hold on for dear life<br />
-Do you rememeber me<br />
+Do you remember me<br />
 Capture you or set you free<br />
 I am all I am all of me...<br />
 I am... I'm all of me...</p>
@@ -226,7 +223,7 @@ I Am... I Am... I Am...</p>
 <p>Can you see all of me<br />
 Walk into my mystery<br />
 Step inside and hold on for dear life<br />
-Do you rememeber me<br />
+Do you remember me<br />
 Capture you or set you free<br />
 I am all I am all of me...<br />
 I am... I'm all of me...</p>
@@ -255,6 +252,101 @@ I am... I'm all of me...</p>
             { id: "mgc19" },
             { id: "tmg19" },
             { id: "symphony" }
+        ],
+        versionGroups: [
+            {
+                title: "Game Versions",
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Lyrics & Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Toru Kawamura" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the full version of the song.", 
+                        appearances: [ "Lost and Found - Shadow the Hedgehog Vocal Trax", "History of Sonic Music 20th Anniversary Edition", "Shadow the Hedgehog Official Soundtrack", "Sonic at the Olympic Games" ] 
+                    },
+                    { 
+                        officialName: "Opening ver.", 
+                        inGame: true,
+                        long: "This short version of the song plays in the opening cinematic of Shadow the Hedgehog.", 
+                        appearances: [ "Shadow the Hedgehog Original Soundtrax" ] 
+                    },
+                    { 
+                        fanName: "Invinciblilty ver.", 
+                        inGame: true,
+                        long: "This short version of the song plays when you get the invincibility power-up in Shadow the Hedgehog."
+                    },
+                    { 
+                        fanName: "Final Doom ver. (Game)", 
+                        inGame: true,
+                        long: "This version of plays during the final boss of Shadow the Hedgehog. It features a short opening, and loops back to the intro after the third chorus.",
+                        appearances: [ "_GAME" ]
+                    },
+                    { 
+                        fanName: "Final Doom ver. (Album)", 
+                        inGame: true,
+                        long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
+                        appearances: [ "_GAME" ]
+                    },
+                    { 
+                        fanName: "Super Sonic Songs Mix",
+                        inGame: true,
+                        long: "This new mix was made for the Super Sonic Songs album. There are various mixing changes throughout the mix, but most notably, the ending has been changed.",
+                        appearances: [ "Super Sonic Songs", "" ]
+                    },
+                    { 
+                        fanName: "Short Looped ver.",
+                        short: "Version created for <i>Sonic Generations</i>",
+                        long: "This version loops back to the first verse after the first chorus, and appears on <i>Sonic Generations</i>",
+                        appearances: [ "Sonic Generations" ]
+                    },
+                    { 
+                        fanName: "Opening ver. (SSS Mix)",
+                        long: "This version of the song is the Super Sonic Songs mix, but edited down to the length of the Opening version. The song is also labelled as the Opening version on the album it appears on.",
+                        appearances: [ "Sonic the Hedgehog 25th Anniversary Selection" ]
+                    },
+                    { 
+                        fanName: "Super Shadow",
+                        long: "This instrumental track combines I Am... All Of Me, All Hail Shadow, and Live & Learn for Shadow's Super transformation.",
+                        appearances: [ "Shadow the Hedgehog Original Soundtrax", "Shadow the Hedgehog Official Soundtrack" ]
+                    },
+                ]
+            },
+            {
+                title: "Instrumentals",
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Toru Kawamura" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Super Shadow",
+                        long: "This instrumental track combines I Am... All Of Me, All Hail Shadow, and Live & Learn for Shadow's Super transformation.",
+                        appearances: [ "Shadow the Hedgehog Original Soundtrax", "Shadow the Hedgehog Official Soundtrack" ]
+                    },
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition", n: "Jun Senoue" },
+                    { t: "Arrangement", n: "Yutaka Minobe" },
+                    { t: "Piano", n: "Yutaka Minobe" }
+                ],
+                versions: [
+                    { 
+                        officialName: "I Am... The Story Is Over",
+                        inGame: true,
+                        long: "This sad, piano version of I Am... All Of Me is used as the pre-intro for Never Turn Back, but it has also been released on its own.",
+                        appearances: [ "Shadow the Hedgehog Original Soundtrax" ]
+                    },
+                ]
+            }
         ]
     },
     oyh: {
@@ -430,6 +522,7 @@ window.addEventListener('load', () => {
     description = document.querySelector("#descText");
     lyricsSource = document.querySelector("#lyricsSource");
     lyricsText = document.querySelector("#lyricsText");
+    groupsList = document.querySelector("#groupsList");
     performancesList = document.querySelector("#performancesList");
 
     SetupTabs();
@@ -472,6 +565,7 @@ function Populate(basicSong, song)
     PopulateDescription(song);
     PopulateLyrics(song);
     PopulatePerformances(song);
+    PopulateVersions(song);
 }
 
 function PopulateLyrics(song) 
@@ -570,4 +664,61 @@ function AppendDesc(desc)
     text.classList.add("text");
     text.innerHTML = desc.text;
     description.appendChild(text);
+}
+
+function PopulateVersions(song)
+{
+    for (let group of song.versionGroups)   
+    {
+        let grpElem = document.createElement("li");
+        grpElem.classList.add("group");
+
+        // Title
+        if (group.title)
+        {
+            let grpTitle = document.createElement("h3");
+            grpTitle.innerText = group.title;
+            grpElem.appendChild(grpTitle);
+        }
+
+        // Versions
+        let versElem = document.createElement("ul");
+        versElem.classList.add("versionList");
+        versElem.classList.add("generalList");
+        for (let version of group.versions)
+        {
+            let verElem = document.createElement("li");
+
+            let verTitleElem = document.createElement("p");
+            verTitleElem.classList.add("title");
+            verTitleElem.innerText = version.fanName ? version.fanName : version.officialName;
+            verElem.appendChild(verTitleElem);
+
+            if (version.short)
+            {
+                let verDescElem = document.createElement("p");
+                verDescElem.innerHTML = version.short;
+                verElem.appendChild(verDescElem);
+            }
+
+            versElem.appendChild(verElem);
+        }
+        grpElem.appendChild(versElem);
+
+        // Credits
+        let creditsElem = document.createElement("ul");
+        creditsElem.classList.add("credits");
+        for (let credit of group.credits)
+        {
+            let creditElem = document.createElement("p");
+            creditElem.innerHTML = 
+                "<b>" + credit.t + "</b><br/>" + credit.n;
+            
+            creditsElem.appendChild(creditElem);
+        }
+
+        grpElem.appendChild(creditsElem);
+
+        groupsList.appendChild(grpElem);
+    }
 }

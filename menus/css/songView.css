@@ -222,6 +222,49 @@ body {
     text-align: center;
 }
 
+/* VERSIONS */
 .versions {
     grid-area: versions;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.versions .groupsList {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.versions .groupsList .title {
+    font-size: 110%;
+}
+
+.versions .groupsList .group {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 350px;
+}
+
+.versions .groupsList .group .credits {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.versions .groupsList .group .credits p {
+    margin: 0;
+}
+
+.versions .versionList {
+    flex-direction: column;
+    padding: 0;
 }
