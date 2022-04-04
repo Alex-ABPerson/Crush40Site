@@ -278,14 +278,12 @@ I am... I'm all of me...</p>
                     { 
                         fanName: "Final Doom ver. (Game)", 
                         inGame: true,
-                        long: "This version of plays during the final boss of Shadow the Hedgehog. It features a short opening, and loops back to the intro after the third chorus.",
-                        appearances: [ ]
+                        long: "This version of plays during the final boss of Shadow the Hedgehog. It features a short opening, and loops back to the intro after the third chorus."
                     },
                     { 
                         fanName: "Final Doom ver. (Album)", 
                         inGame: true,
-                        long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
-                        appearances: [ ]
+                        long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus."
                     },
                     { 
                         fanName: "Super Sonic Songs Mix",
@@ -775,12 +773,16 @@ function PopulateVersionInfo(version, group)
 {
     ShowVersionInfo();
 
+    // Title
     document.querySelector("#versionTitle").innerText = version.fanName ? version.fanName : version.officialName;
     document.querySelector("#versionTitleSub").innerText = version.fanName ? "(Non-official Name)" : "(Official Name)";
-    document.querySelector("#versionDesc").innerText = version.long;
 
+    // Description
+    document.querySelector("#versionDesc").innerHTML = version.long;
+
+    // Is In Song
     let versionInSong = document.querySelector("#versionInSong");
-    if (version.inSong)
+    if (version.inGame)
     {
         versionInSong.classList.add("isInSong");
         versionInSong.innerText = "This version is featured in the game.";
@@ -791,15 +793,25 @@ function PopulateVersionInfo(version, group)
         versionInSong.innerText = "This version is not featured in the game.";
     }
 
+    // Appearances
     let appearancesLstElem = document.querySelector("#versionAppearances");
+    let noAppearances = document.querySelector("#noAppearances");
     appearancesLstElem.replaceChildren();
-    for (let appearance of version.appearances)
+
+    if (!version.appearances)
+        noAppearances.classList.remove("hidden");
+    else
     {
-        let appearanceItm = document.createElement("li");
-        appearanceItm.innerHTML = "<p>" + appearance + "</p>";
-        appearancesLstElem.appendChild(appearanceItm);
+        noAppearances.classList.add("hidden");
+        for (let appearance of version.appearances)
+        {
+            let appearanceItm = document.createElement("li");
+            appearanceItm.innerHTML = "<p>" + appearance + "</p>";
+            appearancesLstElem.appendChild(appearanceItm);
+        }
     }
 
+    // Credits
     CreateCreditsItems(document.querySelector("#versionCredits"), group.credits);
 }
 

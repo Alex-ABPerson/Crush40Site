@@ -455,7 +455,7 @@ body {
     right: 0;
 }
 
-.versions .info.hidden {
+.versions .info.hidden, .versions .noAppearances.hidden {
     position: fixed;
     visibility: collapse;
 }
@@ -463,6 +463,11 @@ body {
 .versions .appearances {
     grid-area: appearances;
     overflow-y: auto;
+}
+
+.versions .noAppearances {
+    padding: 10px;
+    max-width: 200px;
 }
 
 .versions .appearances .title {
