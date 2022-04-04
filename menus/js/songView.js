@@ -279,19 +279,19 @@ I am... I'm all of me...</p>
                         fanName: "Final Doom ver. (Game)", 
                         inGame: true,
                         long: "This version of plays during the final boss of Shadow the Hedgehog. It features a short opening, and loops back to the intro after the third chorus.",
-                        appearances: [ "_GAME" ]
+                        appearances: [ ]
                     },
                     { 
                         fanName: "Final Doom ver. (Album)", 
                         inGame: true,
                         long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
-                        appearances: [ "_GAME" ]
+                        appearances: [ ]
                     },
                     { 
                         fanName: "Super Sonic Songs Mix",
                         inGame: true,
                         long: "This new mix was made for the Super Sonic Songs album. There are various mixing changes throughout the mix, but most notably, the ending has been changed.",
-                        appearances: [ "Super Sonic Songs", "" ]
+                        appearances: [ "Super Sonic Songs" ]
                     },
                     { 
                         fanName: "Short Looped ver.",
@@ -597,7 +597,6 @@ function Populate(basicSong, song)
     PopulateLyrics(song);
     PopulatePerformances(song);
     PopulateVersions(song);
-    PopulateVersionInfo(song.versionGroups[0].versions[0], song.versionGroups[0]);
 }
 
 function PopulateLyrics(song) 
@@ -721,6 +720,8 @@ function PopulateVersions(song)
         for (let version of group.versions)
         {
             let verElem = document.createElement("li");
+            verElem.classList.add("versionGroupVerItem");
+            verElem.addEventListener('click', () => SelectVersion(verElem, version, group));
 
             let verTitleElem = document.createElement("p");
             verTitleElem.classList.add("title");
@@ -753,8 +754,27 @@ function PopulateVersions(song)
     }
 }
 
+function SelectVersion(elem, version, group)
+{
+    // If it's already selected, deselect it.
+    if (elem.classList.contains("selected"))
+    {
+        elem.classList.remove("selected");
+        HideVersionInfo();
+        return;
+    }
+
+    for (let desElem of document.querySelectorAll(".versionGroupVerItem"))
+        desElem.classList.remove("selected");
+
+    elem.classList.add("selected");
+    PopulateVersionInfo(version, group);
+}
+
 function PopulateVersionInfo(version, group)
 {
+    ShowVersionInfo();
+
     document.querySelector("#versionTitle").innerText = version.fanName ? version.fanName : version.officialName;
     document.querySelector("#versionTitleSub").innerText = version.fanName ? "(Non-official Name)" : "(Official Name)";
     document.querySelector("#versionDesc").innerText = version.long;
@@ -771,18 +791,31 @@ function PopulateVersionInfo(version, group)
         versionInSong.innerText = "This version is not featured in the game.";
     }
 
+    let appearancesLstElem = document.querySelector("#versionAppearances");
+    appearancesLstElem.replaceChildren();
     for (let appearance of version.appearances)
     {
         let appearanceItm = document.createElement("li");
         appearanceItm.innerHTML = "<p>" + appearance + "</p>";
-        document.querySelector("#versionAppearances").appendChild(appearanceItm);
+        appearancesLstElem.appendChild(appearanceItm);
     }
 
     CreateCreditsItems(document.querySelector("#versionCredits"), group.credits);
 }
 
+function ShowVersionInfo()
+{
+    document.querySelector("#versionInfo").classList.remove("hidden");
+}
+
+function HideVersionInfo()
+{
+    document.querySelector("#versionInfo").classList.add("hidden");
+}
+
 function CreateCreditsItems(elem, credits)
 {
+    elem.replaceChildren();
     for (let credit of credits)
     {
         let creditElem = document.createElement("p");

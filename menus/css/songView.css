@@ -319,6 +319,14 @@ body {
     height: 300px;
 }
 
+.versions .versionList li.selected {
+    background-color: var(--crush40-blue-pale-transparent);
+}
+
+.versions .versionList li.selected:hover {
+    background-color: var(--crush40-blue-pale-hover);
+}
+
 @media (min-width: 850px)
 {
     .versions {
@@ -445,6 +453,11 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.versions .info.hidden {
+    position: fixed;
+    visibility: collapse;
 }
 
 .versions .appearances {
