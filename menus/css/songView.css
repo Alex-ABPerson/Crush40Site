@@ -425,6 +425,10 @@ body {
     background-color: var(--crush40-red-pale);
 }
 
+.versions .details .inSong.isInSong {
+    background-color: var(--crush40-blue-pale);
+}
+
 .versions .details .inSong p {
     margin: 0;
 }
@@ -454,6 +458,10 @@ body {
 
 .versions .appearances .list {
     flex-direction: column;
+}
+
+.versions .appearances .list li {
+    max-width: 200px;
 }
 
 .versions .appearances .list li, .versions .appearances .list li:hover {

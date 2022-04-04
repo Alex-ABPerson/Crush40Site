@@ -597,6 +597,7 @@ function Populate(basicSong, song)
     PopulateLyrics(song);
     PopulatePerformances(song);
     PopulateVersions(song);
+    PopulateVersionInfo(song.versionGroups[0].versions[0], song.versionGroups[0]);
 }
 
 function PopulateLyrics(song) 
@@ -750,6 +751,34 @@ function PopulateVersions(song)
         else
             shortGroupsList.appendChild(grpElem);
     }
+}
+
+function PopulateVersionInfo(version, group)
+{
+    document.querySelector("#versionTitle").innerText = version.fanName ? version.fanName : version.officialName;
+    document.querySelector("#versionTitleSub").innerText = version.fanName ? "(Non-official Name)" : "(Official Name)";
+    document.querySelector("#versionDesc").innerText = version.long;
+
+    let versionInSong = document.querySelector("#versionInSong");
+    if (version.inSong)
+    {
+        versionInSong.classList.add("isInSong");
+        versionInSong.innerText = "This version is featured in the game.";
+    }
+    else
+    {
+        versionInSong.classList.remove("isInSong");
+        versionInSong.innerText = "This version is not featured in the game.";
+    }
+
+    for (let appearance of version.appearances)
+    {
+        let appearanceItm = document.createElement("li");
+        appearanceItm.innerHTML = "<p>" + appearance + "</p>";
+        document.querySelector("#versionAppearances").appendChild(appearanceItm);
+    }
+
+    CreateCreditsItems(document.querySelector("#versionCredits"), group.credits);
 }
 
 function CreateCreditsItems(elem, credits)
