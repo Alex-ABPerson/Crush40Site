@@ -552,6 +552,8 @@ window.addEventListener('load', () => {
     longGroupsList = document.querySelector("#longGroupsList");
     performancesList = document.querySelector("#performancesList");
 
+    document.querySelector("#versionInfoClose").addEventListener('click', () => HideVersionInfoAndDeselect());
+
     SetupTabs();
 
     let afterS = document.URL.split('?')[1].substring(2); // Trim off the "s="
@@ -754,19 +756,16 @@ function PopulateVersions(song)
 
 function SelectVersion(elem, version, group)
 {
-    // If it's already selected, deselect it.
-    if (elem.classList.contains("selected"))
+    // If it's already selected, just deselect it.
+    let shouldSelectNew = !elem.classList.contains("selected");
+
+    HideVersionInfoAndDeselect();
+
+    if (shouldSelectNew)
     {
-        elem.classList.remove("selected");
-        HideVersionInfo();
-        return;
+        elem.classList.add("selected");
+        PopulateVersionInfo(version, group);
     }
-
-    for (let desElem of document.querySelectorAll(".versionGroupVerItem"))
-        desElem.classList.remove("selected");
-
-    elem.classList.add("selected");
-    PopulateVersionInfo(version, group);
 }
 
 function PopulateVersionInfo(version, group)
@@ -775,7 +774,7 @@ function PopulateVersionInfo(version, group)
 
     // Title
     document.querySelector("#versionTitle").innerText = version.fanName ? version.fanName : version.officialName;
-    document.querySelector("#versionTitleSub").innerText = version.fanName ? "(Non-official Name)" : "(Official Name)";
+    document.querySelector("#versionTitleSub").innerText = version.fanName ? "(Unofficial Name)" : "(Official Name)";
 
     // Description
     document.querySelector("#versionDesc").innerHTML = version.long;
@@ -820,8 +819,13 @@ function ShowVersionInfo()
     document.querySelector("#versionInfo").classList.remove("hidden");
 }
 
-function HideVersionInfo()
+function HideVersionInfoAndDeselect()
 {
+    // Deselect the item 
+    for (let desElem of document.querySelectorAll(".versionGroupVerItem"))
+        desElem.classList.remove("selected");
+
+    // Hide the version info
     document.querySelector("#versionInfo").classList.add("hidden");
 }
 

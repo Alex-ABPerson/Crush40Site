@@ -50,7 +50,7 @@ body {
         "performances";
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1299px)
 {
     /* Hide the description on three-tabbed view unless selected */
     .page.lyricsOpen .desc, .page.performancesOpen .desc
@@ -399,17 +399,22 @@ body {
 
 .versions .info {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "details appearances";
+
+    /* Smallscreen */
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "details"
+        "appearances";
 
     position: relative;
-    height: 300px;
     background-color: black;
 }
 
 .versions .details {
+    position: relative;
+
     text-align: left;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-right: 10px;
     font-size: 125%;
     grid-area: details;
@@ -443,16 +448,28 @@ body {
 
 .versions .details .credits {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
     gap: 15px;
+    overflow-x: auto;
+
+    padding: 15px 0 15px 0;
 }
 
-.versions .info .close {
+.versions .details .credits p {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.versions .details .close {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.versions .details .close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .versions .info.hidden, .versions .noAppearances.hidden {
@@ -467,7 +484,6 @@ body {
 
 .versions .noAppearances {
     padding: 10px;
-    max-width: 200px;
 }
 
 .versions .appearances .title {
@@ -475,7 +491,10 @@ body {
 }
 
 .versions .appearances .list {
-    flex-direction: column;
+    padding: 0 0 0 10px;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .versions .appearances .list li {
@@ -489,4 +508,26 @@ body {
 
 .versions .appearances .list li p {
     margin: 0;
+}
+
+@media (min-width: 1150px) and (max-width: 1300px), (min-width: 1800px)
+{
+    .versions .info {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "details appearances";
+        height: 300px;
+    }
+
+    .versions .details .credits {
+        flex-direction: column;
+    }
+
+    .versions .appearances .list {
+        flex-direction: column;
+    }
+
+    .versions .noAppearances {
+        max-width: 200px;
+    }
 }
