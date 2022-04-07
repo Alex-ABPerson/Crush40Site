@@ -132,7 +132,7 @@ body {
 @media (min-width: 1500px)
 {
     body, .lyricsOpen, .performancesOpen {
-        grid-template-columns: 450px 600px 1fr;
+        grid-template-columns: 450px 550px 1fr;
     }
 }
 
@@ -211,13 +211,19 @@ body {
 
 .performances .list {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .performances .list > li {
     flex-shrink: 0;
     
     font-size: 120%;
-    max-width: 450px;
+
+    position: relative;
+    width: 100%;
+    max-width: 380px;
     align-content: center;
     justify-content: center;
     gap: 10px;
