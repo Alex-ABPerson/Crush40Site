@@ -1,25 +1,21 @@
-var pagePrompt;
-var pageResults;
+let pagePrompt;
+let pageResults;
 
-var questionPos;
-var question;
-var buttons;
-var submit;
-var pos = 0;
-var currentChoice;
+let buttons;
+let submit;
+let pos = 0;
+let currentChoice;
 
-var resultsBarFilled;
-var resultsBarPercentage;
-var resultsBarQuote;
-var resultsBarTryAgainMsg;
-var resultsBarTryAgain;
-var tryAgainButton;
+let resultsBarFilled;
+let resultsBarPercentage;
+let resultsBarQuote;
+let resultsBarTryAgainMsg;
+let resultsBarTryAgain;
+let tryAgainButton;
 
-var noCorrect = 0;
+let noCorrect = 0;
 
 window.addEventListener('load', () => {
-    question = document.querySelector(".question");
-    questionPos = document.querySelector(".questionPos");
     submit = document.querySelector(".quizSubmit");
     buttons = document.querySelectorAll(".btnAnswer");
 
@@ -57,7 +53,7 @@ function Submit() {
 }
 
 function LoadNext() {
-    submit.style.visibility = 'hidden';
+    submit.classList.add("hidden");
 
     if (pos >= Questions.length)
     {
@@ -67,21 +63,40 @@ function LoadNext() {
 
     let currentQ = Questions[pos];
 
-    questionPos.innerText = (pos + 1) + " / " + Questions.length;
-    question.innerText = currentQ.title;
+    document.querySelector("#questionPos").innerText = (pos + 1) + " / " + Questions.length;
+    document.querySelector("#question").innerText = currentQ.title;
 
-    for (let i = 0; i < currentQ.answers.length; i++) {
+    if (currentQ.img)
+        ShowImg(currentQ.img);
+    else
+        HideImg();
+
+    for (let i = 0; i < currentQ.answers.length; i++)
         document.querySelector("[data-answer-idx='" + i + "']").innerText = currentQ.answers[i];
-    }
 
     DeselectAllButtons();
+}
+
+function ShowImg(img)
+{
+    let questionImgElem = document.querySelector("#questionImg");
+    questionImgElem.src = "../img/" + img;
+    questionImgElem.classList.remove("hidden");
+
+    document.querySelector("#answerBtns").classList.add("withImg");
+}
+
+function HideImg()
+{
+    document.querySelector("#questionImg").classList.add("hidden");
+    document.querySelector("#answerBtns").classList.remove("withImg");
 }
 
 function ChooseAnswer(btn) {
     DeselectAllButtons();
     btn.classList.add("selectedBtnAnswer");
     currentChoice = btn.dataset.answerIdx;
-    submit.style.visibility = 'visible';
+    submit.classList.remove('hidden');
 }
 
 function DeselectAllButtons() {

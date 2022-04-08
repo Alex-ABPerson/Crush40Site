@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     position: absolute;
     left: 0;
@@ -12,36 +13,12 @@
 
 /* Question Prompt */
 .questionPrompt {
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "pos"
-        "question"
-        "a"
-        "b"
-        "c"
-        "d"
-        "submit";
-
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-
     gap: 10px;
 
     width: 80%;
-}
-
-@media (min-width: 1000px) {
-    .questionPrompt {
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "pos pos pos pos"
-            "question question question question"
-            "a b c d"
-            "submit submit submit submit";
-
-    }
 }
 
 .questionPos {
@@ -51,9 +28,48 @@
     font-weight: 700;
 }
 
+.questionImg {
+    height: 200px;
+}
+
 .question {
     grid-area: question;
     font-size: 150%;
+}
+
+.multiChoice {
+    display: flex;
+    flex-direction: column; /* Smallscreen */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.multiChoiceBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.answerBtns {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    
+    /* Smallscreen */
+    flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+    .multiChoice {
+        flex-direction: row;
+    }
+
+    .answerBtns {
+        flex-direction: row;
+    }
 }
 
 .btnAnswer {
@@ -62,6 +78,7 @@
     color: white;
     width: 100%;
     height: 60px;
+    margin: 0;
     cursor: pointer;
 }
 
@@ -86,8 +103,6 @@
 {
     grid-area: submit;
     width: 100%;
-
-    visibility: hidden;
 }
 
 /* Results Screen */
@@ -127,4 +142,9 @@
     width: 40%;
     height: 100%;
     background-color: green;
+}
+
+.hidden {
+    position: fixed;
+    visibility: collapse;
 }

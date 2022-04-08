@@ -18,9 +18,10 @@
                     correctAnswer: 0
                 },
                 { 
-                    title: "Test 2", 
+                    title: "Test 2",
                     answers: ["AnswerX 1", "AnswerX 2", "AnswerX 3", "AnswerX 4"],
-                    correctAnswer: 1
+                    correctAnswer: 1,
+                    img: "Placeholder.png"
                 },
                 { 
                     title: "Test 3", 
@@ -35,15 +36,21 @@
     <body>
         <div class="page promptPage">
             <div class="questionPrompt">
-                <p class="questionPos">X / Y</p>
-                <p class="question">Question</p>
+                <p class="questionPos" id="questionPos">X / Y</p>
+                <p class="question" id="question">Question</p>
     
-                <button class="btnAnswer answerA" data-answer-idx="0">A</button>
-                <button class="btnAnswer answerB" data-answer-idx="1">B</button>
-                <button class="btnAnswer answerC" data-answer-idx="2">C</button>
-                <button class="btnAnswer answerD" data-answer-idx="3">D</button>
-    
-                <button class="emptyButton quizSubmit">Submit</button>
+                <div class="multiChoice">
+                    <img class="questionImg" src="../img/Placeholder.png" id="questionImg" />
+                    <div class="multiChoiceBtns">
+                        <div class="answerBtns withImg" id="answerBtns">
+                            <button class="btnAnswer answerA" data-answer-idx="0">A</button>
+                            <button class="btnAnswer answerB" data-answer-idx="1">B</button>
+                            <button class="btnAnswer answerC" data-answer-idx="2">C</button>
+                            <button class="btnAnswer answerD" data-answer-idx="3">D</button>
+                        </div>
+                        <button class="emptyButton quizSubmit">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
 
