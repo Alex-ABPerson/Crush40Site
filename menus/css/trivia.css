@@ -4,6 +4,11 @@
     justify-content: center;
     text-align: center;
 
+    background-image: url('../../img/visuals/Background/Vector/Johnny2.svg');
+    background-position: center 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     position: absolute;
     left: 0;
     top: 0;
