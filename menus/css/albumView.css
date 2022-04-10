@@ -2,10 +2,8 @@
 @import url('../../css/imgFacts.css');
 
 body {
-    --separator-color: rgb(40, 40, 40);
+    --separator-color: black;
     background-color: var(--crush40-gray);
-    background-image: url('../../img/visuals/Background/Vector/Jun1.svg');
-    background-repeat: no-repeat;
 
     display: grid;
 

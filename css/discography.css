@@ -4,182 +4,76 @@
     background-image: url('../img/visuals/Background/Back3.jpg');
 }
 
-/* Albums */
-.albums-intro {
-    background-color: var(--crush40-red);
-    font-size: 125%;
-
-    padding: 5px;
-    box-sizing: border-box;
+/* Songs List */
+.songs {
+    background-color: black;
     text-align: center;
 }
 
-.albumList {
-    width: 100%;
-    font-size: 125%;
-
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-
-    /* Bleeds through 2N2R and Live! */
-    background-image: url('../img/visuals/Background/Discography/LiveStuff.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.songs .top {
+    padding: 10px;
 }
 
-.albumList .album {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto auto; /* Smallscreen */
-
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative;
+.songs .top h1 {
+    font-size: 2.5em;
 }
 
-/* Smallscreen */
-.albumList .albumLeft, .albumList .albumRight {
-    grid-template-areas: 
-        "img"
-        "info";
-}
-
-.albumList .album .info {
-    grid-area: info;
-
-    padding: 10px; /* Smallscreen */
-    box-sizing: border-box;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    border: solid 3px white;
-}
-
-@media (min-width: 980px) {
-
-    /* Largescreen */
-    .albumList .album {
-        grid-template-columns: 50% 50%;
-    }
- 
-    .albumList .albumLeft {
-        grid-template-areas: "info img";
-    }
-
-    .albumList .albumRight {
-        grid-template-areas: "img info";
-    }
-
-    .albumList .album .info {
-        padding: 50px;
-        margin: 20px;
-    }
-}
-
-.albumList .album .img {
-    grid-area: img;
-    width: 400px;
-    max-width: calc(100% - 20px);
-    margin: 15px;
-
-    align-self: center;
-    justify-self: center;
-}
-
-.albumList .album .yearIndicator {
-    font-family: 'Dimentia';
-    font-style: italic;
-    color: var(--crush40-red);
-}
-
-.albumList .album .title {
-    font-weight: 300;
-    font-size: 200%;
-    color: red;
-}
-
-.albumList .albumThrill {
-    background-image: url('../img/visuals/Background/Discography/SkyBg.jpg');
-    background-color: skyblue;
-}
-
-.albumList .albumThrill .title {
-    font-family: 'Impact';
-    text-transform: uppercase;
-}
-
-.albumList .albumC40 {
-    background-image: url('../img/visuals/Background/Discography/Crush40_MotionBlur.png');
-    background-color: darkred;
-}
-
-.albumList .albumC40 .title {
-    font-family: 'Dimentia';
-    font-style: italic;
-}
-
-.albumList .albumSSS {
-    background-image: url('../img/visuals/Background/Discography/SSSBackground.png');
-    background-color: lightblue;
-}
-
-.albumList .albumSSS .title {
-    font-family: 'Bronzo';
-}
-
-.albumList .albumRiseAgain {
-    background-image: url('../img/visuals/Background/Discography/RiseAgain.png');
-    background-size: cover;
-    background-position: right;
-    background-color: orangered;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.albumList .albumRiseAgain .title {
-    font-family: 'Downcome';
-}
-
-.albumList .albumLive .title {
-    font-family: 'Stencil';
-}
-
-.albumList .album2N2R {
+.songs .search {
+    font-size: 120%;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
     background-color: transparent;
-    background-image: url('../img/visuals/Background/Discography/2N2RBackground_Transparent.png');
-    background-repeat: repeat;
-    background-size: cover;
+    border: solid 3px var(--crush40-red);
+    outline: none;
+    border-radius: 10px;
 }
 
-.albumList .album2N2R .title {
-    font-family: 'Brig';
-    text-transform: lowercase;
+.songs .search::placeholder {
+    color: lightgray;
 }
 
-/* Slanted background */
-/*.albumList .album2012 .albumBackground {
-    background-color: purple;
-    transform: rotate(6deg);
+.songs .search:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
-    z-index: -1;
-    position: absolute;
-    left: -50px;
-    top: -100px;
-    width: calc(100% + 100px);
-    height: calc(100% + 150px);
-}*/
+.songs .search.active {
+    border: solid 3px var(--crush40-blue);
+}
 
-.albumList .albumDrivingThroughForever {
-    background-image: url('../img/visuals/Background/Discography/DTF.jpg');
-    background-position: center;
+.songs .songListContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.songs .songList {
+    width: 100%;
+
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.songs .songList .song {
+    min-width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.songs .songList .song .year {
+    margin: 0;
+}
+
+.songs .song {
+    background-color: var(--crush40-red-pale);
+}
+
+.songs .song:hover {
+    background-color: var(--crush40-red-pale-hover);
 }
 
 .features {
     position: relative;
-
-    font-size: 125%;
     background-color: white;
     color: black;
 
@@ -191,6 +85,12 @@
 }
 
 .featuresMain {
+    font-size: 125%;
+    
+    background-image: url('../img/visuals/Background/Vector/Jun1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
     box-sizing: border-box;
     padding: 0 10px;
 }
@@ -379,66 +279,174 @@
     justify-content: center;
 }
 
-/* Songs List */
-.songs {
-    background-color: black;
+/* Albums */
+.albums-intro {
+    background-color: var(--crush40-gray);
+    font-size: 125%;
+
+    padding: 5px;
+    box-sizing: border-box;
     text-align: center;
 }
 
-.songs .top {
-    padding: 10px;
-}
-
-.songs .search {
-    font-size: 120%;
-    text-align: center;
-    color: white;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: solid 3px var(--crush40-red);
-    outline: none;
-    border-radius: 10px;
-}
-
-.songs .search::placeholder {
-    color: lightgray;
-}
-
-.songs .search:focus {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.songs .search.active {
-    border: solid 3px var(--crush40-blue);
-}
-
-.songs .songListContainer {
+.albumList {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
+    font-size: 125%;
 
-.songs .songList {
-    width: 100%;
-
-    flex-direction: row;
-    overflow-x: auto;
-}
-
-.songs .songList .song {
-    min-width: 250px;
-    text-align: center;
-    justify-content: center;
-}
-
-.songs .songList .song .year {
+    padding: 0;
     margin: 0;
+    list-style-type: none;
+
+    /* Bleeds through 2N2R and Live! */
+    background-image: url('../img/visuals/Background/Discography/LiveStuff.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.songs .song {
-    background-color: var(--crush40-red-pale);
+.albumList .album {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto; /* Smallscreen */
+
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
 }
 
-.songs .song:hover {
-    background-color: var(--crush40-red-pale-hover);
+/* Smallscreen */
+.albumList .albumLeft, .albumList .albumRight {
+    grid-template-areas: 
+        "img"
+        "info";
+}
+
+.albumList .album .info {
+    grid-area: info;
+
+    padding: 10px; /* Smallscreen */
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 3px white;
+}
+
+@media (min-width: 980px) {
+
+    /* Largescreen */
+    .albumList .album {
+        grid-template-columns: 50% 50%;
+    }
+ 
+    .albumList .albumLeft {
+        grid-template-areas: "info img";
+    }
+
+    .albumList .albumRight {
+        grid-template-areas: "img info";
+    }
+
+    .albumList .album .info {
+        padding: 50px;
+        margin: 20px;
+    }
+}
+
+.albumList .album .img {
+    grid-area: img;
+    width: 400px;
+    max-width: calc(100% - 20px);
+    margin: 15px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.albumList .album .yearIndicator {
+    font-family: 'Dimentia';
+    font-style: italic;
+    color: var(--crush40-red);
+}
+
+.albumList .album .title {
+    font-weight: 300;
+    font-size: 200%;
+    color: red;
+}
+
+.albumList .albumThrill {
+    background-image: url('../img/visuals/Background/Discography/SkyBg.jpg');
+    background-color: skyblue;
+}
+
+.albumList .albumThrill .title {
+    font-family: 'Impact';
+    text-transform: uppercase;
+}
+
+.albumList .albumC40 {
+    background-image: url('../img/visuals/Background/Discography/Crush40_MotionBlur.png');
+    background-color: darkred;
+}
+
+.albumList .albumC40 .title {
+    font-family: 'Dimentia';
+    font-style: italic;
+}
+
+.albumList .albumSSS {
+    background-image: url('../img/visuals/Background/Discography/SSSBackground.png');
+    background-color: lightblue;
+}
+
+.albumList .albumSSS .title {
+    font-family: 'Bronzo';
+}
+
+.albumList .albumRiseAgain {
+    background-image: url('../img/visuals/Background/Discography/RiseAgain.png');
+    background-size: cover;
+    background-position: right;
+    background-color: orangered;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.albumList .albumRiseAgain .title {
+    font-family: 'Downcome';
+}
+
+.albumList .albumLive .title {
+    font-family: 'Stencil';
+}
+
+.albumList .album2N2R {
+    background-color: transparent;
+    background-image: url('../img/visuals/Background/Discography/2N2RBackground_Transparent.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.albumList .album2N2R .title {
+    font-family: 'Brig';
+    text-transform: lowercase;
+}
+
+/* Slanted background */
+/*.albumList .album2012 .albumBackground {
+    background-color: purple;
+    transform: rotate(6deg);
+
+    z-index: -1;
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    width: calc(100% + 100px);
+    height: calc(100% + 150px);
+}*/
+
+.albumList .albumDrivingThroughForever {
+    background-image: url('../img/visuals/Background/Discography/DTF.jpg');
+    background-position: center;
 }

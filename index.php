@@ -40,7 +40,7 @@
         <div class="intro section" id="intro">
             <div class="openBg"></div>
 
-            <h2>Introducing <img src="img/logo/EmptyRed.svg" alt="Crush 40">!</h2>
+            <h2 class="dimentiaTitle">Introducing <img src="img/logo/EmptyRed.svg" alt="Crush 40">!</h2>
 
             <!-- What is Crush 40? -->
             <div class="blockTitle">
@@ -151,8 +151,8 @@
 
         <!-- Trivia -->
         <div class="trivia section">
-            <h2>Trivia Quiz</h2>
-            <p class="description">Find out how well you know Crush 40 right here on the site - through this interactive trivia quiz!</p>
+            <h2 class="dimentiaTitle">Crush 40 Trivia</h2>
+            <p class="description">Find out how well you know Crush 40 right here on the site - through this interactive <i>trivia quiz</i>!</p>
             <button style="font-size: 125%" class="filledButton btnWidthWide takeTrivia" data-action="panel" data-page-name="trivia">Start the quiz</button>
         </div>
 

@@ -38,10 +38,40 @@
             </div>
         </div>
 
+            <!-- Songs -->
+            <div class="songs section" id="songs">
+                <div class="top">
+                    <h1 class="dimentiaTitle">Tracks</h1>
+                    <p>Every Crush 40 song created!</p>
+                    <input class="search" id="songsSearch" placeholder="Search"></input>
+                </div>
+                <div class="songListContainer">
+                    <ul class="generalList songList" id="songList"></ul>
+                </div>
+            </div>
+
+        <!-- Features -->
+        <div class="features section" id="features">
+            <div class="featuresMain" id="featuresMain">
+                <h1 class="dimentiaTitle">Features</h1>
+                <p>Every album to feature a track by the band!</p>
+                <ul class="featureList" id="featureList"></ul>
+            </div>
+
+            <div class="featureInfo" id="featureInfo">
+                <button title="Close" class="close iconButton" id="featureInfoClose"><img src="img/icons/smallCloseButtonWhite.svg" alt="Close Icon"></button>
+                <h2 id="featureTitle"></h2>
+                <p id="featureDescription"></p>
+
+                <h3 class="featuredTracksTitle">Featured Tracks</h3>
+                <ul class="generalList featuredTracks" id="featureTracks"></ul>
+            </div>
+        </div>
+
         <!-- Albums -->
         <div class="albums-intro section" id="intro">
-            <h1>Releases</h1>
-            <p>Below is a list of all the albums/EPs the band has put out - be sure to explore them all to find out tons of in-depth trivia, booklet scans, and more!</p>
+            <h1 class="dimentiaTitle">Releases</h1>
+            <p>Every album released by the band - be sure to explore them all to find out tons of in-depth trivia, booklet scans, and more!</p>
         </div>
 
         <ol class="albumList section">
@@ -120,34 +150,6 @@
                 <img data-action="zoom" class="img" src="img/content/discography/DrivingThroughForever.jpg" alt="'Driving Through Forever' Album Cover">
             </div>
         </ol>
-
-        <div class="features section" id="features">
-            <div class="featuresMain" id="featuresMain">
-                <h1>Features</h1>
-                <p>Given their presence in video games, Crush 40 has been featured in a number of releases/soundtracks over the years, this is a complete list of every non-Crush 40 album they're featured in.</p>
-                <ul class="featureList" id="featureList"></ul>
-            </div>
-
-            <div class="featureInfo" id="featureInfo">
-                <button title="Close" class="close iconButton" id="featureInfoClose"><img src="img/icons/smallCloseButtonWhite.svg" alt="Close Icon"></button>
-                <h2 id="featureTitle"></h2>
-                <p id="featureDescription"></p>
-
-                <h3 class="featuredTracksTitle">Featured Tracks</h3>
-                <ul class="generalList featuredTracks" id="featureTracks"></ul>
-            </div>
-        </div>
-
-        <div class="songs section" id="songs">
-            <div class="top">
-                <h1>Songs</h1>
-                <p>Every "Crush 40" (Johnny Gioeli + Jun Senoue) song created.</p>
-                <input class="search" id="songsSearch" placeholder="Search"></input>
-            </div>
-            <div class="songListContainer">
-                <ul class="generalList songList" id="songList"></ul>
-            </div>
-        </div>
 
         <?php include('base/bodyEnd.html') ?>
     </body>
