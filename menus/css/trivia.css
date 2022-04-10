@@ -161,6 +161,7 @@
 }
 
 .resultsScreen .correctBar {
+    z-index: 0;
     border: 3px black solid;
     border-radius: 10px;
     line-height: 10px;
