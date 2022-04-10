@@ -20,6 +20,7 @@
 }
 
 /* INTRODUCING... CRUSH 40! */
+
 .intro {
     position: relative;
     z-index: 0;
@@ -42,6 +43,19 @@
 .intro h2 img {
     vertical-align: middle;
     width: 180px;
+}
+
+.openBg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-repeat: repeat-y;
+    background-position: 50% 30%;
+    background-size: cover;
+    background-image: url('../img/visuals/Background/Vector/Crowd1.svg');
 }
 
 .intro .blockTitle {

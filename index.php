@@ -38,7 +38,7 @@
 
         <!-- Introducing... Crush 40! -->
         <div class="intro section" id="intro">
-            <div class="background-2n2r"></div>
+            <div class="openBg"></div>
 
             <h2>Introducing <img src="img/logo/EmptyRed.svg" alt="Crush 40">!</h2>
 
