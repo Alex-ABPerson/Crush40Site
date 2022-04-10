@@ -185,15 +185,11 @@ function Finish()
     // Choose quote
     if (percentageScore == 0)
         resultsBarQuote.innerText = "\"Wow.\" - Johnny";
-    else if (percentageScore < 20)
+    else if (percentageScore < 25)
         resultsBarQuote.innerText = "\"Yeah, tickles, pickles, I don't know the names of all these characters - I'm getting old!\" - Johnny";
-    else if (percentageScore < 40) 
-    {
-        
-    }
     else if (percentageScore < 60)
         resultsBarQuote.innerText = "\"So... We got a new record coming out soon, right? Well, at least that's what I heard - I don't know!\" - Johnny";
-    else if (percentageScore < 80)
+    else if (percentageScore < 100)
         resultsBarQuote.innerText = "\"Yeah, you guys know the lyrics better than I do.\"  - Johnny";
     
     if (percentageScore == 100)
