@@ -8,7 +8,7 @@
     position: relative;
 
     padding: 15px 15px 75px 15px;
-    background-color: rgb(40, 40, 40);
+    background-color: var(--crush40-gray);
     color: white;
     text-align: center;
 
@@ -346,6 +346,35 @@
     flex-direction: row;
     background-color: red;
     gap: 3px;
+}
+
+.explorer .details .selectInfo .switchPositions {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.explorer .details .selectInfo .switchPos p {
+    margin: 0;
+}
+
+.explorer .details .selectInfo .switchPos {
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 25px;
+
+    cursor: pointer;
+}
+
+.explorer .details .selectInfo .switchPos:hover {
+    background-color: var(--crush40-red-pale);
+}
+
+.explorer .details .selectInfo .switchPos.selected {
+    background-color: var(--crush40-blue-pale);
 }
 
 .explorer .details .selectInfo .pickup {

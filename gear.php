@@ -152,15 +152,19 @@
                     <div class="page pickupInfo" id="selectPickupPage">
                         <h2>Pickups</h2>
                         <p id="gtrPickupDesc">This guitar has a <b>HS</b> layout for pickups</p>
-                        <div class="pickups" id="gtrPickups">
-                            <div class="pickup" id="pickup1">
-                                <p class="type">Humbucker</p>
-                                <h3 class="title">Seymour Duncan</h3>
-                            </div>
-                            <div class="pickup" id="pickup2">
-                                <p class="type">Single</p>
-                                <h3 class="title">MONSTER Thing</h3>
-                            </div>
+                        <div class="pickups" id="gtrPickups"></div>
+                    </div>
+                    <div class="switchInfo hidden" id="selectSwitchPage">
+                        <h2>Pickup Switch</h2>
+                        <p id="gtrPickupDesc">This guitar has a <b>three-way</b> switch to choose which pickups are currently active, each position will enable the following pickups:</p>
+                        <ul class="switchPositions">
+                            <li class="switchPos"><p>1</p></li>
+                            <li class="switchPos"><p>2</p></li>
+                            <li class="switchPos"><p>3</p></li>
+                        </ul>
+                        <div class="switchPickups">
+                            <img src="img/Placeholder.png">
+                            <img src="img/Placeholder.png">
                         </div>
                     </div>
                     <div class="page basicInfo" id="selectBasicPage">
