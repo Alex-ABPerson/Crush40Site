@@ -79,7 +79,7 @@
                     <p class="johnnyAka aka"><i>(a.k.a. Giovanni Giuseppe Baptista Gioeli)</i></p>
                 </div>
 
-                <p class="johnnyDesc">Pelting out strong rock melodies you can't avoid singing along to!</p>
+                <p class="johnnyDesc">Belting out strong rock melodies you can't avoid singing along to!</p>
                 <img data-action="zoom" class="johnnyImg img" src="img/content/Johnny_Ring.png" alt="Johnny Gioeli">
 
                 <img data-action="zoom" class="johnnyTogetherImg" src="img/content/JohnnyAndJun.png" alt="Johnny & Jun">
