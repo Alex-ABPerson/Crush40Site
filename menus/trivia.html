@@ -13,24 +13,86 @@
         <script>
             var Questions = [
                 { 
-                    title: "Test 1", 
-                    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
+                    title: "For which game did Crush 40 create their hit song 'Live & Learn'?",
+                    answers: ["Sonic Adventure 2", "Sonic Heroes", "Sonic Unleashed", "Sonic Adventure"],
                     correctAnswer: 0
                 },
                 { 
-                    title: "Test 2",
-                    answers: ["AnswerX 1", "AnswerX 2", "AnswerX 3", "AnswerX 4"],
-                    correctAnswer: 1,
-                    img: "Placeholder.png"
+                    title: "Which other band has Crush 40 performed concurrently on-stage with before?", 
+                    answers: ["Fiona", "Tomoya Ohtani Band", "Cash Cash", "Kazaly"],
+                    correctAnswer: 2
                 },
                 { 
-                    title: "Test 3", 
-                    answers: ["AnswerY 1", "AnswerY 2", "AnswerY 3", "AnswerY 4"],
-                    correctAnswer: 2
+                    title: "In what order did Crush 40 make these songs?", 
+                    answers: ["Live & Learn", "Open Your Heart", "In The Lead", "Knight of the Wind"],
+                    correctOrder: [ 1, 2, 0, 3 ]
+                },
+                { 
+                    title: "Which Crush 40 concert is depicted by this image?", 
+                    img: "Placeholder.png",
+                    answers: ["Summer of Sonic 2016", "Sonic 25th Party", "Joypolis", "Youmacon"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "What brand of guitars does Jun use at every Crush 40 show?", 
+                    answers: ["Fender", "Gibson", "Epiphone", "ESP"],
+                    correctAnswer: 3
+                },
+                { 
+                    title: "In what order did Crush 40 perform these shows?", 
+                    answers: ["Japan Game Music Fest.", "Summer of Sonic 2016", "<i>Live!</i> Show", "Sega x PUMA"],
+                    correctOrder: [ 2, 0, 1, 3 ]
+                },
+                { 
+                    title: "Which of these is NOT a Crush 40 song?", 
+                    answers: ["Fuel Me", "Fill It Up", "Through the Fire", "In the Lead"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "Which album has this cover image?", 
+                    img: "Placeholder.png",
+                    answers: ["Live!", "2 Nights 2 Remember", "Driving Through Forever", "Crush 40"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "How many songs did the band make for <i>Sonic and the Black Knight</i>?", 
+                    answers: ["1", "2", "3", "4"],
+                    correctAnswer: 3
+                },
+                { 
+                    title: "In what order did Crush 40 release these EPs/albums?", 
+                    answers: ["Thrill Of The Feel", "Rise Again", "Driving Through Forever", "Super Sonic Songs"],
+                    correctOrder: [ 0, 3, 1, 2 ]
+                },
+                { 
+                    title: "Which of these songs has never been performed live by the band yet?", 
+                    answers: ["Down & Dirty", "Light Of The Day", "Call Me Crazy", "Fight The Knight"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "Which song has not had an official full instrumental released?", 
+                    answers: ["I Am... All Of Me", "Live Life", "Live & Learn", "Open Your Heart"],
+                    correctAnswer: 0
+                },
+                { 
+                    title: "Through which band did Jun originally discover Johnny?", 
+                    answers: ["Axel Rudi Pell", "Hardline", "Brunette", "S.A.M.E"],
+                    correctAnswer: 1
+                },
+                { 
+                    title: "How many concerts did the band perform from 2014 - 2016?",
+                    answers: ["5", "3", "8", "6"],
+                    correctAnswer: 0
+                },
+                { 
+                    title: "Which song is not labelled as Crush 40 but features both members in some capacity?", 
+                    answers: ["Batter Up!", "Road To Win", "Burnout Running", "Sons Of Angels"],
+                    correctAnswer: 0
                 }
             ];
         </script>
 
+        <script src="js/menuZoom.js"></script>
         <script src="js/trivia.js"></script>
     </head>
     <body>
@@ -40,15 +102,19 @@
                 <p class="question" id="question">Question</p>
     
                 <div class="multiChoice">
-                    <img class="questionImg" src="../img/Placeholder.png" id="questionImg" />
+                    <img class="questionImg" src="../img/Placeholder.png" id="questionImg" data-action="zoom" />
                     <div class="multiChoiceBtns">
+                        <p class="clickToEnlarge" id="clickToEnlarge">(Click image to enlarge)</p>
                         <div class="answerBtns withImg" id="answerBtns">
                             <button class="btnAnswer answerA" data-answer-idx="0">A</button>
                             <button class="btnAnswer answerB" data-answer-idx="1">B</button>
                             <button class="btnAnswer answerC" data-answer-idx="2">C</button>
                             <button class="btnAnswer answerD" data-answer-idx="3">D</button>
                         </div>
-                        <button class="emptyButton quizSubmit">Submit</button>
+                        <div class="nextBtns">
+                            <button class="emptyButton quizReset hidden">Reset</button>
+                            <button class="emptyButton quizSubmit">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,7 +128,8 @@
                     <div class="correctBarFilled"></div>
                     <p class="correctBarPercentage">X%</p>
                 </div>
-                <p class="tryAgainPrompt">Try again for 100%!</p>
+                <p class="hundredPercent">Wow, well done, you got everything right! Be sure to share your result on the Discord Server!</p>
+                <ol class="questions"></ol>
                 <button class="filledButton tryAgainBtn">Try again</button>
             </div>
         </div>
