@@ -403,3 +403,59 @@
 .explorer .details .selectInfo {
     padding-top: var(--guitar-half-height);
 }
+
+.amps {
+    text-align: center;
+    background-color: var(--crush40-gray);
+    font-size: 130%;
+}
+
+.amps .ampsList {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.amps .amp {
+    margin: 10px;
+    padding: 25px;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 300px;
+}
+
+.cabinet .main {
+    font-size: 130%;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.pods {
+    font-size: 130%;
+    text-align: center;
+    background-color: var(--crush40-gray);
+}
+
+.pods .podHighlight {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img txt";
+    align-items: center;
+    gap: 20px;
+
+    padding: 50px;
+}
+
+.pods .podHighlight img {
+    grid-area: img;
+}
+
+.pods .podHighlight .text {
+    grid-area: txt;
+    text-align: left;
+}

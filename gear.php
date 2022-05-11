@@ -39,7 +39,7 @@
 
         <!-- Guitars -->
         <div class="intro">
-            <h1>Guitars</h1>
+            <h1 class="dimentiaTitle">Guitars</h1>
 
             <div class="start">
                 <div class="text">
@@ -81,7 +81,7 @@
         <!-- Guitars Explorer -->
         <div class="explorer section">
             <div class="explorer-intro">
-                <h1>Guitar Explorer</h1>
+                <h1 class="dimentiaTitle">Guitar Explorer</h1>
                 <p>Take a look at all the custom-made Jun Senoue guitars - he may not use all of these for Crush 40, but most of them have been used in a Crush 40 work!</p>
             </div>
 
@@ -174,6 +174,59 @@
                             <div id="selectDesc"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amplifiers -->
+        <div class="amps section">
+            <div class="section-intro">
+                <h1 class="dimentiaTitle">Amplifiers</h1>
+                <p>Jun owns and typically uses one of these <b>four amps</b> for most of his work, including his work with Crush 40.</p>
+            </div>
+
+            <div class="ampsList">
+                <div class="amp">
+                    <h2>Soldano SLO-100R</h2>
+                    <img src="img/Placeholder.png">
+                    <p>Jun used this amp at a lot of the Crush 40 live shows.</p>
+                </div>
+                <div class="amp">
+                    <h2>Suhr Badget 18</h2>
+                    <img src="img/Placeholder.png">
+                    <p></p>
+                </div>
+                <div class="amp">
+                    <h2>Mesa Dual Rectifier</h2>
+                    <img src="img/Placeholder.png">
+                    <p></p>
+                </div>
+                <div class="amp">
+                    <h2>Peavey 5150</h2>
+                    <img src="img/Placeholder.png">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cabinet section">
+            <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
+            <div class="main">
+                <h1 class="dimentiaTitle">Cabinet</h1>
+                <p>Jun typically uses a <b>Soldano 4x12"</b> cabinet.</p>
+            </div>
+        </div>
+
+        <div class="pods section">
+            <h1 class="dimentiaTitle">Virtual</h1>
+            <p>While Jun usually uses hardware, he has used some software-based equipment in his work!</p>
+            <p>Jun uses <b>Line 6 PODs</b> on some of the most iconic Crush 40 songs, and has used some other equipment live!</p>
+            <div class="podHighlight">
+                <img src="img/Placeholder.png">
+                <div class="text">
+                    <h2>Line 6 POD</h2>
+                    <p>Jun used this for many <i>Sonic Adventure 2</i> tracks - most notably for the iconic and hit song <b>Live & Learn</b>!</p>
+                    <p>It's possible to more or less replicate the guitar tone on the song with one of these!</p>
                 </div>
             </div>
         </div>
