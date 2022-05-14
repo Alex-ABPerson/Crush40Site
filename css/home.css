@@ -20,7 +20,6 @@
 }
 
 /* INTRODUCING... CRUSH 40! */
-
 .intro {
     position: relative;
     z-index: 0;
@@ -148,6 +147,20 @@
 .intro .introSection, .intro .strip {
     font-size: 160%;
 }
+
+@keyframes animIntroTitle {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes animIntroStrip {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animIntro .blockTitle { animation: animIntroTitle 0.5s ease-out paused; }
+.animIntro .stripText { animation: animIntroStrip 0.4s 0.5s ease-in-out backwards paused; }
+.animIntro .strip img { animation: animIntroStrip 0.5s 0.9s ease-in-out backwards paused; }
 
 .intro .bandMembers {
     position: relative;
@@ -299,9 +312,47 @@
 .intro .bandMembers .junImg { grid-area: junImg; }
 .intro .bandMembers .junIndicator { grid-area: junIndicator; }
 
+@keyframes animMembersTitle {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes animMembersLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes animMembersRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes animMembersBottom {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animMembers .blockTitleRight { animation: animMembersTitle 0.5s ease-out paused; }
+.animMembers .animLeft { animation: animMembersLeft 0.8s 0.5s backwards ease-in-out paused; }
+.animMembers .animRight { animation: animMembersRight 0.8s 0.5s backwards ease-in-out paused; }
+.animMembers .animBottom { animation: animMembersBottom 0.8s 0.5s backwards ease-in-out paused; }
+
 .intro .otherBandMembers {
     margin-bottom: 50px;
 }
+
+@keyframes animOtherMembersText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animOtherMembersImg {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animOtherMembers .stripText { animation: animOtherMembersText 0.4s backwards ease-in-out paused; }
+.animOtherMembers img { animation: animOtherMembersText 0.4s 0.4s backwards ease-in-out paused; }
 
 .intro .naming {
     display: flex;
@@ -323,6 +374,25 @@
     margin: 15px;
     height: 300px;
 }
+
+@keyframes animNamingTitle {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes animNamingImg {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes animNamingFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animNaming .blockTitle { animation: animNamingTitle 0.8s backwards ease-in-out paused; }
+.animNaming .imgContainer { animation: animNamingImg 0.8s backwards ease-in-out paused; }
+.animNaming .para { animation: animNamingFade 0.4s 0.8s backwards ease-in-out paused; }
 
 .intro {
     padding-bottom: 200px;
@@ -496,6 +566,25 @@
     }
 }
 
+@keyframes animGuitarsHeading {
+    0% { transform: scale(0); }
+    100% { transform: scale(100%); }
+}
+
+@keyframes animGuitarsText {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes animGuitarsBtn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.animGuitars .heading { animation: animGuitarsHeading 0.5s ease-in-out backwards paused; }
+.animGuitars .subheading { animation: animGuitarsText 0.5s 0.5s ease-in-out backwards paused; }
+.animGuitars button { animation: animGuitarsBtn 0.5s 0.5s ease-in-out backwards paused; }
+
 .trivia {
     margin-top: -120px;
 }
@@ -531,3 +620,22 @@
 .trivia .takeTrivia {
     color: white;
 }
+
+@keyframes animTriviaTitle {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes animTriviaDesc {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animTriviaBtn {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.animTrivia h2 { animation: animTriviaTitle 0.5s ease-in-out backwards paused; }
+.animTrivia .description { animation: animTriviaDesc 0.5s ease-in-out backwards paused; }
+.animTrivia button { animation: animTriviaBtn 0.5s ease-in-out backwards paused; }

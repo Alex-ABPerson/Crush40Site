@@ -250,6 +250,58 @@ function UpdateBackgroundParallaxY(item)
     item.style.backgroundPosition = "0% " + -(item.getBoundingClientRect().top / parseInt(item.dataset.parallaxSpeed)) + "px";
 }
 
+// Animation
+// The animation engine marks all the children marked with "data-anim"
+// on "data-anim-marker" elements!
+var toAnim;
+var triggerPoint;
+
+window.addEventListener('load', () => {
+    let elems = document.querySelectorAll("[data-anim-point='s']");
+    toAnim = Array.from(elems);
+
+    // Ensure the items are ordered by their y-position
+    toAnim.sort((a, b) => { b.getBoundingClientRect().y - a.getBoundingClientRect().y });
+
+    window.addEventListener('resize', UpdateAnimTrigger);
+    UpdateAnimTrigger();
+
+    window.addEventListener('scroll', CheckForNextAnimTrigger);
+});
+
+function UpdateAnimTrigger()
+{
+    triggerPoint = window.innerHeight / 2;
+    CheckForNextAnimTrigger();
+}
+
+function CheckForNextAnimTrigger()
+{
+    if (toAnim.length > 0)
+    {
+        if (toAnim[0].getBoundingClientRect().y <= triggerPoint)
+        {
+            TriggerAnimation(toAnim.shift());
+            CheckForNextAnimTrigger();
+        }
+
+        // If we hit the bottom, trigger everyone who remains
+        else if (window.scrollY + window.innerHeight == document.body.scrollHeight)
+        {
+            for (let itm of toAnim)
+                TriggerAnimation(itm);
+            toAnim = null;
+        }
+    }
+}
+
+function TriggerAnimation(itm)
+{
+    let children = itm.querySelectorAll("[data-anim='y']");
+    for (let child of children)
+        child.classList.add("_anim");
+}
+
 // Parallax
 /*window.addEventListener('load', () => {
     let parallaxed = document.querySelectorAll("[data-parallax-speed]")

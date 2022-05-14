@@ -43,66 +43,72 @@
             <h2 class="dimentiaTitle">Introducing <img src="img/logo/EmptyRed.svg" alt="Crush 40">!</h2>
 
             <!-- What is Crush 40? -->
-            <div class="blockTitle">
-                <h3>What is Crush 40?</h3>
-            </div>
-
-            <div class="whoIsC40 strip stripUp">
-                <div class="stripBack"></div>
-
-                <!-- Text -->
-                <div class="stripText">
-                    <p>Crush 40 is a <span style="font-size: 150%">hard-rock</span> focused musical group.</p>
-                    <p>Most commonly associated with writing vocal themes for the Sonic the Hedgehog series.</p>
+            <div class="animIntro" data-anim-point="s">
+                <div class="blockTitle" data-anim="y">
+                    <h3>What is Crush 40?</h3>
                 </div>
 
-                <!-- Image -->
-                <img data-action="zoom" src="img/content/Both1.jpg" class="stripImg" alt="Johnny Gioeli & Jun Senoue">
+                <div class="whoIsC40 strip stripUp">
+                    <div class="stripBack"></div>
+
+                    <!-- Text -->
+                    <div class="stripText" data-anim="y">
+                        <p>Crush 40 is a <span style="font-size: 150%">hard-rock</span> focused musical group.</p>
+                        <p>Most commonly associated with writing vocal themes for the Sonic the Hedgehog series.</p>
+                    </div>
+
+                    <!-- Image -->
+                    <img data-action="zoom" src="img/content/Both1.jpg" class="stripImg" alt="Johnny Gioeli & Jun Senoue" data-anim="y">
+                </div>
             </div>
             
             <!-- Band Members -->
-            <div class="blockTitleRight">
-                <div class="blockTitle">
-                    <h3>Band Members</h3>
+            <div class="animMembers" data-anim-point="s">
+                <div class="blockTitleRight" data-anim="y">
+                    <div class="blockTitle">
+                        <h3>Band Members</h3>
+                    </div>
+                </div>
+
+                <div class="bandMembers introSection">
+
+                    <div class="bg"></div>
+
+                    <!-- Johnny -->
+                    <p class="johnnyIndicator indicator animLeft" data-anim="y">VOCALS</p>
+
+                    <div class="johnnyTitle animLeft" data-anim="y">
+                        <h4 class="title"><span style="font-size: 150%;">Johnny</span> Gioeli</h4>
+                        <p class="johnnyAka aka"><i>(a.k.a. Giovanni Giuseppe Baptista Gioeli)</i></p>
+                    </div>
+
+                    <p class="johnnyDesc animLeft" data-anim="y">Belting out strong rock melodies you can't avoid singing along to!</p>
+                    <img data-action="zoom" class="johnnyImg img animLeft" data-anim="y" src="img/content/Johnny_Ring.png" alt="Johnny Gioeli">
+
+                    <img data-action="zoom" class="johnnyTogetherImg animBottom" data-anim="y" src="img/content/JohnnyAndJun.png" alt="Johnny & Jun">
+
+                    <!-- Separator -->
+                    <div class="centreSeparator" data-parallax="backgroundYRev" data-parallax-speed="4" data-parallax-change-at="1000"></div>
+
+                    <!-- Jun -->
+                    <p class="junIndicator indicator animRight" data-anim="y">GUITAR</p>
+                    <h4 class="junTitle title animRight" data-anim="y"><span style="font-size: 180%;">Jun</span> Senoue</h4>
+                    <p class="junDesc animRight" data-anim="y">Laying down irresistable lead and rhythm for every song!</p>
+                    <img data-action="zoom" class="junImg img animRight" data-anim="y" src="img/content/Jun_Ring.png" alt="Jun Senoue">
+
+                    <div class="junMrJun animBottom" data-anim="y">
+                        <h5>"Mr Jun Senoue!"</h5>
+                        <p>Johnny <i>loves</i> introducing Jun at Crush 40 shows... <b>A lot</b>...</p>
+                        <iframe class="contents" src="https://streamable.com/e/kkddda" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="bandMembers introSection">
-
-                <div class="bg"></div>
-
-                <!-- Johnny -->
-                <p class="johnnyIndicator indicator">VOCALS</p>
-
-                <div class="johnnyTitle">
-                    <h4 class="title"><span style="font-size: 150%;">Johnny</span> Gioeli</h4>
-                    <p class="johnnyAka aka"><i>(a.k.a. Giovanni Giuseppe Baptista Gioeli)</i></p>
-                </div>
-
-                <p class="johnnyDesc">Belting out strong rock melodies you can't avoid singing along to!</p>
-                <img data-action="zoom" class="johnnyImg img" src="img/content/Johnny_Ring.png" alt="Johnny Gioeli">
-
-                <img data-action="zoom" class="johnnyTogetherImg" src="img/content/JohnnyAndJun.png" alt="Johnny & Jun">
-
-                <div class="centreSeparator" data-parallax="backgroundYRev" data-parallax-speed="4" data-parallax-change-at="1000"></div>
-
-                <!-- Jun -->
-                <p class="junIndicator indicator">GUITAR</p>
-                <h4 class="junTitle title"><span style="font-size: 180%;">Jun</span> Senoue</h4>
-                <p class="junDesc">Laying down irresistable lead and rhythm for every song!</p>
-                <img data-action="zoom" class="junImg img" src="img/content/Jun_Ring.png" alt="Jun Senoue">
-
-                <div class="junMrJun">
-                    <h5>"Mr Jun Senoue!"</h5>
-                    <p>Johnny <i>loves</i> introducing Jun at Crush 40 shows... <b>A lot</b>...</p>
-                    <iframe class="contents" src="https://streamable.com/e/kkddda" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="otherBandMembers strip stripDown">
+            <!-- Other Band Members -->
+            <div class="otherBandMembers strip stripDown animOtherMembers"data-anim-point="s">
                 <div class="stripBack"></div>
 
-                <div class="stripText">
+                <div class="stripText" data-anim="y">
                     <h4>Drums and bass?</h4>
                     <p>"Crush 40" does not have a set drummer and bass player!</p> 
                     <p>They either rely on a <span style="font-size: 120%">backing track</span> live, or some other member to fill in temporarily.</span></p>
@@ -110,25 +116,27 @@
                     <button style="font-size: 100%" class="emptyButton btnWidthWide" data-action="panel" data-page-name="allMembers">View other members</button>
                 </div>
 
-                <img data-action="zoom" src="img/content/members/Together.png" class="stripImg" alt="Crush 40 with full band">
+                <img data-action="zoom" src="img/content/members/Together.png" class="stripImg" data-anim="y" alt="Crush 40 with full band">
             </div>
 
             <!-- Why "Crush 40"? -->
-            <div class="blockTitle">
-                <h3>Why "Crush 40"?</h3>
-            </div>
-            
-            <div class="naming introSection">
-                <p>The band was originally titled <span style="font-size: 120%">"Sons of Angels"</span> - but they soon discovered a <i>Norwegian rock band</i> already had the same name, and were thinking <span style="font-size: 80%">"Sons of..."</span>.</p>
-                <p>At the time, Jun liked the word and drink "Crush" and Johnny didn't want to turn 40, so together they created the new name.</p>
-                <div class="imgContainer">
-                    <img class="img" src="img/content/info/What_Crush_40_Means.svg" alt="Jun likes the drink Crush, and Johnny wanted to Crush 40">
+            <div class="animNaming" data-anim-point="s">
+                <div class="blockTitle" data-anim="y">
+                    <h3>Why "Crush 40"?</h3>
+                </div>
+                
+                <div class="naming introSection">
+                    <p class="para" data-anim="y">The band was originally titled <span style="font-size: 120%">"Sons of Angels"</span> - but they soon discovered a <i>Norwegian rock band</i> already had the same name, and were thinking <span style="font-size: 80%">"Sons of..."</span>.</p>
+                    <p class="para" data-anim="y">At the time, Jun liked the word and drink "Crush" and Johnny didn't want to turn 40, so together they created the new name.</p>
+                    <div class="imgContainer" data-anim="y">
+                        <img class="img" src="img/content/info/What_Crush_40_Means.svg" alt="Jun likes the drink Crush, and Johnny wanted to Crush 40">
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Guitars -->
-        <div class="guitars section">
+        <div class="guitars animGuitars section" data-anim-point="s">
             <div class="guitar guitar-top">
                 <img class="body" src="img/content/guitars/Sonic-II/BodyHorizontal.svg" alt="ESP-SONIC-II Guitar Body">
                 <div class="neck"></div>
@@ -137,9 +145,9 @@
             <div class="middle">
                 <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
                 <div class="contents">
-                    <p class="heading">Oh - and there's even custom "Crush 40" guitars by ESP!</p>
-                    <p class="subheading"><i>Jun uses these live!</i></p>
-                    <button class="emptyButton btnWidthWide" href="#">Check out their gear</button>
+                    <p class="heading" data-anim="y">Oh - and there's even custom "Crush 40" guitars by ESP!</p>
+                    <p class="subheading" data-anim="y"><i>Jun uses these live!</i></p>
+                    <button class="emptyButton btnWidthWide" data-anim="y" href="#">Check out their gear</button>
                 </div>
             </div>
             <div class="guitar guitar-bottom">
@@ -150,10 +158,10 @@
         </div>
 
         <!-- Trivia -->
-        <div class="trivia section">
-            <h2 class="dimentiaTitle">Crush 40 Trivia</h2>
-            <p class="description">Find out how well you know Crush 40 right here on the site - through this interactive <i>trivia quiz</i>!</p>
-            <button style="font-size: 125%" class="filledButton btnWidthWide takeTrivia" data-action="panel" data-page-name="trivia">Start the quiz</button>
+        <div class="trivia animTrivia section" data-anim-point="s">
+            <h2 class="dimentiaTitle" data-anim="y">Crush 40 Trivia</h2>
+            <p class="description" data-anim="y">Find out how well you know Crush 40 right here on the site - through this interactive <i>trivia quiz</i>!</p>
+            <button style="font-size: 125%" data-anim="y" class="filledButton btnWidthWide takeTrivia" data-action="panel" data-page-name="trivia">Start the quiz</button>
         </div>
 
         <?php include('base/bodyEnd.html') ?>

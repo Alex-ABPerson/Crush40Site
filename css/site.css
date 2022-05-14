@@ -53,6 +53,10 @@ a {
     cursor: pointer;
 }
 
+._anim {
+    animation-play-state: running !important;
+}
+
 .dimentiaTitle {
     font-family: 'Dimentia';
     font-weight: 300;
@@ -570,6 +574,25 @@ a {
 
     max-width: 600px;
 }
+
+@keyframes animOpeningLogo {
+    0% { transform: scale(300%); opacity: 0; }
+    100% { transform: scale(100%); opacity: 1; }
+}
+
+@keyframes animOpeningText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes animOpeningBtns {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.opening img { animation: animOpeningLogo 0.5s 0.1s backwards ease-in-out; }
+.opening h2 { animation: animOpeningText 0.5s 0.5s backwards ease-in-out; }
+.opening .btnSet { animation: animOpeningBtns 0.5s 0.5s backwards ease-in-out; }
 
 /* FOOTER */
 .footer {
