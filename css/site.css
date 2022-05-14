@@ -216,7 +216,7 @@ a {
 .GSBack {
     opacity: 50%;
 
-    background-position: center;
+    background-position: 0% 0px;
     background-size: cover;
     background-repeat: no-repeat;
 
