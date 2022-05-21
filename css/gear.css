@@ -404,9 +404,12 @@
     padding-top: var(--guitar-half-height);
 }
 
+.otherJunGear {
+    background-color: var(--crush40-gray);
+}
+
 .amps {
     text-align: center;
-    background-color: var(--crush40-gray);
     font-size: 130%;
 }
 
@@ -423,15 +426,37 @@
     padding: 25px;
     border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     width: 300px;
 }
 
-.cabinet .main {
-    font-size: 130%;
-    border: 3px solid white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+.amps .amp img {
+    width: 100%;
+}
+
+.cabinet {
+    background-color: var(--crush40-gray);
+}
+
+.cabinet .strip {
+    margin: 120px 0;
+}
+
+.cabinet .stripBack {
+    background-color: var(--crush40-red);
+}
+
+.cabinet .stripText {
+    color: black;
+    padding-left: 50px;
+}
+
+.cabinet .img {
+    height: 300px;
 }
 
 .pods {

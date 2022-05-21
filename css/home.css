@@ -69,60 +69,16 @@
 }
 
 .intro .strip {
-    position: relative;
-    width: calc(100% + 20px);
-
-    box-sizing: border-box;
     margin-top: 30px;
     margin-bottom: 50px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     color: black;
-
-    z-index: 1;
-}
-
-.intro .stripUp {
-    padding-left: 50px;
-    transform: rotateZ(-6deg);
-}
-
-.intro .stripDown {
-    padding-right: 50px;
-    transform: rotateZ(6deg);
-}
-
-.intro .stripDown .stripText {
-    width: 80%;
-}
-
-.intro .stripUp .stripText {
-    width: 80%;
-}
-
-.intro .stripImg {
-    width: 80%;
 }
 
 @media (min-width: 800px)
 {
-    .intro .strip {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        font-size: 180%;
-        flex-direction: row;
-    }
-
     .intro .stripDown {
         padding-left: 50px;
-    }
-
-    .intro .stripImg {
-        width: 30%;
     }
 }
 
@@ -142,10 +98,6 @@
 
 .intro .otherBandMembers .stripBack {
     background-color: var(--crush40-blue);
-}
-
-.intro .introSection, .intro .strip {
-    font-size: 160%;
 }
 
 @keyframes animIntroTitle {
