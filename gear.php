@@ -200,7 +200,7 @@
                     <div class="amp">
                         <h2>Suhr Badger 18</h2>
                         <img src="img/content/extraGear/amps/SuhrBadger.png" alt="A Suhr Badger 18" data-action="zoom">
-                        <p>One song this amp was used for is <b>Is It You</b>, from <i>Super Sonic Songs</i>.</p>
+                        <p>One song this amp was used for is <a data-action="panel" data-page-name="songView?a=iiy">Is It You</a>, from <i>Super Sonic Songs</i>.</p>
                     </div>
                     <div class="amp">
                         <h2>Peavey 5150</h2>
