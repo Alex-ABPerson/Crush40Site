@@ -413,15 +413,18 @@
     font-size: 130%;
 }
 
-.amps .ampsList {
+.otherJunGear .ampsList {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+
+    list-style-type: none;
+    padding: 0;
 }
 
-.amps .amp {
+.otherJunGear .ampsList .amp {
     margin: 10px;
     padding: 25px;
     border: 3px solid white;

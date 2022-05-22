@@ -186,28 +186,28 @@
                     <p>Jun owns and typically uses one of these <b>four amps</b> for most of his work, including his work with Crush 40.</p>
                 </div>
 
-                <div class="ampsList">
-                    <div class="amp">
+                <ul class="ampsList">
+                    <li class="amp">
                         <h2>Soldano SLO-100R</h2>
                         <img src="img/content/extraGear/amps/Soldano.png" alt="A Soldano SLO-100R" data-action="zoom">
                         <p>This, alongside the Dual Rectifier, is an amp Jun commonly uses at Crush 40 shows. Many of his tracks utilise this amp.</p>
-                    </div>
-                    <div class="amp">
+                    </li>
+                    <li class="amp">
                         <h2>MESA Dual Rectifier</h2>
                         <img src="img/content/extraGear/amps/DualRectifier.jpg" data-action="zoom">
                         <p>Jun has used this amp at various shows. This amp was heavily used in Shadow the Hedgehog to achieve the darker and deeper tones.</p>
-                    </div>
-                    <div class="amp">
+                    </li>
+                    <li class="amp">
                         <h2>Suhr Badger 18</h2>
                         <img src="img/content/extraGear/amps/SuhrBadger.png" alt="A Suhr Badger 18" data-action="zoom">
                         <p>One song this amp was used for is <a data-action="panel" data-page-name="songView?a=iiy">Is It You</a>, from <i>Super Sonic Songs</i>.</p>
-                    </div>
-                    <div class="amp">
+                    </li>
+                    <li class="amp">
                         <h2>Peavey 5150</h2>
                         <img src="img/content/extraGear/amps/5150.png" data-action="zoom">
                         <p>Jun also owns this amp and uses it occasionally.</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
 
             <div class="cabinet">
@@ -225,15 +225,20 @@
                 <h1 class="dimentiaTitle">Virtual</h1>
                 <p>While Jun usually uses hardware, he has used some software-based equipment in his work!</p>
                 <p>Jun uses <b>Line 6 PODs</b> on some of the most iconic Crush 40 songs, and has used some other equipment live!</p>
-                <div class="podHighlight">
-                    <img src="img/Placeholder.png">
-                    <!-- Line 6 POD PRO for Live & Learn, Line 6 XT for other tracks -->
-                    <div class="text">
-                        <h2>Line 6 POD</h2>
-                        <p>Jun used this for many <i>Sonic Adventure 2</i> tracks - most notably for the iconic and hit song <b>Live & Learn</b>!</p>
+                <ul class="ampsList">
+                    <li class="amp">
+                        <h2>Line 6 Pod PRO</h2>
+                        <img src="img/content/extraGear/virtual/PodPro.jpg" alt="A POD Pro" data-action="zoom">
+                        <p>Jun used this for many <i>Sonic Adventure 2</i> tracks - most notably for the iconic and hit song <a data-action="panel" data-page-name="songView?a=lal">Live & Learn</a>!</p>
                         <p>It's possible to more or less replicate the guitar tone on the song with one of these!</p>
-                    </div>
-                </div>
+                    </li>
+                    <li class="amp">
+                        <h2>Line 6 Pod XT</h2>
+                        <img src="img/content/extraGear/virtual/PodXt.jpg" alt="A Soldano SLO-100R" data-action="zoom">
+                        <p>Jun used this for many <i>Sonic Heroes</i> tracks - including <a data-action="panel" data-page-name="songView?a=wimo">What I'm Made Of</a>!</p>
+                        <p>It's possible to more or less replicate the guitar tone on the song with one of these!</p>
+                    </li>
+                </ul>
             </div>
         </div>
 
