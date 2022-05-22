@@ -583,7 +583,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--crush40-gray)
+    background-color: var(--crush40-gray);
 }
 
 .loading-screen .spinning {
@@ -591,7 +591,7 @@ a {
     height: 24px;
     border-radius: 50%;
     border: solid transparent 4px;
-    border-top: solid black 4px;
+    border-top: solid white 4px;
 
     margin-left: 10px;
 }
