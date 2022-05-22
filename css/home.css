@@ -92,6 +92,10 @@
     height: 100%;
 }
 
+.intro .introSection {
+    font-size: 160%;
+}
+
 .intro .whoIsC40 .stripBack {
     background-color: var(--crush40-red);
 }
