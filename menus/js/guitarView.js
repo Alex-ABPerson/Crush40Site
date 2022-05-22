@@ -1,5 +1,9 @@
 let gearPageNav;
 
+let Guitars = [
+
+];
+
 window.addEventListener('load', () => {
     gearPageNav = document.querySelector("#gearPageNav");
 
@@ -8,7 +12,7 @@ window.addEventListener('load', () => {
             gearPageNav.classList.add("hiddenNav");
     });
 
-    let afterS = document.URL.split('?')[1].substring(2); // Trim off the "g="
+    let afterG = document.URL.split('?')[1].substring(2); // Trim off the "g="
 
     window.parent.postMessage('!700px', '*');
 });
