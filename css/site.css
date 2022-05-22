@@ -215,10 +215,12 @@ a {
     align-items: center;
 
     z-index: 1;
+
+    font-size: 150%;
 }
 
 .stripUp {
-    padding-left: 50px;
+    padding-left: 20px;
     transform: rotateZ(-6deg);
 }
 
@@ -236,6 +238,9 @@ a {
 }
 
 @media (min-width: 800px) {
+    .stripUp {
+        padding-left: 50px;
+    }
     .strip {
         margin-bottom: 20px;
         margin-top: 10px;
