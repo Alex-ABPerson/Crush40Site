@@ -180,6 +180,8 @@
 
         <!-- Other Jun Gear -->
         <div class="otherJunGear section">
+            <div class="zigZag zigZagTop"></div>
+
             <div class="amps">
                 <div class="section-intro">
                     <h1 class="dimentiaTitle">Amplifiers</h1>

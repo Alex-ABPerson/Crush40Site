@@ -154,13 +154,6 @@
     background-repeat: repeat;
 }
 
-/*.guitars .details .zigZagTop {
-    top: 0;
-
-    background-image: url('../img/visuals/Separators/ZigZagDownBlack.svg');
-    background-repeat: repeat;
-}*/
-
 .explorer {
     z-index: 1;
     background: none;
@@ -406,6 +399,19 @@
 
 .otherJunGear {
     background-color: var(--crush40-gray);
+
+    position: relative;
+    padding-top: 50px;
+}
+
+.otherJunGear .zigZagTop {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+
+    background-image: url('../img/visuals/Separators/ZigZagDownBlack.svg');
+    background-repeat: repeat;
 }
 
 .amps {
