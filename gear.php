@@ -46,7 +46,7 @@
                     <p>By far the most prominent set of gear for Crush 40 is Jun's <i>guitars</i>.</p>
                     <p>Jun uses custom-made <b>ESP Guitars</b> for his own works and Crush 40. The guitars have different designs on them - some being used for general Sonic/Shadow songs, and some being used for very precise game soundtracks.</p>
                     <p>Jun most commonly plays the <b>ESP GL "SONIC"</b>, <b>ESP SONIC-II</b> and <b>ESP SHADOW-II</b> at most Crush 40 shows, but at some shows he also brings the dedicated game guitars to play.</p>
-                    <p>He's been in a sponsership deal with ESP ever since he first worked on Sonic Adventure - and as such is required to use these guitars at his shows, but that's not a problem, because they're awesome and he always sounds great anyway!</p>
+                    <p>He's been in a sponsorship deal with ESP ever since he first worked on Sonic Adventure - and as such is required to use these guitars at his shows, but that's not a problem, because they're awesome and he always sounds great anyway!</p>
                 </div>
                 <img data-action="zoom" class="img" src="img/content/guitars/AllGuitars.png" alt="Some of Jun's guitars">
             </div>
