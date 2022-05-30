@@ -14,12 +14,16 @@ let hoverPointsElem;
 let currentGuitar;
 
 var Guitars = {
+    noGtr: {
+        imgCentreOffset: 3
+    },
     sonic: {
         title: "ESP GL 'SONIC'",
         desc: "The first 'Crush 40' guitar made, created for Jun due to his work in the game <i>Sonic Adventure</i>!",
         img: "img/content/guitars/GL-SONIC/Front.svg",
         imgBaseWidth: 2284.64,
         imgBaseHeight: 749.46,
+        imgCentreOffset: -3,
         pickupHoverPoint: {
             left: 398,
             top: 275,
@@ -122,7 +126,7 @@ window.addEventListener('load', () => {
             gtr.classList.add("selected");
 
             // If we didn't previously have a guitar, start listening for touch point adjustments and remove BG
-            if (!currentGuitar)
+            if (currentGuitar == Guitars.noGtr)
             {
                 gtrElem.classList.add('guitarNoBg');
 
@@ -135,6 +139,8 @@ window.addEventListener('load', () => {
             ChangeTo(Guitars[gtr.dataset.id]);
         });
 
+    // Setup the "guitarless" view
+    currentGuitar = Guitars.noGtr;
     UpdateGtrMargin();
 
     window.addEventListener('resize', () => {
@@ -198,7 +204,7 @@ function GenerateTouchPoint(data, clickHandler)
 
 function UpdateGtrMargin()
 {
-    let val = (gtrImg.offsetHeight / 2 + 5) + "px";
+    let val = (gtrImg.offsetHeight / 2 + currentGuitar.imgCentreOffset) + "px";
     belowGtr.style.setProperty("--guitar-half-height", val);
     belowGtr.style.marginTop = "-" + val;
 }

@@ -135,7 +135,7 @@
             <div class="guitar" id="gtrElem">
                 <div class="guitarImgContainer">
                     <div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
-                    <img id="gtrImg" src="img/content/guitars/GtrOutline.png">
+                    <img id="gtrImg" src="img/content/guitars/GtrOutline.svg">
                     <div class="hover hoverBack" id="hoverPoints">
                         <div class="point" style="left: 200px; top: 200px; width: 100px; height: 100px"></div>
                     </div>
