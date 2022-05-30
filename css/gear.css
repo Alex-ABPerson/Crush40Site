@@ -421,6 +421,22 @@
     background-repeat: repeat;
 }
 
+.otherJunGear .zigZagTop .lineOverlay {
+    position: absolute;
+    left: 0;
+    height: 50px;
+    width: 560px;
+
+    visibility: hidden;
+}
+
+@media (min-width: 1100px)
+{
+    .otherJunGear .zigZagTop .lineOverlay {
+        visibility: visible;
+    }
+}
+
 .amps {
     text-align: center;
     font-size: 130%;

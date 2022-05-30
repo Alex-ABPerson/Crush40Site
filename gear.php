@@ -180,7 +180,7 @@
 
         <!-- Other Jun Gear -->
         <div class="otherJunGear section">
-            <div class="zigZag zigZagTop"></div>
+            <div class="zigZag zigZagTop"><img class="lineOverlay" src="img/visuals/Separators/ZigZagDownBlackWithLine.svg"></div>
 
             <div class="amps">
                 <div class="section-intro">
