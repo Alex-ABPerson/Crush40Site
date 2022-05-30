@@ -131,6 +131,8 @@ window.addEventListener('load', () => {
                 gtrElem.classList.add('guitarNoBg');
 
                 window.addEventListener('resize', () => {
+                    UpdateHoverPointPos(currentGuitar.pickupHoverPoint);
+                    UpdateHoverPointPos(currentGuitar.switchHoverPoint);
                     for (let hoverPoint of currentGuitar.otherHoverPoints)
                         UpdateHoverPointPos(hoverPoint);
                 });
