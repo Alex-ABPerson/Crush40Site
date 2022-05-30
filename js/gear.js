@@ -124,7 +124,6 @@ window.addEventListener('load', () => {
             // Deselect everyone else
             for (let deselectGtr of guitars)
                 deselectGtr.classList.remove("selected");
-
             
             gtr.classList.add("selected");
 
@@ -133,12 +132,8 @@ window.addEventListener('load', () => {
             {
                 gtrElem.classList.add('guitarNoBg');
 
-                window.addEventListener('resize', () => {
-                    UpdateHoverPointPos(currentGuitar.pickupHoverPoint);
-                    UpdateHoverPointPos(currentGuitar.switchHoverPoint);
-                    for (let hoverPoint of currentGuitar.otherHoverPoints)
-                        UpdateHoverPointPos(hoverPoint);
-                });
+                gtrImg.addEventListener('load', UpdateHoverPoints);
+                window.addEventListener('resize', UpdateHoverPoints);
             }
 
             ChangeTo(Guitars[gtr.dataset.id]);
@@ -211,6 +206,14 @@ function UpdateGtrMargin()
     let val = (gtrImg.offsetHeight / 2 + currentGuitar.imgCentreOffset) + "px";
     belowGtr.style.setProperty("--guitar-half-height", val);
     belowGtr.style.marginTop = "-" + val;
+}
+
+function UpdateHoverPoints()
+{
+    UpdateHoverPointPos(currentGuitar.pickupHoverPoint);
+    UpdateHoverPointPos(currentGuitar.switchHoverPoint);
+    for (let hoverPoint of currentGuitar.otherHoverPoints)
+        UpdateHoverPointPos(hoverPoint);
 }
 
 function UpdateHoverPointPos(point)
