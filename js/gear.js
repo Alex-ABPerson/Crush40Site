@@ -141,6 +141,7 @@ window.addEventListener('load', () => {
 
     // Setup the "guitarless" view
     currentGuitar = Guitars.noGtr;
+    ViewBasicDetails({ title: "Choose a guitar!", desc: "Choose a guitar above to view more details here!" })
     UpdateGtrMargin();
 
     window.addEventListener('resize', () => {

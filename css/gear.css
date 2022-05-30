@@ -290,7 +290,8 @@
         "more";
 }
 
-.explorer .details.noGtr .otherDetails, .explorer .details.noGtr .selectInfo {
+.explorer .details.noGtr .otherDetails {
+    position: fixed;
     visibility: hidden;
 }
 
@@ -382,6 +383,11 @@
         grid-template-rows: auto;
         grid-template-columns: 500px 1fr;
         grid-template-areas: "more select";
+    }
+
+    .explorer .details.noGtr {
+        grid-template-columns: 1fr;
+        grid-template-areas: "select";
     }
 
     .explorer .details .otherDetails {
