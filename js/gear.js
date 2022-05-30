@@ -224,7 +224,7 @@ function UpdateHoverPointPos(point)
     elem.style.height = point.height * yStretch + "px";
 }
 
-function ViewDefaultDetails() { ViewBasicDetails({ title: "Tap something!", desc: "Tap something on the guitar to find out about it details about it!" })}
+function ViewDefaultDetails() { ViewBasicDetails({ title: "Tap something!", desc: "Tap something on the guitar to find out about it here!" })}
 function ViewBasicDetails(point)
 {
     ShowDetailsPage(selectBasicPage);
