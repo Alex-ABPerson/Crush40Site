@@ -430,7 +430,7 @@
     visibility: hidden;
 }
 
-@media (min-width: 1100px)
+@media (min-width: 1000px)
 {
     .otherJunGear .zigZagTop .lineOverlay {
         visibility: visible;

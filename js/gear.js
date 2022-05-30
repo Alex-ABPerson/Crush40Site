@@ -144,9 +144,8 @@ window.addEventListener('load', () => {
     ViewBasicDetails({ title: "Choose a guitar!", desc: "Choose a guitar above to view more details here!" })
     UpdateGtrMargin();
 
-    window.addEventListener('resize', () => {
-        UpdateGtrMargin();
-    });
+    window.addEventListener('resize', UpdateGtrMargin);
+    gtrImg.addEventListener('load', UpdateGtrMargin);
 });
 
 function ChangeTo(gtr)
@@ -166,8 +165,6 @@ function ChangeTo(gtr)
     hoverPointsElem.appendChild(GenerateTouchPoint(gtr.switchHoverPoint, d => ViewSwitchDetails()));
     for (let hoverPoint of gtr.otherHoverPoints)
         hoverPointsElem.appendChild(GenerateTouchPoint(hoverPoint, d => ViewBasicDetails(d)));
-
-    UpdateGtrMargin();
 }
 
 function PopulateBasicDetails(gtr)
