@@ -5,6 +5,7 @@ let gtrDesc;
 let gtrPickupDesc;
 let gtrPickups;
 let belowGtr;
+let otherJunGear;
 let selectTitle;
 let selectDesc;
 let selectInfo;
@@ -106,6 +107,7 @@ window.addEventListener('load', () => {
     gtrDesc = document.querySelector("#gtrDesc");
     gtrPickupDesc = document.querySelector("#gtrPickupDesc");
     gtrPickups = document.querySelector("#gtrPickups");
+    otherJunGear = document.querySelector("#otherJunGear");
     selectImg = document.querySelector("#selectImg");
     selectTitle = document.querySelector("#selectTxt");
     selectDesc = document.querySelector("#selectDesc");
@@ -123,6 +125,7 @@ window.addEventListener('load', () => {
             for (let deselectGtr of guitars)
                 deselectGtr.classList.remove("selected");
 
+            
             gtr.classList.add("selected");
 
             // If we didn't previously have a guitar, start listening for touch point adjustments and remove BG
@@ -160,6 +163,7 @@ function ChangeTo(gtr)
     // Handle guitar details
     ViewDefaultDetails();
     belowGtr.classList.remove("noGtr");
+    otherJunGear.classList.remove("noGtrAbove");
 
     // Handle hover points
     hoverPointsElem.replaceChildren();

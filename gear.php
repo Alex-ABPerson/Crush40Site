@@ -179,7 +179,7 @@
         </div>
 
         <!-- Other Jun Gear -->
-        <div class="otherJunGear section">
+        <div class="otherJunGear noGtrAbove section" id="otherJunGear">
             <div class="zigZag zigZagTop"><img class="lineOverlay" src="img/visuals/Separators/ZigZagDownBlackWithLine.svg"></div>
 
             <div class="amps">

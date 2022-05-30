@@ -432,7 +432,7 @@
 
 @media (min-width: 1000px)
 {
-    .otherJunGear .zigZagTop .lineOverlay {
+    .otherJunGear:not(.noGtrAbove) .zigZagTop .lineOverlay {
         visibility: visible;
     }
 }
