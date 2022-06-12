@@ -22,7 +22,7 @@ var Guitars = {
         title: "ESP GL 'SONIC'",
         desc: "The first 'Crush 40' guitar made, created for Jun due to his work in the game <i>Sonic Adventure</i>!",
         img: "img/content/guitars/GL-SONIC/Front.svg",
-        imgBaseWidth: 2284.64,
+        imgBaseWidth: 2280.77,
         imgBaseHeight: 749.46,
         imgCentreOffset: -3,
         pickupHoverPoint: {
@@ -84,17 +84,42 @@ var Guitars = {
     sth130: {
         title: "ESP STH-130",
         desc: "A <b>20th Anniversary edition</b> variant of the classic <i>ESP GL 'SONIC'</i>!",
-        img: "img/content/guitars/STH-130/Front.svg"
+        img: "img/content/guitars/GL-SONIC/FrontAnniversary.svg",
+        imgBaseWidth: 2280.77,
+        imgBaseHeight: 749.46,
+        imgCentreOffset: -3
     },
     sonicii: {
         title: "ESP SONIC-II",
         desc: "The most common guitar Jun uses at Crush 40 shows, often used for any song!",
-        img: "img/content/guitars/Sonic-II/Front.svg"
+        img: "img/content/guitars/Sonic-II/Front.svg",
+        imgBaseWidth: 2267.15,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
     },
     sn25th: {
         title: "ESP SN-25th",
         desc: "A <b>25th Anniversary edition</b> variant of the <i>ESP SONIC-II</i>!",
-        img: "img/content/guitars/SN-25th/Front.svg"
+        img: "img/content/guitars/Sonic-II/FrontAnniversary.svg",
+        imgBaseWidth: 2281.16,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
+    },
+    shadow: {
+        title: "ESP VIPER 'SHADOW'",
+        desc: "An ESP 'Viper' guitar with a <i>Shadow the Hedgehog</i> symbol on it!",
+        img: "img/content/guitars/ViperShadow/Front.svg",
+        imgBaseWidth: 2281.16,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
+    },
+    knight: {
+        title: "ESP MR 'Black Knight'",
+        desc: "An ESP 'MR' guitar with <i>Black Knight</i> graphics on it!",
+        img: "img/content/guitars/BlackKnight/Front.svg",
+        imgBaseWidth: 2281.16,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
     }
 };
 
