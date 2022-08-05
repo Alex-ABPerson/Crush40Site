@@ -105,13 +105,29 @@ var Guitars = {
         imgBaseHeight: 730.6,
         imgCentreOffset: 0,
     },
+    shadowii: {
+        title: "ESP SHADOW-II",
+        desc: "Jun's 'Shadow the Hedgehog' guitar, commonly used for tracks like 'I Am... All of Me' and 'Never Turn Back'!",
+        img: "img/content/guitars/Shadow-II/Front.svg",
+        imgBaseWidth: 2313.42,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
+    },
+    sd15th: {
+        title: "ESP SD-15th",
+        desc: "A <b>25th Anniversary edition</b> variant of the <i>ESP SHADOW-II</i>!",
+        img: "img/content/guitars/Shadow-II/FrontAnniversary.svg",
+        imgBaseWidth: 2313.42,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: 0,
+    },
     shadow: {
         title: "ESP VIPER 'SHADOW'",
         desc: "An ESP 'Viper' guitar with a <i>Shadow the Hedgehog</i> symbol on it!",
         img: "img/content/guitars/ViperShadow/Front.svg",
         imgBaseWidth: 2281.16,
         imgBaseHeight: 730.6,
-        imgCentreOffset: 0,
+        imgCentreOffset: 2,
     },
     knight: {
         title: "ESP MR 'Black Knight'",
@@ -119,7 +135,15 @@ var Guitars = {
         img: "img/content/guitars/BlackKnight/Front.svg",
         imgBaseWidth: 2281.16,
         imgBaseHeight: 730.6,
-        imgCentreOffset: 0,
+        imgCentreOffset: -3,
+    },
+    c82: {
+        title: "ESP SEC '82 Custom'",
+        desc: "An ESP 'SEC' guitar with parodies of already existing logos, in the theme of NASCAR Arcade!",
+        img: "img/content/guitars/82/Front.svg",
+        imgBaseWidth: 2281.16,
+        imgBaseHeight: 730.6,
+        imgCentreOffset: -3,
     }
 };
 
