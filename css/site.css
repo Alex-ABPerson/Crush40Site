@@ -176,6 +176,12 @@ a {
     background-color: var(--crush40-red-pale-hover);
 }
 
+.tabLikeList > li:hover {
+    background-image: url('../img/icons/thiccRightArrow.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 .tabSet {
     display: flex;
     flex-direction: row;

@@ -8,8 +8,8 @@ body {
     grid-template-rows: auto 1fr;
     grid-template-columns: 400px 400px 1fr;
     grid-template-areas:
-        "intro desc pictures"
-        "performances desc pictures";
+        "guitarList intro desc"
+        "guitarList performances desc";
 
     gap: 5px;
 }
@@ -32,6 +32,15 @@ body {
 .intro .hiddenNav {
     visibility: collapse;
     position: fixed;
+}
+
+.guitarList {
+    grid-area: guitarList;
+}
+
+.guitarList .list {
+    padding-top: 35px;
+    flex-direction: column;
 }
 
 .performances {
