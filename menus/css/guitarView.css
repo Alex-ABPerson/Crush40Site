@@ -43,6 +43,14 @@ body {
     flex-direction: column;
 }
 
+.guitarList .list .selected {
+    background-color: var(--crush40-blue-pale);
+}
+
+.guitarList .list .selected:hover {
+    background-color: var(--crush40-blue-pale-hover);
+}
+
 .performances {
     grid-area: performances;
 }
