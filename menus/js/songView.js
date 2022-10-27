@@ -532,7 +532,93 @@ I'm the knight of the wind...</p>
             { id: "symphony" }
         ],
         versionsBg: 'Crush40_MotionBlur.png'
-    }
+    },
+	lal: {
+        desc: {
+            fan: `
+            <p>Arguably the most iconic song in the entire Crush 40 catalogue – Live and Learn plays as the final boss theme in Sonic Adventure 2, as well as in the credits.</p>
+			<p>Its unforgettable main riff is repeated in various forms at different points in the game, helping to build the anticipation gradually and make the moment it plays all the more special.</p> 
+            <p>Johnny has mentioned in interviews that he wrote the song about the experience of playing a game – having to learn to overcome any obstacle in your path in order to live. Yet its lyrics can easily be applied in the context of SA2’s story too, with new revelations and character developments for many of the main cast.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454933355792842752' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>It's the band's signature song, and I don't think that'll ever change.</p>
+                        <p>Though I can't explain it well, I'm sure Johnny and I have different thoughts on this song than the fans.</p>
+						<p>Even ten years after its release, this song continues to shine.</p>
+                    ` } 
+					// To do here: add quote about Johnny's inspiration from Dreamcasters about song lyric inspiration.
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+<p>Can you feel life moving through your mind<br />
+Looks like it came back for more - yeah yeah yeah<br />
+Can you feel time slipping down your spine<br />
+You try and try to ignore</p>
+<p>But you can hardly swallow<br />
+Your fears and pain<br />
+And you can't help but follow<br />
+And puts you right back where you came</p>
+<p>Live and Learn - Hanging on the edge of tomorrow<br />
+Live and Learn - From the works of yesterday<br />
+Live and Learn - If you beg or if you borrow<br />
+Live and Learn - You may never find your way<p/>
+<p>Can you feel life tangle you up inside<br />
+And now your face down on the floor</p>
+<p>But you can't save your sorrow<br />
+You've paid in trade<br />
+And you can't help but follow<br />
+And puts you right back where you came</p>
+<p>Live and Learn - Hanging on the edge of tomorrow<br />
+Live and Learn - From the works of yesterday<br />
+Live and Learn - If you beg or if you borrow<br />
+Live and Learn - You may never find your way</p>
+<p>There's a face searching far, so far and wide<br />
+There's a place where you dreamed you'd never find<br />
+Hold on to what if...<br />
+Hold on to what if...</p>
+<p>Live and Learn - Hanging on the edge of tomorrow<br />
+Live and Learn - From the works of yesterday<br />
+Live and Learn - If you beg or if you borrow<br />
+Live and Learn - You may never find your way</p>
+<p>Live and Learn - Hanging on the edge of tomorrow<br />
+Live and Learn - From the works of yesterday<br />
+Live and Learn - If you beg or if you borrow<br />
+Live and Learn - You may never find your way</p>
+`
+        },
+        performances: [
+            { id: "tgs08" },
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "sb12" },
+            { id: "sos12" },
+            { id: "jgmf13" },
+            { id: "sb13" },
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "joypolis15" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
+            { id: "tmg17" },
+            { id: "mgc18" },
+            { id: "puma18" },
+            { id: "jgmf18" },
+            { id: "tmg18" },
+            { id: "mgc19" },
+            { id: "tmg19" },
+            { id: "sega60th" },
+            { id: "symphony" }
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
+    },
 };
 
 let page;
