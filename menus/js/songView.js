@@ -93,7 +93,6 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
         },
         performances: [
             { id: "sap", d: "Featuring <i>Eizo Sakamoto</i> on vocals!" },
-            { id: "tgs08" },
             { id: "sos10" },
             { id: "t11" },
             { id: "t12" },
@@ -107,7 +106,6 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
             { id: "youmacon15" },
             { id: "sonic25th" },
             { id: "sos16" },
-            { id: "tmg17" },
             { id: "mgc18" },
             { id: "puma18" },
             { id: "jgmf18" },
