@@ -114,7 +114,275 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
             { id: "tmg19" },
             { id: "sega60th" },
             { id: "symphony" }
-        ]
+        ],
+			 versionGroups: [
+            {
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+		    { t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
+                ],
+                versions: [
+                    { 
+                        fanName: "...for Main Menu (Autodemo)", 
+                        long: "This track is essentially the same as the final game's main menu, but it is mastered differently.", 
+                        appearances: [ "Sonic Adventure (AutoDemo)" ] 
+                    },
+                    { 
+                        fanName: "...for Main Menu", 
+                        inGame: true,
+                        long: "A short edit used on the main menu of Sonic Adventure. ", 
+                    },
+                    { 
+                        fanName: "...Boss: Perfect Chaos", 
+                        inGame: true,
+                        long: "This version plays during the final boss against Perfect CHAOS. After the first chorus it skips to the solo, after which it loops back to the beginning."
+                    },
+                    { 
+                        fanName: "Credits ver.", 
+                        inGame: true,
+                        long: "This version plays during the credits of Super Sonic's story. It's essentially the full song, with no storm sounds at the start and end, with the short ending, featuring a lone 'Yeeeeeaaaaaaahh...' by Johnny."
+                    },
+                    { 
+                        fanName: "Long Intro/Outro", 
+                        long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
+			appearances: [ 'SONICTEAM "PowerPlay" ~Best Songs from SonicTeam~',
+"SONIC ADVENTURE Songs With Attitude ~Vocal mini-Album~",
+"Thrill Of The Feel",
+"SONIC THE HEDGEHOG 10th Anniversary",
+"Segacon -The Best of Sega Game Music- Vol.2",
+"Crush 40",
+"SONIC HEROES : TRIPLE THREAT - vocal trax",
+"True Blue - The Best of Sonic the Hedgehog",
+"Sonic Adventure Original Soundtrack 20th Anniversary Edition",
+"History Of Sonic Music 20th Anniversary Edition",
+"Sonic Adventure Official Soundtrack Vinyl Edition",
+"Driving Through Forever - The Ultimate Crush 40 Collection",
+"Sonic at the Olympic Games - Tokyo 2020 [Slightly different: Song has short intro, and loops back to the start through the long intro]",
+"GO SEGA - 60th ANNIVERSARY Album -" ] 
+                    },
+                    { 
+                        fanName: "Short Intro/Outro",
+                        long: "This version of Open Your Heart is identical to the Long Intro/Outro, except the intro and outros are shorter by lack of storm sounds, and the short ending. ",
+                        appearances: [ 'SONIC ADVENTURE "Digi-LOG Conversation" Original Sound Track',
+'Sonic Adventure Original Soundtrack vol.2' ]
+                    },
+                    { 
+                        fanName: "Super Sonic Songs Mix",
+                        long: "This is a new mix of Open Your Heart done for the Super Sonic Songs album.",
+                        appearances: [ "The Best Of Crush 40 - Super Sonic Songs",
+"Sonic Generations (3DS) [Note: Short edit, going from the first verse to the solo, skipping the second verse and chorus]" ]
+                    } 
+                ]
+            },
+            {
+                title: "Instrumentals",
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
+                ],
+                versions: [
+                    { 
+                        fanName: "...for Title Screen",
+			inGame: true,
+                        long: "A short edit of Open Your Heart, used on Sonic Adventure's title screen."
+                    },
+                   { 
+                        fanName: '...Theme of "Super Sonic"',
+			inGame: true,
+                        long: "This edit is similar to the main menu edit, but it loops and the chorus is without vocals, and there are some other minor differences. "
+                    },
+                   { 
+                        officialName: "Instrumental ver.",
+                        long: "This version of Open Your Heart is essentially the same as the short intro/outro ver., except it is, of course, instrumental. ",
+			appearances: [ "Sonic Adventure Original Soundtrack vol.2",
+"Sonic Runners [Slightly different: Looped] " ]
+									},
+                   { 
+                        fanName: "Sonic Runners ver.",
+			inGame: true,
+                        long: "This version of Open Your Heart appeared in Sonic Runners. It is an instrumental version, with a guitar as lead. It is unknown who performed this new guitar. It also loops, and skips over the 2nd verse and chorus. ",
+										  appearances: [ "Sonic Runners" ]
+                    }
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue & Fumie Kumatani" },
+                    { t: "Programming", n: "Fumie Kumatani" }
+                ],
+                versions: [
+                    { 
+                        officialName: 'Introduction ...featuring "Open Your Heart"',
+                        inGame: true,
+                        long: "This track plays during the opening cinematic of Sonic Adventure. An early version of this track can be heard in the Tokyo International Forum presentation.",
+                        appearances: [ "Sonic Adventure",
+'SONIC ADVENTURE "Digi-LOG Conversation" Original Sound Track',
+"Sonic Adventure Original Soundtrack 20th Anniversary Edition",
+'Sonic Adventure Original Soundtrack vol.1 [NOTE: Digital platforms think "Open Your Heart" is a featuring artist due to the name of the track]',
+'Sonic the Hedgehog 25th Anniversary Selection',
+"Sonic Adventure Official Soundtrack Vinyl Edition" ]
+                    }
+                ]
+            },
+					{
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Guitar", n: "Jun Senoue" },
+									{ t: "Bass", n: "Takeshi Taneda" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Vancouver 2010 ver.",
+                        inGame: true,
+                        long: "This short, instrumental version of Open Your Heart has an organ as lead. The bass appears to be newly recorded, and the drums programmed.",
+                        appearances: [ "Mario & Sonic At The Olympic Winter Games" ]
+                    }
+                ]
+            },
+					{
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Vocals", n: "Kenichi Tokoi (supposedly)" },
+                    { t: "Guitars", n: "Jun Senoue" }
+                ],
+                versions: [
+								{ 
+                        fanName: "Kenichi Tokoi demo",
+                        long: "A demo version of Open Your Heart. The vocals are supposedly by Kenichi Tokoi. The drums and bass are not live instruments in this version."
+                    }
+							]
+				},
+					{
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals", n: "Eizo Sakamoto" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
+                ],
+                versions: [
+								{ 
+                        fanName: "Eizo Sakamoto demo",
+                        long: "A demo version of Open Your Heart, with vocals by Eizo Sakamoto. There's also a short version of this version, skipping to the ending after the first chorus.",
+			appearances: [ "Tokyo International Forum Presentation" ]
+                    }
+							]
+				},
+				{
+                credits: [
+                    { t: "Remix", n: "Transmutator vs Razed in Black" },
+                    { t: "Vocals", n: "Corey Glover" },
+                    { t: "Guitars", n: "Al Pitrelli" }
+                ],
+                versions: [
+								{ 
+                        fanName: "Transmutator vs. Razed in Black Remix",
+                        long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
+			appearances: [ "SONIC Adventure REMIX" ]
+                    }
+							]
+				},							
+				{
+                credits: [
+                    { t: "Remix", n: "Chris Vrenna & Mark Blasques" },
+                    { t: "Vocals", n: "Corey Glover" },
+                    { t: "Guitars", n: "Al Pitrelli" }
+                ],
+                versions: [
+								{ 
+                        fanName: "Chris Vrenna & Mark Blasques Remix",
+                        long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
+			appearances: [ "SONIC Adventure REMIX" ]
+                    }
+							]
+				},
+				{
+                credits: [
+                    { t: "Remix", n: "Chris Randall & Van Christie from Sister Machine Gun" }
+                ],
+                versions: [
+								{ 
+                        fanName: "Chris Randall & Van Christie Remix",
+                        long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
+			appearances: [ "SONIC Adventure REMIX" ]
+                    }
+							]
+				},
+				{
+                credits: [
+                    { t: "Remix", n: "Unknown" },
+                    { t: "Vocals", n: "Johnny Gioeli" }
+                ],
+                versions: [
+								{ 
+                        officialName: "MJZ Mix",
+                        long: "This remix is part of a set of remixes from Sonic Gems Collection's Musuem.",
+			appearances: [ "Sonic Gem Collection" ]
+                    }
+							]
+				},
+				{
+                credits: [
+		    { t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
+                    { t: "Production", n: "Bentley Jones" },
+                    { t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
+                    { t: "Guitars", n: "Jun Senoue & the Remix Factory" }
+                ],
+                versions: [
+								{ 
+                       	officialName: "Crush 40 vs. Bentley Jones Remix",
+                        long: "This remix is done by Bentley Jones, and features some extra vocals by BJ.",
+											appearances: [ "True Blue: The Best Of Sonic The Hedgehog" ]
+                    }
+							]
+				},
+			  {
+                credits: [
+                    { t: "Remix", n: "LB (Remix Factory)" },
+		    { t: "Production", n: "Remix Factory" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" }
+                ],
+                versions: [
+								{ 
+                        officialName: "K-Klub Remix",
+                        long: "This remix of Open Your Heart was originally made for the 15th anniversary in 2006 (an early version of the remix dating back to 2006 exists), but didn't see a release until 2009's True Colors",
+											appearances: [ "True Colors: The Best Of Sonic The Hedgehog Part 2" ] 
+											//also Amazing Sonic Scene Creator 2 lmao
+                    }
+							]
+				},
+				{
+                credits: [
+                    { t: "Remix", n: "Circuit Freq" },
+		    { t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+									{ t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
+                ],
+                versions: [
+								{ 
+                        officialName: "Crush 40 vs. Circuit Freq RMX",
+			inGame: true,
+                        long: "This remix of Open Your Heart was made for the Perfect CHAOS Boss Battle in Sonic Generations.",
+											appearances: [ "Sonic Generations",
+"Sonic Generations Original Soundtrack Blue Blur",
+"Sonic Generations Official Soundtrack Vol.1" ] 
+                    }
+							]
+				}
+    	  ],
+	versionsBg: 'SSSBackground.png'
     },
 	lal: {
         desc: {
