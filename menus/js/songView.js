@@ -1,5 +1,5 @@
 let Songs = {
-	   oyh: {
+	oyh: {
         desc: {
             fan: `
             <p>"Open Your Heart" is the main track of "Sonic Adventure" and the first Crush 40 track ever created - written before they even had a name!</p>
@@ -115,16 +115,16 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
             { id: "sega60th" },
             { id: "symphony" }
         ],
-			 versionGroups: [
+	versionGroups: [
             {
                 credits: [
-                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    { t: "Arrangement", n: "Jun Senoue" },
-								  { t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
-                    { t: "Vocals", n: "Johnny Gioeli" },
-                    { t: "Guitars & Programming", n: "Jun Senoue" },
-                    { t: "Bass", n: "Naotu Shibata" },
-                    { t: "Drums", n: "Hirotsugu Homma" }
+                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    	{ t: "Arrangement", n: "Jun Senoue" },
+			{ t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
+                    	{ t: "Vocals", n: "Johnny Gioeli" },
+                    	{ t: "Guitars & Programming", n: "Jun Senoue" },
+                    	{ t: "Bass", n: "Naotu Shibata" },
+                    	{ t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
                     { 
@@ -182,41 +182,41 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
             {
                 title: "Instrumentals",
                 credits: [
-                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    { t: "Arrangement", n: "Jun Senoue" },
-                    { t: "Guitars & Programming", n: "Jun Senoue" },
-                    { t: "Bass", n: "Naotu Shibata" },
-                    { t: "Drums", n: "Hirotsugu Homma" }
+                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    	{ t: "Arrangement", n: "Jun Senoue" },
+                    	{ t: "Guitars & Programming", n: "Jun Senoue" },
+                    	{ t: "Bass", n: "Naotu Shibata" },
+                    	{ t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
                     { 
                         fanName: "...for Title Screen",
-											inGame: true,
+			inGame: true,
                         long: "A short edit of Open Your Heart, used on Sonic Adventure's title screen."
                     },
                    { 
                         fanName: '...Theme of "Super Sonic"',
-											inGame: true,
+			inGame: true,
                         long: "This edit is similar to the main menu edit, but it loops and the chorus is without vocals, and there are some other minor differences. "
                     },
                    { 
                         officialName: "Instrumental ver.",
                         long: "This version of Open Your Heart is essentially the same as the short intro/outro ver., except it is, of course, instrumental. ",
-										  appearances: [ "Sonic Adventure Original Soundtrack vol.2",
-"Sonic Runners [Slightly different: Looped] " ]
-									},
+			appearances: [ "Sonic Adventure Original Soundtrack vol.2",
+"Sonic Runners [Slightly different: Looped]" ]
+		},
                    { 
                         fanName: "Sonic Runners ver.",
-											inGame: true,
+			inGame: true,
                         long: "This version of Open Your Heart appeared in Sonic Runners. It is an instrumental version, with a guitar as lead. It is unknown who performed this new guitar. It also loops, and skips over the 2nd verse and chorus. ",
-										  appearances: [ "Sonic Runners" ]
+			appearances: [ "Sonic Runners" ]
                     }
                 ]
             },
             {
                 credits: [
-                    { t: "Composition & Arrangement", n: "Jun Senoue & Fumie Kumatani" },
-                    { t: "Programming", n: "Fumie Kumatani" }
+                    	{ t: "Composition & Arrangement", n: "Jun Senoue & Fumie Kumatani" },
+                    	{ t: "Programming", n: "Fumie Kumatani" }
                 ],
                 versions: [
                     { 
@@ -229,14 +229,14 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 'Sonic Adventure Original Soundtrack vol.1 [NOTE: Digital platforms think "Open Your Heart" is a featuring artist due to the name of the track]',
 'Sonic the Hedgehog 25th Anniversary Selection',
 "Sonic Adventure Official Soundtrack Vinyl Edition" ]
-                    }
+		    }
                 ]
             },
-					{
+		{
                 credits: [
-                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    { t: "Arrangement", n: "Jun Senoue" },
-                    { t: "Guitar", n: "Jun Senoue" },
+                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    	{ t: "Arrangement", n: "Jun Senoue" },
+                    	{ t: "Guitar", n: "Jun Senoue" },
 									{ t: "Bass", n: "Takeshi Taneda" }
                 ],
                 versions: [
@@ -248,148 +248,148 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                     }
                 ]
             },
-					{
+	{
                 credits: [
-                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    { t: "Vocals", n: "Kenichi Tokoi (supposedly)" },
-                    { t: "Guitars", n: "Jun Senoue" }
+                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    	{ t: "Vocals", n: "Kenichi Tokoi (supposedly)" },
+                    	{ t: "Guitars", n: "Jun Senoue" }
                 ],
                 versions: [
-								{ 
+			{ 
                         fanName: "Kenichi Tokoi demo",
                         long: "A demo version of Open Your Heart. The vocals are supposedly by Kenichi Tokoi. The drums and bass are not live instruments in this version."
                     }
-							]
-				},
-					{
+		]
+	},
+	{
                 credits: [
-                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    { t: "Arrangement", n: "Jun Senoue" },
-                    { t: "Vocals", n: "Eizo Sakamoto" },
-                    { t: "Guitars", n: "Jun Senoue" },
-                    { t: "Bass", n: "Naotu Shibata" },
-                    { t: "Drums", n: "Hirotsugu Homma" }
+                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    	{ t: "Arrangement", n: "Jun Senoue" },
+                    	{ t: "Vocals", n: "Eizo Sakamoto" },
+                    	{ t: "Guitars", n: "Jun Senoue" },
+                    	{ t: "Bass", n: "Naotu Shibata" },
+                    	{ t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
-								{ 
+			{ 
                         fanName: "Eizo Sakamoto demo",
                         long: "A demo version of Open Your Heart, with vocals by Eizo Sakamoto. There's also a short version of this version, skipping to the ending after the first chorus.",
-											appearances: [ "Tokyo International Forum Presentation" ]
-                    }
-							]
-				},
-				{
+			appearances: [ "Tokyo International Forum Presentation" ]
+                    	}
+		]
+	},
+	{
                 credits: [
-                    { t: "Remix", n: "Transmutator vs Razed in Black" },
-                    { t: "Vocals", n: "Corey Glover" },
-                    { t: "Guitars", n: "Al Pitrelli" }
+                    	{ t: "Remix", n: "Transmutator vs Razed in Black" },
+                    	{ t: "Vocals", n: "Corey Glover" },
+                    	{ t: "Guitars", n: "Al Pitrelli" }
                 ],
                 versions: [
-								{ 
+			{ 
                         fanName: "Transmutator vs. Razed in Black Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-											appearances: [ "SONIC Adventure REMIX" ]
-                    }
-							]
-				},							
-				{
+			appearances: [ "SONIC Adventure REMIX" ]
+                    	}
+		]
+	},							
+	{
                 credits: [
-                    { t: "Remix", n: "Chris Vrenna & Mark Blasques" },
-                    { t: "Vocals", n: "Corey Glover" },
-                    { t: "Guitars", n: "Al Pitrelli" }
+                    	{ t: "Remix", n: "Chris Vrenna & Mark Blasques" },
+                    	{ t: "Vocals", n: "Corey Glover" },
+                    	{ t: "Guitars", n: "Al Pitrelli" }
                 ],
                 versions: [
-								{ 
+			{ 
                         fanName: "Chris Vrenna & Mark Blasques Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-											appearances: [ "SONIC Adventure REMIX" ]
-                    }
-							]
-				},
-				{
+			appearances: [ "SONIC Adventure REMIX" ]
+                    	}
+		]
+	},
+	{
                 credits: [
                     { t: "Remix", n: "Chris Randall & Van Christie from Sister Machine Gun" }
                 ],
                 versions: [
-								{ 
+			{ 
                         fanName: "Chris Randall & Van Christie Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-											appearances: [ "SONIC Adventure REMIX" ]
-                    }
-							]
-				},
-				{
+			appearances: [ "SONIC Adventure REMIX" ]
+                    	}
+		]
+	},
+	{
                 credits: [
-                    { t: "Remix", n: "Unknown" },
-                    { t: "Vocals", n: "Johnny Gioeli" }
+                    	{ t: "Remix", n: "Unknown" },
+                    	{ t: "Vocals", n: "Johnny Gioeli" }
                 ],
                 versions: [
-								{ 
+			{ 
                         officialName: "MJZ Mix",
                         long: "This remix is part of a set of remixes from Sonic Gems Collection's Musuem.",
-											appearances: [ "Sonic Gem Collection" ]
+			appearances: [ "Sonic Gem Collection" ]
                     }
-							]
-				},
-				{
+		]
+	},
+	{
                 credits: [
-									{ t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
-                    { t: "Production", n: "Bentley Jones" },
-                    { t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
-                    { t: "Guitars", n: "Jun Senoue & the Remix Factory" }
+			{ t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
+			{ t: "Production", n: "Bentley Jones" },
+			{ t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
+			{ t: "Guitars", n: "Jun Senoue & the Remix Factory" }
                 ],
                 versions: [
-								{ 
+			{ 
                        	officialName: "Crush 40 vs. Bentley Jones Remix",
                         long: "This remix is done by Bentley Jones, and features some extra vocals by BJ.",
-											appearances: [ "True Blue: The Best Of Sonic The Hedgehog" ]
-                    }
-							]
-				},
-			  {
+			appearances: [ "True Blue: The Best Of Sonic The Hedgehog" ]
+			}
+		]
+	},
+	{
                 credits: [
-                    { t: "Remix", n: "LB (Remix Factory)" },
-									{ t: "Production", n: "Remix Factory" },
-                    { t: "Vocals", n: "Johnny Gioeli" },
-                    { t: "Guitars", n: "Jun Senoue" }
+			{ t: "Remix", n: "LB (Remix Factory)" },
+			{ t: "Production", n: "Remix Factory" },
+                    	{ t: "Vocals", n: "Johnny Gioeli" },
+                    	{ t: "Guitars", n: "Jun Senoue" }
                 ],
                 versions: [
-								{ 
+			{ 
                         officialName: "K-Klub Remix",
                         long: "This remix of Open Your Heart was originally made for the 15th anniversary in 2006 (an early version of the remix dating back to 2006 exists), but didn't see a release until 2009's True Colors",
-											appearances: [ "True Colors: The Best Of Sonic The Hedgehog Part 2" ] 
-											//also Amazing Sonic Scene Creator 2 lmao
-                    }
-							]
-				},
-				{
+			appearances: [ "True Colors: The Best Of Sonic The Hedgehog Part 2" ] 
+			//also Amazing Sonic Scene Creator 2 lmao
+                    	}
+		]
+	},
+	{
                 credits: [
-                    { t: "Remix", n: "Circuit Freq" },
-									{ t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
-                    { t: "Vocals", n: "Johnny Gioeli" },
-                    { t: "Guitars", n: "Jun Senoue" },
-									{ t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
+                    	{ t: "Remix", n: "Circuit Freq" },
+			{ t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
+                    	{ t: "Vocals", n: "Johnny Gioeli" },
+                    	{ t: "Guitars", n: "Jun Senoue" },
+			{ t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
                 ],
                 versions: [
-								{ 
+			{ 
                         officialName: "Crush 40 vs. Circuit Freq RMX",
-											inGame: true,
+			inGame: true,
                         long: "This remix of Open Your Heart was made for the Perfect CHAOS Boss Battle in Sonic Generations.",
-											appearances: [ "Sonic Generations",
+			appearances: [ "Sonic Generations",
 "Sonic Generations Original Soundtrack Blue Blur",
 "Sonic Generations Official Soundtrack Vol.1" ] 
-                    }
-							]
-				}
+                    	}
+		]
+		}
     	  ],
-			versionsBg: 'SSSBackground.png'
+	versionsBg: 'SSSBackground.png'
     },
 	lal: {
         desc: {
             fan: `
-            <p>Arguably the most iconic song in the entire Crush 40 catalogue – Live and Learn plays as the final boss theme in Sonic Adventure 2, as well as in the credits.</p>
-					 <p>Its unforgettable main riff is repeated in various forms at different points in the game, helping to build the anticipation gradually and make the moment it plays all the more special.</p> 
-            <p>Johnny has mentioned in interviews that he wrote the song about the experience of playing a game – having to learn to overcome any obstacle in your path in order to live. Yet its lyrics can easily be applied in the context of SA2’s story too, with new revelations and character developments for many of the main cast.</p>`,
+            	<p>Arguably the most iconic song in the entire Crush 40 catalogue – Live and Learn plays as the final boss theme in Sonic Adventure 2, as well as in the credits.</p>
+		<p>Its unforgettable main riff is repeated in various forms at different points in the game, helping to build the anticipation gradually and make the moment it plays all the more special.</p> 
+            	<p>Johnny has mentioned in interviews that he wrote the song about the experience of playing a game – having to learn to overcome any obstacle in your path in order to live. Yet its lyrics can easily be applied in the context of SA2’s story too, with new revelations and character developments for many of the main cast.</p>`,
             other: [
                 { 
                     heading: "Jun Senoue", 
@@ -397,17 +397,17 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                     text:`
                         <p>It's the band's signature song, and I don't think that'll ever change.</p>
                         <p>Though I can't explain it well, I'm sure Johnny and I have different thoughts on this song than the fans.</p>
-										  <p>Even ten years after its release, this song continues to shine.</p>
+			<p>Even ten years after its release, this song continues to shine.</p>
                     ` } ,
-							 { 
+		{ 
                     heading: "Johnny", 
                     subHeading: "(From <a href='https://youtu.be/xDu58flOWeU' target='_blank'>Johnny at TooManyGames 2017</a>.)", 
                     text:`
                         <p>I didn't think Live And Learn was good.</p>
                         <p>When you're a...creative person, you should always be weary of whether your work is good. So for an artist, for a musician ... there's always something you can change.</p>
-										  <p>And I remember calling Jun and saying, "Jun, is it good?" And he goes, "Yeah! Are you kidding?"</p>`
-                  		}
-								//To do here: add quote about Johnny's inspiration from Dreamcasters about song lyric inspiration.
+			<p>And I remember calling Jun and saying, "Jun, is it good?" And he goes, "Yeah! Are you kidding?"</p>`
+                  }
+			//To do here: add quote about Johnny's inspiration from Dreamcasters about song lyric inspiration.
             ]
         },
         lyrics: {
@@ -486,20 +486,20 @@ Live and Learn - You may never find your way</p>
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
-		sh: {
+sh: {
         desc: {
             fan: `
-            <p>As the theme that plays over the intro of the game with the same name, Sonic Heroes is an outlier in Crush 40's early catalogue. Ironic, since it was their first song recorded under the Crush 40 name.</p>
-					 <p>Sonic Heroes is a bright and melodic song in a major key, in stark contrast to the final boss theme What I'm Made Of. It perfectly sets the tone of the upbeat game to come.</p>
-					 <p>Originally, What I'm Made Of was going to be the game's theme! However, Sega vetoed this, wishing for a brighter-sounding song - and thus, the song Sonic Heroes was born.</p>`,
+            	<p>As the theme that plays over the intro of the game with the same name, Sonic Heroes is an outlier in Crush 40's early catalogue. Ironic, since it was their first song recorded under the Crush 40 name.</p>
+		<p>Sonic Heroes is a bright and melodic song in a major key, in stark contrast to the final boss theme What I'm Made Of. It perfectly sets the tone of the upbeat game to come.</p>
+		<p>Originally, What I'm Made Of was going to be the game's theme! However, Sega vetoed this, wishing for a brighter-sounding song - and thus, the song Sonic Heroes was born.</p>`,
             other: [
                 { 
                     heading: "Jun Senoue", 
                     subHeading: "(Written by <a href='https://twitter.com/crush40/status/454928503616450560' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>Whenever it's played live, I always wonder, "Why is this song so exciting?"</p>
-										  <p>Up until now, I've been using a shortened version like the one from the game's opening, so it was over in no time.</p>
-											<p>This is the first time we've played the long version live.</p>
+			<p>Up until now, I've been using a shortened version like the one from the game's opening, so it was over in no time.</p>
+			<p>This is the first time we've played the long version live.</p>
                     ` }
             ]
         },
@@ -855,13 +855,13 @@ I am... I'm all of me...</p>
         ],
         versionsBg: 'SSSBackground.png'
     },
-		ntb: {
+ntb: {
         desc: {
             fan: `
-            <p>Never Turn Back is the true ending theme from Shadow The Hedgehog (2005).</p>
-					 <p>It features a piano intro on most releases, which is a separate song called “I Am… The Story is Over” from the game’s soundtrack, and really just a piano arrangement of I Am… All of Me’s chorus. Live, though, the song is sometimes played with a drum intro instead.</p>
-					 <p>The song represents Shadow’s commitment to moving on from the past and taking everything day by day, living in the present."</p>
-					 `,
+            	<p>Never Turn Back is the true ending theme from Shadow The Hedgehog (2005).</p>
+		<p>It features a piano intro on most releases, which is a separate song called “I Am… The Story is Over” from the game’s soundtrack, and really just a piano arrangement of I Am… All of Me’s chorus. Live, though, the song is sometimes played with a drum intro instead.</p>
+		<p>The song represents Shadow’s commitment to moving on from the past and taking everything day by day, living in the present."</p>
+		`,
             other: [
                 { 
                     heading: "Jun Senoue", 
@@ -869,7 +869,7 @@ I am... I'm all of me...</p>
                     text:`
                         <p>The original version from Shadow The Hedgehog starts with a piano intro, but I also like this live arrangement's drum intro.</p>
                         <p>When the song opens, and the audience starts shouting together, everything heats up at once.</p>
-                    ` } 
+             ` } 
             ]
         },
         lyrics: {
@@ -941,9 +941,9 @@ And I'll never turn back...</p>
 srih: {
         desc: {
             fan: `
-            <p>The song was originally recorded by Steve Conte for 2007’s Wii exclusive, “Sonic and the Secret Rings”, as the opening theme. You wouldn’t know it from listening to the song though – aside from the lyrics and rough vocal melody, Crush 40’s cover does not retain much of the original.</p>
-					 <p>Jun’s guitar part is far more complex, using a similar tone to the original mix of Knight of The Wind to great effect. There’s also more layering across the whole song, compared to the original where the clean part only appears during choruses.</p>
-					 <p>Perhaps due to that variety, and the addition of one of Jun’s finest guitar solos ever, the song feels dramatically shorter than the original despite only undercutting it by 20 seconds. And as always: Johnny’s vocal performance impresses, standing out as more aggressive than the original and immediately demonstrating the benefit of covering the song in a lower key.</p>`,
+            	<p>The song was originally recorded by Steve Conte for 2007’s Wii exclusive, “Sonic and the Secret Rings”, as the opening theme. You wouldn’t know it from listening to the song though – aside from the lyrics and rough vocal melody, Crush 40’s cover does not retain much of the original.</p>
+		<p>Jun’s guitar part is far more complex, using a similar tone to the original mix of Knight of The Wind to great effect. There’s also more layering across the whole song, compared to the original where the clean part only appears during choruses.</p>
+		<p>Perhaps due to that variety, and the addition of one of Jun’s finest guitar solos ever, the song feels dramatically shorter than the original despite only undercutting it by 20 seconds. And as always: Johnny’s vocal performance impresses, standing out as more aggressive than the original and immediately demonstrating the benefit of covering the song in a lower key.</p>`,
             other: [
                 
             ]
@@ -1117,13 +1117,13 @@ I'm the knight of the wind...</p>
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
-    ttf: {
-        desc: {
-            fan: `
-            <p>Through The Fire is used as the character boss theme of 2009’s “Sonic and the Black Knight”, playing in your encounters against Lancelot, Gawain and Percival.</p>
-					 <p>The song sets out an incredibly confident and almost intimidating tone from Sonic, fitting in with his acceptance to Merlina that he “can’t be the hero every time”.</p>
-					 <p>The song features very prominent bass compared to some of the other material in the game, but lacks the strings section that adds weight to its more climactic moments. This distinction helps to separate it out from the encounters with the story’s central villains, and further lends power to the main boss theme, “Fight The Knight”, used for King Arthur.</p>`,
-					other: [
+ttf: {
+	desc: {
+		fan: `
+            		<p>Through The Fire is used as the character boss theme of 2009’s “Sonic and the Black Knight”, playing in your encounters against Lancelot, Gawain and Percival.</p>
+			<p>The song sets out an incredibly confident and almost intimidating tone from Sonic, fitting in with his acceptance to Merlina that he “can’t be the hero every time”.</p>
+			<p>The song features very prominent bass compared to some of the other material in the game, but lacks the strings section that adds weight to its more climactic moments. This distinction helps to separate it out from the encounters with the story’s central villains, and further lends power to the main boss theme, “Fight The Knight”, used for King Arthur.</p>`,
+		other: [
                 
             ]
         },
@@ -1158,17 +1158,17 @@ Power</p>
             `
         },
         performances: [
-						//lmao nothing
+		//lmao nothing
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
-	  ftk: {
+ftk: {
         desc: {
             fan: `
-            <p>Fight The Knight plays as the final… well, false final boss theme of 2009’s “Sonic and the Black Knight”, in your last showdown against King Arthur.</p>
-					<p>An instrumental mix is played in your first encounter with that boss, building the drama when the vocal mix replaces it after a long training journey.</p>
-					<p>The song has a repetitive structure that lends itself to looping for the duration of the battle, but it’s far from boring. The strings section complements that signature Black Knight guitar tone that ties so much of the game’s soundtrack together; with perfect dramatic pauses for Johnny’s chants between those powerful verses.</p>`,
-					other: [
+           	<p>Fight The Knight plays as the final… well, false final boss theme of 2009’s “Sonic and the Black Knight”, in your last showdown against King Arthur.</p>
+		<p>An instrumental mix is played in your first encounter with that boss, building the drama when the vocal mix replaces it after a long training journey.</p>
+		<p>The song has a repetitive structure that lends itself to looping for the duration of the battle, but it’s far from boring. The strings section complements that signature Black Knight guitar tone that ties so much of the game’s soundtrack together; with perfect dramatic pauses for Johnny’s chants between those powerful verses.</p>`,
+	other: [
                 
             ]
         },
@@ -1222,17 +1222,17 @@ And I'm alive... my will to survive</p>
         desc: {
             fan: `
             <p>While not used in Sonic and The Black Knight itself, Crush 40’s version of With Me was included on the game’s vocal tracks album, “Face to Faith”. According to Jun Senoue, it was even recorded before the version with All Ends’ vocalists that ended up being used in the final boss.</p>
-             <p>It takes a darker turn than the game version – played in C Standard, 2 steps lower than its counterpart. Jun’s thicker guitar tone here also contributes to that heavier feel, using his baritone ESP VP “Shadow” for live renditions.</p>
-             <p>Johnny’s lyrics encapsulate the central ideological struggle between Sonic and Merlina – to make the most of a limited life, vs existing in a hollow eternity – and his aggressive performance as compared to the All Ends version drives home that only one can come out on top. The song's climactic feel is pushed that little bit further by the chorus melody using Merlina's theme; which is heard throughout the game but now turned against the player.</p>
-						`,
+            <p>It takes a darker turn than the game version – played in C Standard, 2 steps lower than its counterpart. Jun’s thicker guitar tone here also contributes to that heavier feel, using his baritone ESP VP “Shadow” for live renditions.</p>
+            <p>Johnny’s lyrics encapsulate the central ideological struggle between Sonic and Merlina – to make the most of a limited life, vs existing in a hollow eternity – and his aggressive performance as compared to the All Ends version drives home that only one can come out on top. The song's climactic feel is pushed that little bit further by the chorus melody using Merlina's theme; which is heard throughout the game but now turned against the player.</p>
+		`,
             other: [
                 { 
                     heading: "Jun Senoue", 
                     subHeading: "(Written by <a href='https://www.google.com/amp/s/www.sonicstadium.org/2010/02/the-jun-senoue-interview-part-two/amp/' target='_blank'>Jun in an interview</a>.)", 
                     text:`
-										  <p>I wrote that song for the final boss in the Sonic and the Black Knight, and I so first I tried to find the female singers for that song. One of my friends in a Japanese record company takes care of dealings with All Ends [Tinna & Emma’s band – T], and so that’s how I got in touch with them.</p>
-										  <p>With Marty, although he was now living in Japan, I didn’t know him personally. I didn’t know his manager or any of the other business guys who dealt with him, so I asked him directly. Originally I planned to ask him to play all of the guitar stuff, but when he came into the studio, he said “hey, we should just keep these backing tracks!”</p>
-										  <p>We booked the studio here in Tokyo to record the lyrics and Marty’s guitar solo, but then the other guys came into the studio and wanted me to change the key, so I said “please give me one hour!” Since we use Pro-Tools, it was easy enough to raise the track one note, but it did not have very good clarity. We changed the key digitally anyway, then tracked the vocals, then Marty tracked his guitar. I went back later on and tracked all of the backing guitar in the correct key.</p>
+			<p>I wrote that song for the final boss in the Sonic and the Black Knight, and I so first I tried to find the female singers for that song. One of my friends in a Japanese record company takes care of dealings with All Ends [Tinna & Emma’s band – T], and so that’s how I got in touch with them.</p>
+			<p>With Marty, although he was now living in Japan, I didn’t know him personally. I didn’t know his manager or any of the other business guys who dealt with him, so I asked him directly. Originally I planned to ask him to play all of the guitar stuff, but when he came into the studio, he said “hey, we should just keep these backing tracks!”</p>
+			<p>We booked the studio here in Tokyo to record the lyrics and Marty’s guitar solo, but then the other guys came into the studio and wanted me to change the key, so I said “please give me one hour!” Since we use Pro-Tools, it was easy enough to raise the track one note, but it did not have very good clarity. We changed the key digitally anyway, then tracked the vocals, then Marty tracked his guitar. I went back later on and tracked all of the backing guitar in the correct key.</p>
                         <p>Originally my idea was to have that song in a lower key, and in fact we [Crush 40] did the demo in that much lower key, and that was featured on the Sonic and the Black Knight “Face to Faith” album and it is much heavier.</p>
                     ` }
             ]
@@ -1289,11 +1289,11 @@ So, turn away or face this day with me, with me...</p>
             `
         },
         performances: [
-            { id: "sos10" },
-					 { id: "t11" },
-					 { id: "t12" },
-					 { id: "twoNights" },
-					 { id: "expoTNT" }
+            	{ id: "sos10" },
+		{ id: "t11" },
+		{ id: "t12" },
+		{ id: "twoNights" },
+		{ id: "expoTNT" }
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
@@ -1371,9 +1371,9 @@ Live Life...</p>
 iiy: {
         desc: {
             fan: `
-            <p>Is It You was Crush 40’s first original song to have no connection to a game.</p>
-					 <p>Released in 2009 as a bonus track on the best of album, “Super Sonic Songs”, it’s the only love song Crush 40 has ever put out.</p>
-					 <p>Johnny however is no stranger to the genre with his Hardline experience, and the result is a brilliantly catchy ballad with harmonies reminiscent of that band’s early material on Double Eclipse.</p>`,
+            	<p>Is It You was Crush 40’s first original song to have no connection to a game.</p>
+		<p>Released in 2009 as a bonus track on the best of album, “Super Sonic Songs”, it’s the only love song Crush 40 has ever put out.</p>
+		<p>Johnny however is no stranger to the genre with his Hardline experience, and the result is a brilliantly catchy ballad with harmonies reminiscent of that band’s early material on Double Eclipse.</p>`,
             other: [
                 
             ]
@@ -1439,16 +1439,16 @@ is it you... oh... Is it you</p>
     twoNights: {
         desc: {
             fan: `
-            <p>One of the few Crush 40 songs with no ties to a game – 2 Nights 2 Remember is the first song on the 2015 EP of the same name.</p>
-					 <p>The lyrics describe Johnny’s and Jun’s love of their concerts, and the thrill of performing in front of a crowd. It's no coincidence that the release includes many tracks from the titular 2014 concerts!</p>
-					 <p>The sheer energy of the song is perfect proof that the band can still rock just as hard without a game to draw inspiration from, and gives the EP one of the band’s strongest opening tracks.</p>`,
+            	<p>One of the few Crush 40 songs with no ties to a game – 2 Nights 2 Remember is the first song on the 2015 EP of the same name.</p>
+		<p>The lyrics describe Johnny’s and Jun’s love of their concerts, and the thrill of performing in front of a crowd. It's no coincidence that the release includes many tracks from the titular 2014 concerts!</p>
+		<p>The sheer energy of the song is perfect proof that the band can still rock just as hard without a game to draw inspiration from, and gives the EP one of the band’s strongest opening tracks.</p>`,
             other: [
                 { 
                     heading: "Jun Senoue", 
                     subHeading: "(Written by <a href='https://mobile.twitter.com/crush40/status/454925585727234049' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>A new song made specially for this show. Katsuji's drum phrase after the guitar solo is the best.</p>
-										  <p>Up until now, I'd always implemented my two-bass phrases in a one-point, but effective way - until now we've never done two-bass entirely live!?</p>
+			<p>Up until now, I'd always implemented my two-bass phrases in a one-point, but effective way - until now we've never done two-bass entirely live!?</p>
                     ` }
             ]
         },
@@ -1516,9 +1516,9 @@ Never ever end</p>
     bm: {
         desc: {
             fan: `
-            <p>The 2nd track on 2 Nights 2 Remember, Big Mouth starts strong with a more heavily produced feel than the title track.</p>
-					 <p>It merges more synths into the mix, differentiating itself from the rest of the EP with a simple driving rhythm part and uncomplicated drum fills. The simple instrumentals, however, contribute to Johnny’s vocal performance standing out more - particularly the energy he throws into the second verse.</p>
-					 <p>The lyrics describe the singer standing up to those who would put them down, maintaining their self-worth and confidence in the face of a perceived betrayal.</p>`,
+            	<p>The 2nd track on 2 Nights 2 Remember, Big Mouth starts strong with a more heavily produced feel than the title track.</p>
+		<p>It merges more synths into the mix, differentiating itself from the rest of the EP with a simple driving rhythm part and uncomplicated drum fills. The simple instrumentals, however, contribute to Johnny’s vocal performance standing out more - particularly the energy he throws into the second verse.</p>
+		<p>The lyrics describe the singer standing up to those who would put them down, maintaining their self-worth and confidence in the face of a perceived betrayal.</p>`,
             other: [
                 
             ]
@@ -1594,9 +1594,9 @@ Keep your big mouth shut</p>
     lotd: {
         desc: {
             fan: `
-            <p>Light of The Day is the slowest track on the EP, with an interesting and unique down-tuned twist on the rock ballad style which is difficult to compare to the rest of the discography.</p>
-					 <p>Johnny sings a message of support for any listener that needs it and has stated in the fan discord that the song sums up how he feels about Jun, the band and the community.</p>
-					 <p>The song’s meaning goes two ways – the listener is as much the singer’s light as vice versa.</p>`,
+            	<p>Light of The Day is the slowest track on the EP, with an interesting and unique down-tuned twist on the rock ballad style which is difficult to compare to the rest of the discography.</p>
+		<p>Johnny sings a message of support for any listener that needs it and has stated in the fan discord that the song sums up how he feels about Jun, the band and the community.</p>
+		<p>The song’s meaning goes two ways – the listener is as much the singer’s light as vice versa.</p>`,
             other: [
                 
             ]
@@ -1664,8 +1664,8 @@ You're my light</p>
     dnd: {
         desc: {
             fan: `
-            <p>Letting Takeshi Taneda strut his stuff on a 5 string bass over Katsuji’s funkiest drum grooves, Down and Dirty is a fantastic song that shows the skill of every band member. This is especially apparent when it’s played live, with a building intro that allows each part to shine individually.</p>
-					<p>Johnny’s passionate lyrics feel more akin to his Hardline material in tone, while Jun’s solo certainly deserves to be considered with his finest work – taking a slightly slower approach at times that lends greater focus to each beautiful bend and harmonic, but accelerating towards the end in a perfect build back up to the chorus.</p>`,
+            	<p>Letting Takeshi Taneda strut his stuff on a 5 string bass over Katsuji’s funkiest drum grooves, Down and Dirty is a fantastic song that shows the skill of every band member. This is especially apparent when it’s played live, with a building intro that allows each part to shine individually.</p>
+		<p>Johnny’s passionate lyrics feel more akin to his Hardline material in tone, while Jun’s solo certainly deserves to be considered with his finest work – taking a slightly slower approach at times that lends greater focus to each beautiful bend and harmonic, but accelerating towards the end in a perfect build back up to the chorus.</p>`,
             other: [
                 { 
                     heading: "Jun Senoue", 
@@ -1673,7 +1673,7 @@ You're my light</p>
                     text:`
                         <p>I made this song because I wanted a song that would be an accent during the show, and it was performed live for the first time here.</p>
                         <p>Taneda-chan is a fan of this "big bass song", with the groovy feel that's unlike any other Crush 40 song being his favorite</p>
-										  <p>The number of songs that are fun to play has increased again.</p>
+			<p>The number of songs that are fun to play has increased again.</p>
                     ` }
             ]
         },
