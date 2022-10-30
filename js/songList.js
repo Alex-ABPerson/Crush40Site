@@ -29,7 +29,7 @@ var Crush40Songs = {
   sy: { t: "Sonic Youth", y: 2012, g: "Crush 40 Original" },
   ootd: { t: "One Of Those Days", y: 2012, g: "Crush 40 Original" },
   ra: { t: "Rise Again", y: 2012, g: "Crush 40 Original" },
-  twoNights: { t: "2 Nights 2 Remember", y: 2014, g: "Crush 40 Original" },
+  twonights: { t: "2 Nights 2 Remember", y: 2014, g: "Crush 40 Original" },
   bm: { t: "Big Mouth", y: 2014, g: "Crush 40 Original" },
   lotd: { t: "Light Of The Day", y: 2014, g: "Crush 40 Original" },
   dnd: { t: "Down & Dirty", y: 2014, g: "Crush 40 Original" },
