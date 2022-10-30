@@ -120,7 +120,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                 credits: [
                     { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
                     { t: "Arrangement", n: "Jun Senoue" },
-		    { t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
+								  { t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
                     { t: "Vocals", n: "Johnny Gioeli" },
                     { t: "Guitars & Programming", n: "Jun Senoue" },
                     { t: "Bass", n: "Naotu Shibata" },
@@ -150,7 +150,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                     { 
                         fanName: "Long Intro/Outro", 
                         long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
-			appearances: [ 'SONICTEAM "PowerPlay" ~Best Songs from SonicTeam~',
+											appearances: [ 'SONICTEAM "PowerPlay" ~Best Songs from SonicTeam~',
 "SONIC ADVENTURE Songs With Attitude ~Vocal mini-Album~",
 "Thrill Of The Feel",
 "SONIC THE HEDGEHOG 10th Anniversary",
@@ -191,23 +191,23 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                 versions: [
                     { 
                         fanName: "...for Title Screen",
-			inGame: true,
+											inGame: true,
                         long: "A short edit of Open Your Heart, used on Sonic Adventure's title screen."
                     },
                    { 
                         fanName: '...Theme of "Super Sonic"',
-			inGame: true,
+											inGame: true,
                         long: "This edit is similar to the main menu edit, but it loops and the chorus is without vocals, and there are some other minor differences. "
                     },
                    { 
                         officialName: "Instrumental ver.",
                         long: "This version of Open Your Heart is essentially the same as the short intro/outro ver., except it is, of course, instrumental. ",
-			appearances: [ "Sonic Adventure Original Soundtrack vol.2",
+										  appearances: [ "Sonic Adventure Original Soundtrack vol.2",
 "Sonic Runners [Slightly different: Looped] " ]
 									},
                    { 
                         fanName: "Sonic Runners ver.",
-			inGame: true,
+											inGame: true,
                         long: "This version of Open Your Heart appeared in Sonic Runners. It is an instrumental version, with a guitar as lead. It is unknown who performed this new guitar. It also loops, and skips over the 2nd verse and chorus. ",
 										  appearances: [ "Sonic Runners" ]
                     }
@@ -274,7 +274,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 								{ 
                         fanName: "Eizo Sakamoto demo",
                         long: "A demo version of Open Your Heart, with vocals by Eizo Sakamoto. There's also a short version of this version, skipping to the ending after the first chorus.",
-			appearances: [ "Tokyo International Forum Presentation" ]
+											appearances: [ "Tokyo International Forum Presentation" ]
                     }
 							]
 				},
@@ -288,7 +288,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 								{ 
                         fanName: "Transmutator vs. Razed in Black Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
+											appearances: [ "SONIC Adventure REMIX" ]
                     }
 							]
 				},							
@@ -302,7 +302,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 								{ 
                         fanName: "Chris Vrenna & Mark Blasques Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
+											appearances: [ "SONIC Adventure REMIX" ]
                     }
 							]
 				},
@@ -314,7 +314,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 								{ 
                         fanName: "Chris Randall & Van Christie Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
+											appearances: [ "SONIC Adventure REMIX" ]
                     }
 							]
 				},
@@ -327,13 +327,13 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 								{ 
                         officialName: "MJZ Mix",
                         long: "This remix is part of a set of remixes from Sonic Gems Collection's Musuem.",
-			appearances: [ "Sonic Gem Collection" ]
+											appearances: [ "Sonic Gem Collection" ]
                     }
 							]
 				},
 				{
                 credits: [
-		    { t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
+									{ t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
                     { t: "Production", n: "Bentley Jones" },
                     { t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
                     { t: "Guitars", n: "Jun Senoue & the Remix Factory" }
@@ -349,7 +349,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 			  {
                 credits: [
                     { t: "Remix", n: "LB (Remix Factory)" },
-		    { t: "Production", n: "Remix Factory" },
+									{ t: "Production", n: "Remix Factory" },
                     { t: "Vocals", n: "Johnny Gioeli" },
                     { t: "Guitars", n: "Jun Senoue" }
                 ],
@@ -365,7 +365,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 				{
                 credits: [
                     { t: "Remix", n: "Circuit Freq" },
-		    { t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
+									{ t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
                     { t: "Vocals", n: "Johnny Gioeli" },
                     { t: "Guitars", n: "Jun Senoue" },
 									{ t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
@@ -373,7 +373,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                 versions: [
 								{ 
                         officialName: "Crush 40 vs. Circuit Freq RMX",
-			inGame: true,
+											inGame: true,
                         long: "This remix of Open Your Heart was made for the Perfect CHAOS Boss Battle in Sonic Generations.",
 											appearances: [ "Sonic Generations",
 "Sonic Generations Original Soundtrack Blue Blur",
@@ -382,7 +382,7 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 							]
 				}
     	  ],
-	versionsBg: 'SSSBackground.png'
+			versionsBg: 'SSSBackground.png'
     },
 	lal: {
         desc: {
@@ -489,7 +489,7 @@ Live and Learn - You may never find your way</p>
 		sh: {
         desc: {
             fan: `
-            <p>As the theme that plays over the intro of the game with the same name, Sonic Heroes is an outlier in Crush 40's early catalogue.</p>
+            <p>As the theme that plays over the intro of the game with the same name, Sonic Heroes is an outlier in Crush 40's early catalogue. Ironic, since it was their first song recorded under the Crush 40 name.</p>
 					 <p>Sonic Heroes is a bright and melodic song in a major key, in stark contrast to the final boss theme What I'm Made Of. It perfectly sets the tone of the upbeat game to come.</p>
 					 <p>Originally, What I'm Made Of was going to be the game's theme! However, Sega vetoed this, wishing for a brighter-sounding song - and thus, the song Sonic Heroes was born.</p>`,
             other: [
@@ -865,7 +865,7 @@ I am... I'm all of me...</p>
             other: [
                 { 
                     heading: "Jun Senoue", 
-                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454933355792842752' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    subHeading: "(Written by <a href='https://mobile.twitter.com/crush40/status/454930198597611520' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>The original version from Shadow The Hedgehog starts with a piano intro, but I also like this live arrangement's drum intro.</p>
                         <p>When the song opens, and the audience starts shouting together, everything heats up at once.</p>
@@ -937,6 +937,109 @@ And I'll never turn back...</p>
             { id: "tmg19" },
         ],
         versionsBg: 'Crush40_MotionBlur.png'
+    },
+srih: {
+        desc: {
+            fan: `
+            <p>The song was originally recorded by Steve Conte for 2007’s Wii exclusive, “Sonic and the Secret Rings”, as the opening theme. You wouldn’t know it from listening to the song though – aside from the lyrics and rough vocal melody, Crush 40’s cover does not retain much of the original.</p>
+					 <p>Jun’s guitar part is far more complex, using a similar tone to the original mix of Knight of The Wind to great effect. There’s also more layering across the whole song, compared to the original where the clean part only appears during choruses.</p>
+					 <p>Perhaps due to that variety, and the addition of one of Jun’s finest guitar solos ever, the song feels dramatically shorter than the original despite only undercutting it by 20 seconds. And as always: Johnny’s vocal performance impresses, standing out as more aggressive than the original and immediately demonstrating the benefit of covering the song in a lower key.</p>`,
+            other: [
+                
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "True Blue - The Best Of Sonic The Hedgehog" }
+            ],
+            text: `
+<p>Make believes reborn<br />
+Myths, in mind, re-thought<br />
+Question all that's known<br />
+Legends blurred and torn</p>
+
+<p>No such thing as fate for those who speed<br />
+A path out of time, instead of just living it<br />
+So many things erased before they begins<br />
+Hopes un-dream, instead of what could have been</p>
+
+<p>Fortune fades, like words in the sand<br />
+Just like that, it nothing, it all just seems<br />
+Fortune shines, with seven in hands<br />
+Back to fact, make real of all that seems<br />
+Make real of all that seems</p>
+
+<p>Seven rings in hand<br />
+Speed through nights with feet in sand<br />
+Seven rings in hand<br />
+Wonders all under command<br />
+Seven rings in hand<br />
+Wild with just one single hand<br />
+Seven rings in hand<br />
+Arrowed hearts catch fire now</p>
+
+<p>Make believes reborn<br />
+Myths, in mind, re-thought<br />
+Question all that's known<br />
+Legends blurred and torn</p>
+
+<p>No such thing as an arrow through who dreams<br />
+Hopes may burden, but, forever, last to give in<br />
+So many things need a push or pull to begin<br />
+Un-free to move, unless another hand gets in</p>
+
+<p>Be it all the same, it's never the same<br />
+Just like that, just nothing, it all just means<br />
+Nothing, it all just means<br />
+If all as is, then it's never as is<br />
+Back to fact, make real of all that seems<br />
+Make real of all that seems</p>
+
+<p>Seven rings in hand<br />
+Speed through nights with feet in sand<br />
+Seven rings in hand<br />
+Wonders all under command<br />
+Seven rings in hand<br />
+Wild with just one single hand<br />
+Seven rings in hand<br />
+Arrowed hearts catch fire now</p>
+
+<p>Memories that dance<br />
+Fairy tales in trance<br />
+Know what to believe<br />
+Nothing is up to chance</p>
+
+<p>Make believes reborn<br />
+Myths, in mind, re-thought<br />
+Question all that's known<br />
+Legends blurred and torn</p>
+
+<p>Seven rings in hand<br />
+Speed through nights with feet in sand<br />
+Seven rings in hand<br />
+Wonders all under command<br />
+Seven rings in hand<br />
+Wild with just one single hand<br />
+Seven rings in hand<br />
+Arrowed hearts catch fire now</p>
+
+<p>Make believes reborn<br />
+Myths, in mind, re-thought<br />
+Question all that's known<br />
+Legends blurred and torn</p>
+
+<p>Seven seas in hand <br />
+Speed of sound through sands<br />
+All our hopes and plans<br />
+In one single hand</p>
+            `
+        },
+        performances: [
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" }
+        ],
+        versionsBg: 'SSSBackground.png'
     },
     kotw: {
         desc: {
@@ -1264,6 +1367,390 @@ Live Life...</p>
             { id: "jgmf18", d: "Featuring a real violinist!" },
         ],
         versionsBg: 'SSSBackground.png'
+    },
+iiy: {
+        desc: {
+            fan: `
+            <p>Is It You was Crush 40’s first original song to have no connection to a game.</p>
+					 <p>Released in 2009 as a bonus track on the best of album, “Super Sonic Songs”, it’s the only love song Crush 40 has ever put out.</p>
+					 <p>Johnny however is no stranger to the genre with his Hardline experience, and the result is a brilliantly catchy ballad with harmonies reminiscent of that band’s early material on Double Eclipse.</p>`,
+            other: [
+                
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Super Sonic Songs", id: "sss" }
+            ],
+            text: `
+<p>Here I stand, right before you<br />
+Feeling like a million words<br />
+And there you are, right before me<br />
+And not a sound can be heard</p>
+
+<p>And I think to myself what am I trying to see<br />
+Am I going out of my mind<br />
+When something's so right, but you can barely see it<br />
+Open, close every door</p>
+
+<p>Is it you? Is it me?<br />
+Is it everything we've meant to be<br />
+Is it here, Is it now<br />
+That only we can feel somehow<br />
+Is it you... oh... Is it you...</p>
+
+<p>And we take, every moment<br />
+Trying to feel who is who<br />
+And there you are, right before me<br />
+Stuck inside of what to do</p>
+
+<p>And I think to myself, are we trying to love<br />
+When love shouldn't be trying at all<br />
+When something's so right but you can barely see it<br />
+Open close every door.</p>
+
+<p>Is it you? Is it me?<br />
+Is it everything we've meant to be<br />
+Is it here, Is it now<br />
+That only we can feel somehow<br />
+Is it you... oh... Is it you</p>
+
+<p>I'm hanging on to every word, to every word you say<br />
+And it's taking me over, over and over<br />
+And then it starts over again</p>
+
+<p>Is it you? Is it me?<br />
+Is it heaven and we're meant to be<br />
+Is it here, Is it now<br />
+That only we can feel somehow<br />
+Is it you? Is it me?<br />
+Is it everything we've meant to be<br />
+Is it here, Is it now<br />
+That only we can feel somehow<br />
+is it you... oh... Is it you</p>
+
+            `
+        },
+        performances: [
+            
+        ],
+        versionsBg: 'SSSBackground.png'
+    },
+    twoNights: {
+        desc: {
+            fan: `
+            <p>One of the few Crush 40 songs with no ties to a game – 2 Nights 2 Remember is the first song on the 2015 EP of the same name.</p>
+					 <p>The lyrics describe Johnny’s and Jun’s love of their concerts, and the thrill of performing in front of a crowd. It's no coincidence that the release includes many tracks from the titular 2014 concerts!</p>
+					 <p>The sheer energy of the song is perfect proof that the band can still rock just as hard without a game to draw inspiration from, and gives the EP one of the band’s strongest opening tracks.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://mobile.twitter.com/crush40/status/454925585727234049' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>A new song made specially for this show. Katsuji's drum phrase after the guitar solo is the best.</p>
+										  <p>Up until now, I'd always implemented my two-bass phrases in a one-point, but effective way - until now we've never done two-bass entirely live!?</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+<p>In a city filled with fever<br />
+That runs and runs all night<br />
+Never had this feeling<br />
+Ever in my life</p>
+
+<p>Every minute's torture<br />
+Can't wait to see the lights<br />
+See your faces shining<br />
+Enough to light the night</p>
+
+<p>Freeze my life, let me hold it tight<br />
+Let this feeling fly, ever more<br />
+I'm in love with...</p>
+
+<p>2 Nights to remember, 2 nights no regret<br />
+Don't wake me up this dream ain't over yet<br />
+2 Nights to remember, tonight no regret<br />
+Lovin' every minute let it never end<br />
+Never ever end</p>
+
+<p>Can it last forever<br />
+I'm beggin' on my knees<br />
+Give me just an hour<br />
+Like a junkie, like a tease</p>
+
+<p>Freeze my life, let me hold it tight<br />
+Let this feeling fly, ever more<br />
+I'm in love with...</p>
+
+<p>2 Nights to remember, 2 nights no regret<br />
+Don't wake me up this dream ain't over yet<br />
+2 Nights to remember, tonight no regret<br />
+Lovin' every minute let it never end <br />
+Never ever end</p>
+
+<p>Never ever<br />
+I'm in love with...</p>
+
+<p>2 Nights to remember, 2 nights no regret<br />
+Don't wake me up this dream ain't over yet<br />
+2 Nights to remember, tonight no regret<br />
+Lovin' every minute let it never end<br />
+Never ever end</p>
+            `
+        },
+        performances: [
+            { id: "twoNights" },
+            { id: "expoTNT" },
+            { id: "joypolis15" },
+            { id: "youmacon15" },
+            { id: "sonic25th" },
+            { id: "sos16" },
+            { id: "jgmf18" }
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
+    },
+    bm: {
+        desc: {
+            fan: `
+            <p>The 2nd track on 2 Nights 2 Remember, Big Mouth starts strong with a more heavily produced feel than the title track.</p>
+					 <p>It merges more synths into the mix, differentiating itself from the rest of the EP with a simple driving rhythm part and uncomplicated drum fills. The simple instrumentals, however, contribute to Johnny’s vocal performance standing out more - particularly the energy he throws into the second verse.</p>
+					 <p>The lyrics describe the singer standing up to those who would put them down, maintaining their self-worth and confidence in the face of a perceived betrayal.</p>`,
+            other: [
+                
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "2 Nights 2 Remember", id: "twonights" }
+            ],
+            text: `
+<p>Little past midnight<br />
+Standing by the moonlight<br />
+Watching the world take a shot at me<br />
+Why'd you lie to me<br />
+In this crazy generation<br />
+Glue it, screw it down<br />
+Filthy separation<br />
+Try and knock me down</p>
+
+<p>All my life you rob me of my take and blow my mind<br />
+Who's to try, another inch closer you're a real tough guy</p>
+
+<p>Keep your big mouth shut<br />
+Go ahead and keep it, if you want another<br />
+And keep that big mouth running on<br />
+Keep your big mouth shut<br />
+Oh........shut it<br />
+If you know what's good for ya<br />
+Keep your big mouth shut</p>
+
+<p>Standing toe to toe<br />
+Let me know when you wanna go<br />
+Hit you with some day light<br />
+Face down, goodnight<br />
+Oh a lesson so well learned<br />
+I should have left you there, left to burn<br />
+And I'm a man on a mission<br />
+Try and knock me down</p>
+
+<p>All my life you rob me of my take and blow my mind<br />
+Who's to try, another inch closer you're a real tough guy</p>
+
+<p>Keep your big mouth shut<br />
+Go ahead and keep it, if you want another<br />
+And keep that big mouth running on<br />
+Keep your big mouth shut<br />
+Oh........shut it<br />
+If you know what's good for ya<br />
+Keep your big mouth shut</p>
+
+<p>Do it once, do it twice<br />
+You're a fool in paradise<br />
+Run and hide<br />
+And that mouth keeps running on and on</p>
+
+<p>Keep your big mouth shut<br />
+Go ahead and keep it, if you want another<br />
+And keep that big mouth running on<br />
+Keep your big mouth shut<br />
+Oh........shut it<br />
+If you know what's good for ya<br />
+Keep your big mouth shut</p>
+
+<p>Keep your big mouth shut</p>
+
+<p>Shut it</p>
+            `
+        },
+        performances: [
+            
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
+    },
+    lotd: {
+        desc: {
+            fan: `
+            <p>Light of The Day is the slowest track on the EP, with an interesting and unique down-tuned twist on the rock ballad style which is difficult to compare to the rest of the discography.</p>
+					 <p>Johnny sings a message of support for any listener that needs it and has stated in the fan discord that the song sums up how he feels about Jun, the band and the community.</p>
+					 <p>The song’s meaning goes two ways – the listener is as much the singer’s light as vice versa.</p>`,
+            other: [
+                
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "2 Nights 2 Remember", id: "twonights" }
+            ],
+            text: `
+<p>As we follow, every moment<br />
+Standing proud in shadows<br />
+We will follow, we will lift up<br />
+When you need us, we'll be there</p>
+
+<p>When you're let down we'll lift you up<br />
+Best that we can<br />
+When you're drowned out by the sound of life<br />
+Who what and when, but I know you are...</p>
+
+<p>On your way up to the light of the day<br />
+Reaching higher in every way<br />
+Way up to the light of the day<br />
+I can see your light shining away...</p>
+
+<p>As we follow, every tear drop<br />
+Standing proud by your side<br />
+We will follow, thru the valleys<br />
+When you need us, we'll be there</p>
+
+<p>When you're let down we'll lift you up<br />
+Best that we can<br />
+Drowned out by the sound of life<br />
+Who what and when, but I know you are...</p>
+
+<p>and I know you are...</p>
+
+<p>And you see that light and you walk on by<br />
+You'll know and you'll know when it's right...</p>
+
+<p>On your way up to the light of the day<br />
+Reaching higher in every way<br />
+Way up to the light of the day<br />
+I can see your light shining away...</p>
+
+<p>On your way up to the light of the day<br />
+Reaching higher in every way<br />
+Way up to the light of the day<br />
+I can see your light shining away...</p>
+
+<p>When I'm low<br />
+you're my light<br />
+You're my light<br />
+You're my light</p>
+
+<p>When it's a dark and stormy day</p>
+
+<p>You call me, on your way up...</p>
+            `
+        },
+        performances: [
+
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
+    },
+    dnd: {
+        desc: {
+            fan: `
+            <p>Letting Takeshi Taneda strut his stuff on a 5 string bass over Katsuji’s funkiest drum grooves, Down and Dirty is a fantastic song that shows the skill of every band member. This is especially apparent when it’s played live, with a building intro that allows each part to shine individually.</p>
+					<p>Johnny’s passionate lyrics feel more akin to his Hardline material in tone, while Jun’s solo certainly deserves to be considered with his finest work – taking a slightly slower approach at times that lends greater focus to each beautiful bend and harmonic, but accelerating towards the end in a perfect build back up to the chorus.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://mobile.twitter.com/crush40/status/454926537121202176' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>I made this song because I wanted a song that would be an accent during the show, and it was performed live for the first time here.</p>
+                        <p>Taneda-chan is a fan of this "big bass song", with the groovy feel that's unlike any other Crush 40 song being his favorite</p>
+										  <p>The number of songs that are fun to play has increased again.</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "2 Nights 2 Remember", id: "twonights" }
+            ],
+            text: `
+<p>Watcha gonna do, when it's inside of you<br />
+Wake it up and let it out, pour it on and scream and shout<br />
+You know, you know, you know, you know it's all you can do</p>
+
+<p>With a little bit of this and that<br />
+Did it make ya feel like bailing out<br />
+Wake it up and let it out, pour it on and scream and shout<br />
+You know, you know, you know, you know it's all you can do</p>
+
+<p>(Well I know) I met the man in the mirror<br />
+(I can see) He's so glad to see ya<br />
+(And I know) Wanting it way down<br />
+I want, I want, I want to get it...</p>
+
+<p>Down and Dirty, Down and Dirty<br />
+Shake me up, wake me up<br />
+Girl you know I'll always be<br />
+Down and Dirty, Down and Dirty<br />
+Hit me up, hit me up<br />
+Give me some of that Down and Dirty.....</p>
+
+<p>Watcha gonna do, when it's inside if you<br />
+Wind it up and let it go<br />
+Rock that baby even more<br />
+You know, you know, you know, you know it's all you can do</p>
+
+<p>(Well I know) I met the man in the mirror<br />
+(I can see) He's so glad to see ya<br />
+(And I know) Wanting it way down</p>
+
+<p>(Well I know) Don't let the feeling fear ya<br />
+(I can see) I'd be glad to heal ya<br />
+(And I know) Wanting it way down<br />
+I want, I want, I want to get it...</p>
+
+<p>Down and Dirty, Down and Dirty<br />
+Shake me up, wake me up<br />
+Girl you know I'll always be<br />
+Down and Dirty, Down and Dirty<br />
+Hit me up, hit me up<br />
+Give me some of that Down and Dirty.....</p>
+
+<p>Down and Dirty, Down and Dirty<br />
+Shake me up, wake me up<br />
+Girl you know I'll always be<br />
+Down and Dirty, Down and Dirty<br />
+Hit me up, hit me up<br />
+Give me some of that Down and Dirty.....</p>
+
+<p>Down and Dirty, Down and Dirty<br />
+Shake me up, wake me up<br />
+Girl you know I'll always be<br />
+Down and Dirty, Down and Dirty<br />
+Hit me up, hit me up<br />
+Give me some of that Down and Dirty.....</p>
+
+<p>Down and Dirty, Down and Dirty<br />
+Shake me up, wake me up<br />
+Girl you know I'll always be<br />
+Down and Dirty, Down and Dirty<br />
+Hit me up, hit me up<br />
+Give me some of that Down and Dirty.....</p>
+
+            `
+        },
+        performances: [
+            { id: "twoNights" }
+        ],
+        versionsBg: 'Crush40_MotionBlur.png'
     }
 };
 
