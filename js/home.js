@@ -1,8 +1,8 @@
 // Headstock snapping - so it doesn't weirdly line up with frets.
-window.addEventListener('load', () => {
+AddLoadLogic(() => {
+	UpdateNavbarPageSelection("navAbout");
 
     let headstocks = document.querySelectorAll(".headstock-right");
-
     for (let headstock of headstocks)
     {
         // Remove default CSS
@@ -14,8 +14,6 @@ window.addEventListener('load', () => {
 
         UpdatePos(headstock);
     }
-
-    UpdateNavbarPageSelection("navAbout");
 });
 
 function UpdatePos(headstock) {

@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+AddLoadLogic(() => {
     UpdateNavbarPageSelection("navDiscography");
 
     InitFeatures();

@@ -1,3 +1,81 @@
+const headerHTML = `
+<div class="GSBackContainer"><div class="GSBack" data-parallax="backgroundY" data-parallax-speed="2"></div></div>
+
+<!-- Navbar -->
+<nav class="nav">
+    <div class="other">
+        <img class="logo" src="img/logo_white.svg" alt="Crush 40 Logo">
+        <button class="btn" title="Toggle Navigation Menu"><img src="img/icons/hamburgerMenu.svg" alt="Menu Icon"></button>
+    </div>
+
+    <ul class="items">
+        <li id="navAbout">
+            <a href="index.html"><p>About</p></a>
+            <div class="back"></div>
+        </li>
+        <li id="navDiscography">
+            <a href="discography.html"><p>Discography</p></a>
+            <div class="back"></div>
+        </li>
+        <li id="navGear">
+            <div class="back"></div>
+            <a href="gear.html"><p>Gear</p></a>
+        </li>
+        <li id="navShows">
+            <div class="back"></div>
+            <p>Shows</p>
+        </li>
+        <li id="navBranding">
+            <div class="back"></div>
+            <p>Branding</p>
+        </li>
+        <li id="navHistory">
+            <div class="back"></div>
+            <p>History</p>
+        </li>
+    </ul>
+</nav>
+`;
+
+const footerHTML = `
+<!-- Footer -->
+<div class="footer section" data-action="panel" data-page-name="credits">
+    <img class="image" src="img/logo/FanWebsiteLogo.svg" alt="Crush 40 Logo">
+    <div class="text">
+        <p>This entire site was created completely from scratch by the <b>Crush 40 Fan Community</b> - no templates, no website builder, just raw work from the community!</p>
+        <p>Click here to see a list of the project leads who helped most of all to make this website come to life on your screen today!</p>
+    </div>
+</div>
+
+<div class="floating">
+    <div class="floatingClose"></div>
+    <div class="panel" id="myPanel">
+        <div class="titlebar">
+            <button id="backButton" title="Back" class="back iconButton"><img src="img/icons/smallBackButton.svg" alt="Back Icon"></button>
+            <p class="title">Loading...</p>
+            <button title="Close" class="close iconButton"><img src="img/icons/smallCloseButton.svg" alt="Close Icon"></button>
+        </div>
+
+        <div class="loading-screen">
+            <p class="loading-text"><b>Revvin' Up</b> the engines!</p>
+            <div class="spinning"></div>
+        </div>
+
+        <iframe title="Menu Contents" class="contents" src=""></iframe>
+    </div>
+</div>
+
+<div class="zoom" id="zoom">
+    <img id="zoomImg" />
+</div>
+`;
+
+var addedLoadEvents = [];
+function AddLoadLogic(eve)
+{
+	addedLoadEvents.push(eve);
+}
+
 function DisableScroll()
 {
     document.body.style.overflow = 'hidden';
@@ -8,12 +86,30 @@ function EnableScroll()
     document.body.style.overflow = 'auto';
 }
 
+window.addEventListener('load', () => {
+	// Insert header + footer
+	document.body.insertAdjacentHTML('afterbegin', headerHTML);
+	document.body.insertAdjacentHTML('beforeend', footerHTML);
+	
+	// Setup everything
+	SetupNavbar();
+	SetupFloating();
+	SetupZoom();
+	SetupParallax();
+	SetupAnim();
+	
+	// Call the load for everything registered
+	for (let toLoad of addedLoadEvents)
+		toLoad();
+});
+
 // Navbar Mobile Menu
 var navbar;
 var navbarItems;
 var navbarBtn;
 
-window.addEventListener('load', () => {
+function SetupNavbar()
+{
     navbar = document.querySelector(".nav");
     navbarItems = document.querySelector(".nav .items");
     navbarBtn = document.querySelector(".nav .btn");
@@ -29,7 +125,7 @@ window.addEventListener('load', () => {
         if (navbar.classList.contains("navOpen") && window.innerWidth > 1040)
             CloseNavbar();
     });
-});
+}
 
 function CloseNavbar()
 {
@@ -43,7 +139,6 @@ function OpenNavbar()
     navbar.classList.add("navOpen");
 }
 
-// Navbar "Current Page" selection
 function UpdateNavbarPageSelection(id) {
     let item = document.querySelector(".nav .items #" + id);
     item.classList.add("selected");
@@ -60,7 +155,7 @@ var currentPanelHeight;
 var panelOpen = false;
 var noPanelHistory = 0;
 
-window.addEventListener('load', () => {
+function SetupFloating() {
     
     floating = document.querySelector(".floating");
     floatingLoading = document.querySelector(".floating .panel .loading-screen");
@@ -81,7 +176,7 @@ window.addEventListener('load', () => {
 
     for (let btn of document.querySelectorAll("[data-action='panel']"))
         btn.addEventListener('click', () => UpdatePanelPage(btn.dataset.pageName));
-});
+}
 
 function UpdatePanelPage(newSrc)
 {   
@@ -174,7 +269,7 @@ function HandleMessage(msg) {
 let zoom;
 let zoomImg;
 
-window.addEventListener('load', () => {
+function SetupZoom() {
     zoom = document.querySelector("#zoom");
     zoomImg = document.querySelector("#zoomImg");
 
@@ -187,7 +282,7 @@ window.addEventListener('load', () => {
     }
 
     zoom.addEventListener('click', CloseZoom);
-});
+}
 
 function OpenZoom(imgSrc)
 {
@@ -207,7 +302,7 @@ function CloseZoom()
 // Parallax movement (e.g. guitar separator)
 var backgroundParallax;
 
-window.addEventListener('load', () => {
+function SetupParallax() {
     
     backgroundParallax = document.querySelectorAll("[data-parallax]");
 
@@ -230,7 +325,7 @@ window.addEventListener('load', () => {
         window.addEventListener('resize', handler);
         handler();
     }
-});
+}
 
 function UpdateBackgroundParallaxX(item)
 {
@@ -256,7 +351,7 @@ function UpdateBackgroundParallaxY(item)
 var toAnim;
 var triggerPoint;
 
-window.addEventListener('load', () => {
+function SetupAnim() {
     let elems = document.querySelectorAll("[data-anim-point='s']");
     toAnim = Array.from(elems);
 
@@ -267,7 +362,7 @@ window.addEventListener('load', () => {
     UpdateAnimTrigger();
 
     window.addEventListener('scroll', CheckForNextAnimTrigger);
-});
+}
 
 function UpdateAnimTrigger()
 {
