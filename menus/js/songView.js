@@ -1145,6 +1145,7 @@ Setting the stage for a heroes parade</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "tmg17" },
+            { id: "puma18" },
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
@@ -1487,7 +1488,7 @@ I am... I'm all of me...</p>
         ],
         versionsBg: 'SSSBackground.png'
     },
-ntb: {
+    ntb: {
         desc: {
             fan: `
             	<p>Never Turn Back is the true ending theme from Shadow The Hedgehog (2005).</p>
@@ -1564,6 +1565,7 @@ And I'll never turn back...</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "tmg17" },
+            { id: "puma18" },
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
