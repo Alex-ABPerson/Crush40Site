@@ -118,13 +118,13 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
 	versionGroups: [
             {
                 credits: [
-                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    	{ t: "Arrangement", n: "Jun Senoue" },
-			{ t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
-                    	{ t: "Vocals", n: "Johnny Gioeli" },
-                    	{ t: "Guitars & Programming", n: "Jun Senoue" },
-                    	{ t: "Bass", n: "Naotu Shibata" },
-                    	{ t: "Drums", n: "Hirotsugu Homma" }
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+			        { t: "Lyrics", n: "Jun Senoue & Takahiro Fukada" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
                     { 
@@ -150,73 +150,73 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                     { 
                         fanName: "Long Intro/Outro", 
                         long: "The album version of this variant. It doesn't loop infinitely and doesn't include the opening like the other. It also has slight mixing differences with the main version, mainly the deep backing vocals during the pre-chorus.",
-											appearances: [ 'SONICTEAM "PowerPlay" ~Best Songs from SonicTeam~',
-"SONIC ADVENTURE Songs With Attitude ~Vocal mini-Album~",
-"Thrill Of The Feel",
-"SONIC THE HEDGEHOG 10th Anniversary",
-"Segacon -The Best of Sega Game Music- Vol.2",
-"Crush 40",
-"SONIC HEROES : TRIPLE THREAT - vocal trax",
-"True Blue - The Best of Sonic the Hedgehog",
-"Sonic Adventure Original Soundtrack 20th Anniversary Edition",
-"History Of Sonic Music 20th Anniversary Edition",
-"Sonic Adventure Official Soundtrack Vinyl Edition",
-"Driving Through Forever - The Ultimate Crush 40 Collection",
-"Sonic at the Olympic Games - Tokyo 2020 [Slightly different: Song has short intro, and loops back to the start through the long intro]",
-"GO SEGA - 60th ANNIVERSARY Album -" ] 
+						appearances: [ 'SONICTEAM "PowerPlay" ~Best Songs from SonicTeam~',
+                        "SONIC ADVENTURE Songs With Attitude ~Vocal mini-Album~",
+                        "Thrill Of The Feel",
+                        "SONIC THE HEDGEHOG 10th Anniversary",
+                        "Segacon -The Best of Sega Game Music- Vol.2",
+                        "Crush 40",
+                        "SONIC HEROES : TRIPLE THREAT - vocal trax",
+                        "True Blue - The Best of Sonic the Hedgehog",
+                        "Sonic Adventure Original Soundtrack 20th Anniversary Edition",
+                        "History Of Sonic Music 20th Anniversary Edition",
+                        "Sonic Adventure Official Soundtrack Vinyl Edition",
+                        "Driving Through Forever - The Ultimate Crush 40 Collection",
+                        "Sonic at the Olympic Games - Tokyo 2020 [Slightly different: Song has short intro, and loops back to the start through the long intro]",
+                        "GO SEGA - 60th ANNIVERSARY Album -" ] 
                     },
                     { 
                         fanName: "Short Intro/Outro",
                         long: "This version of Open Your Heart is identical to the Long Intro/Outro, except the intro and outros are shorter by lack of storm sounds, and the short ending. ",
                         appearances: [ 'SONIC ADVENTURE "Digi-LOG Conversation" Original Sound Track',
-'Sonic Adventure Original Soundtrack vol.2' ]
+                        'Sonic Adventure Original Soundtrack vol.2' ]
                     },
                     { 
                         fanName: "Super Sonic Songs Mix",
                         long: "This is a new mix of Open Your Heart done for the Super Sonic Songs album.",
                         appearances: [ "The Best Of Crush 40 - Super Sonic Songs",
-"Sonic Generations (3DS) [Note: Short edit, going from the first verse to the solo, skipping the second verse and chorus]" ]
+                        "Sonic Generations (3DS) [Note: Short edit, going from the first verse to the solo, skipping the second verse and chorus]" ]
                     } 
                 ]
             },
             {
                 title: "Instrumentals",
                 credits: [
-                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    	{ t: "Arrangement", n: "Jun Senoue" },
-                    	{ t: "Guitars & Programming", n: "Jun Senoue" },
-                    	{ t: "Bass", n: "Naotu Shibata" },
-                    	{ t: "Drums", n: "Hirotsugu Homma" }
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
                     { 
                         fanName: "...for Title Screen",
-			inGame: true,
+			            inGame: true,
                         long: "A short edit of Open Your Heart, used on Sonic Adventure's title screen."
                     },
                    { 
                         fanName: '...Theme of "Super Sonic"',
-			inGame: true,
+			            inGame: true,
                         long: "This edit is similar to the main menu edit, but it loops and the chorus is without vocals, and there are some other minor differences. "
                     },
                    { 
                         officialName: "Instrumental ver.",
                         long: "This version of Open Your Heart is essentially the same as the short intro/outro ver., except it is, of course, instrumental. ",
-			appearances: [ "Sonic Adventure Original Soundtrack vol.2",
-"Sonic Runners [Slightly different: Looped]" ]
-		},
+			            appearances: [ "Sonic Adventure Original Soundtrack vol.2",
+                        "Sonic Runners [Slightly different: Looped]" ]
+		            },
                    { 
                         fanName: "Sonic Runners ver.",
-			inGame: true,
+			            inGame: true,
                         long: "This version of Open Your Heart appeared in Sonic Runners. It is an instrumental version, with a guitar as lead. It is unknown who performed this new guitar. It also loops, and skips over the 2nd verse and chorus. ",
-			appearances: [ "Sonic Runners" ]
+			            appearances: [ "Sonic Runners" ]
                     }
                 ]
             },
             {
                 credits: [
-                    	{ t: "Composition & Arrangement", n: "Jun Senoue & Fumie Kumatani" },
-                    	{ t: "Programming", n: "Fumie Kumatani" }
+                    { t: "Composition & Arrangement", n: "Jun Senoue & Fumie Kumatani" },
+                    { t: "Programming", n: "Fumie Kumatani" }
                 ],
                 versions: [
                     { 
@@ -224,20 +224,20 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                         inGame: true,
                         long: "This track plays during the opening cinematic of Sonic Adventure. An early version of this track can be heard in the Tokyo International Forum presentation.",
                         appearances: [ "Sonic Adventure",
-'SONIC ADVENTURE "Digi-LOG Conversation" Original Sound Track',
-"Sonic Adventure Original Soundtrack 20th Anniversary Edition",
-'Sonic Adventure Original Soundtrack vol.1 [NOTE: Digital platforms think "Open Your Heart" is a featuring artist due to the name of the track]',
-'Sonic the Hedgehog 25th Anniversary Selection',
-"Sonic Adventure Official Soundtrack Vinyl Edition" ]
-		    }
+                        'SONIC ADVENTURE "Digi-LOG Conversation" Original Sound Track',
+                        "Sonic Adventure Original Soundtrack 20th Anniversary Edition",
+                        'Sonic Adventure Original Soundtrack vol.1 [NOTE: Digital platforms think "Open Your Heart" is a featuring artist due to the name of the track]',
+                        'Sonic the Hedgehog 25th Anniversary Selection',
+                        "Sonic Adventure Official Soundtrack Vinyl Edition" ]
+		            }
                 ]
             },
-		{
+		    {
                 credits: [
-                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    	{ t: "Arrangement", n: "Jun Senoue" },
-                    	{ t: "Guitar", n: "Jun Senoue" },
-									{ t: "Bass", n: "Takeshi Taneda" }
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Guitar", n: "Jun Senoue" },
+					{ t: "Bass", n: "Takeshi Taneda" }
                 ],
                 versions: [
                     { 
@@ -248,141 +248,506 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
                     }
                 ]
             },
-	{
+	        {
                 credits: [
-                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    	{ t: "Vocals", n: "Kenichi Tokoi (supposedly)" },
-                    	{ t: "Guitars", n: "Jun Senoue" }
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Vocals", n: "Kenichi Tokoi (supposedly)" },
+                    { t: "Guitars", n: "Jun Senoue" }
                 ],
                 versions: [
-			{ 
+			        { 
                         fanName: "Kenichi Tokoi demo",
                         long: "A demo version of Open Your Heart. The vocals are supposedly by Kenichi Tokoi. The drums and bass are not live instruments in this version."
                     }
-		]
-	},
-	{
+		        ]
+	        },
+	        {
                 credits: [
-                    	{ t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
-                    	{ t: "Arrangement", n: "Jun Senoue" },
-                    	{ t: "Vocals", n: "Eizo Sakamoto" },
-                    	{ t: "Guitars", n: "Jun Senoue" },
-                    	{ t: "Bass", n: "Naotu Shibata" },
-                    	{ t: "Drums", n: "Hirotsugu Homma" }
+                    { t: "Composition", n: "Jun Senoue & Kenichi Tokoi" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals", n: "Eizo Sakamoto" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naotu Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
                 ],
                 versions: [
-			{ 
+			        { 
                         fanName: "Eizo Sakamoto demo",
                         long: "A demo version of Open Your Heart, with vocals by Eizo Sakamoto. There's also a short version of this version, skipping to the ending after the first chorus.",
-			appearances: [ "Tokyo International Forum Presentation" ]
-                    	}
-		]
-	},
-	{
+			            appearances: [ "Tokyo International Forum Presentation" ]
+                    }
+		        ]
+	        },
+	        {
                 credits: [
-                    	{ t: "Remix", n: "Transmutator vs Razed in Black" },
-                    	{ t: "Vocals", n: "Corey Glover" },
-                    	{ t: "Guitars", n: "Al Pitrelli" }
+                    { t: "Remix", n: "Transmutator vs Razed in Black" },
+                    { t: "Vocals", n: "Corey Glover" },
+                    { t: "Guitars", n: "Al Pitrelli" }
                 ],
                 versions: [
-			{ 
+			        { 
                         fanName: "Transmutator vs. Razed in Black Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
-                    	}
-		]
-	},							
-	{
+			            appearances: [ "SONIC Adventure REMIX" ]
+                    }
+		        ]
+	        },							
+	        {
                 credits: [
-                    	{ t: "Remix", n: "Chris Vrenna & Mark Blasques" },
-                    	{ t: "Vocals", n: "Corey Glover" },
-                    	{ t: "Guitars", n: "Al Pitrelli" }
+                    { t: "Remix", n: "Chris Vrenna & Mark Blasques" },
+                    { t: "Vocals", n: "Corey Glover" },
+                    { t: "Guitars", n: "Al Pitrelli" }
                 ],
                 versions: [
-			{ 
+			        { 
                         fanName: "Chris Vrenna & Mark Blasques Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
-                    	}
-		]
-	},
-	{
+			            appearances: [ "SONIC Adventure REMIX" ]
+                    }
+		        ]
+	        },
+	        {
                 credits: [
                     { t: "Remix", n: "Chris Randall & Van Christie from Sister Machine Gun" }
                 ],
                 versions: [
-			{ 
+			        { 
                         fanName: "Chris Randall & Van Christie Remix",
                         long: "This is one of the remixes of Open Your Heart from 1998's Sonic Adventure Remix album.",
-			appearances: [ "SONIC Adventure REMIX" ]
-                    	}
-		]
-	},
-	{
+			            appearances: [ "SONIC Adventure REMIX" ]
+                    }
+		        ]
+	        },
+	        {
                 credits: [
-                    	{ t: "Remix", n: "Unknown" },
-                    	{ t: "Vocals", n: "Johnny Gioeli" }
+                    { t: "Remix", n: "Unknown" },
+                    { t: "Vocals", n: "Johnny Gioeli" }
                 ],
                 versions: [
-			{ 
+			        { 
                         officialName: "MJZ Mix",
                         long: "This remix is part of a set of remixes from Sonic Gems Collection's Musuem.",
-			appearances: [ "Sonic Gem Collection" ]
+			            appearances: [ "Sonic Gem Collection" ]
                     }
-		]
-	},
-	{
+		        ]
+	        },
+	        {
                 credits: [
-			{ t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
-			{ t: "Production", n: "Bentley Jones" },
-			{ t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
-			{ t: "Guitars", n: "Jun Senoue & the Remix Factory" }
+                    { t: "Lyrics", n: "Jun Senoue, Takahiro Fukada & Bentley Jones" },
+                    { t: "Production", n: "Bentley Jones" },
+                    { t: "Vocals", n: "Johnny Gioeli & Bentley Jones" },
+                    { t: "Guitars", n: "Jun Senoue & the Remix Factory" }
                 ],
                 versions: [
-			{ 
+			        { 
                        	officialName: "Crush 40 vs. Bentley Jones Remix",
                         long: "This remix is done by Bentley Jones, and features some extra vocals by BJ.",
-			appearances: [ "True Blue: The Best Of Sonic The Hedgehog" ]
-			}
-		]
-	},
-	{
+			            appearances: [ "True Blue: The Best Of Sonic The Hedgehog" ]
+			        }
+		        ]
+	        },
+	        {
                 credits: [
-			{ t: "Remix", n: "LB (Remix Factory)" },
-			{ t: "Production", n: "Remix Factory" },
-                    	{ t: "Vocals", n: "Johnny Gioeli" },
-                    	{ t: "Guitars", n: "Jun Senoue" }
+			        { t: "Remix", n: "LB (Remix Factory)" },
+			        { t: "Production", n: "Remix Factory" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" }
                 ],
                 versions: [
-			{ 
+			        { 
                         officialName: "K-Klub Remix",
                         long: "This remix of Open Your Heart was originally made for the 15th anniversary in 2006 (an early version of the remix dating back to 2006 exists), but didn't see a release until 2009's True Colors",
-			appearances: [ "True Colors: The Best Of Sonic The Hedgehog Part 2" ] 
-			//also Amazing Sonic Scene Creator 2 lmao
-                    	}
-		]
-	},
-	{
+			            appearances: [ "True Colors: The Best Of Sonic The Hedgehog Part 2" ] 
+			            //also Amazing Sonic Scene Creator 2 lmao
+                    }
+		        ]
+	        },
+	        {
                 credits: [
-                    	{ t: "Remix", n: "Circuit Freq" },
-			{ t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
-                    	{ t: "Vocals", n: "Johnny Gioeli" },
-                    	{ t: "Guitars", n: "Jun Senoue" },
-			{ t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
+                    { t: "Remix", n: "Circuit Freq" },
+			        { t: "Sound Produced By", n: "Circuit Freq & Jun Senoue" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+			        { t: "Programming", n: 'Amir Derakh & Anthony "Fu" Valcic from Circuit Freq' }
                 ],
                 versions: [
-			{ 
+			        { 
                         officialName: "Crush 40 vs. Circuit Freq RMX",
-			inGame: true,
+			            inGame: true,
                         long: "This remix of Open Your Heart was made for the Perfect CHAOS Boss Battle in Sonic Generations.",
-			appearances: [ "Sonic Generations",
-"Sonic Generations Original Soundtrack Blue Blur",
-"Sonic Generations Official Soundtrack Vol.1" ] 
-                    	}
-		]
-		}
-    	  ],
+			            appearances: [ "Sonic Generations",
+                        "Sonic Generations Original Soundtrack Blue Blur",
+                        "Sonic Generations Official Soundtrack Vol.1" ] 
+                    }
+		        ]
+		    }
+    	],
 	versionsBg: 'SSSBackground.png'
+    },
+    dg: {
+        desc: {
+            fan: `
+            <p>Dangerous Ground’s huge, theatrical intro provides the perfect link from Jun Senoue’s rendition of The Star Spangled Banner into the main body of Crush 40’s debut album, Thrill Of The Feel.</p> 
+            <p>As one of the shortest songs in their discography, it doesn’t outstay its welcome, but makes an incredibly powerful first impression for the band then known as Sons of Angels.</p>
+            <p>With energetic drums, shouty crowd vocals (featuring Jun’s only vocal performance for the band) and a guitar part making full use of Jun’s Floyd Rose setup – Dangerous Ground is unforgettable. The band clearly think so too – having used it as the opener in the Tokyo 2014 2 Nights 2 Remember shows.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454923353128574977' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>A song that I wrote for NASCAR Arcade from the Sons Of Angels era, the show starts with this song. I always wanted to play it as an opener at some point.</p>
+                        <p>Of course I used the '82' guitar here. In truth, the guitar solo idea was actually much older.</p>
+                    ` },
+                    { 
+                        heading: "Jun Senoue", 
+                        subHeading: "(Written by <a href='https://twitter.com/crush40/status/369476034749403136' target='_blank'>Jun on Twitter</a>, in response to a comment about the Dangerous Ground solo.)", 
+                        text:`
+                            <p>Originally I did that back in 93.</p>
+                        ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Jun Senoue / THE WORKS II" }
+            ],
+            text: `
+            <p>It's time to get ready to go (Ready to go)<br />
+            It's time to party down again<br />
+            We can go for it all (For it all)<br />
+            We know you think we're crazy</p>
+            
+            <p>We're on dangerous ground, but...<br />
+            Once we start, we can never ever stop</p>
+            
+            <p>Who is the fool this time? (Fool this time)<br />
+            You're gonna set our hearts on fire<br />
+            We can push for the top (For the top)<br />
+            We show you how to play the game</p>
+            
+            <p>Watch out, our aim is true<br />
+            Step back you, it's our turn to fly</p>
+            
+            <p>It's time to get ready to go (Ready to go)<br />
+            It's time to party down again<br />
+            We can go for it all (For it all)<br />
+            We know you think we're crazy</p>
+            
+            <p>We're on dangerous ground, but...<br />
+            Once we start, we can never ever ever ever stop</p>
+            `
+        },
+        performances: [
+            { id: "twoNights" }
+        ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition, Arrangement and Lyrics", n: "Jun Senoue" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naoto Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" },
+                    { t: "Gang Vocals", n: "Yukio Morikawa & Jun Senoue" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Long Intro ver.", 
+                        inGame: true,
+                        long: "This version of Dangerous Ground has the long intro of the song.", 
+                        appearances: [ "NASCAR Arcade",
+                        "Thrill Of The Feel",
+                        "The Works II" ] 
+                    },
+                    { 
+                        fanName: "Short Intro ver.", 
+                        inGame: true,
+                        long: "This version of Dangerous Ground skips over the intro.", 
+                        appearances: [ "NASCAR Arcade",
+                        "Crush 40" ] 
+                    },
+                ]
+            },
+        ],
+        versionsBg: 'SkyBg.jpg'
+    },
+    itw: {
+        desc: {
+            fan: `
+           	<p>Created for NASCAR Arcade and featured on the band's debut album, Into the Wind is a song the band simply can't let go of. Recurring repeatedly at live performances and often paired with Revvin' Up and Watch Me Fly..., it's one of Jun's favourite non-Sonic songs.</p>
+            <p>Like all the other songs from the game, the lyrics try to paint inspiring, liberating images in your mind - car-themed as per the game, but just vague and emotive enough to inspire you for anything.</p>
+            <p>In addition to appearing in NASCAR Arcade, this song makes a surprise appearance in the credits of the DS version of Sonic And Sega All-Stars Racing! It plays after the song "So Much More" by Bentley Jones, and though it's shortened and compressed, it's certainly a welcome surprise.</p>`,
+	other: [
+                
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Super Sonic Songs", id: "sss"}
+            ],
+            text: `
+            <p>If you wanna make it, you've gotta give'em all<br />
+            Lay it all on the line<br />
+            You wonder why good things never come easy<br />
+            Don't stop for anything</p>
+            
+            <p>Don't give up<br />
+            Keep the fire, keep the faith<br />
+            You life is in your hands<br />
+            Don't you think that's time you take a chance<br />
+            'Cause you're gonna have to face it</p>
+            
+            <p>Start you up, down the road you go<br />
+            Hang on to your dreams, yeah<br />
+            Crusin' down to the paradise<br />
+            Turn the car into the wind, yeah</p>
+            
+            <p>You've got to fight to keep sight of your dreams<br />
+            Keep your hands on the wheel</p>
+            
+            <p>Don't give in<br />
+            You have the strength to get over<br />
+            You better stand up<br />
+            There's a light still shining on you<br />
+            Fair wind is blowin' to your way</p>
+            
+            <p>Start you up, down the road you go<br />
+            Hang on to your dreams, yeah<br />
+            Crusin' down to the paradise<br />
+            Turn the car into the wind, yeah<br />
+            Into the wind</p>
+            
+            <p>You're much to serious<br />
+            Let's steal away, blow your mind<br />
+            That's an easy thing to say<br />
+            You must take a step</p>
+            
+            <p>Start you up, down the road you go<br />
+            Hang on to your dreams, yeah<br />
+            Crusin' down to the paradise<br />
+            Turn the car into the wind, yeah</p>
+            
+            <p>Crusin' down to the paradise<br />
+            Turn the car into the wind</p>
+            `
+        },
+        performances: [
+            { id: "t11" },
+            { id: "t12" },
+            { id: "twoNights" }
+        ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition, Arrangement and Lyrics", n: "Jun Senoue" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naoto Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        inGame: true,
+                        long: "This is the main version of Into The Wind.", 
+                        appearances: [ "NASCAR Arcade",
+                            "Thrill Of The Feel",
+                            "The Best Of Crush 40 - Super Sonic Songs" ] 
+                    },
+                    { 
+                        fanName: "Sonic & SEGA All-Stars Racing DS Credits ver.", 
+                        inGame: true,
+                        long: "This is a short version of Into The Wind that appears exclusively in the credits for the DS version of Sonic & SEGA All-Stars Racing. It fades out during the bridge.", 
+                        appearances: [ "Sonic & SEGA All-Stars Racing (DS)" ] 
+                    },
+                ]
+            },
+        ],
+        versionsBg: 'SkyBg.jpg'
+    },
+    fm: {
+        desc: {
+            fan: `
+            <p>Among the many tracks Crush 40 has released over the years, Fuel Me is perhaps one of the more obscure ones. It's never been performed live and rereleased only on Jun Senoue's The Works II, and it's debated whether it even appears in NASCAR Arcade at all!</p> 
+            <p>Despite this, Fuel Me is no less explosive and fun than the rest of Thrill Of The Feel. It features a thundering rhythm guitar part from Jun, and Johnny's second ever self-written lyrics for the band.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/206054810460495874' target='_blank'>Jun on Twitter</a>.", 
+                    text:`
+                        <p>I remember that "Fuel Me" was the very last song I composed for that project.</p>
+                    ` },
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/108975004900790272' target='_blank'>Jun on Twitter</a>.", 
+                    text:`
+                        <p>"Fuel Me" was the second song Johnny and I did as "a team". I provided music to him and he wrote the whole lyrics. Was easy.</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Jun Senoue / THE WORKS II" }
+            ],
+            text: `
+            <p>I can feel you comin' up on my heels<br />
+            Can you feel my thunder behind my wheels<br />
+            Just you try to take me<br />
+            Just you try to take me<br />
+            I will dust you back right where you came</p>
+            
+            <p>One way is my way<br />
+            Your way don't even try</p>
+            
+            <p>Feel my fever burning you up inside<br />
+            Taste my passion floor you passing by<br />
+            Eat my bittersweet dust<br />
+            Hear my roaring fuel thrust<br />
+            Ain't no way you're ever getting by</p>
+            
+            <p>One way is my way<br />
+            Your way don't even try</p>
+            
+            <p>All in all your time is running out<br />
+            You will just leave here without<br />
+            Running down on the final pace<br />
+            Run you out into last place<br />
+            Fuel me I can't live without (it)</p>
+            
+            <p>One way is my way<br />
+            Your way don't even try</p>
+            
+            <p>All in all your time is running out<br />
+            You will just leave here without<br />
+            Running down on the final pace<br />
+            Run you out into last place<br />
+            Fuel me I can't live without (it)</p>
+            
+            `
+        },
+        performances: [
+            //none lmao get pranked
+        ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naoto Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the main, and so far, only version of Fuel Me.", 
+                        appearances: [ "Thrill Of The Feel",
+                            "Crush 40",
+                            "The Best Of Crush 40 - Super Sonic Songs" ] 
+                    }
+                ]
+            },
+        ],
+        versionsBg: 'SkyBg.jpg'
+    },
+    wmf: {
+        desc: {
+            fan: `
+            <p>Watch Me Fly is a very special song in Crush 40's history, as it's the first song both Jun and Johnny wrote as a team - Jun wrote the music, while Johnny wrote the lyrics. Fittingly, it's also one of both Jun and Johnny's favorite Crush 40 songs!</p>
+            <p>Though it's often placed at the middle of albums or setlists, this song has the sound of a closer, as it plays during the credits of NASCAR Arcade. The in-game version is a shortened edit, however.</p>`,
+            other: [
+                { 
+                    heading: "Jun Senoue", 
+                    subHeading: "(Written by <a href='https://twitter.com/crush40/status/454927737862774785' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
+                    text:`
+                        <p>I wrote the music and melody, and to make it easier for him to sing, Johnny rewrote the lyrics. Even now that's how we perform this memorable song.</p>
+                        <p>I don't think there will ever be a song that is more important to me than this one, where we shared the joy of creating together.</p>
+                    ` }
+            ]
+        },
+        lyrics: {
+            src: [ 
+                { n: "Driving Through Forever", id: "driving" }
+            ],
+            text: `
+            <p>I've been wondering bout who I am<br />
+            And just how far I'd drive to see the end<br />
+            I started from, when I believe I've won</p>
+            
+            <p>And as the sweat runs down my face<br />
+            I put my heart into this place of mine<br />
+            I go back in time, to see what I'm living in...</p>
+            
+            <p>My will, my way<br />
+            My fear fades grey<br />
+            With wings I fly high<br />
+            Watch me fly...</p>
+            
+            <p>It's just my wild heart moving in<br />
+            It's just my will to live the win you know<br />
+            I need it so<br />
+            Life's when the race begins</p>
+            
+            <p>And all the years I've wondered why<br />
+            I've starred at speed with open eyes you see<br />
+            It lives in me<br />
+            Now that's what sets me free</p>
+            
+            <p>My will, my way<br />
+            My fear fades grey<br />
+            With wings I fly high<br />
+            Watch me fly...</p>
+            
+            <p>I keep this fire, burning inside me<br />
+            The thrill of desire<br />
+            Coming over me...</p>
+            
+            <p>Now I believe whether near or far<br />
+            The road is windy there where you are you try<br />
+            To take the curve, next turn another learned</p>
+            
+            <p>And so I finally see my way<br />
+            Straight and true pass yesterday my friend<br />
+            I've waited for, the trill, the chase forever more</p>
+            
+            <p>Watch me fly...</p>
+            `
+        },
+        performances: [
+            { id: "sos10" },
+            { id: "t11" },
+            { id: "t12" },
+            { id: "twoNights" },
+            { id: "jgmf18" }
+        ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition, Arrangement and Lyrics", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Naoto Shibata" },
+                    { t: "Drums", n: "Hirotsugu Homma" },
+                    { t: "Piano", n: "Yutaka Minobe" }
+                ],
+                versions: [
+                    { 
+                        fanName: "In-game Short ver.", 
+                        inGame: true,
+                        long: "This is a short edit version of <i>Watch Me Fly...</i>, that plays during the credits of NASCAR Arcade.", 
+                        appearances: [ "NASCAR Arcade" ] 
+                    },
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the main version of <i>Watch Me Fly...</i>.", 
+                        appearances: [ "Thrill Of The Feel",
+                            "Crush 40",
+                            "The Best Of Crush 40 - Super Sonic Songs",
+                            "Driving Through Forever - The Ultimate Crush 40 Collection" ] 
+                    },
+                ]
+            },
+        ],
+        versionsBg: 'SkyBg.jpg'
     },
 	lal: {
         desc: {
@@ -484,22 +849,222 @@ Live and Learn - You may never find your way</p>
             { id: "sega60th" },
             { id: "symphony" }
         ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Lyrics", n: "Johnny Gioeli" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Katsuji" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        inGame: false,
+                        long: "This is the main version of Live & Learn, being used most commonly on releases.", 
+                        appearances: [ "Cuts Unleashed SA2 Vocal Collection",
+                            "Sonic Adventure 2 Official Soundtrack",
+                            "Crush 40",
+                            "The Best Of Crush 40 - Super Sonic Songs",
+                            "Sonic Adventure 2 Original Soundtrack 20th Anniversary Edition",
+                            "History Of Sonic Music 20th Anniversary Edition",
+                            "Sega Sound Selection 2",
+                            "Sonic Adventure 2 Official Soundtrack Vinyl Edition",
+                            "Driving Through Forever - The Ultimate Crush 40 Collection",
+                            "Non-Stop Music Selection Vol.1" ] 
+                    },
+                    { 
+                        fanName: "Finalhazard ver.", 
+                        inGame: true,
+                        long: `This version of Live & Learn play during the final boss of Sonic Adventure 2. It is identical to the main version, except without the synth sample at the start, and the "Yeah yeah yeah yeah yeah" backing vocals at the end.`, 
+                        appearances: [ "Sonic Adventure 2 [NOTE: Looped]",
+                        "multi - dimensional SONIC ADVENTURE 2 ORIGINAL SOUND TRACK",
+                        "Sonic Adventure 2 Original Soundtrack vol.2" ] 
+                    },
+                    { 
+                        fanName: "Credits ver.", 
+                        inGame: true,
+                        long: `This short version plays during the credits of Sonic Adventure 2. It shortens the intro, and skips to the end after the first chorus.`, 
+                        appearances: [ "Sonic Adventure 2" ] 
+                    },
+                    { 
+                        fanName: "SA2 Vocal Trax Medley ver.", 
+                        inGame: false,
+                        long: `This short version of Live & Learn appears as part of the SA2 Vocal Trax medley from the 10th Anniversary Birthday Pack bonus CD. It is similar to the credits version, but skips the intro completely.`, 
+                        appearances: [ "Sonic Adventure 2 Birthday Pack CD" ] 
+                    },
+                    { 
+                        fanName: "Sonic Adventure 2: Battle - Sampler ver.", 
+                        inGame: false,
+                        long: `This version of Live & Learn appeared on the Sonic Adventure 2: Battle - Sampler CD, which contained short edits of SA2 vocal tracks.<br />
+                        This version goes from the first chorus to the solo, and then after the bridge skips to the second half of the last chorus.`, 
+                        appearances: [ "Sonic Adventure 2: Battle - Sampler" ] 
+                    },
+                    { 
+                        fanName: "True Blue Mix", 
+                        inGame: false,
+                        long: `This version of Live & Learn is Re-Mixed by Masahiro Fukuhara in August of 2007 for the True Blue album.`, 
+                        appearances: [ "True Blue - The Best of Sonic The Hedgehog" ] 
+                    },
+                    { 
+                        fanName: "Sonic Generations 3DS ver.", 
+                        inGame: true,
+                        long: `This version of Live & Learn is similar to the Credits and SA2 Vocal Trax versions, but it adds the 2nd half of the last chorus.`, 
+                        appearances: [ "Sonic Generations (3DS)" ] 
+                    },
+                    { 
+                        officialName: "Short ver.", 
+                        inGame: true,
+                        long: `This short version appeared in Sonic Generations, as the theme for Sonic's attack in the Shadow the Hedgehog rival battle.<br />
+                        It features newly recorded bass and drums.`, 
+                        appearances: [ "Sonic Generations",
+                        "Sonic Generations Original Soundtrack: Blue Blur" ] 
+                    },
+                    { 
+                        fanName: "Short Looped ver.", 
+                        inGame: true,
+                        long: `This version of Live & Learn skips from the first chorus to the solo, before returning back to the start of the song.`, 
+                        appearances: [ "Super Smash Bros. Series",
+                        "Sonic Generations" ] 
+                    }
+                ]
+            },
+            {
+                title: "Instrumentals",
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Katsuji" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Demo ver.", 
+                        inGame: true,
+                        long: `This is a demo version of Live & Learn. It features no vocals, instead there is a midi flute playing a (different than final) vocal melody. There is also no guitar solo.`, 
+                        appearances: [ "Sonic Adventure 2 (Preview)" ] 
+                    },
+                    { 
+                        officialName: "Instrumental ver.", 
+                        inGame: false,
+                        long: `This is the instrumental version of Live & Learn, it is identical to the main version, except it lacks lead vocals.`, 
+                        appearances: [ "Cuts Unleashed SA2 Vocal Collection",
+                            "Sonic Adventure 2 Original Soundtrack vol.2" ] 
+                    },
+                    { 
+                        officialName: `SA2 ...Main Riff for "Sonic Adventure 2"`, 
+                        inGame: true,
+                        long: `SA2 is the name given to various instrumental mixes of Live & Learn, used throughout Sonic Adventure 2. The Main Riff version plays on the title screen.`, 
+                        appearances: [ "Sonic Adventure 2: The Trial",
+                            "Sonic Adventure 2",
+                            "multi - dimensional SONIC ADVENTURE 2 ORIGINAL SOUND TRACK",
+                            "Sonic Adventure 2 Original Soundtrack vol.1",
+                            "Sonic Adventure 2 Official Soundtrack Vinyl Edition" ] 
+                    },
+                    { 
+                        officialName: `SA2 ver.B`, 
+                        inGame: true,
+                        long: `SA2 is the name given to various instrumental mixes of Live & Learn, used throughout Sonic Adventure 2. Ver.B plays in the main menu.`, 
+                        appearances: [ "Sonic Adventure 2",
+                            "multi - dimensional SONIC ADVENTURE 2 ORIGINAL SOUND TRACK",
+                            "Sonic Adventure 2 Original Soundtrack vol.1" ] 
+                    },
+                    { 
+                        officialName: `SA2 ver.C`, 
+                        inGame: true,
+                        long: `SA2 is the name given to various instrumental mixes of Live & Learn, used throughout Sonic Adventure 2. Ver.C plays in the stage select screen.`, 
+                        appearances: [ "Sonic Adventure 2",
+                            "multi - dimensional SONIC ADVENTURE 2 ORIGINAL SOUND TRACK",
+                            "Sonic Adventure 2 Original Soundtrack vol.2" ] 
+                    },
+                    { 
+                        fanName: `SA2`, 
+                        inGame: true,
+                        long: `This version of SA2 is a mix of ver.B and C. The mix together has no official release.`, 
+                        appearances: [ "Sonic Adventure 2" ] 
+                    },
+                    { 
+                        fanName: `Sonic Runners ver.`, 
+                        inGame: true,
+                        long: `This version of Live & Learn appeared in Sonic Runners, and has a lead guitar instead of vocals. It is unknown who performed this new guitar.<br />
+                        It goes from the first chorus to the solo, and after the bridge it loops back to the intro.`, 
+                        appearances: [ "Sonic Runners" ] 
+                    }
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" }
+                ],
+                versions: [
+                    { 
+                        officialName: "SA2 ...in the Groove", 
+                        inGame: true,
+                        long: "SA2 is the name given to various instrumental mixes of Live & Learn, used throughout Sonic Adventure 2. This version plays in the Story Select screen, as well as during the story recaps.", 
+                        appearances: [ "Sonic Adventure 2",
+                        "multi - dimensional SONIC ADVENTURE 2 ORIGINAL SOUND TRACK",
+                        "Sonic Adventure 2 Official Soundtrack",
+                        "Sonic Adventure 2 Original Soundtrack vol.1" ] 
+                    }
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition", n: "Jun Senoue" },
+                    { t: "Lyrics", n: "Johnny Gioeli" },
+                    { t: "Vocals", n: "Hatsune Miku" },
+                    { t: "Manipulated by", n: "otomania" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Hatsune Miku ver.", 
+                        inGame: false,
+                        long: `This version of Live & Learn was included on a bonus CD that came with pre-orders for the Hatsune Miku -Project DIVA- extend videogame.<br />
+                            It is the True Blue mix, but with vocals by Hatsune Miku instead of Johnny Gioeli.`, 
+                        appearances: [ "Hatsune Miku -Project DIVA- extend Special Collaboration Album VOCALOID extend REMIXIES" ] 
+                    }
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition", n: "Jun Senoue & Johnny Gioeli" },
+                    { t: "Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Keyboard", n: "Katsuhiko Nakamichi" },
+                    { t: "Drums", n: "Akht." },
+                ],
+                versions: [
+                    { 
+                        officialName: "Acoustic Version", 
+                        inGame: false,
+                        long: "This version of Live & Learn was featured on Rock 'n' Sonic The Hedgehog: Sessions. It is performed with acoustic instruments, bar the addition of an electric organ.", 
+                        appearances: [ "Rock 'N' Sonic The Hedgehog: Sessions!" ] 
+                    }
+                ]
+            }
+        ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
 sh: {
         desc: {
             fan: `
             	<p>As the theme that plays over the intro of the game with the same name, Sonic Heroes is an outlier in Crush 40's early catalogue. Ironic, since it was their first song recorded under the Crush 40 name.</p>
-		<p>Sonic Heroes is a bright and melodic song in a major key, in stark contrast to the final boss theme What I'm Made Of. It perfectly sets the tone of the upbeat game to come.</p>
-		<p>Originally, What I'm Made Of was going to be the game's theme! However, Sega vetoed this, wishing for a brighter-sounding song - and thus, the song Sonic Heroes was born.</p>`,
+		        <p>Sonic Heroes is a bright and melodic song in a major key, in stark contrast to the final boss theme What I'm Made Of. It perfectly sets the tone of the upbeat game to come.</p>
+		        <p>Originally, What I'm Made Of was going to be the game's theme! However, Sega vetoed this, wishing for a brighter-sounding song - and thus, the song Sonic Heroes was born.</p>`,
             other: [
                 { 
                     heading: "Jun Senoue", 
                     subHeading: "(Written by <a href='https://twitter.com/crush40/status/454928503616450560' target='_blank'>Jun on Twitter</a>, describing the 2 Nights 2 Remember setlist)", 
                     text:`
                         <p>Whenever it's played live, I always wonder, "Why is this song so exciting?"</p>
-			<p>Up until now, I've been using a shortened version like the one from the game's opening, so it was over in no time.</p>
-			<p>This is the first time we've played the long version live.</p>
+			            <p>Up until now, I've been using a shortened version like the one from the game's opening, so it was over in no time.</p>
+			            <p>This is the first time we've played the long version live.</p>
                     ` }
             ]
         },
@@ -580,6 +1145,7 @@ Setting the stage for a heroes parade</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "tmg17" },
+            { id: "puma18" },
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
@@ -666,6 +1232,73 @@ Let me show you just what I'm made of</p>
             { id: "tmg18" },
             { id: "mgc19" },
             { id: "tmg19" }
+        ],
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Mark Schulman" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Early Demo ver.", 
+                        inGame: false,
+                        long: `This early version of <i>What I'm Made Of...</i> appeared in one of the beta builds of Sonic Heroes. The ending resembles how they often end the song during live performances.`, 
+                        appearances: [ "Sonic Heroes (Xbox Beta)" ] 
+                    },
+                    { 
+                        fanName: "Prototype ver.", 
+                        long: "This version of What I'm Made Of... is nearly identical to the final version. The only difference is the lack of vocals during the outro.", 
+                        appearances: [ "Sonic Heroes (GameCube 10.8 Prototype)" ] 
+                    },
+                    { 
+                        fanName: "Main ver.", 
+                        inGame: true,
+                        long: `This is the main version of <i>What I'm Made Of...</i>.`, 
+                        appearances: [ "Sonic Heroes (NOTE: Looped)",
+                        "SONIC HEROES : COMPLETE TRINITY - original soundtrax",
+                        "SONIC HEROES : TRIPLE THREAT - vocal trax",
+                        "Sonic Heroes Official Soundtrack",
+                        "Sonic Heroes Original Soundtrack 20th Anniversary Edition" ] 
+                    },
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Remixed by", n: "Masahiro Fukuhara" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars & Programming", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Mark Schulman" }
+                ],
+                versions: [
+                    { 
+                        fanName: "True Blue Mix", 
+                        inGame: false,
+                        long: `This version of What I'm Made Of... is Re-Mixed by Masahiro Fukuhara in August of 2007 for the True Blue album.<br />
+                        Unlike Live & Learn's True Blue mix, What I'm Made Of...'s True Blue mix became the new main version of the song.`, 
+                        appearances: [ "True Blue - The Best of Sonic the Hedgehog",
+                            "The Best Of Crush 40 - Super Sonic Songs",
+                            "Driving Through Forever - The Ultimate Crush 40 Collection" ] 
+                    },
+                    { 
+                        fanName: "True Blue Looped ver.",
+                        inGame: true,
+                        long: "This version is the True Blue mix of What I'm Made Of..., but after the third chorus it loops back to the second verse.", 
+                        appearances: [ "Sonic Generations" ] 
+                    },
+                    { 
+                        fanName: "True Blue Short ver.", 
+                        inGame: true,
+                        long: `This short version of the True Blue mix skips to the ending of the song after the first chorus.`, 
+                        appearances: [ "Sonic Generations (3DS)" ] 
+                    },
+                ]
+            },
         ],
         versionsBg: 'SSSBackground.png'
     },
@@ -855,7 +1488,7 @@ I am... I'm all of me...</p>
         ],
         versionsBg: 'SSSBackground.png'
     },
-ntb: {
+    ntb: {
         desc: {
             fan: `
             	<p>Never Turn Back is the true ending theme from Shadow The Hedgehog (2005).</p>
@@ -932,11 +1565,12 @@ And I'll never turn back...</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "tmg17" },
+            { id: "puma18" },
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
         ],
-        versionsBg: 'Crush40_MotionBlur.png'
+        versionsBg: 'SSSBackground.png'
     },
 srih: {
         desc: {
@@ -1436,7 +2070,7 @@ is it you... oh... Is it you</p>
         ],
         versionsBg: 'SSSBackground.png'
     },
-    twoNights: {
+    twonights: {
         desc: {
             fan: `
             	<p>One of the few Crush 40 songs with no ties to a game – 2 Nights 2 Remember is the first song on the 2015 EP of the same name.</p>
@@ -1511,7 +2145,43 @@ Never ever end</p>
             { id: "sos16" },
             { id: "jgmf18" }
         ],
-        versionsBg: 'Crush40_MotionBlur.png'
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda" },
+                    { t: "Drums", n: "Katsuji" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the full version of 2 Nights 2 Remember.", 
+                        appearances: [ "2 Nights 2 Remember",
+                            "Driving Through Forever - The Ultimate Crush 40 Collection" ] 
+                    },
+                    { 
+                        officialName: "Short ver.", 
+                        long: "This is a short version of 2 Nights 2 Remember that was posted on the Crush 40 YouTube channel.", 
+                        appearances: [ `Crush 40 "2 Nights 2 Remember" Lyric Video (Short ver.)` ] 
+                    },
+                ]
+            },
+            {
+                credits: [
+                    { t: "Composition", n: "Jun Senoue" }
+                ],
+                versions: [
+                    { 
+                        officialName: `2013 "Energy" Demo`, 
+                        long: "This is an early demo version of 2 Nights 2 Remember, which has not been released to the public. It's the same length as the Short version.", 
+                        appearances: [ `<a target="_blank" href="https://twitter.com/crush40/status/1255911886769381376" >Jun's Twitter</a>` ] 
+                    }
+                ]
+            }
+        ],
+        versionsBg: '2N2RBackground.jpg'
     },
     bm: {
         desc: {
@@ -1589,7 +2259,25 @@ Keep your big mouth shut</p>
         performances: [
             
         ],
-        versionsBg: 'Crush40_MotionBlur.png'
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda	[NOTE: Unconfirmed, but highly likely.]" },
+                    { t: "Drums", n: "Katsuji	[NOTE: Presumably]" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the only version of Big Mouth.", 
+                        appearances: [ "2 Nights 2 Remember" ] 
+                    }
+                ]
+            },
+        ],
+        versionsBg: '2N2RBackground.jpg'
     },
     lotd: {
         desc: {
@@ -1659,7 +2347,25 @@ You're my light</p>
         performances: [
 
         ],
-        versionsBg: 'Crush40_MotionBlur.png'
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda	[NOTE: Unconfirmed, but highly likely.]" },
+                    { t: "Drums", n: "Katsuji	[NOTE: Presumably]" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the only version of Light Of The Day.", 
+                        appearances: [ "2 Nights 2 Remember" ] 
+                    }
+                ]
+            },
+        ],
+        versionsBg: '2N2RBackground.jpg'
     },
     dnd: {
         desc: {
@@ -1750,7 +2456,30 @@ Give me some of that Down and Dirty.....</p>
         performances: [
             { id: "twoNights" }
         ],
-        versionsBg: 'Crush40_MotionBlur.png'
+        versionGroups: [
+            {
+                credits: [
+                    { t: "Composition & Arrangement", n: "Jun Senoue" },
+                    { t: "Vocals & Lyrics", n: "Johnny Gioeli" },
+                    { t: "Guitars", n: "Jun Senoue" },
+                    { t: "Bass", n: "Takeshi Taneda	[NOTE: Unconfirmed, but highly likely.]" },
+                    { t: "Drums", n: "Katsuji	[NOTE: Presumably]" }
+                ],
+                versions: [
+                    { 
+                        fanName: "Main ver.", 
+                        long: "This is the full version of Down & Dirty.", 
+                        appearances: [ "2 Nights 2 Remember" ] 
+                    },
+                    { 
+                        officialName: "Short ver.", 
+                        long: "This is a short version of Down & Dirty that was posted on the Crush 40 YouTube channel. It is a slightly different mix from the full track.", 
+                        appearances: [ `Crush 40 New Song Preview "Down & Dirty" (Short ver.)` ] 
+                    }
+                ]
+            },
+        ],
+        versionsBg: '2N2RBackground.jpg'
     }
 };
 
