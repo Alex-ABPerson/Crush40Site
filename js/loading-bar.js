@@ -7,7 +7,8 @@ let messages = [
     "It's time to get ready to <b>load</b>!",
     "In his world, <b>loading</b> does not exist!",
     "2 Nights 2 <b>Load</b>",
-    "No <b>loading</b> to bring you down!"
+    "No <b>loading</b> to bring you down!",
+    "Step aside, I'll <b>load the page</b>!"
 ];
 
 function StartLoading(loading) {
