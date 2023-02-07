@@ -10,18 +10,22 @@ const headerHTML = `
 
     <ul class="items">
         <li id="navAbout">
-            <a href="index.html"><p>About</p></a>
             <div class="back"></div>
+            <a href="index.html"><p>About</p></a>
         </li>
         <li id="navDiscography">
-            <a href="discography.html"><p>Discography</p></a>
             <div class="back"></div>
+            <a href="discography.html"><p>Discography</p></a>
         </li>
         <li id="navGear">
             <div class="back"></div>
             <a href="gear.html"><p>Gear</p></a>
         </li>
-        <li id="navShows">
+        <li id="navMerch">
+            <div class="back"></div>
+            <a href="https://johnnygmerch.com" target="_blank"><p>Merch</p></a>
+        </li>
+        <!--<li id="navShows">
             <div class="back"></div>
             <p>Shows</p>
         </li>
@@ -32,7 +36,7 @@ const headerHTML = `
         <li id="navHistory">
             <div class="back"></div>
             <p>History</p>
-        </li>
+        </li>-->
     </ul>
 </nav>
 `;
