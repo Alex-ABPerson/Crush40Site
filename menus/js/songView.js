@@ -1997,8 +1997,7 @@ Live Life...</p>
         },
         performances: [
             { id: "sos12" },
-            { id: "twoNights" },
-            { id: "jgmf18", d: "Featuring a real violinist!" },
+            { id: "twoNights" }
         ],
         versionsBg: 'SSSBackground.png'
     },
@@ -2143,7 +2142,7 @@ Never ever end</p>
             { id: "youmacon15" },
             { id: "sonic25th" },
             { id: "sos16" },
-            { id: "jgmf18" }
+            { id: "jgmf18", d: "Featuring a real violinist!" }
         ],
         versionGroups: [
             {
