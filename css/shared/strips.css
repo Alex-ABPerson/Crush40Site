@@ -1,0 +1,58 @@
+.strip {
+    position: relative;
+    width: calc(100% + 20px);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+    font-size: 150%;
+}
+
+.stripUp {
+    padding-left: 20px;
+    transform: rotateZ(-6deg);
+}
+
+.stripDown {
+    padding-right: 50px;
+    transform: rotateZ(6deg);
+}
+
+.strip .stripText {
+    width: 80%;
+}
+
+.strip .stripImg {
+    width: 80%;
+}
+
+@media (min-width: 800px) {
+    .stripUp {
+        padding-left: 50px;
+    }
+    .strip {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 160%;
+        flex-direction: row;
+    }
+
+    .strip .stripImg {
+        width: 30%;
+    }
+}
+
+.stripBack {
+    padding: 10px;
+    margin-left: -100px;
+
+    z-index: -1;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+}

@@ -1,0 +1,28 @@
+.loading-screen {
+    visibility: collapse;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--crush40-gray);
+}
+
+.loading-screen .spinning {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: solid transparent 4px;
+    border-top: solid white 4px;
+
+    margin-left: 10px;
+}
+
+.loading-screen p {
+    font-size: 150%;
+}

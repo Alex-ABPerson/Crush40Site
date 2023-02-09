@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--crush40-red-pale);
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "img"
+        "txt";
+    
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 1000px) {
+    .footer {
+        grid-template-rows: auto;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas: "img txt";
+    }
+}
+
+.footer:hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.footer .image {
+    grid-area: img;
+    width: 300px;
+}
+
+.footer .text {
+    grid-area: txt;
+    font-size: 150%;
+    margin-left: 20px;
+}

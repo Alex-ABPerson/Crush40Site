@@ -1,0 +1,65 @@
+/* GENERAL: */
+.generalList {
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    display: flex;
+}
+
+.generalList > li {
+    text-align: left;
+
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: var(--crush40-red-pale-transparent);
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 300px;
+
+    color: white;
+    cursor: pointer;
+}
+
+.generalList > li:hover {
+    background-color: var(--crush40-red-pale-hover);
+}
+
+.tabLikeList > li:hover {
+    background-image: url('../img/icons/thiccRightArrow.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.tabSet {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.tabSet .tab {
+    margin: 10px;
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    border-bottom: solid var(--crush40-red) 5px;
+    cursor: pointer;
+}
+
+.tabSet .tab p {
+    margin: 5px;
+}
+
+.tabSet .tab:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,88 @@
+
+.floating {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+
+    visibility: collapse;
+}
+
+.floating .floatingClose {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.floating .panel {
+
+    z-index: 102;
+
+    position: absolute;
+    background-color: var(--crush40-gray);
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+
+    box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "titlebar"
+        "cont";
+}
+
+.floating .panel .contents {
+    grid-area: cont;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.floating .panel .page {
+    width: 100%;
+    height: 100%;
+}
+
+.floating .panel .titlebar {
+    grid-area: titlebar;
+    color: black;
+
+    padding: 0;
+    background-color: var(--crush40-red);
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "back title close";
+}
+
+.floating .panel .titlebar .title {
+    font-weight: 700;
+    font-size: 125%;
+    margin: 0;
+    padding: 20px;
+}
+
+.floating .panel .titlebar .back {
+    grid-area: back;
+}
+
+.floating .panel .titlebar .close {
+    grid-area: close;
+}
+
+.floating .panel .titlebar .hiddenBack {
+    position: absolute;
+    visibility: collapse;
+}
+
+.floating .panel .titlebar .iconButton {
+    height: 64px;
+}
+
+.floating .panel .titlebar .close:hover, .floating .panel .titlebar .back:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

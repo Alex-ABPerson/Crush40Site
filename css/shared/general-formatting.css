@@ -1,0 +1,56 @@
+html, body {
+    --crush40-red: rgb(235, 0, 5);
+    --crush40-red-hover: rgb(205, 0, 5);
+    --crush40-blue: rgb(120, 120, 255);
+
+    --crush40-darkred: rgb(195, 0, 5);
+    --crush40-lightred-hover: rgb(109, 0, 0);
+
+    --crush40-red-pale: rgb(140, 30, 30);
+    --crush40-red-pale-transparent: rgba(140, 30, 30, 0.8);
+    --crush40-red-pale-hover: rgb(160, 30, 30);
+    --crush40-blue-pale: rgb(30, 30, 140);
+    --crush40-blue-pale-transparent: rgba(30, 30, 140, 0.8);
+    --crush40-blue-pale-hover: rgb(60, 30, 140);
+
+    --crush40-gray: rgb(24, 26, 27);
+    --crush40-darkgray: rgb(20, 20, 20);
+
+    margin: 0;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+
+    font-family: 'Bahnschrift', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: var(--crush40-red);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+._anim {
+    animation-play-state: running !important;
+}
+
+.dimentiaTitle {
+    font-family: 'Dimentia';
+    font-weight: 300;
+    color: red;
+}
+
+.section {
+    width: 100%;
+    overflow: hidden;
+}
