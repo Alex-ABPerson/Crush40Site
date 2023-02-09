@@ -1,132 +1,157 @@
 var FloatingMenuPanel = class {
 
+    mainElem = null
     panelElem = null
     panelTitleElem = null
-    panelFrameElem = null
-    panelBackElem = null
+    panelIFrameElem = null
+    panelBackBtnElem = null
 
     loadingScreen = null
     currentPanelHeight = 0
-    panelOpen = false
-    
 
+    noPanelHistory = 0
 
-    var floatingLoading;
-    var floatingPanelTitle;
-    var floatingPanelFrame;
-    var floatingPanelBack;
-    var currentPanelHeight;
-    var panelOpen = false;
-    var noPanelHistory = 0;
-}
+    constructor(main) {
 
+        this.mainElem = main
+        this.mainElem.classList.add("_comp_menupanel");
+        this.mainElem.innerHTML = `
+        <div class="panelClose"></div>
+        <div class="panel">
+            <div class="titlebar">
+                <button title="Back" class="back iconButton"><img src="img/icons/smallBackButton.svg" alt="Back Icon"></button>
+                <p class="title">Loading...</p>
+                <button title="Close" class="close iconButton"><img src="img/icons/smallCloseButton.svg" alt="Close Icon"></button>
+            </div>
 
-function SetupFloating() {
-    
-    floating = document.querySelector(".floating");
-    floatingLoading = new LoadingComponent(document.querySelector(".floating .panel .loading-screen"));
-    floatingPanel = document.querySelector(".floating .panel");
-    floatingPanelTitle = document.querySelector(".floating .panel .titlebar .title");
-    floatingPanelFrame = document.querySelector(".floating .panel .contents");
-    floatingPanelBack = document.querySelector(".floating .panel .titlebar .back");
+            <div class="loading"></div>
 
-    document.querySelector(".floating .floatingClose").addEventListener('click', ClosePanel);
-    document.querySelector(".floating .panel .titlebar .close").addEventListener('click', ClosePanel);
-    floatingPanelBack.addEventListener('click', NavBack);
+            <iframe title="Menu Contents" class="contents" src=""></iframe>
+        </div>
+        `;
 
-    window.addEventListener('message', (e) => HandleMessage(e.data));
-    window.addEventListener('resize', () => {
-        UpdatePanelSizing();
-    });
-    UpdatePanelSizing();
+        // Setup elements
+        this.panelElem = this.mainElem.querySelector(".panel");
+        this.panelTitleElem = this.panelElem.querySelector(".titlebar .title");
+        this.panelIFrameElem = this.panelElem.querySelector(".contents");
+        this.backBtnElem = this.panelElem.querySelector(".titlebar .back");
+        this.loadingScreen = new LoadingScreen(this.panelElem.querySelector(".loading"));
+ 
+        // Setup clicks
+        this.panelElem.querySelector(".titlebar .close").addEventListener('click', () => this.Close());
+        this.mainElem.querySelector(".panelClose").addEventListener('click', () => this.Close());
 
-    for (let btn of document.querySelectorAll("[data-action='panel']"))
-        btn.addEventListener('click', () => UpdatePanelPage(btn.dataset.pageName));
-}
+        this.backBtnElem.addEventListener('click', () => this.GoBack());
+        
+        // Setup additional handling
+        window.addEventListener('message', (e) => this.HandleMessage(e.data));
+        window.addEventListener('resize', () => this.RefreshPanelSizing());
 
-function UpdatePanelPage(newSrc)
-{   
-    let bothParts = newSrc.split('?');
-    floatingPanelFrame.src = "menus/" + bothParts[0] + ".html" + (bothParts.length > 1 ? "?" + bothParts[1] : "");
+        // Initialize
+        this.RefreshPanelSizing();
 
-    OnUpdatePanelPage(panelOpen);
-}
+        for (let btn of document.querySelectorAll("[data-action='panel']"))
+            btn.addEventListener('click', () => this.OpenTo(btn.dataset.pageName));
+    }
 
-function OnUpdatePanelPage(updateHistory)
-{
-    floatingLoading.Start();
-    OpenPanel();
+    // Open/Close
+    OpenTo(newSrc) {
+        this.mainElem.style.visibility = 'visible';
+        DisableScroll();
 
-    if (updateHistory) noPanelHistory++;
+        this.GoTo(newSrc, false);
+        this.ResetHistory();
+    }
 
-    // Show the back button if we have enough history now.
-    if (noPanelHistory > 0)
-        floatingPanelBack.classList.remove("hiddenBack");
-    else
-        floatingPanelBack.classList.add("hiddenBack");
-}
+    Close() {
+        this.mainElem.style.visibility = 'collapse';
+        EnableScroll();
+    }
 
-function NavBack()
-{
-    noPanelHistory--;
-    floatingPanelFrame.contentWindow.history.back();
-    OnUpdatePanelPage(false);
-}
+    // Navigation
+    GoTo(newSrc, updateHistory = true) {
+        let bothParts = newSrc.split('?');
 
-function OpenPanel()
-{
-    panelOpen = true;
-    floating.style.visibility = 'visible';
-    DisableScroll();
-}
+        if (bothParts.length > 1)
+            this.panelIFrameElem.src = "menus/" + bothParts[0] + ".html" + "?" + bothParts[1];
+        else
+            this.panelIFrameElem.src = "menus/" + bothParts[0] + ".html";
 
-function ClosePanel()
-{
-    panelOpen = false;
-    noPanelHistory = 0;
-    floating.style.visibility = 'collapse';
-    EnableScroll();
-}
+        this.BeforePageLoad(updateHistory);
+    }
 
-function OnPanelLoad()
-{
-    let splitURL = document.URL.split('/');
+    // Page Loading
+    BeforePageLoad(updateHistory) {
+        this.loadingScreen.Start();
+        if (updateHistory) this.AddToHistory();
+    }
 
-    // Send the current parent page to the iframe - the menu may just ignore this. One place this is used by the "guitar view" page,
-    // which needs to know whether it should hide the "View on Gear page" button if we're already on the gear page.
-    floatingPanelFrame.contentWindow.postMessage(splitURL[splitURL.length - 1]);
-    
-    floatingPanelTitle.innerHTML = floatingPanelFrame.contentDocument.title;
-    floatingLoading.Stop();
-}
+    AfterPageLoad() {
+        // Send the current parent page to the iframe - the menu may just ignore this. One place this is used by the "guitar view" page,
+        // which needs to know whether it should hide the "View on Gear page" button if we're already on the gear page.
+        let splitURL = document.URL.split('/');
+        this.panelIFrameElem.contentWindow.postMessage(splitURL[splitURL.length - 1]);
+        
+        this.panelTitleElem.innerHTML = this.panelIFrameElem.contentDocument.title;
+        this.loadingScreen.Stop();
+    }
 
-function UpdatePanelSizing() {
-    if (currentPanelHeight >= window.innerHeight || window.innerWidth < 1000)
-        floatingPanel.style.height = "100%";
-    else
-        floatingPanel.style.height = currentPanelHeight + "px";
-}
+    // Panel Sizing
+    RefreshPanelSizing() {
+        if (this.currentPanelHeight >= window.innerHeight || window.innerWidth < 1000)
+            this.panelElem.style.height = "100%";
+        else
+            this.panelElem.style.height = this.currentPanelHeight + "px";
+    }
 
-function HandleMessage(msg) {
-    let msgCode = msg[0];
-    let msgContents = msg.substring(1);
+    // Page Communication
+    HandleMessage(msg) {
+        let msgCode = msg[0];
+        let msgContents = msg.substring(1);
 
-    switch (msgCode)
-    {
-        // Listen out for a message from the page in the frame when it loads - this will not only tell us how tall to make the panel,
-        // but will also confirm it's fully loaded.
-        case '!':
-            currentPanelHeight = parseInt(msgContents);
-            UpdatePanelSizing();
-            OnPanelLoad();
-            break;
-        // Zoom feature
-        case '^':
-            OpenZoom(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
-            break;
-        // Navigate To
-        case '@':
-            UpdatePanelPage(msgContents); // Get rid of any ../s as they don't apply here.
-            break;
+        switch (msgCode)
+        {
+            // Listen out for a message from the page in the frame when it loads - this will not only tell us how tall to make the panel,
+            // but will also confirm it's fully loaded.
+            case '!':
+                this.currentPanelHeight = parseInt(msgContents);
+                this.RefreshPanelSizing();
+                this.AfterPageLoad();
+                break;
+            // Zoom feature
+            case '^':
+                OpenZoom(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
+                break;
+            // Navigate To
+            case '@':
+                this.GoTo(msgContents);
+                break;
+        }
+    }
+
+    // Panel History
+    AddToHistory() {
+        this.noPanelHistory++;
+        this.RefreshBackPrescence();
+    }
+
+    GoBack() {
+        this.noPanelHistory--;
+        this.RefreshBackPrescence();
+        this.panelIFrameElem.contentWindow.history.back();
+        this.BeforePageLoad(false);
+    }
+
+    ResetHistory() {
+        this.noPanelHistory = 0;
+        this.backBtnElem.classList.add("hiddenBack");
+    }
+
+    RefreshBackPrescence() {
+        // Show the back button if we have enough history now.
+        if (this.noPanelHistory > 0)
+            this.backBtnElem.classList.remove("hiddenBack");
+        else
+            this.backBtnElem.classList.add("hiddenBack");
     }
 }
