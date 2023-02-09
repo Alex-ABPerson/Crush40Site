@@ -1,4 +1,4 @@
-.loading-screen {
+._comp_loading {
     visibility: collapse;
 
     position: absolute;
@@ -13,7 +13,7 @@
     background-color: var(--crush40-gray);
 }
 
-.loading-screen .spinning {
+._comp_loading .spinning {
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -23,6 +23,6 @@
     margin-left: 10px;
 }
 
-.loading-screen p {
+._comp_loading p {
     font-size: 150%;
 }
