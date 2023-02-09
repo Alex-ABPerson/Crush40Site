@@ -1747,6 +1747,7 @@ I'm the knight of the wind...</p>
             { id: "youmacon15" },
             { id: "sonic25th" },
             { id: "sos16" },
+            { id: "jgmf18", d: "Featuring a real violinist!" },
             { id: "symphony" }
         ],
         versionsBg: 'Crush40_MotionBlur.png'
@@ -2141,8 +2142,7 @@ Never ever end</p>
             { id: "joypolis15" },
             { id: "youmacon15" },
             { id: "sonic25th" },
-            { id: "sos16" },
-            { id: "jgmf18", d: "Featuring a real violinist!" }
+            { id: "sos16" }
         ],
         versionGroups: [
             {
