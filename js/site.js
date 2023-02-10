@@ -37,6 +37,7 @@ class PageScrollHandler {
     }
 } 
 
+var menuPanel;
 function InitPage(navbarID)
 {
     // Insert header + footer
@@ -46,7 +47,7 @@ function InitPage(navbarID)
     // Setup everything
     let scrollHandler = new PageScrollHandler();
     let zoomHandler = new ZoomPanel(document.querySelector(".global-zoom"), scrollHandler);
-    let menuPanel = new FloatingMenuPanel(document.querySelector(".global-menu"), zoomHandler, scrollHandler);
+    menuPanel = new FloatingMenuPanel(document.querySelector(".global-menu"), zoomHandler, scrollHandler);
     let navbar = new Navbar(document.querySelector(".global-nav"), navbarID, scrollHandler);
 
     SetupParallax();

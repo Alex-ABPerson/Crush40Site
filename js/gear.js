@@ -147,8 +147,8 @@ var Guitars = {
     }
 };
 
-AddLoadLogic(() => {
-    UpdateNavbarPageSelection("navGear");
+window.addEventListener('load', () => {
+    InitPage("navGear");
 
     gtrElem = document.querySelector("#gtrElem");
     gtrImg = document.querySelector("#gtrImg");

@@ -1,5 +1,5 @@
-AddLoadLogic(() => {
-    UpdateNavbarPageSelection("navDiscography");
+window.addEventListener('load', () => {
+    InitPage("navDiscography");
 
     InitFeatures();
     InitSongs();
@@ -573,7 +573,7 @@ function UpdateSongs(songs, searchTerm)
     {
         let newSongView = document.createElement("li");
         newSongView.classList.add("song");
-        newSongView.addEventListener('click', () => UpdatePanelPage("songView?s=" + itm.id));
+        newSongView.addEventListener('click', () => menuPanel.OpenTo("songView?s=" + itm.id));
         
         let title = document.createElement("h2");
         title.innerHTML = CreateHTMLFor(itm.data.t, searchTerm);
