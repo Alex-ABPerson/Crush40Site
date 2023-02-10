@@ -1,4 +1,4 @@
-.zoom {
+._comp_zoom {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 200;
 
@@ -15,7 +15,7 @@
     visibility: hidden;
 }
 
-.zoom img {
+._comp_zoom img {
     max-width: 90%;
     max-height: 90%;
 }

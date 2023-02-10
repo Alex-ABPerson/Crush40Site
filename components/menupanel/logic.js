@@ -7,11 +7,17 @@ var FloatingMenuPanel = class {
     panelBackBtnElem = null
 
     loadingScreen = null
+    zoomPanel = null
+    scrollHandler = null
+
     currentPanelHeight = 0
 
     noPanelHistory = 0
 
-    constructor(main) {
+    constructor(main, zoomPanel, scrollHandler) {
+
+        this.zoomPanel = zoomPanel;
+        this.scrollHandler = scrollHandler;
 
         this.mainElem = main
         this.mainElem.classList.add("_comp_menupanel");
@@ -57,7 +63,7 @@ var FloatingMenuPanel = class {
     // Open/Close
     OpenTo(newSrc) {
         this.mainElem.style.visibility = 'visible';
-        DisableScroll();
+        this.scrollHandler.AddOneNoScroll();
 
         this.GoTo(newSrc, false);
         this.ResetHistory();
@@ -65,7 +71,7 @@ var FloatingMenuPanel = class {
 
     Close() {
         this.mainElem.style.visibility = 'collapse';
-        EnableScroll();
+        this.scrollHandler.ReleaseOneNoScroll();
     }
 
     // Navigation
@@ -120,7 +126,7 @@ var FloatingMenuPanel = class {
                 break;
             // Zoom feature
             case '^':
-                OpenZoom(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
+                this.zoomPanel.Open(msgContents.replace("../", "")); // Get rid of any ../s as they don't apply here.
                 break;
             // Navigate To
             case '@':

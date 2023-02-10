@@ -40,7 +40,6 @@ var LoadingScreen = class {
         // Choose a random message
         this.textElem.innerHTML = chooseRandMsg();
 
-        let thisVal;
         this.intervalId = setInterval(() => {
             this.spinPos += 2;
             if (this.spinPos == 360)
