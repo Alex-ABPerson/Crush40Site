@@ -1,7 +1,7 @@
-// Headstock snapping - so it doesn't weirdly line up with frets.
-AddLoadLogic(() => {
-	UpdateNavbarPageSelection("navAbout");
+window.addEventListener('load', () => {
+    InitPage('navAbout');
 
+    // Headstock snapping - so it doesn't weirdly line up with frets.
     let headstocks = document.querySelectorAll(".headstock-right");
     for (let headstock of headstocks)
     {

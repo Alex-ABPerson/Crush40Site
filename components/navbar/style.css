@@ -1,0 +1,170 @@
+._comp_navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 100;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo items";
+
+    justify-items: flex-end;
+}
+
+._comp_navbar .logo {
+    margin: 10px;
+    height: 60px;
+}
+
+._comp_navbar .items {
+    grid-area: items;
+    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: black;
+    
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    box-sizing: border-box;
+
+    align-self: center;
+}
+
+._comp_navbar .items li {
+    display: block;
+    margin: 10px;
+
+    width: 110px;
+    text-align: center;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+._comp_navbar .items li:hover .back {
+    background-color: var(--crush40-red-hover);
+}
+
+._comp_navbar .items .selected .back {
+    background-color: var(--crush40-darkred);
+}
+
+._comp_navbar .items li .back {
+    background-color: var(--crush40-red);
+    transform: skew(-25deg);
+
+    position: absolute;
+    margin-top: 5px;
+    width: 110px;
+    height: 40px;
+
+    z-index: -1;
+}
+
+._comp_navbar .items li a {
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+._comp_navbar .btn {
+    /* Button for mobile only */
+    visibility: collapse;
+
+    background-color: transparent;
+    border: none;
+}
+
+/* Smallscreen Nav */
+@media (max-width: 1040px) {
+
+    ._comp_navbar {
+        align-items: flex-start;
+        justify-items: center;
+        
+        grid-template-rows: auto 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "logo"
+            "items";
+    }
+
+    ._comp_navbar_open {
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.8);
+    }
+
+    ._comp_navbar .img {
+        justify-self: center;
+    }
+
+    ._comp_navbar .btn {
+        visibility: visible;
+
+        margin-left: 10px;
+        margin-right: 10px;       
+
+        width: 36px;
+        height: 36px;
+        border: 2px solid white;
+        border-radius: 100%;
+
+        cursor: pointer;
+    }
+
+    ._comp_navbar .btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    ._comp_navbar .other {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    ._comp_navbar .items {
+        visibility: collapse;
+
+        align-self: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 0;
+
+        width: 300px;
+    }
+
+    ._comp_navbar_open .items {
+        visibility: visible;   
+    }
+
+    ._comp_navbar .items li {
+        width: 300px;
+        height: 50px;
+
+        line-height: 30px;
+
+        margin: 0;
+        margin-bottom: 15px;
+        align-items: flex-start;
+    }
+
+    ._comp_navbar .items li .back {
+        width: 300px;
+        height: 50px;
+
+        border-radius: 10px;
+        transform: none;
+    }
+}
