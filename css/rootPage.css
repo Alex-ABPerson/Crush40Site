@@ -1,11 +1,8 @@
 @import url('shared/general-formatting.css');
 @import url('shared/strips.css');
 @import url('shared/colors.css');
-@import url('shared/buttons.css');
 @import url('shared/lists.css');
 @import url('shared/site-background.css');
-@import url('shared/zoom-panel.css');
-@import url('shared/navbar.css');
 @import url('shared/opening.css');
 @import url('shared/footer.css');
 
@@ -19,4 +16,9 @@
     font-family: 'Dimentia';
     font-weight: 300;
     src: url('../img/fonts/Dimentia.otf');
+}
+
+.section {
+    width: 100%;
+    overflow: hidden;
 }
