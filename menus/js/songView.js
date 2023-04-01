@@ -113,7 +113,8 @@ Close my eyes and feel it burn - Now I see what I've gotta do</p>
             { id: "mgc19" },
             { id: "tmg19" },
             { id: "sega60th" },
-            { id: "symphony" }
+            { id: "symphony" },
+            { id: "aex" }
         ],
 	versionGroups: [
             {
@@ -847,7 +848,8 @@ Live and Learn - You may never find your way</p>
             { id: "mgc19" },
             { id: "tmg19" },
             { id: "sega60th" },
-            { id: "symphony" }
+            { id: "symphony" },
+            { id: "aex" }
         ],
         versionGroups: [
             {
@@ -1149,7 +1151,8 @@ Setting the stage for a heroes parade</p>
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
-            { id: "symphony" }
+            { id: "symphony" },
+            { id: "aex" }
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },
@@ -1231,7 +1234,8 @@ Let me show you just what I'm made of</p>
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "mgc19" },
-            { id: "tmg19" }
+            { id: "tmg19" },
+            { id: "aex" }
         ],
         versionGroups: [
             {
@@ -1397,7 +1401,8 @@ I am... I'm all of me...</p>
             { id: "tmg18" },
             { id: "mgc19" },
             { id: "tmg19" },
-            { id: "symphony" }
+            { id: "symphony" },
+            { id: "aex" }
         ],
         versionGroups: [
             {
@@ -1569,6 +1574,7 @@ And I'll never turn back...</p>
             { id: "jgmf18" },
             { id: "tmg18" },
             { id: "tmg19" },
+            { id: "aex" }
         ],
         versionsBg: 'SSSBackground.png'
     },
@@ -1748,7 +1754,8 @@ I'm the knight of the wind...</p>
             { id: "sonic25th" },
             { id: "sos16" },
             { id: "jgmf18", d: "Featuring a real violinist!" },
-            { id: "symphony" }
+            { id: "symphony" },
+            { id: "aex" }
         ],
         versionsBg: 'Crush40_MotionBlur.png'
     },

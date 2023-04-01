@@ -24,4 +24,5 @@ var Crush40Performances = {
     tmg19: { n: "TooManyGames 2019", y: 2019 },
     sega60th: { n: "SEGA GO 60th Live", y: 2020 },
     symphony: { n: "Sonic 30th Symphony", y: 2021 },
+    aex: { n: "AEX Chile", y: 2023 },
 };
