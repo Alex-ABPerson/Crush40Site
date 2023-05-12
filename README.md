@@ -3,7 +3,7 @@
 
 The **Crush 40 Fan Website** is a fan-made website, developed from complete scratch by the members of the _Crush 40 Discord server_.
 
-This repository contains the entire site's source - from the server-side PHP to the images and graphics used on the page. And, in addition, issues and "Projects" boards used to track the progress made on the site and future pieces to be built.
+This repository contains the entire site's source - from the HTML5 to the images and graphics used on the page. And, in addition, issues and "Projects" boards used to track the progress made on the site and future pieces to be built.
 
 The server hosting, which is currently https://abco.live/C40/index.html, pulls source directly from this repo periodically - note that for short periods of time the server may be slightly behind this repo.
 
