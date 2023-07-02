@@ -10,7 +10,7 @@ var FloatingMenuPanel = class {
     zoomPanel = null
     scrollHandler = null
 
-    currentPanelHeight = 0
+    currentPanelHeight = 400 // Default to 400 for loading screen
 
     noPanelHistory = 0
 
